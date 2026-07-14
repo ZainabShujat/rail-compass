@@ -15,7 +15,11 @@ export default function Signup({ setUserName }) {
     const firstName = name.trim().split(' ')[0];
     
     // Mock signup logic - instantly log them in with their first name
-    localStorage.setItem('userName', firstName);
+    try {
+      localStorage.setItem('userName', firstName);
+    } catch (e) {
+      console.warn('localStorage access denied');
+    }
     if (setUserName) setUserName(firstName);
     
     navigate('/');

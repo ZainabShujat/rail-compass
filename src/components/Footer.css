@@ -61,15 +61,15 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--overlay-bg);
   color: var(--text-main);
   transition: all 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--border-color);
 }
 
 .social-link:hover {
-  background: rgba(79, 70, 229, 0.2);
-  color: #818cf8;
+  background: color-mix(in srgb, var(--accent-fill) 15%, transparent);
+  color: var(--accent-text);
   transform: translateY(-3px);
 }
 
@@ -80,7 +80,7 @@
 
 .footer-heading {
   font-size: 0.85rem;
-  color: var(--text-muted);
+  color: var(--text-secondary);
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
@@ -97,7 +97,7 @@
 }
 
 .footer-links a {
-  color: var(--text-main);
+  color: var(--text-secondary);
   text-decoration: none;
   font-size: 0.95rem;
   font-weight: 500;
@@ -105,7 +105,7 @@
 }
 
 .footer-links a:hover {
-  color: #818cf8;
+  color: var(--accent-text);
 }
 
 .footer-bottom {
@@ -131,7 +131,7 @@
 }
 
 .bottom-links a {
-  color: var(--text-muted);
+  color: var(--text-secondary);
   text-decoration: none;
   font-size: 0.85rem;
   letter-spacing: 1px;
@@ -140,7 +140,7 @@
 }
 
 .bottom-links a:hover {
-  color: var(--text-main);
+  color: var(--accent-text);
 }
 
 @media (max-width: 768px) {

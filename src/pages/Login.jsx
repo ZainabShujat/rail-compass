@@ -14,7 +14,11 @@ export default function Login({ setUserName }) {
     const emailPrefix = email.split('@')[0];
     const firstName = emailPrefix.charAt(0).toUpperCase() + emailPrefix.slice(1);
     
-    localStorage.setItem('userName', firstName);
+    try {
+      localStorage.setItem('userName', firstName);
+    } catch (e) {
+      console.warn('localStorage access denied');
+    }
     if (setUserName) setUserName(firstName);
     
     navigate('/');

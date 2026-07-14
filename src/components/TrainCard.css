@@ -2,35 +2,34 @@
   padding: 24px;
   margin-bottom: 20px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
 }
 
 .train-card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(79, 70, 229, 0.4);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(79, 70, 229, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
 }
 
 .top-recommendation {
-  border-color: rgba(245, 158, 11, 0.5);
-  box-shadow: 0 8px 32px rgba(245, 158, 11, 0.15);
+  border-color: var(--warning);
+  box-shadow: 0 4px 12px rgba(249, 115, 22, 0.05);
   position: relative;
 }
 
 .top-badge {
   position: absolute;
-  top: -12px;
+  top: -1px; /* Align with hairline top border */
   left: 24px;
-  background: linear-gradient(to right, #f59e0b, #d97706);
-  color: white;
+  background: transparent;
+  color: var(--accent);
   padding: 4px 12px;
-  border-radius: 20px;
+  border-top: 1px solid var(--accent);
   font-size: 0.75rem;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  box-shadow: 0 4px 10px rgba(245, 158, 11, 0.4);
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .train-header {
@@ -49,52 +48,49 @@
 .train-number {
   color: var(--text-muted);
   font-size: 0.9rem;
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--overlay-bg);
   padding: 2px 8px;
   border-radius: 4px;
 }
 
 .ai-score-badge {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 8px 12px;
-  border-radius: 12px;
-  border: 1px solid rgba(255,255,255,0.1);
-  min-width: 70px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1.5px solid transparent;
+  background: transparent;
 }
 
 .score-value {
-  font-size: 1.5rem;
-  font-weight: 800;
+  font-size: 1.25rem;
+  font-weight: 500;
   line-height: 1;
-  margin-bottom: 2px;
 }
 
 .score-label {
-  font-size: 0.6rem;
+  font-size: 0.65rem;
   text-transform: uppercase;
   text-align: center;
-  opacity: 0.8;
+  letter-spacing: 1px;
 }
 
+/* Ring styles based on score */
 .score-excellent {
-  background: rgba(16, 185, 129, 0.15);
-  color: #34d399;
-  border-color: rgba(16, 185, 129, 0.3);
+  border-color: var(--success);
+  color: var(--success-text);
 }
 
 .score-good {
-  background: rgba(245, 158, 11, 0.15);
-  color: #fbbf24;
-  border-color: rgba(245, 158, 11, 0.3);
+  border-color: var(--warning);
+  color: var(--warning-text);
 }
 
 .score-average {
-  background: rgba(14, 165, 233, 0.15);
-  color: #7dd3fc;
-  border-color: rgba(14, 165, 233, 0.3);
+  border-color: var(--error);
+  color: var(--error-text);
 }
 
 .train-body {
@@ -180,23 +176,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 6px;
+  background: transparent;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
   padding: 4px 8px;
   min-width: 50px;
   transition: all 0.2s ease;
 }
 
 .class-chip:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.2);
+  background: var(--overlay-bg);
 }
 
 .class-chip.preferred {
-  background: rgba(79, 70, 229, 0.2);
-  border-color: var(--primary);
-  box-shadow: 0 0 10px rgba(79, 70, 229, 0.3);
+  background: rgba(37, 99, 235, 0.1);
+  border-color: var(--accent-fill);
 }
 
 .class-name {
@@ -206,7 +200,7 @@
 }
 
 .class-chip.preferred .class-name {
-  color: var(--primary);
+  color: var(--accent-text);
 }
 
 .class-fare {
@@ -246,10 +240,16 @@
 .metric span {
   color: var(--text-main);
   font-weight: 600;
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--overlay-bg);
   padding: 2px 6px;
   border-radius: 4px;
 }
+
+.metric.metric-duration span { color: #22c55e; background: rgba(34, 197, 94, 0.1); }
+.metric.metric-budget span { color: #f59e0b; background: rgba(245, 158, 11, 0.1); }
+.metric.metric-comfort span { color: #3b82f6; background: rgba(59, 130, 246, 0.1); }
+.metric.metric-reliability span { color: #6366f1; background: rgba(99, 102, 241, 0.1); }
+.metric.metric-food span { color: #eab308; background: rgba(234, 179, 8, 0.1); }
 
 .view-details {
   padding: 8px 16px;
@@ -267,6 +267,23 @@
 
 .text-secondary {
   color: var(--secondary);
+}
+
+.irctc-book-btn {
+  padding: 6px 12px;
+  background: transparent;
+  color: var(--accent-text);
+  border: 1px solid var(--accent-text);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.irctc-book-btn:hover {
+  background: var(--accent-text);
+  color: var(--bg-color);
 }
 
 @media (max-width: 768px) {

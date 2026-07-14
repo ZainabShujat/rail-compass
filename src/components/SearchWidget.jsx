@@ -97,10 +97,11 @@ export default function SearchWidget() {
         
         {/* Origin Field */}
         <div className="input-group" ref={originRef}>
-          <MapPin className="input-icon" size={20} />
+          <MapPin className="input-icon" size={20} color="#2D9C6A" />
           <div className="input-field">
-            <label>From</label>
+            <label htmlFor="search-origin">From</label>
             <input 
+              id="search-origin"
               type="text" 
               value={origin} 
               onChange={(e) => { 
@@ -141,10 +142,11 @@ export default function SearchWidget() {
 
         {/* Destination Field */}
         <div className="input-group" ref={destRef}>
-          <MapPin className="input-icon" size={20} />
+          <MapPin className="input-icon" size={20} color="#EF4444" />
           <div className="input-field">
-            <label>To</label>
+            <label htmlFor="search-dest">To</label>
             <input 
+              id="search-dest"
               type="text" 
               value={destination} 
               onChange={(e) => { 
@@ -184,10 +186,11 @@ export default function SearchWidget() {
         <div className="divider"></div>
 
         <div className="input-group">
-          <Calendar className="input-icon" size={20} />
+          <Calendar className="input-icon" size={20} color="var(--text-secondary)" />
           <div className="input-field">
-            <label>Date</label>
+            <label htmlFor="search-date">Date</label>
             <input 
+              id="search-date"
               type="date" 
               value={date} 
               min={today}

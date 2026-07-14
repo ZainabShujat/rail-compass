@@ -8,7 +8,7 @@
 }
 
 .spinner {
-  color: var(--primary);
+  color: var(--accent-fill);
   animation: spin 1.5s linear infinite;
   margin-bottom: 24px;
 }
@@ -60,8 +60,25 @@
 .filters-sidebar {
   padding: 24px;
   height: fit-content;
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
   position: sticky;
   top: 100px;
+}
+
+/* Custom Scrollbar for Sidebar */
+.filters-sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+.filters-sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.filters-sidebar::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 6px;
+}
+.filters-sidebar::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
 }
 
 .filters-sidebar h3 {
@@ -90,8 +107,15 @@
 
 .weight-slider input[type="range"] {
   width: 100%;
-  accent-color: var(--primary);
-  opacity: 0.5;
+  accent-color: var(--accent-fill);
+  background: var(--border-strong);
+  height: 4px;
+  border-radius: 2px;
+  opacity: 0.8;
+}
+
+.weight-slider input[type="range"]:hover {
+  opacity: 1;
 }
 
 .empty-state {
@@ -100,30 +124,7 @@
   color: var(--text-muted);
 }
 
-/* Image Background */
-.image-background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -2;
-  background-image: url('/charbagh-bg.png');
-  background-size: cover;
-  background-position: center;
-  pointer-events: none;
-}
 
-.video-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(15, 23, 42, 0.65); /* Dark overlay to make text readable but show sun rays */
-  z-index: -1;
-  pointer-events: none;
-}
 
 @media (max-width: 900px) {
   .results-layout {

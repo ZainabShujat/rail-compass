@@ -1,10 +1,12 @@
 .search-widget {
-  padding: 16px;
+  padding: 12px;
   border-radius: 100px;
   display: inline-block;
   margin-top: 40px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-  position: relative; /* ensure dropdowns are positioned relative to this */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--border-color);
+  background: var(--bg-secondary);
+  position: relative;
   z-index: 9999;
 }
 
@@ -25,7 +27,7 @@
 }
 
 .input-group:hover {
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--overlay-bg);
 }
 
 .input-icon {
@@ -59,7 +61,7 @@
 }
 
 .input-field input::placeholder {
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--border-color);
 }
 
 .input-field input[type="date"]::-webkit-calendar-picker-indicator {
@@ -99,13 +101,11 @@
   left: 20px;
   width: 250px;
   margin-top: 8px;
-  background: rgba(20, 25, 40, 0.95);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid var(--glass-border);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
   border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-  z-index: 9999; /* Ensure it stays above everything else */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
   
   /* Set max height to show 3-4 items, add slider if more */
   max-height: 250px;
@@ -122,15 +122,15 @@
   width: 6px;
 }
 .autocomplete-dropdown::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--overlay-bg);
   border-radius: 6px;
 }
 .autocomplete-dropdown::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--border-color);
   border-radius: 6px;
 }
 .autocomplete-dropdown::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.3);
+  background: var(--border-color);
 }
 
 .autocomplete-item {
@@ -139,7 +139,7 @@
   flex-direction: column;
   cursor: pointer;
   transition: background 0.2s;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid var(--overlay-bg);
 }
 
 .autocomplete-item:last-child {
@@ -147,7 +147,7 @@
 }
 
 .autocomplete-item:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--border-color);
 }
 
 .station-name {

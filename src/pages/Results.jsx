@@ -26,17 +26,17 @@ function LoadingFacts() {
 
   return (
     <div className="glass-panel loading-facts animate-fade-in" style={{ padding: '3rem 2rem', textAlign: 'center', maxWidth: '600px', margin: '2rem auto', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1.5rem' }}>
-      <Loader2 className="spinner" size={48} style={{ color: 'var(--primary)' }} />
+      <Loader2 className="spinner" size={48} style={{ color: 'var(--accent-fill)' }} />
       <h3 style={{ margin: 0, color: 'var(--text-main)', fontSize: '1.25rem', lineHeight: '1.4' }}>
         We'll have your perfect journey ready in just a moment... <br/>
         <span style={{ color: 'var(--text-muted)', fontSize: '1rem', fontWeight: 'normal' }}>Meanwhile, did you know?</span>
       </h3>
       
-      <div style={{ padding: '1.5rem', background: 'rgba(79, 70, 229, 0.1)', borderRadius: '12px', border: '1px solid rgba(79, 70, 229, 0.2)', minHeight: '120px', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        <p style={{ fontSize: '1.1rem', fontStyle: 'italic', margin: 0, lineHeight: 1.5, color: '#e2e8f0' }}>"{RAILWAY_FACTS[factIndex]}"</p>
+      <div style={{ padding: '1.5rem', background: 'color-mix(in srgb, var(--accent-fill) 10%, transparent)', borderRadius: '12px', border: '1px solid var(--border-color)', minHeight: '120px', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <p style={{ fontSize: '1.1rem', fontStyle: 'italic', margin: 0, lineHeight: 1.5, color: 'var(--accent-text)' }}>"{RAILWAY_FACTS[factIndex]}"</p>
       </div>
       
-      <button onClick={nextFact} className="btn-secondary" style={{ padding: '8px 16px', fontSize: '0.9rem' }}>
+      <button onClick={nextFact} className="btn-secondary" style={{ padding: '8px 16px', fontSize: '0.9rem', borderColor: 'var(--border-strong)' }}>
         Another fact?
       </button>
     </div>
@@ -99,10 +99,6 @@ export default function Results() {
 
   return (
     <>
-      {/* Static Image Background */}
-      <div className="image-background"></div>
-      <div className="video-overlay"></div>
-
       <div className="page-container animate-fade-in" style={{ background: 'transparent' }}>
       <div className="results-header">
         <div>
@@ -117,11 +113,11 @@ export default function Results() {
       </div>
 
       {/* Weather Banner */}
-      <div className="weather-banner glass-panel" style={{ margin: '0 0 2rem 0', padding: '1rem 1.5rem', display: 'flex', alignItems: 'center', gap: '1rem', background: 'linear-gradient(to right, rgba(14, 165, 233, 0.1), rgba(79, 70, 229, 0.1))' }}>
+      <div className="weather-banner glass-panel" style={{ margin: '0 0 2rem 0', padding: '1rem 1.5rem', display: 'flex', alignItems: 'center', gap: '1rem', background: 'color-mix(in srgb, var(--accent-fill) 5%, transparent)' }}>
         <span style={{ fontSize: '1.5rem' }}>🌤️</span>
         <div>
           <h4 style={{ margin: 0, fontSize: '1rem', color: 'var(--text-main)' }}>Expected Weather in {destination}</h4>
-          <p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--text-muted)' }}>28°C, Partly Cloudy. Pack light!</p>
+          <p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--text-secondary)' }}>28°C, Partly Cloudy. Pack light!</p>
         </div>
       </div>
 

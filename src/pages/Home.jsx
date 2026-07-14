@@ -26,9 +26,9 @@ export default function Home() {
     <div className="home-container animate-fade-in" style={{ display: 'block' }}>
       <div className="hero-section" style={{ margin: '0 auto', paddingTop: '100px', paddingBottom: '100px', minHeight: '60vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         <div className="hero-content">
-          <div className="badge">✨ Smart & Personalized Recommendations</div>
+          <div className="badge">SMART & PERSONALIZED RECOMMENDATIONS</div>
           <h1>
-            Find the <span className="highlight-text">Perfect Train</span><br />
+            Find the <span className="accent-text">Perfect Train</span><br />
             for your Journey
           </h1>
           <p className="subtitle">
@@ -39,34 +39,37 @@ export default function Home() {
         </div>
       </div>
       
-      <div className="features-section">
-        <h2 className="section-title">Why use Rail Compass?</h2>
-        <div className="features-grid">
-          <div className="feature-card glass-panel">
-            <div className="feature-icon-wrapper">
-              <Map size={32} />
+      <div className="features-section-wrapper">
+        <div className="features-section">
+          <h2 className="section-title">Why use Rail Compass?</h2>
+          <div className="features-grid ticket-layout">
+            <div className="feature-card">
+              <div className="feature-number mono-text step-label">STEP 01</div>
+              <h3 className="feature-title">Smart Search</h3>
+              <p className="feature-desc">Enter your journey details and we instantly scan thousands of routes across India.</p>
             </div>
-            <h3>Smart Search</h3>
-            <p className="text-muted text-sm">Enter your journey details and we instantly scan thousands of routes across India.</p>
-          </div>
-          <div className="feature-card glass-panel">
-            <div className="feature-icon-wrapper">
-              <BrainCircuit size={32} />
+            
+            <div className="ticket-divider"></div>
+            
+            <div className="feature-card">
+              <div className="feature-number mono-text step-label">STEP 02</div>
+              <h3 className="feature-title">Smart Analysis</h3>
+              <p className="feature-desc">Our algorithm weighs duration, budget, comfort, and reliability based on your unique needs.</p>
             </div>
-            <h3>Smart Analysis</h3>
-            <p className="text-muted text-sm">Our algorithm weighs duration, budget, comfort, and reliability based on your unique needs.</p>
-          </div>
-          <div className="feature-card glass-panel">
-            <div className="feature-icon-wrapper">
-              <ShieldCheck size={32} />
+            
+            <div className="ticket-divider"></div>
+            
+            <div className="feature-card">
+              <div className="feature-number mono-text step-label">STEP 03</div>
+              <h3 className="feature-title">Top Recommendations</h3>
+              <p className="feature-desc">Get clear, ranked train options so you always book the perfect ticket.</p>
             </div>
-            <h3>Top Recommendations</h3>
-            <p className="text-muted text-sm">Get clear, ranked train options so you always book the perfect ticket.</p>
           </div>
         </div>
       </div>
 
-      <div className="popular-routes-section">
+      <div className="popular-routes-section-wrapper">
+        <div className="popular-routes-section">
         <h2 className="section-title" style={{ textAlign: 'left', marginBottom: '2rem' }}>Popular Journeys</h2>
         <div className="routes-grid">
           
@@ -120,12 +123,11 @@ export default function Home() {
 
         </div>
       </div>
+      </div>
 
-      <FAQSection />
-
-      {/* Decorative background elements */}
-      <div className="glow-orb orb-1"></div>
-      <div className="glow-orb orb-2"></div>
+      <div className="faq-section-wrapper">
+        <FAQSection />
+      </div>
 
       {/* Date Selection Modal */}
       {selectedRoute && createPortal(
@@ -143,14 +145,19 @@ export default function Home() {
             </button>
             <h3 style={{ marginBottom: '1rem' }}>When are you travelling to {selectedRoute.destination}?</h3>
             <form onSubmit={handleRouteSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-              <input 
-                type="date" 
-                style={{ padding: '12px', borderRadius: '8px', background: 'rgba(255,255,255,0.1)', color: 'white', border: '1px solid rgba(255,255,255,0.2)' }}
+              <label htmlFor="modal-date" style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', color: 'white' }}>
+                <span className="sr-only" style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', whiteSpace: 'nowrap', borderWidth: 0 }}>Journey Date</span>
+                <input 
+                  id="modal-date"
+                  type="date" 
+                  aria-label="Journey Date"
+                  style={{ padding: '12px', borderRadius: '8px', background: 'rgba(255,255,255,0.1)', color: 'white', border: '1px solid rgba(255,255,255,0.2)' }}
                 min={today}
                 value={journeyDate}
                 onChange={(e) => setJourneyDate(e.target.value)}
                 required
               />
+              </label>
               <button type="submit" className="btn-primary" style={{ padding: '12px' }}>Find Trains</button>
             </form>
           </div>

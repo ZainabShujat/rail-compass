@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="footer-brand">
           <Link to="/" className="logo footer-logo">
             <img src="/logo.png" alt="Rail Compass Logo" />
-            <span>RAIL COMPASS</span>
+            <span className="logo-text"><span className="logo-rail">RAIL</span> <span className="logo-compass">COMPASS</span></span>
           </Link>
           <p className="footer-description text-muted">
             India's premier personalized railway discovery platform.<br />
@@ -27,10 +27,10 @@ export default function Footer() {
         <div className="footer-links-group">
           <h4 className="footer-heading">COMPANY</h4>
           <ul className="footer-links">
-            <li><Link to="#">About Rail Compass</Link></li>
-            <li><Link to="#">Premium Insights</Link></li>
-            <li><Link to="#">Contact Us</Link></li>
-            <li><Link to="#">Support</Link></li>
+            <li><Link to="/about">About Rail Compass</Link></li>
+            <li><Link to="/premium-insights">Premium Insights</Link></li>
+            <li><Link to="/contact">Contact Us</Link></li>
+            <li><Link to="/support">Support</Link></li>
           </ul>
         </div>
 
@@ -38,9 +38,8 @@ export default function Footer() {
         <div className="footer-links-group">
           <h4 className="footer-heading">LEGAL</h4>
           <ul className="footer-links">
-            <li><Link to="#">Privacy Policy</Link></li>
-            <li><Link to="#">Terms & Conditions</Link></li>
-            <li><Link to="#">Cancellation & Refund</Link></li>
+            <li><Link to="/privacy-policy">Privacy Policy</Link></li>
+            <li><Link to="/terms-conditions">Terms & Conditions</Link></li>
           </ul>
         </div>
         
@@ -51,8 +50,8 @@ export default function Footer() {
           &copy; {new Date().getFullYear()} RAIL COMPASS. ALL RIGHTS RESERVED.
         </p>
         <div className="bottom-links">
-          <Link to="#">PRIVACY POLICY</Link>
-          <Link to="#">TERMS & CONDITIONS</Link>
+          <Link to="/privacy-policy">PRIVACY POLICY</Link>
+          <Link to="/terms-conditions">TERMS & CONDITIONS</Link>
         </div>
       </div>
     </footer>

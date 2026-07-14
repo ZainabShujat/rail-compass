@@ -4,9 +4,27 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Space+Grotesk:wght@600&display=swap" rel="stylesheet">
     <title>RAIL COMPASS</title>
   </head>
   <body>
+    <h1 id="debug-text" style="color: white; position: absolute; z-index: 999999;">LOADING APP... IF THIS STAYS, REACT CRASHED</h1>
+    <script>
+      window.addEventListener('error', function(e) {
+        var errDiv = document.createElement('div');
+        errDiv.style.cssText = 'position: fixed; top: 0; left: 0; right: 0; background: red; color: white; padding: 20px; z-index: 9999999; font-size: 16px; overflow: auto; max-height: 100vh;';
+        errDiv.innerHTML = '<b>Error:</b> ' + e.message + '<br><pre>' + (e.error ? e.error.stack : '') + '</pre>';
+        document.body.appendChild(errDiv);
+      });
+      window.addEventListener('unhandledrejection', function(e) {
+        var errDiv = document.createElement('div');
+        errDiv.style.cssText = 'position: fixed; top: 50%; left: 0; right: 0; background: orange; color: black; padding: 20px; z-index: 9999999; font-size: 16px; overflow: auto; max-height: 50vh;';
+        errDiv.innerHTML = '<b>Unhandled Promise:</b> ' + e.reason;
+        document.body.appendChild(errDiv);
+      });
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

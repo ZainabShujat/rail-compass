@@ -1,10 +1,31 @@
-import { useState } from 'react';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import { Train } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { BrowserRouter, Routes, Route, Link, useLocation } from 'react-router-dom';
+import { Train, Sun, Moon } from 'lucide-react';
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  }, [pathname]);
+
+  return null;
+};
+
 import Home from './pages/Home';
 import Results from './pages/Results';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
+import About from './pages/About';
+import PremiumInsights from './pages/PremiumInsights';
+import ContactUs from './pages/ContactUs';
+import Support from './pages/Support';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsConditions from './pages/TermsConditions';
 import Footer from './components/Footer';
 import './index.css';
 
@@ -14,24 +35,52 @@ const ClassSelection = () => <div className="page-container glass-panel animate-
 const PassengerDetails = () => <div className="page-container glass-panel animate-fade-in"><h2>Step 6: Passenger Details</h2><p>Enter traveler info.</p></div>;
 const BookingConfirmation = () => <div className="page-container glass-panel animate-fade-in"><h2>Step 7: Booking Confirmation</h2><p>Your ticket is booked!</p></div>;
 
+function getInitialUserName() {
+  try {
+    return localStorage.getItem('userName') || '';
+  } catch (e) {
+    console.warn('localStorage access denied');
+    return '';
+  }
+}
+
 function App() {
-  const [userName, setUserName] = useState(localStorage.getItem('userName') || '');
+  const [userName, setUserName] = useState(getInitialUserName());
+  const [theme, setTheme] = useState('dark');
+
+  useEffect(() => {
+    if (theme === 'light') {
+      document.body.classList.add('light-theme');
+    } else {
+      document.body.classList.remove('light-theme');
+    }
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme(prev => prev === 'dark' ? 'light' : 'dark');
+  };
 
   const handleLogout = () => {
-    localStorage.removeItem('userName');
+    try {
+      localStorage.removeItem('userName');
+    } catch (e) {}
     setUserName('');
   };
 
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <div className="app-container">
         <header className="app-header">
           <Link to="/" className="logo">
             <img src="/logo.png" alt="Rail Compass Logo" style={{ width: '80px', height: 'auto', marginRight: '12px' }} />
-            RAIL COMPASS
+            <span className="logo-text"><span className="logo-rail">RAIL</span> <span className="logo-compass">COMPASS</span></span>
           </Link>
-          <nav style={{ display: 'flex', alignItems: 'center' }}>
-            <Link to="/" className="btn-secondary" style={{ marginRight: '1rem', padding: '8px 16px' }}>Home</Link>
+          <nav style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
+            <button onClick={toggleTheme} className="theme-toggle" aria-label="Toggle Theme">
+              {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
+            </button>
+            <Link to="/" className="nav-link">Home</Link>
             {userName ? (
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
                 <span style={{ fontWeight: '600', color: 'var(--text-main)' }}>
@@ -58,6 +107,12 @@ function App() {
             <Route path="/class-selection/:id" element={<ClassSelection />} />
             <Route path="/passenger-details" element={<PassengerDetails />} />
             <Route path="/booking-confirmation" element={<BookingConfirmation />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/premium-insights" element={<PremiumInsights />} />
+            <Route path="/contact" element={<ContactUs />} />
+            <Route path="/support" element={<Support />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-conditions" element={<TermsConditions />} />
           </Routes>
         </main>
         

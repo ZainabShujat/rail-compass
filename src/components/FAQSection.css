@@ -14,19 +14,21 @@
 
 .faq-item {
   padding: 1.5rem;
-  border-radius: 12px;
+  border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
   overflow: hidden;
+  border: 1px solid var(--border-color);
+  background: var(--bg-secondary);
 }
 
 .faq-item:hover {
-  background: rgba(255, 255, 255, 0.08);
+  background: var(--overlay-hover);
 }
 
 .faq-item.active {
-  background: rgba(79, 70, 229, 0.15);
-  border-color: rgba(79, 70, 229, 0.3);
+  background: var(--overlay-bg);
+  border-color: var(--accent);
 }
 
 .faq-question {
@@ -48,8 +50,12 @@
   transition: transform 0.3s ease;
 }
 
+.faq-item.active .faq-question:hover {
+  color: var(--accent-text);
+}
+
 .faq-item.active .faq-icon {
-  color: #818cf8;
+  color: var(--accent-text);
 }
 
 .faq-answer {
