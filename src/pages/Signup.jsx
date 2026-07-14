@@ -1,82 +1,63 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { UserPlus } from 'lucide-react';
+import { GoogleLogin } from '@react-oauth/google';
+import axios from 'axios';
+import { useAuth } from '../context/AuthContext';
 import './Auth.css';
 
-export default function Signup({ setUserName }) {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+export default function Signup() {
   const navigate = useNavigate();
+  const { login } = useAuth();
+  const [error, setError] = useState('');
 
-  const handleSignup = (e) => {
-    e.preventDefault();
-    // Extract just the First Name
-    const firstName = name.trim().split(' ')[0];
-    
-    // Mock signup logic - instantly log them in with their first name
+  const API_URL = import.meta.env.PROD ? '' : 'http://localhost:5000';
+
+  const handleGoogleSuccess = async (credentialResponse) => {
     try {
-      localStorage.setItem('userName', firstName);
-    } catch (e) {
-      console.warn('localStorage access denied');
+      const res = await axios.post(`${API_URL}/api/auth/google`, {
+        credential: credentialResponse.credential,
+      });
+      
+      const { token, user } = res.data;
+      login(token, user);
+      
+      if (!user.isOnboarded) {
+        navigate('/onboarding');
+      } else {
+        navigate('/');
+      }
+    } catch (err) {
+      console.error(err);
+      setError('Failed to authenticate with Google. Please try again.');
     }
-    if (setUserName) setUserName(firstName);
-    
-    navigate('/');
   };
 
   return (
     <div className="auth-container animate-fade-in">
-      <div className="auth-card glass-panel">
-        <h2>Create Account</h2>
-        <p>Join Rail Compass to save your custom travel metrics.</p>
+      <div className="auth-card glass-panel" style={{ padding: '60px 40px', maxWidth: '450px' }}>
+        <h2 style={{ fontSize: '2rem', marginBottom: '10px' }}>Join Rail Compass</h2>
+        <p style={{ color: 'var(--text-secondary)', marginBottom: '30px' }}>Create an account to personalize your travel recommendations.</p>
         
-        <form onSubmit={handleSignup} className="auth-form">
-          <div className="auth-input-group">
-            <label>Full Name</label>
-            <input 
-              type="text" 
-              className="auth-input" 
-              placeholder="John Doe"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              required 
-            />
-          </div>
-
-          <div className="auth-input-group">
-            <label>Email Address</label>
-            <input 
-              type="email" 
-              className="auth-input" 
-              placeholder="you@example.com"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required 
-            />
-          </div>
-          
-          <div className="auth-input-group">
-            <label>Password</label>
-            <input 
-              type="password" 
-              className="auth-input" 
-              placeholder="••••••••"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              required 
-            />
-          </div>
-          
-          <button type="submit" className="btn-primary auth-button">
-            <UserPlus size={20} />
-            Sign Up
-          </button>
-        </form>
+        {error && <div style={{ color: '#ef4444', marginBottom: '20px', background: 'rgba(239, 68, 68, 0.1)', padding: '10px', borderRadius: '6px' }}>{error}</div>}
         
-        <div className="auth-footer">
+        <div style={{ display: 'flex', justifyContent: 'center', margin: '20px 0' }}>
+          <GoogleLogin
+            onSuccess={handleGoogleSuccess}
+            onError={() => {
+              setError('Google Signup Failed');
+            }}
+            useOneTap
+            theme="filled_blue"
+            shape="rectangular"
+            size="large"
+            text="signup_with"
+            width="100%"
+          />
+        </div>
+        
+        <div className="auth-footer" style={{ marginTop: '30px' }}>
           Already have an account? 
-          <Link to="/login" className="auth-link">Sign In</Link>
+          <Link to="/login" className="auth-link">Sign in</Link>
         </div>
       </div>
       

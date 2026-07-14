@@ -1,67 +1,61 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { LogIn } from 'lucide-react';
+import { GoogleLogin } from '@react-oauth/google';
+import axios from 'axios';
+import { useAuth } from '../context/AuthContext';
 import './Auth.css';
 
-export default function Login({ setUserName }) {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+export default function Login() {
   const navigate = useNavigate();
+  const { login } = useAuth();
+  const [error, setError] = useState('');
 
-  const handleLogin = (e) => {
-    e.preventDefault();
-    // Extract name from email and capitalize the first letter
-    const emailPrefix = email.split('@')[0];
-    const firstName = emailPrefix.charAt(0).toUpperCase() + emailPrefix.slice(1);
-    
+  const API_URL = import.meta.env.PROD ? '' : 'http://localhost:5000';
+
+  const handleGoogleSuccess = async (credentialResponse) => {
     try {
-      localStorage.setItem('userName', firstName);
-    } catch (e) {
-      console.warn('localStorage access denied');
+      const res = await axios.post(`${API_URL}/api/auth/google`, {
+        credential: credentialResponse.credential,
+      });
+      
+      const { token, user } = res.data;
+      login(token, user);
+      
+      if (!user.isOnboarded) {
+        navigate('/onboarding');
+      } else {
+        navigate('/');
+      }
+    } catch (err) {
+      console.error(err);
+      setError('Failed to authenticate with Google. Please try again.');
     }
-    if (setUserName) setUserName(firstName);
-    
-    navigate('/');
   };
 
   return (
     <div className="auth-container animate-fade-in">
-      <div className="auth-card glass-panel">
-        <h2>Welcome Back</h2>
-        <p>Sign in to access your saved preferences.</p>
+      <div className="auth-card glass-panel" style={{ padding: '60px 40px', maxWidth: '450px' }}>
+        <h2 style={{ fontSize: '2rem', marginBottom: '10px' }}>Welcome Back</h2>
+        <p style={{ color: 'var(--text-secondary)', marginBottom: '30px' }}>Sign in to access your saved preferences and search history.</p>
         
-        <form onSubmit={handleLogin} className="auth-form">
-          <div className="auth-input-group">
-            <label>Email Address</label>
-            <input 
-              type="email" 
-              className="auth-input" 
-              placeholder="you@example.com"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required 
-            />
-          </div>
-          
-          <div className="auth-input-group">
-            <label>Password</label>
-            <input 
-              type="password" 
-              className="auth-input" 
-              placeholder="••••••••"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              required 
-            />
-          </div>
-          
-          <button type="submit" className="btn-primary auth-button">
-            <LogIn size={20} />
-            Sign In
-          </button>
-        </form>
+        {error && <div style={{ color: '#ef4444', marginBottom: '20px', background: 'rgba(239, 68, 68, 0.1)', padding: '10px', borderRadius: '6px' }}>{error}</div>}
         
-        <div className="auth-footer">
+        <div style={{ display: 'flex', justifyContent: 'center', margin: '20px 0' }}>
+          <GoogleLogin
+            onSuccess={handleGoogleSuccess}
+            onError={() => {
+              setError('Google Login Failed');
+            }}
+            useOneTap
+            theme="filled_blue"
+            shape="rectangular"
+            size="large"
+            text="signin_with"
+            width="100%"
+          />
+        </div>
+        
+        <div className="auth-footer" style={{ marginTop: '30px' }}>
           Don't have an account? 
           <Link to="/signup" className="auth-link">Create one</Link>
         </div>

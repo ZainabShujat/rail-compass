@@ -3,6 +3,7 @@ import { useSearchParams } from 'react-router-dom';
 import axios from 'axios';
 import { SlidersHorizontal, Loader2 } from 'lucide-react';
 import TrainCard from '../components/TrainCard';
+import { useAuth } from '../context/AuthContext';
 import './Results.css';
 
 const RAILWAY_FACTS = [
@@ -49,6 +50,7 @@ export default function Results() {
   const origin = searchParams.get('origin') || 'New Delhi';
   const destination = searchParams.get('destination') || 'Lucknow';
   const date = searchParams.get('date');
+  const { user } = useAuth();
 
   const [trains, setTrains] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -60,8 +62,20 @@ export default function Results() {
   const [weightReliability, setWeightReliability] = useState(0.10);
   const [weightComfort, setWeightComfort] = useState(0.05);
   const [weightFood, setWeightFood] = useState(0.05);
-
   const [preferredClass, setPreferredClass] = useState('All');
+
+  // Load user preferences once on mount if available
+  useEffect(() => {
+    if (user && user.preferences) {
+      setWeightDuration(user.preferences.weightDuration ?? 0.35);
+      setWeightDaytime(user.preferences.weightDaytime ?? 0.25);
+      setWeightBudget(user.preferences.weightBudget ?? 0.20);
+      setWeightReliability(user.preferences.weightReliability ?? 0.10);
+      setWeightComfort(user.preferences.weightComfort ?? 0.05);
+      setWeightFood(user.preferences.weightFood ?? 0.05);
+      setPreferredClass(user.preferences.preferredClass ?? 'All');
+    }
+  }, [user]);
 
   useEffect(() => {
     const fetchTrains = async () => {
