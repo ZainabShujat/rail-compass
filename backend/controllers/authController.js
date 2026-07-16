@@ -30,9 +30,11 @@ export const googleLogin = async (req, res) => {
     
     // In-memory fallback if DB not connected
     if (mongoose.connection.readyState !== 1) {
-      console.log('MongoDB not connected, using in-memory user');
+      console.log('MongoDB not connected, creating stateless user');
+      // Check if we already have it in memory as a fallback
       global.memoryUsers = global.memoryUsers || [];
       user = global.memoryUsers.find(u => u.googleId === googleId);
+      
       if (!user) {
         user = {
           _id: new mongoose.Types.ObjectId().toString(),
@@ -62,7 +64,11 @@ export const googleLogin = async (req, res) => {
 
     // Generate our own session token
     const token = jwt.sign(
-      { userId: user._id, isOnboarded: user.isOnboarded },
+      { 
+        userId: user._id, 
+        isOnboarded: user.isOnboarded,
+        userData: mongoose.connection.readyState !== 1 ? user : undefined
+      },
       JWT_SECRET,
       { expiresIn: '7d' }
     );
@@ -94,8 +100,12 @@ export const protect = async (req, res, next) => {
     const decoded = jwt.verify(token, JWT_SECRET);
     
     if (mongoose.connection.readyState !== 1) {
-      global.memoryUsers = global.memoryUsers || [];
-      req.user = global.memoryUsers.find(u => u._id === decoded.userId || u._id === decoded.userId.toString());
+      if (decoded.userData) {
+        req.user = decoded.userData;
+      } else {
+        global.memoryUsers = global.memoryUsers || [];
+        req.user = global.memoryUsers.find(u => u._id === decoded.userId || u._id === decoded.userId.toString());
+      }
     } else {
       req.user = await User.findById(decoded.userId);
     }
@@ -116,13 +126,28 @@ export const updatePreferences = async (req, res) => {
     
     // Find user and update
     let user;
+    let newToken = null;
+    
     if (mongoose.connection.readyState !== 1) {
+      user = req.user;
+      user.preferences = { ...user.preferences, ...preferences };
+      user.isOnboarded = true;
+      
+      // Update memory fallback
       global.memoryUsers = global.memoryUsers || [];
-      user = global.memoryUsers.find(u => u._id === req.user._id || u._id === (req.user._id ? req.user._id.toString() : ''));
-      if (user) {
-        user.preferences = { ...user.preferences, ...preferences };
-        user.isOnboarded = true;
-      }
+      const idx = global.memoryUsers.findIndex(u => u._id === user._id);
+      if (idx !== -1) global.memoryUsers[idx] = user;
+      
+      // Issue new token with updated user data
+      newToken = jwt.sign(
+        { 
+          userId: user._id, 
+          isOnboarded: user.isOnboarded,
+          userData: user
+        },
+        JWT_SECRET,
+        { expiresIn: '7d' }
+      );
     } else {
       user = await User.findByIdAndUpdate(
         req.user._id,
@@ -136,7 +161,8 @@ export const updatePreferences = async (req, res) => {
 
     res.status(200).json({
       success: true,
-      user
+      user,
+      token: newToken
     });
   } catch (error) {
     console.error('Error updating preferences:', error);

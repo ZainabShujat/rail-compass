@@ -28,7 +28,15 @@ export function AuthProvider({ children }) {
   const fetchUser = async () => {
     try {
       const res = await axios.get(`${API_URL}/api/auth/me`);
-      setUser(res.data.user);
+      const fetchedUser = res.data.user;
+      
+      const savedUsers = JSON.parse(localStorage.getItem('railwise_users') || '{}');
+      if (savedUsers[fetchedUser.googleId] && !fetchedUser.isOnboarded) {
+        fetchedUser.preferences = savedUsers[fetchedUser.googleId].preferences;
+        fetchedUser.isOnboarded = savedUsers[fetchedUser.googleId].isOnboarded;
+      }
+      
+      setUser(fetchedUser);
     } catch (err) {
       console.error('Error fetching user', err);
       logout();
@@ -38,6 +46,20 @@ export function AuthProvider({ children }) {
   };
 
   const login = (newToken, userData) => {
+    const savedUsers = JSON.parse(localStorage.getItem('railwise_users') || '{}');
+    if (savedUsers[userData.googleId] && !userData.isOnboarded) {
+      userData.preferences = savedUsers[userData.googleId].preferences;
+      userData.isOnboarded = savedUsers[userData.googleId].isOnboarded;
+      
+      // Update backend token silently
+      axios.post(`${API_URL}/api/auth/onboarding`, { preferences: userData.preferences }).then(res => {
+        if (res.data.token) {
+          localStorage.setItem('token', res.data.token);
+          setToken(res.data.token);
+        }
+      }).catch(console.error);
+    }
+
     localStorage.setItem('token', newToken);
     setToken(newToken);
     setUser(userData);
@@ -52,8 +74,24 @@ export function AuthProvider({ children }) {
   const updatePreferences = async (preferences) => {
     try {
       const res = await axios.post(`${API_URL}/api/auth/onboarding`, { preferences });
-      setUser(res.data.user);
-      return res.data.user;
+      
+      if (res.data.token) {
+        localStorage.setItem('token', res.data.token);
+        setToken(res.data.token);
+        axios.defaults.headers.common['Authorization'] = `Bearer ${res.data.token}`;
+      }
+      
+      const updatedUser = res.data.user;
+      
+      const savedUsers = JSON.parse(localStorage.getItem('railwise_users') || '{}');
+      savedUsers[updatedUser.googleId] = {
+        preferences: updatedUser.preferences,
+        isOnboarded: updatedUser.isOnboarded
+      };
+      localStorage.setItem('railwise_users', JSON.stringify(savedUsers));
+      
+      setUser(updatedUser);
+      return updatedUser;
     } catch (err) {
       console.error('Failed to update preferences', err);
       throw err;
