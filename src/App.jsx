@@ -70,7 +70,7 @@ function Navigation() {
               {user.picture && <img src={user.picture} alt={user.name} style={{ width: '28px', height: '28px', borderRadius: '50%' }} />}
               Welcome, {user.name.split(' ')[0]}
             </span>
-            <button onClick={logout} className="btn-secondary" style={{ padding: '8px 16px', fontSize: '0.9rem' }}>Sign Out</button>
+            <button onClick={logout} className="btn-secondary" style={{ padding: '8px 16px', fontSize: '0.9rem' }}>Log out</button>
           </div>
         ) : (
           <Link to="/login" className="btn-primary" style={{ padding: '8px 16px' }}>Sign In</Link>
