@@ -3,7 +3,7 @@ import jwt from 'jsonwebtoken';
 import User from '../models/User.js';
 
 // We'll use a placeholder Client ID if one is not provided in env.
-const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID || 'YOUR_GOOGLE_CLIENT_ID_HERE');
+const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID || '765017417232-fp5ui38tgrjkvsnvv9mpl8ga9pneliq3.apps.googleusercontent.com');
 
 // Secret for our own JWT tokens to maintain session
 const JWT_SECRET = process.env.JWT_SECRET || 'super-secret-railcompass-key-123';
@@ -11,28 +11,52 @@ const JWT_SECRET = process.env.JWT_SECRET || 'super-secret-railcompass-key-123';
 export const googleLogin = async (req, res) => {
   try {
     const { credential } = req.body; // This is the JWT token from Google
+    console.log('Received Google login request');
 
     // Verify the Google token
     const ticket = await client.verifyIdToken({
       idToken: credential,
-      audience: process.env.GOOGLE_CLIENT_ID || 'YOUR_GOOGLE_CLIENT_ID_HERE',
+      audience: process.env.GOOGLE_CLIENT_ID || '765017417232-fp5ui38tgrjkvsnvv9mpl8ga9pneliq3.apps.googleusercontent.com',
     });
+    console.log('Google token verified');
 
     const payload = ticket.getPayload();
     const { sub: googleId, email, name, picture } = payload;
 
     // Check if user already exists
-    let user = await User.findOne({ googleId });
+    console.log('Checking for user in DB...');
+    let user = null;
+    
+    // In-memory fallback if DB not connected
+    if (mongoose.connection.readyState !== 1) {
+      console.log('MongoDB not connected, using in-memory user');
+      global.memoryUsers = global.memoryUsers || [];
+      user = global.memoryUsers.find(u => u.googleId === googleId);
+      if (!user) {
+        user = {
+          _id: new mongoose.Types.ObjectId().toString(),
+          googleId, email, name, picture, isOnboarded: false,
+          preferences: {
+            weightDuration: 0.35, weightDaytime: 0.25, weightBudget: 0.20,
+            weightReliability: 0.10, weightComfort: 0.05, weightFood: 0.05,
+            preferredClass: 'All'
+          }
+        };
+        global.memoryUsers.push(user);
+      }
+    } else {
+      user = await User.findOne({ googleId });
 
-    if (!user) {
-      // Create new user
-      user = new User({
-        googleId,
-        email,
-        name,
-        picture
-      });
-      await user.save();
+      if (!user) {
+        // Create new user
+        user = new User({
+          googleId,
+          email,
+          name,
+          picture
+        });
+        await user.save();
+      }
     }
 
     // Generate our own session token
