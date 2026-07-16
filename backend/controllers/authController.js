@@ -92,7 +92,18 @@ export const protect = async (req, res, next) => {
 
   try {
     const decoded = jwt.verify(token, JWT_SECRET);
-    req.user = await User.findById(decoded.userId);
+    
+    if (mongoose.connection.readyState !== 1) {
+      global.memoryUsers = global.memoryUsers || [];
+      req.user = global.memoryUsers.find(u => u._id === decoded.userId || u._id === decoded.userId.toString());
+    } else {
+      req.user = await User.findById(decoded.userId);
+    }
+    
+    if (!req.user) {
+      return res.status(401).json({ success: false, message: 'User not found' });
+    }
+    
     next();
   } catch (err) {
     return res.status(401).json({ success: false, message: 'Not authorized to access this route' });
@@ -104,14 +115,24 @@ export const updatePreferences = async (req, res) => {
     const { preferences } = req.body;
     
     // Find user and update
-    const user = await User.findByIdAndUpdate(
-      req.user._id,
-      { 
-        preferences,
-        isOnboarded: true // Once they set preferences, they are onboarded
-      },
-      { new: true, runValidators: true }
-    );
+    let user;
+    if (mongoose.connection.readyState !== 1) {
+      global.memoryUsers = global.memoryUsers || [];
+      user = global.memoryUsers.find(u => u._id === req.user._id || u._id === (req.user._id ? req.user._id.toString() : ''));
+      if (user) {
+        user.preferences = { ...user.preferences, ...preferences };
+        user.isOnboarded = true;
+      }
+    } else {
+      user = await User.findByIdAndUpdate(
+        req.user._id,
+        { 
+          preferences,
+          isOnboarded: true // Once they set preferences, they are onboarded
+        },
+        { new: true, runValidators: true }
+      );
+    }
 
     res.status(200).json({
       success: true,
