@@ -3,8 +3,17 @@ import mongoose from 'mongoose';
 const userSchema = new mongoose.Schema({
   googleId: {
     type: String,
-    required: true,
+    sparse: true,
     unique: true
+  },
+  password: {
+    type: String
+  },
+  age: {
+    type: Number
+  },
+  phone: {
+    type: String
   },
   email: {
     type: String,
@@ -30,6 +39,10 @@ const userSchema = new mongoose.Schema({
     weightComfort: { type: Number, default: 0.05 },
     weightFood: { type: Number, default: 0.05 },
     preferredClass: { type: String, default: 'All' }
+  },
+  favouriteJourney: {
+    origin: { type: String, default: '' },
+    destination: { type: String, default: '' }
   }
 }, {
   timestamps: true

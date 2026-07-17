@@ -1,5 +1,6 @@
 import { OAuth2Client } from 'google-auth-library';
 import jwt from 'jsonwebtoken';
+import bcrypt from 'bcryptjs';
 import mongoose from 'mongoose';
 import User from '../models/User.js';
 
@@ -136,7 +137,11 @@ export const updatePreferences = async (req, res) => {
       // Update memory fallback
       global.memoryUsers = global.memoryUsers || [];
       const idx = global.memoryUsers.findIndex(u => u._id === user._id);
-      if (idx !== -1) global.memoryUsers[idx] = user;
+      if (idx !== -1) {
+        global.memoryUsers[idx] = user;
+      } else {
+        global.memoryUsers.push(user);
+      }
       
       // Issue new token with updated user data
       newToken = jwt.sign(
@@ -178,6 +183,127 @@ export const getMe = async (req, res) => {
       user: req.user
     });
   } catch (error) {
+    res.status(500).json({ success: false, message: 'Server Error' });
+  }
+};
+
+export const register = async (req, res) => {
+  try {
+    if (mongoose.connection.readyState !== 1) {
+      return res.status(503).json({ success: false, message: 'Database connection required for native registration.' });
+    }
+    const { name, email, password } = req.body;
+    
+    let user = await User.findOne({ email });
+    if (user) {
+      return res.status(400).json({ success: false, message: 'User already exists' });
+    }
+    
+    const salt = await bcrypt.genSalt(10);
+    const hashedPassword = await bcrypt.hash(password, salt);
+    
+    user = new User({
+      name,
+      email,
+      password: hashedPassword,
+      isOnboarded: false
+    });
+    await user.save();
+    
+    const userObject = user.toObject();
+    delete userObject.password;
+    
+    const token = jwt.sign(
+      { userId: user._id, isOnboarded: user.isOnboarded },
+      JWT_SECRET,
+      { expiresIn: '7d' }
+    );
+    
+    res.status(201).json({ success: true, token, user: userObject });
+  } catch (error) {
+    console.error('Register error:', error);
+    res.status(500).json({ success: false, message: 'Server Error' });
+  }
+};
+
+export const login = async (req, res) => {
+  try {
+    if (mongoose.connection.readyState !== 1) {
+      return res.status(503).json({ success: false, message: 'Database connection required for native login.' });
+    }
+    const { email, password } = req.body;
+    
+    const user = await User.findOne({ email });
+    if (!user || !user.password) {
+      return res.status(400).json({ success: false, message: 'Invalid credentials' });
+    }
+    
+    const isMatch = await bcrypt.compare(password, user.password);
+    if (!isMatch) {
+      return res.status(400).json({ success: false, message: 'Invalid credentials' });
+    }
+    
+    const userObject = user.toObject();
+    delete userObject.password;
+    
+    const token = jwt.sign(
+      { userId: user._id, isOnboarded: user.isOnboarded },
+      JWT_SECRET,
+      { expiresIn: '7d' }
+    );
+    
+    res.status(200).json({ success: true, token, user: userObject });
+  } catch (error) {
+    console.error('Login error:', error);
+    res.status(500).json({ success: false, message: 'Server Error' });
+  }
+};
+
+export const updateProfile = async (req, res) => {
+  try {
+    const { name, age, phone, favouriteJourney, preferences } = req.body;
+    let user;
+    let newToken = null;
+    
+    if (mongoose.connection.readyState !== 1) {
+      user = req.user;
+      if (name !== undefined) user.name = name;
+      if (age !== undefined) user.age = age;
+      if (phone !== undefined) user.phone = phone;
+      if (favouriteJourney !== undefined) user.favouriteJourney = favouriteJourney;
+      if (preferences !== undefined) user.preferences = { ...user.preferences, ...preferences };
+      
+      global.memoryUsers = global.memoryUsers || [];
+      const idx = global.memoryUsers.findIndex(u => u._id === user._id);
+      if (idx !== -1) {
+        global.memoryUsers[idx] = user;
+      } else {
+        global.memoryUsers.push(user);
+      }
+      
+      newToken = jwt.sign(
+        { userId: user._id, isOnboarded: user.isOnboarded, userData: user },
+        JWT_SECRET,
+        { expiresIn: '7d' }
+      );
+    } else {
+      const updateData = {};
+      if (name !== undefined) updateData.name = name;
+      if (age !== undefined) updateData.age = age;
+      if (phone !== undefined) updateData.phone = phone;
+      if (favouriteJourney !== undefined) updateData.favouriteJourney = favouriteJourney;
+      if (preferences !== undefined) updateData.preferences = preferences;
+      
+      user = await User.findByIdAndUpdate(req.user._id, updateData, { new: true, runValidators: true });
+      
+      const userObject = user.toObject();
+      delete userObject.password;
+      user = userObject;
+    }
+    
+    res.status(200).json({ success: true, user, token: newToken });
+  } catch (error) {
+    console.error('Profile update error:', error);
     res.status(500).json({ success: false, message: 'Server Error' });
   }
 };

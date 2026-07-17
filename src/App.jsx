@@ -28,6 +28,7 @@ import Support from './pages/Support';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsConditions from './pages/TermsConditions';
 import Onboarding from './pages/Onboarding';
+import Profile from './pages/Profile';
 import Footer from './components/Footer';
 import './index.css';
 
@@ -66,10 +67,10 @@ function Navigation() {
         <Link to="/" className="nav-link">Home</Link>
         {user ? (
           <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-            <span style={{ fontWeight: '600', color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: '8px' }}>
-              {user.picture && <img src={user.picture} alt={user.name} style={{ width: '28px', height: '28px', borderRadius: '50%' }} />}
+            <Link to="/profile" style={{ fontWeight: '600', color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: '8px', textDecoration: 'none' }}>
+              {user.picture ? <img src={user.picture} alt={user.name} style={{ width: '28px', height: '28px', borderRadius: '50%' }} /> : <div style={{ width: '28px', height: '28px', borderRadius: '50%', background: 'var(--accent-color)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><span style={{ color: 'white', fontSize: '12px' }}>{user.name.charAt(0)}</span></div>}
               Welcome, {user.name.split(' ')[0]}
-            </span>
+            </Link>
             <button onClick={logout} className="btn-secondary" style={{ padding: '8px 16px', fontSize: '0.9rem' }}>Log out</button>
           </div>
         ) : (
@@ -94,6 +95,7 @@ function App() {
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
               <Route path="/onboarding" element={<Onboarding />} />
+              <Route path="/profile" element={<Profile />} />
               <Route path="/train/:id" element={<TrainDetails />} />
               <Route path="/class-selection/:id" element={<ClassSelection />} />
               <Route path="/passenger-details" element={<PassengerDetails />} />

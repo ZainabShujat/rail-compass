@@ -9,6 +9,11 @@ export default function Login() {
   const navigate = useNavigate();
   const { login } = useAuth();
   const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
+
+  // Native Auth State
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
   const API_URL = import.meta.env.PROD ? '' : 'http://localhost:5000';
 
@@ -32,6 +37,33 @@ export default function Login() {
     }
   };
 
+  const handleNativeSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setError('');
+    
+    try {
+      const res = await axios.post(`${API_URL}/api/auth/login`, { email, password });
+      const { token, user } = res.data;
+      login(token, user);
+      
+      if (!user.isOnboarded) {
+        navigate('/onboarding');
+      } else {
+        navigate('/');
+      }
+    } catch (err) {
+      console.error(err);
+      if (err.response?.status === 503) {
+        setError('Database connection required for email login.');
+      } else {
+        setError(err.response?.data?.message || 'Invalid email or password.');
+      }
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <div className="auth-container animate-fade-in">
       <div className="auth-card glass-panel" style={{ padding: '60px 40px', maxWidth: '450px' }}>
@@ -40,6 +72,26 @@ export default function Login() {
         
         {error && <div style={{ color: '#ef4444', marginBottom: '20px', background: 'rgba(239, 68, 68, 0.1)', padding: '10px', borderRadius: '6px' }}>{error}</div>}
         
+        <form onSubmit={handleNativeSubmit} style={{ display: 'grid', gap: '15px' }}>
+          <div>
+            <label style={{ display: 'block', marginBottom: '5px', fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Email</label>
+            <input type="email" value={email} onChange={e => setEmail(e.target.value)} required style={{ width: '100%', padding: '12px', background: 'var(--bg-input)', border: '1px solid var(--border-color)', borderRadius: '8px', color: 'white' }} />
+          </div>
+          <div>
+            <label style={{ display: 'block', marginBottom: '5px', fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Password</label>
+            <input type="password" value={password} onChange={e => setPassword(e.target.value)} required style={{ width: '100%', padding: '12px', background: 'var(--bg-input)', border: '1px solid var(--border-color)', borderRadius: '8px', color: 'white' }} />
+          </div>
+          <button type="submit" className="btn-primary" disabled={loading} style={{ width: '100%', padding: '12px', marginTop: '10px' }}>
+            {loading ? 'Signing In...' : 'Sign In'}
+          </button>
+        </form>
+
+        <div style={{ display: 'flex', alignItems: 'center', margin: '20px 0' }}>
+          <div style={{ flex: 1, height: '1px', background: 'var(--border-color)' }}></div>
+          <span style={{ margin: '0 10px', color: 'var(--text-muted)', fontSize: '0.9rem' }}>or</span>
+          <div style={{ flex: 1, height: '1px', background: 'var(--border-color)' }}></div>
+        </div>
+
         <div style={{ display: 'flex', justifyContent: 'center', margin: '20px 0' }}>
           <GoogleLogin
             onSuccess={handleGoogleSuccess}

@@ -31,9 +31,10 @@ export function AuthProvider({ children }) {
       const fetchedUser = res.data.user;
       
       const savedUsers = JSON.parse(localStorage.getItem('railwise_users') || '{}');
-      if (savedUsers[fetchedUser.googleId] && !fetchedUser.isOnboarded) {
-        fetchedUser.preferences = savedUsers[fetchedUser.googleId].preferences;
-        fetchedUser.isOnboarded = savedUsers[fetchedUser.googleId].isOnboarded;
+      const userKey = fetchedUser.email || fetchedUser.googleId;
+      if (userKey && savedUsers[userKey] && !fetchedUser.isOnboarded) {
+        fetchedUser.preferences = savedUsers[userKey].preferences;
+        fetchedUser.isOnboarded = savedUsers[userKey].isOnboarded;
       }
       
       setUser(fetchedUser);
@@ -47,12 +48,13 @@ export function AuthProvider({ children }) {
 
   const login = (newToken, userData) => {
     const savedUsers = JSON.parse(localStorage.getItem('railwise_users') || '{}');
-    if (savedUsers[userData.googleId] && !userData.isOnboarded) {
-      userData.preferences = savedUsers[userData.googleId].preferences;
-      userData.isOnboarded = savedUsers[userData.googleId].isOnboarded;
+    const userKey = userData.email || userData.googleId;
+    if (userKey && savedUsers[userKey] && !userData.isOnboarded) {
+      userData.preferences = savedUsers[userKey].preferences;
+      userData.isOnboarded = savedUsers[userKey].isOnboarded;
       
       // Update backend token silently
-      axios.post(`${API_URL}/api/auth/onboarding`, { preferences: userData.preferences }).then(res => {
+      axios.post(`${API_URL}/api/auth/onboarding`, { preferences: userData.preferences }, { headers: { Authorization: `Bearer ${newToken}` } }).then(res => {
         if (res.data.token) {
           localStorage.setItem('token', res.data.token);
           setToken(res.data.token);
@@ -82,13 +84,15 @@ export function AuthProvider({ children }) {
       }
       
       const updatedUser = res.data.user;
-      
+      const userKey = updatedUser.email || updatedUser.googleId;
       const savedUsers = JSON.parse(localStorage.getItem('railwise_users') || '{}');
-      savedUsers[updatedUser.googleId] = {
-        preferences: updatedUser.preferences,
-        isOnboarded: updatedUser.isOnboarded
-      };
-      localStorage.setItem('railwise_users', JSON.stringify(savedUsers));
+      if (userKey) {
+        savedUsers[userKey] = {
+          preferences: updatedUser.preferences,
+          isOnboarded: updatedUser.isOnboarded
+        };
+        localStorage.setItem('railwise_users', JSON.stringify(savedUsers));
+      }
       
       setUser(updatedUser);
       return updatedUser;
@@ -98,8 +102,37 @@ export function AuthProvider({ children }) {
     }
   };
 
+  const updateProfile = async (profileData) => {
+    try {
+      const res = await axios.put(`${API_URL}/api/auth/profile`, profileData);
+      
+      if (res.data.token) {
+        localStorage.setItem('token', res.data.token);
+        setToken(res.data.token);
+        axios.defaults.headers.common['Authorization'] = `Bearer ${res.data.token}`;
+      }
+      
+      const updatedUser = res.data.user;
+      const userKey = updatedUser.email || updatedUser.googleId;
+      const savedUsers = JSON.parse(localStorage.getItem('railwise_users') || '{}');
+      if (userKey) {
+        savedUsers[userKey] = {
+          preferences: updatedUser.preferences,
+          isOnboarded: updatedUser.isOnboarded
+        };
+        localStorage.setItem('railwise_users', JSON.stringify(savedUsers));
+      }
+      
+      setUser(updatedUser);
+      return updatedUser;
+    } catch (err) {
+      console.error('Failed to update profile', err);
+      throw err;
+    }
+  };
+
   return (
-    <AuthContext.Provider value={{ user, token, loading, login, logout, updatePreferences }}>
+    <AuthContext.Provider value={{ user, token, loading, login, logout, updatePreferences, updateProfile }}>
       {children}
     </AuthContext.Provider>
   );

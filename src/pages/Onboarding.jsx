@@ -2,10 +2,11 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { CheckCircle } from 'lucide-react';
+import StationAutocomplete from '../components/StationAutocomplete';
 import './Auth.css'; // Reuse some basic layout
 
 export default function Onboarding() {
-  const { user, updatePreferences } = useAuth();
+  const { user, updatePreferences, updateProfile } = useAuth();
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
 
@@ -17,19 +18,38 @@ export default function Onboarding() {
   const [weightFood, setWeightFood] = useState(0.05);
   const [preferredClass, setPreferredClass] = useState('All');
 
+  // Favourite Journey
+  const [origin, setOrigin] = useState('');
+  const [destination, setDestination] = useState('');
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
     try {
-      await updatePreferences({
-        weightDuration,
-        weightDaytime,
-        weightBudget,
-        weightReliability,
-        weightComfort,
-        weightFood,
-        preferredClass
-      });
+      if (updateProfile) {
+        await updateProfile({
+          favouriteJourney: { origin, destination },
+          preferences: {
+            weightDuration,
+            weightDaytime,
+            weightBudget,
+            weightReliability,
+            weightComfort,
+            weightFood,
+            preferredClass
+          }
+        });
+      } else {
+        await updatePreferences({
+          weightDuration,
+          weightDaytime,
+          weightBudget,
+          weightReliability,
+          weightComfort,
+          weightFood,
+          preferredClass
+        });
+      }
       navigate('/');
     } catch (err) {
       console.error(err);
@@ -71,6 +91,27 @@ export default function Onboarding() {
             <option value="SL">SL (Sleeper)</option>
             <option value="2S">2S (Second Seating)</option>
           </select>
+        </div>
+
+        <h3 style={{ fontSize: '1.25rem', marginTop: '30px', marginBottom: '20px', borderBottom: '1px solid var(--border-color)', paddingBottom: '10px' }}>Favourite Journey (Optional)</h3>
+        <p style={{ color: 'var(--text-muted)', marginBottom: '15px', fontSize: '0.9rem' }}>Set your most frequent route to auto-fill the search.</p>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', marginBottom: '24px' }}>
+          <div style={{ position: 'relative' }}>
+            <StationAutocomplete 
+              label="From (Origin)"
+              value={origin} 
+              onChange={setOrigin} 
+              placeholder="e.g. New Delhi" 
+            />
+          </div>
+          <div style={{ position: 'relative' }}>
+            <StationAutocomplete 
+              label="To (Destination)"
+              value={destination} 
+              onChange={setDestination} 
+              placeholder="e.g. Mumbai" 
+            />
+          </div>
         </div>
 
         <h3 style={{ fontSize: '1.25rem', marginTop: '30px', marginBottom: '20px', borderBottom: '1px solid var(--border-color)', paddingBottom: '10px' }}>Algorithm Weights</h3>
