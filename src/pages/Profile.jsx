@@ -107,7 +107,6 @@ export default function Profile() {
         </div>
       </div>
 
-      {successMsg && <div style={{ color: '#10b981', marginBottom: '20px', background: 'rgba(16, 185, 129, 0.1)', padding: '15px', borderRadius: '8px', display: 'flex', alignItems: 'center', gap: '10px' }}><CheckCircle size={20} /> {successMsg}</div>}
       {errorMsg && <div style={{ color: '#ef4444', marginBottom: '20px', background: 'rgba(239, 68, 68, 0.1)', padding: '15px', borderRadius: '8px' }}>{errorMsg}</div>}
 
       <form onSubmit={handleSave} style={{ display: 'grid', gap: '30px' }}>
@@ -221,7 +220,12 @@ export default function Profile() {
           </div>
         </section>
 
-        <div style={{ textAlign: 'right', marginTop: '20px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', gap: '15px', marginTop: '20px' }}>
+          {successMsg && (
+            <span className="animate-fade-in" style={{ color: '#10b981', display: 'flex', alignItems: 'center', gap: '6px', fontWeight: '600', fontSize: '0.95rem' }}>
+              <CheckCircle size={18} /> {successMsg}
+            </span>
+          )}
           <button type="submit" className="btn-primary" disabled={saving} style={{ padding: '15px 30px', fontSize: '1.1rem' }}>
             {saving ? 'Saving...' : 'Save All Changes'}
           </button>
