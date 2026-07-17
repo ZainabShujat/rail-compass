@@ -66,10 +66,15 @@ function Navigation() {
     logout();
   };
 
+  const handleHomeClick = () => {
+    setIsMenuOpen(false);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <>
       <header className="app-header">
-        <Link to="/" className="logo">
+        <Link to="/" className="logo" onClick={handleHomeClick}>
           <img src="/logo.png" alt="Rail Compass Logo" style={{ width: '80px', height: 'auto', marginRight: '12px' }} />
           <span className="logo-text"><span className="logo-rail">RAIL</span> <span className="logo-compass">COMPASS</span></span>
         </Link>
@@ -79,7 +84,7 @@ function Navigation() {
             <button onClick={toggleTheme} className="theme-toggle" aria-label="Toggle Theme">
               {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
             </button>
-            <Link to="/" className="nav-link">Home</Link>
+            <Link to="/" className="nav-link" onClick={handleHomeClick}>Home</Link>
             {user ? (
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
                 <Link to="/profile" style={{ fontWeight: '600', color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: '8px', textDecoration: 'none' }}>
@@ -119,7 +124,7 @@ function Navigation() {
                 <button onClick={() => setIsMenuOpen(false)} style={{ background: 'none', border: 'none', color: 'var(--text-main)', cursor: 'pointer' }}><X size={28} /></button>
               </div>
               
-              <Link to="/" onClick={() => setIsMenuOpen(false)} style={{ fontSize: '1.2rem', color: 'var(--text-main)', textDecoration: 'none', padding: '15px 0', borderBottom: '1px solid var(--border-color)', fontWeight: '500' }}>Home</Link>
+              <Link to="/" onClick={handleHomeClick} style={{ fontSize: '1.2rem', color: 'var(--text-main)', textDecoration: 'none', padding: '15px 0', borderBottom: '1px solid var(--border-color)', fontWeight: '500' }}>Home</Link>
               
               {user ? (
                 <>
