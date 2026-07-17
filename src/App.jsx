@@ -152,29 +152,31 @@ function Navigation() {
             onClick={() => setShowLogoutModal(false)}
             style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.6)', zIndex: 10002, backdropFilter: 'blur(3px)' }} 
           />
-          <div 
-            className="animate-fade-in"
-            style={{ position: 'fixed', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', background: 'var(--bg-secondary)', padding: '30px', borderRadius: '12px', zIndex: 10003, width: '90%', maxWidth: '400px', boxShadow: '0 10px 40px rgba(0,0,0,0.3)', border: '1px solid var(--border-color)', textAlign: 'center' }}
-          >
-            <h3 style={{ margin: '0 0 15px 0', fontSize: '1.4rem', color: 'var(--text-main)' }}>Sign Out</h3>
-            <p style={{ margin: '0 0 25px 0', color: 'var(--text-secondary)', lineHeight: '1.5' }}>
-              Are you sure you want to log out of your account? You will need to sign back in to access your saved preferences.
-            </p>
-            <div style={{ display: 'flex', gap: '15px', justifyContent: 'center' }}>
-              <button 
-                onClick={() => setShowLogoutModal(false)} 
-                className="btn-secondary" 
-                style={{ padding: '10px 20px', fontSize: '1rem', background: 'transparent' }}
-              >
-                Cancel
-              </button>
-              <button 
-                onClick={confirmLogout} 
-                className="btn-primary" 
-                style={{ padding: '10px 20px', fontSize: '1rem', background: '#ef4444' }}
-              >
-                Yes, Sign out
-              </button>
+          <div style={{ position: 'fixed', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 10003, width: '90%', maxWidth: '400px' }}>
+            <div 
+              className="animate-fade-in"
+              style={{ background: 'var(--bg-secondary)', padding: '30px', borderRadius: '12px', boxShadow: '0 10px 40px rgba(0,0,0,0.3)', border: '1px solid var(--border-color)', textAlign: 'center' }}
+            >
+              <h3 style={{ margin: '0 0 15px 0', fontSize: '1.4rem', color: 'var(--text-main)' }}>Sign Out</h3>
+              <p style={{ margin: '0 0 25px 0', color: 'var(--text-secondary)', lineHeight: '1.5' }}>
+                Are you sure you want to log out of your account? You will need to sign back in to access your saved preferences.
+              </p>
+              <div style={{ display: 'flex', gap: '15px', justifyContent: 'center' }}>
+                <button 
+                  onClick={() => setShowLogoutModal(false)} 
+                  className="btn-secondary" 
+                  style={{ padding: '10px 20px', fontSize: '1rem', background: 'transparent' }}
+                >
+                  Cancel
+                </button>
+                <button 
+                  onClick={confirmLogout} 
+                  className="btn-primary" 
+                  style={{ padding: '10px 20px', fontSize: '1rem', background: '#ef4444' }}
+                >
+                  Yes, Sign out
+                </button>
+              </div>
             </div>
           </div>
         </>
