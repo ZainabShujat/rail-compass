@@ -23,7 +23,8 @@ app.use('/api/stations', stationRoutes);
 app.use('/api/auth', authRoutes);
 
 // Database connection
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/railwise';
+const rawUri = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/railwise';
+const MONGODB_URI = rawUri.replace(/\s+/g, ''); // Strip all whitespace and line breaks
 
 mongoose.connect(MONGODB_URI)
   .then(() => {
