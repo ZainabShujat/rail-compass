@@ -154,13 +154,13 @@ function Navigation() {
           />
           <div 
             className="animate-fade-in"
-            style={{ position: 'fixed', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', background: 'var(--bg-secondary)', padding: '30px', borderRadius: '12px', zIndex: 10003, width: '90%', maxWidth: '400px', boxShadow: '0 10px 40px rgba(0,0,0,0.3)', border: '1px solid var(--border-color)' }}
+            style={{ position: 'fixed', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', background: 'var(--bg-secondary)', padding: '30px', borderRadius: '12px', zIndex: 10003, width: '90%', maxWidth: '400px', boxShadow: '0 10px 40px rgba(0,0,0,0.3)', border: '1px solid var(--border-color)', textAlign: 'center' }}
           >
-            <h3 style={{ margin: '0 0 15px 0', fontSize: '1.3rem', color: 'var(--text-main)' }}>Sign Out</h3>
+            <h3 style={{ margin: '0 0 15px 0', fontSize: '1.4rem', color: 'var(--text-main)' }}>Sign Out</h3>
             <p style={{ margin: '0 0 25px 0', color: 'var(--text-secondary)', lineHeight: '1.5' }}>
               Are you sure you want to log out of your account? You will need to sign back in to access your saved preferences.
             </p>
-            <div style={{ display: 'flex', gap: '15px', justifyContent: 'flex-end' }}>
+            <div style={{ display: 'flex', gap: '15px', justifyContent: 'center' }}>
               <button 
                 onClick={() => setShowLogoutModal(false)} 
                 className="btn-secondary" 
