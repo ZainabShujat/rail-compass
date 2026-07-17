@@ -33,7 +33,8 @@ export default function Login() {
       }
     } catch (err) {
       console.error(err);
-      setError('Failed to authenticate with Google. Please try again.');
+      const serverMsg = err.response?.data?.message;
+      setError(`Google Login Failed: ${serverMsg || err.message}`);
     }
   };
 
