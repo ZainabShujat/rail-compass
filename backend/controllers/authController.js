@@ -198,7 +198,13 @@ export const getMe = async (req, res) => {
 export const register = async (req, res) => {
   try {
     if (mongoose.connection.readyState !== 1 && mongoose.connection.readyState !== 2) {
-      return res.status(503).json({ success: false, message: 'Database connection required for native registration.' });
+      try {
+        console.log('Attempting inline DB reconnect...');
+        const rawUri = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/railwise';
+        await mongoose.connect(rawUri.replace(/\s+/g, ''));
+      } catch (dbErr) {
+        return res.status(503).json({ success: false, message: `DB Connection Failed: ${dbErr.message}` });
+      }
     }
     const { name, email, password } = req.body;
     
@@ -237,7 +243,13 @@ export const register = async (req, res) => {
 export const login = async (req, res) => {
   try {
     if (mongoose.connection.readyState !== 1 && mongoose.connection.readyState !== 2) {
-      return res.status(503).json({ success: false, message: 'Database connection required for native login.' });
+      try {
+        console.log('Attempting inline DB reconnect...');
+        const rawUri = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/railwise';
+        await mongoose.connect(rawUri.replace(/\s+/g, ''));
+      } catch (dbErr) {
+        return res.status(503).json({ success: false, message: `DB Connection Failed: ${dbErr.message}` });
+      }
     }
     const { email, password } = req.body;
     
