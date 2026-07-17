@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, Link, useLocation, useNavigate } from 'react-router-dom';
-import { Train, Sun, Moon } from 'lucide-react';
+import { Train, Sun, Moon, Menu, X } from 'lucide-react';
 import { AuthProvider, useAuth } from './context/AuthContext';
 
 const ScrollToTop = () => {
