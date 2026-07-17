@@ -29,6 +29,16 @@ export const googleLogin = async (req, res) => {
     console.log('Checking for user in DB...');
     let user = null;
     
+    if (mongoose.connection.readyState !== 1 && mongoose.connection.readyState !== 2) {
+      try {
+        console.log('Attempting inline DB reconnect in googleLogin...');
+        const rawUri = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/railwise';
+        await mongoose.connect(rawUri.replace(/\s+/g, ''));
+      } catch (dbErr) {
+        console.error('googleLogin DB Reconnect Failed:', dbErr);
+      }
+    }
+    
     // In-memory fallback if DB not connected
     if (mongoose.connection.readyState !== 1 && mongoose.connection.readyState !== 2) {
       console.log('MongoDB not connected, creating stateless user');
@@ -107,6 +117,16 @@ export const protect = async (req, res, next) => {
 
   try {
     const decoded = jwt.verify(token, JWT_SECRET);
+    
+    if (mongoose.connection.readyState !== 1 && mongoose.connection.readyState !== 2) {
+      try {
+        console.log('Attempting inline DB reconnect in protect middleware...');
+        const rawUri = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/railwise';
+        await mongoose.connect(rawUri.replace(/\s+/g, ''));
+      } catch (dbErr) {
+        console.error('Middleware DB Reconnect Failed:', dbErr);
+      }
+    }
     
     if (mongoose.connection.readyState !== 1 && mongoose.connection.readyState !== 2) {
       if (decoded.userData) {
