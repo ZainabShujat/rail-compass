@@ -217,6 +217,13 @@ export default function Profile() {
               </div>
               <input type="range" min="0" max="1" step="0.05" value={weightComfort} onChange={e => setWeightComfort(parseFloat(e.target.value))} style={{ width: '100%' }} />
             </div>
+            <div>
+              <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
+                <label>Food/Pantry Availability</label>
+                <span style={{ color: 'var(--accent-text)' }}>{Math.round(weightFood * 100)}%</span>
+              </div>
+              <input type="range" min="0" max="1" step="0.05" value={weightFood} onChange={e => setWeightFood(parseFloat(e.target.value))} style={{ width: '100%' }} />
+            </div>
           </div>
         </section>
 

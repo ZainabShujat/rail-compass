@@ -161,6 +161,15 @@ export default function Onboarding() {
             <input type="range" min="0" max="1" step="0.05" value={weightComfort} onChange={e => setWeightComfort(parseFloat(e.target.value))} style={{ width: '100%' }} />
             <p className="text-muted" style={{ fontSize: '0.8rem', marginTop: '4px' }}>Factors in coach quality and passenger reviews.</p>
           </div>
+
+          <div>
+            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
+              <label style={{ fontWeight: '500' }}>Food Quality</label>
+              <span style={{ color: 'var(--accent-text)' }}>{Math.round(weightFood * 100)}%</span>
+            </div>
+            <input type="range" min="0" max="1" step="0.05" value={weightFood} onChange={e => setWeightFood(parseFloat(e.target.value))} style={{ width: '100%' }} />
+            <p className="text-muted" style={{ fontSize: '0.8rem', marginTop: '4px' }}>Rates the availability and standard of pantry services.</p>
+          </div>
         </div>
 
         <div style={{ marginTop: '40px', textAlign: 'center' }}>
