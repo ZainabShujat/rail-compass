@@ -30,7 +30,7 @@ export const googleLogin = async (req, res) => {
     let user = null;
     
     // In-memory fallback if DB not connected
-    if (mongoose.connection.readyState !== 1) {
+    if (mongoose.connection.readyState !== 1 && mongoose.connection.readyState !== 2) {
       console.log('MongoDB not connected, creating stateless user');
       // Check if we already have it in memory as a fallback
       global.memoryUsers = global.memoryUsers || [];
@@ -108,7 +108,7 @@ export const protect = async (req, res, next) => {
   try {
     const decoded = jwt.verify(token, JWT_SECRET);
     
-    if (mongoose.connection.readyState !== 1) {
+    if (mongoose.connection.readyState !== 1 && mongoose.connection.readyState !== 2) {
       if (decoded.userData) {
         req.user = decoded.userData;
       } else {
@@ -137,7 +137,7 @@ export const updatePreferences = async (req, res) => {
     let user;
     let newToken = null;
     
-    if (mongoose.connection.readyState !== 1) {
+    if (mongoose.connection.readyState !== 1 && mongoose.connection.readyState !== 2) {
       user = req.user;
       user.preferences = { ...user.preferences, ...preferences };
       user.isOnboarded = true;
@@ -197,7 +197,7 @@ export const getMe = async (req, res) => {
 
 export const register = async (req, res) => {
   try {
-    if (mongoose.connection.readyState !== 1) {
+    if (mongoose.connection.readyState !== 1 && mongoose.connection.readyState !== 2) {
       return res.status(503).json({ success: false, message: 'Database connection required for native registration.' });
     }
     const { name, email, password } = req.body;
@@ -236,7 +236,7 @@ export const register = async (req, res) => {
 
 export const login = async (req, res) => {
   try {
-    if (mongoose.connection.readyState !== 1) {
+    if (mongoose.connection.readyState !== 1 && mongoose.connection.readyState !== 2) {
       return res.status(503).json({ success: false, message: 'Database connection required for native login.' });
     }
     const { email, password } = req.body;
@@ -273,7 +273,7 @@ export const updateProfile = async (req, res) => {
     let user;
     let newToken = null;
     
-    if (mongoose.connection.readyState !== 1) {
+    if (mongoose.connection.readyState !== 1 && mongoose.connection.readyState !== 2) {
       user = req.user;
       if (name !== undefined) user.name = name;
       if (age !== undefined) user.age = age;
