@@ -49,10 +49,18 @@ export const googleLogin = async (req, res) => {
         global.memoryUsers.push(user);
       }
     } else {
-      user = await User.findOne({ googleId });
+      // First try to find by email to link accounts if they signed up traditionally first
+      user = await User.findOne({ email });
 
-      if (!user) {
-        // Create new user
+      if (user) {
+        // If user exists but doesn't have googleId linked, link it now
+        if (!user.googleId) {
+          user.googleId = googleId;
+          if (!user.picture && picture) user.picture = picture;
+          await user.save();
+        }
+      } else {
+        // If no user with this email exists at all, create a brand new one
         user = new User({
           googleId,
           email,
