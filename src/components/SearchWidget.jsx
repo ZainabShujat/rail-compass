@@ -42,28 +42,26 @@ export default function SearchWidget() {
         {error && <div className="search-error" style={{ width: '100%', color: '#ef4444', textAlign: 'center', marginBottom: '15px', background: 'rgba(239, 68, 68, 0.1)', padding: '10px', borderRadius: '6px', fontWeight: 'bold', gridColumn: '1 / -1' }}>{error}</div>}
         
         {/* Origin Field */}
-        <div style={{ width: '100%', position: 'relative' }}>
-          <label style={{ display: 'block', fontSize: '12px', fontWeight: 'bold', color: 'var(--text-secondary)', marginBottom: '5px', textTransform: 'uppercase', letterSpacing: '0.5px' }}>From</label>
-          <StationAutocomplete 
-            value={origin} 
-            onChange={(val) => { setOrigin(val); setError(''); }} 
-            placeholder="Origin Station" 
-            iconColor="#2D9C6A" 
-          />
-        </div>
+        <StationAutocomplete 
+          label="From"
+          widgetMode={true}
+          value={origin} 
+          onChange={(val) => { setOrigin(val); setError(''); }} 
+          placeholder="Origin Station" 
+          iconColor="#2D9C6A" 
+        />
         
         <div className="divider"></div>
 
         {/* Destination Field */}
-        <div style={{ width: '100%', position: 'relative' }}>
-          <label style={{ display: 'block', fontSize: '12px', fontWeight: 'bold', color: 'var(--text-secondary)', marginBottom: '5px', textTransform: 'uppercase', letterSpacing: '0.5px' }}>To</label>
-          <StationAutocomplete 
-            value={destination} 
-            onChange={(val) => { setDestination(val); setError(''); }} 
-            placeholder="Destination Station" 
-            iconColor="#EF4444" 
-          />
-        </div>
+        <StationAutocomplete 
+          label="To"
+          widgetMode={true}
+          value={destination} 
+          onChange={(val) => { setDestination(val); setError(''); }} 
+          placeholder="Destination Station" 
+          iconColor="#EF4444" 
+        />
 
         <div className="divider"></div>
 
