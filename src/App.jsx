@@ -41,6 +41,7 @@ const BookingConfirmation = () => <div className="page-container glass-panel ani
 function Navigation() {
   const [theme, setTheme] = useState('dark');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [showLogoutModal, setShowLogoutModal] = useState(false);
   const { user, logout } = useAuth();
 
   useEffect(() => {
@@ -54,83 +55,131 @@ function Navigation() {
   const toggleTheme = () => {
     setTheme(prev => prev === 'dark' ? 'light' : 'dark');
   };
+  
+  const handleLogoutClick = () => {
+    setIsMenuOpen(false);
+    setShowLogoutModal(true);
+  };
+  
+  const confirmLogout = () => {
+    setShowLogoutModal(false);
+    logout();
+  };
 
   return (
-    <header className="app-header">
-      <Link to="/" className="logo">
-        <img src="/logo.png" alt="Rail Compass Logo" style={{ width: '80px', height: 'auto', marginRight: '12px' }} />
-        <span className="logo-text"><span className="logo-rail">RAIL</span> <span className="logo-compass">COMPASS</span></span>
-      </Link>
-      
-      <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-        <nav className="desktop-nav" style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
-          <button onClick={toggleTheme} className="theme-toggle" aria-label="Toggle Theme">
-            {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
-          </button>
-          <Link to="/" className="nav-link">Home</Link>
-          {user ? (
-            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-              <Link to="/profile" style={{ fontWeight: '600', color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: '8px', textDecoration: 'none' }}>
-                {user.picture ? <img src={user.picture} alt={user.name} style={{ width: '28px', height: '28px', borderRadius: '50%' }} /> : <div style={{ width: '28px', height: '28px', borderRadius: '50%', background: 'var(--accent-color)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><span style={{ color: 'white', fontSize: '12px' }}>{user.name.charAt(0)}</span></div>}
-                Welcome, {user.name.split(' ')[0]}
-              </Link>
-              <button onClick={logout} className="btn-secondary" style={{ padding: '8px 16px', fontSize: '0.9rem' }}>Log out</button>
-            </div>
-          ) : (
-            <Link to="/login" className="btn-primary" style={{ padding: '8px 16px' }}>Sign In</Link>
-          )}
-        </nav>
+    <>
+      <header className="app-header">
+        <Link to="/" className="logo">
+          <img src="/logo.png" alt="Rail Compass Logo" style={{ width: '80px', height: 'auto', marginRight: '12px' }} />
+          <span className="logo-text"><span className="logo-rail">RAIL</span> <span className="logo-compass">COMPASS</span></span>
+        </Link>
         
-        {/* Hamburger Icon */}
-        <button 
-          className="mobile-menu-btn" 
-          onClick={() => setIsMenuOpen(true)} 
-          style={{ background: 'none', border: 'none', color: 'var(--text-main)', cursor: 'pointer', display: 'flex', alignItems: 'center' }}
-        >
-          <Menu size={28} />
-        </button>
-      </div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
+          <nav className="desktop-nav" style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
+            <button onClick={toggleTheme} className="theme-toggle" aria-label="Toggle Theme">
+              {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
+            </button>
+            <Link to="/" className="nav-link">Home</Link>
+            {user ? (
+              <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                <Link to="/profile" style={{ fontWeight: '600', color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: '8px', textDecoration: 'none' }}>
+                  {user.picture ? <img src={user.picture} alt={user.name} style={{ width: '28px', height: '28px', borderRadius: '50%' }} /> : <div style={{ width: '28px', height: '28px', borderRadius: '50%', background: 'var(--accent-color)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><span style={{ color: 'white', fontSize: '12px' }}>{user.name.charAt(0)}</span></div>}
+                  Welcome, {user.name.split(' ')[0]}
+                </Link>
+                <button onClick={handleLogoutClick} className="btn-secondary" style={{ padding: '8px 16px', fontSize: '0.9rem' }}>Log out</button>
+              </div>
+            ) : (
+              <Link to="/login" className="btn-primary" style={{ padding: '8px 16px' }}>Sign In</Link>
+            )}
+          </nav>
+          
+          {/* Hamburger Icon */}
+          <button 
+            className="mobile-menu-btn" 
+            onClick={() => setIsMenuOpen(true)} 
+            style={{ background: 'none', border: 'none', color: 'var(--text-main)', cursor: 'pointer', display: 'flex', alignItems: 'center' }}
+          >
+            <Menu size={28} />
+          </button>
+        </div>
 
-      {/* Side Drawer */}
-      {isMenuOpen && (
+        {/* Side Drawer */}
+        {isMenuOpen && (
+          <>
+            <div 
+              className="drawer-overlay animate-fade-in" 
+              onClick={() => setIsMenuOpen(false)} 
+              style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.6)', zIndex: 10000, backdropFilter: 'blur(2px)' }} 
+            />
+            <div 
+              className="side-drawer" 
+              style={{ position: 'fixed', top: 0, right: 0, bottom: 0, width: '300px', background: 'var(--bg-secondary)', zIndex: 10001, padding: '30px', display: 'flex', flexDirection: 'column', gap: '20px', boxShadow: '-5px 0 30px rgba(0,0,0,0.5)', borderLeft: '1px solid var(--border-color)', animation: 'slideInRight 0.3s ease forwards' }}
+            >
+              <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '20px' }}>
+                <button onClick={() => setIsMenuOpen(false)} style={{ background: 'none', border: 'none', color: 'var(--text-main)', cursor: 'pointer' }}><X size={28} /></button>
+              </div>
+              
+              <Link to="/" onClick={() => setIsMenuOpen(false)} style={{ fontSize: '1.2rem', color: 'var(--text-main)', textDecoration: 'none', padding: '15px 0', borderBottom: '1px solid var(--border-color)', fontWeight: '500' }}>Home</Link>
+              
+              {user ? (
+                <>
+                  <Link to="/profile" onClick={() => setIsMenuOpen(false)} style={{ fontSize: '1.2rem', color: 'var(--text-main)', textDecoration: 'none', padding: '15px 0', borderBottom: '1px solid var(--border-color)', fontWeight: '500', display: 'flex', alignItems: 'center', gap: '10px' }}>
+                    {user.picture ? <img src={user.picture} alt={user.name} style={{ width: '32px', height: '32px', borderRadius: '50%' }} /> : <div style={{ width: '32px', height: '32px', borderRadius: '50%', background: 'var(--accent-color)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><span style={{ color: 'white', fontSize: '14px' }}>{user.name.charAt(0)}</span></div>}
+                    My Profile
+                  </Link>
+                  <button onClick={handleLogoutClick} style={{ fontSize: '1.2rem', color: '#ef4444', textDecoration: 'none', padding: '15px 0', borderBottom: '1px solid var(--border-color)', background: 'none', border: 'none', textAlign: 'left', cursor: 'pointer', fontWeight: '500' }}>Log out</button>
+                </>
+              ) : (
+                <Link to="/login" onClick={() => setIsMenuOpen(false)} style={{ fontSize: '1.2rem', color: 'var(--accent-color)', textDecoration: 'none', padding: '15px 0', borderBottom: '1px solid var(--border-color)', fontWeight: '600' }}>Sign In</Link>
+              )}
+
+              <div style={{ marginTop: 'auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '15px 0' }}>
+                <span style={{ fontSize: '1.1rem', fontWeight: '500', color: 'var(--text-secondary)' }}>Appearance</span>
+                <button onClick={toggleTheme} style={{ background: 'var(--bg-input)', border: '1px solid var(--border-color)', color: 'var(--text-main)', cursor: 'pointer', padding: '10px', borderRadius: '50%', display: 'flex' }}>
+                  {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
+                </button>
+              </div>
+            </div>
+          </>
+        )}
+      </header>
+
+      {/* Logout Confirmation Modal */}
+      {showLogoutModal && (
         <>
           <div 
             className="drawer-overlay animate-fade-in" 
-            onClick={() => setIsMenuOpen(false)} 
-            style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.6)', zIndex: 10000, backdropFilter: 'blur(2px)' }} 
+            onClick={() => setShowLogoutModal(false)}
+            style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.6)', zIndex: 10002, backdropFilter: 'blur(3px)' }} 
           />
           <div 
-            className="side-drawer" 
-            style={{ position: 'fixed', top: 0, right: 0, bottom: 0, width: '300px', background: 'var(--bg-secondary)', zIndex: 10001, padding: '30px', display: 'flex', flexDirection: 'column', gap: '20px', boxShadow: '-5px 0 30px rgba(0,0,0,0.5)', borderLeft: '1px solid var(--border-color)', animation: 'slideInRight 0.3s ease forwards' }}
+            className="animate-fade-in"
+            style={{ position: 'fixed', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', background: 'var(--bg-secondary)', padding: '30px', borderRadius: '12px', zIndex: 10003, width: '90%', maxWidth: '400px', boxShadow: '0 10px 40px rgba(0,0,0,0.3)', border: '1px solid var(--border-color)' }}
           >
-            <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '20px' }}>
-              <button onClick={() => setIsMenuOpen(false)} style={{ background: 'none', border: 'none', color: 'var(--text-main)', cursor: 'pointer' }}><X size={28} /></button>
-            </div>
-            
-            <Link to="/" onClick={() => setIsMenuOpen(false)} style={{ fontSize: '1.2rem', color: 'var(--text-main)', textDecoration: 'none', padding: '15px 0', borderBottom: '1px solid var(--border-color)', fontWeight: '500' }}>Home</Link>
-            
-            {user ? (
-              <>
-                <Link to="/profile" onClick={() => setIsMenuOpen(false)} style={{ fontSize: '1.2rem', color: 'var(--text-main)', textDecoration: 'none', padding: '15px 0', borderBottom: '1px solid var(--border-color)', fontWeight: '500', display: 'flex', alignItems: 'center', gap: '10px' }}>
-                  {user.picture ? <img src={user.picture} alt={user.name} style={{ width: '32px', height: '32px', borderRadius: '50%' }} /> : <div style={{ width: '32px', height: '32px', borderRadius: '50%', background: 'var(--accent-color)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><span style={{ color: 'white', fontSize: '14px' }}>{user.name.charAt(0)}</span></div>}
-                  My Profile
-                </Link>
-                <button onClick={() => { logout(); setIsMenuOpen(false); }} style={{ fontSize: '1.2rem', color: '#ef4444', textDecoration: 'none', padding: '15px 0', borderBottom: '1px solid var(--border-color)', background: 'none', border: 'none', textAlign: 'left', cursor: 'pointer', fontWeight: '500' }}>Log out</button>
-              </>
-            ) : (
-              <Link to="/login" onClick={() => setIsMenuOpen(false)} style={{ fontSize: '1.2rem', color: 'var(--accent-color)', textDecoration: 'none', padding: '15px 0', borderBottom: '1px solid var(--border-color)', fontWeight: '600' }}>Sign In</Link>
-            )}
-
-            <div style={{ marginTop: 'auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '15px 0' }}>
-              <span style={{ fontSize: '1.1rem', fontWeight: '500', color: 'var(--text-secondary)' }}>Appearance</span>
-              <button onClick={toggleTheme} style={{ background: 'var(--bg-input)', border: '1px solid var(--border-color)', color: 'var(--text-main)', cursor: 'pointer', padding: '10px', borderRadius: '50%', display: 'flex' }}>
-                {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
+            <h3 style={{ margin: '0 0 15px 0', fontSize: '1.3rem', color: 'var(--text-main)' }}>Sign Out</h3>
+            <p style={{ margin: '0 0 25px 0', color: 'var(--text-secondary)', lineHeight: '1.5' }}>
+              Are you sure you want to log out of your account? You will need to sign back in to access your saved preferences.
+            </p>
+            <div style={{ display: 'flex', gap: '15px', justifyContent: 'flex-end' }}>
+              <button 
+                onClick={() => setShowLogoutModal(false)} 
+                className="btn-secondary" 
+                style={{ padding: '10px 20px', fontSize: '1rem', background: 'transparent' }}
+              >
+                Cancel
+              </button>
+              <button 
+                onClick={confirmLogout} 
+                className="btn-primary" 
+                style={{ padding: '10px 20px', fontSize: '1rem', background: '#ef4444' }}
+              >
+                Yes, Sign out
               </button>
             </div>
           </div>
         </>
       )}
-    </header>
+    </>
   );
 }
 
