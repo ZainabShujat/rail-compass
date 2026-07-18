@@ -31,18 +31,22 @@ export const googleLogin = async (req, res) => {
     console.log('Checking for user in DB...');
     let user = null;
     
-    if (mongoose.connection.readyState !== 1 && mongoose.connection.readyState !== 2) {
+    if (mongoose.connection.readyState !== 1) {
       try {
         console.log('Attempting inline DB reconnect in googleLogin...');
         const rawUri = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/railwise';
-        await mongoose.connect(rawUri.replace(/\s+/g, ''), { serverSelectionTimeoutMS: 5000 });
+        await mongoose.connect(rawUri.replace(/\s+/g, ''), { 
+          serverSelectionTimeoutMS: 3000,
+          connectTimeoutMS: 3000,
+          socketTimeoutMS: 3000
+        });
       } catch (dbErr) {
         console.error('googleLogin DB Reconnect Failed:', dbErr);
       }
     }
     
-    // In-memory fallback if DB not connected
-    if (mongoose.connection.readyState !== 1 && mongoose.connection.readyState !== 2) {
+    // In-memory fallback if DB not connected after attempt
+    if (mongoose.connection.readyState !== 1) {
       console.log('MongoDB not connected, creating stateless user');
       // Check if we already have it in memory as a fallback
       global.memoryUsers = global.memoryUsers || [];
