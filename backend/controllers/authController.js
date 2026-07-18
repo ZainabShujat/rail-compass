@@ -35,7 +35,7 @@ export const googleLogin = async (req, res) => {
       try {
         console.log('Attempting inline DB reconnect in googleLogin...');
         const rawUri = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/railwise';
-        await mongoose.connect(rawUri.replace(/\s+/g, ''));
+        await mongoose.connect(rawUri.replace(/\s+/g, ''), { serverSelectionTimeoutMS: 5000 });
       } catch (dbErr) {
         console.error('googleLogin DB Reconnect Failed:', dbErr);
       }

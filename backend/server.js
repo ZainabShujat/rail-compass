@@ -26,13 +26,19 @@ app.use('/api/auth', authRoutes);
 const rawUri = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/railwise';
 const MONGODB_URI = rawUri.replace(/\s+/g, ''); // Strip all whitespace and line breaks
 
-mongoose.connect(MONGODB_URI)
+mongoose.connect(MONGODB_URI, { serverSelectionTimeoutMS: 5000 })
   .then(() => {
     console.log('Connected to MongoDB');
   })
   .catch((err) => {
     console.error('⚠️ Failed to connect to MongoDB. Running in memory fallback mode:', err.message);
   });
+
+// Global error handler to catch unhandled promise rejections in Express 5
+app.use((err, req, res, next) => {
+  console.error('Unhandled Global Error:', err);
+  res.status(500).json({ success: false, message: err.message || 'Internal Server Error' });
+});
 
 // Only listen on port if running locally (not on Vercel)
 if (process.env.NODE_ENV !== 'production') {
