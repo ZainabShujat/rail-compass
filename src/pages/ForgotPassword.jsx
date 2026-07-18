@@ -10,7 +10,7 @@ export default function ForgotPassword() {
   const [message, setMessage] = useState('');
   const [error, setError] = useState('');
 
-  const API_URL = import.meta.env.PROD ? '' : 'http://localhost:5000';
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -19,7 +19,7 @@ export default function ForgotPassword() {
     setMessage('');
     
     try {
-      const res = await axios.post(`${API_URL}/api/auth/forgot-password`, { email });
+      const res = await axios.post(`/api/auth/forgot-password`, { email });
       setMessage(res.data.message || 'If an account exists, a password reset link has been sent to your email.');
     } catch (err) {
       console.error(err);

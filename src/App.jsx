@@ -97,7 +97,7 @@ function Navigation() {
         </Link>
         
         <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-          <nav className="desktop-nav" style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
+          <nav className="desktop-nav" style={{ alignItems: 'center', gap: '24px' }}>
             <button onClick={toggleTheme} className="theme-toggle" aria-label="Toggle Theme">
               {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
             </button>
@@ -115,7 +115,7 @@ function Navigation() {
           <button 
             className="mobile-menu-btn" 
             onClick={() => setIsMenuOpen(true)} 
-            style={{ background: 'none', border: 'none', color: 'var(--text-main)', cursor: 'pointer', display: 'flex', alignItems: 'center' }}
+            style={{ background: 'none', border: 'none', color: 'var(--text-main)', cursor: 'pointer', alignItems: 'center' }}
           >
             <Menu size={28} />
           </button>

@@ -15,7 +15,7 @@ export default function ResetPassword() {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState('');
 
-  const API_URL = import.meta.env.PROD ? '' : 'http://localhost:5000';
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -28,7 +28,7 @@ export default function ResetPassword() {
     setError('');
     
     try {
-      await axios.post(`${API_URL}/api/auth/reset-password/${token}`, { password });
+      await axios.post(`/api/auth/reset-password/${token}`, { password });
       setSuccess(true);
       setTimeout(() => {
         navigate('/login');

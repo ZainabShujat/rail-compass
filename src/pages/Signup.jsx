@@ -20,11 +20,11 @@ export default function Signup() {
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
-  const API_URL = import.meta.env.PROD ? '' : 'http://localhost:5000';
+
 
   const handleGoogleSuccess = async (credentialResponse) => {
     try {
-      const res = await axios.post(`${API_URL}/api/auth/google`, {
+      const res = await axios.post(`/api/auth/google`, {
         credential: credentialResponse.credential,
       });
       
@@ -52,7 +52,7 @@ export default function Signup() {
     setError('');
     
     try {
-      const res = await axios.post(`${API_URL}/api/auth/register`, { name, email, password });
+      const res = await axios.post(`/api/auth/register`, { name, email, password });
       const { token, user } = res.data;
       login(token, user);
       navigate('/onboarding');

@@ -14,7 +14,7 @@ export function AuthProvider({ children }) {
   const [loading, setLoading] = useState(true);
   const [welcomeMessage, setWelcomeMessage] = useState('');
 
-  const API_URL = import.meta.env.PROD ? '' : 'http://localhost:5000';
+
 
   useEffect(() => {
     if (token) {
@@ -28,7 +28,7 @@ export function AuthProvider({ children }) {
 
   const fetchUser = async () => {
     try {
-      const res = await axios.get(`${API_URL}/api/auth/me`);
+      const res = await axios.get(`/api/auth/me`);
       const fetchedUser = res.data.user;
       
       const savedUsers = JSON.parse(localStorage.getItem('railwise_users') || '{}');
@@ -55,7 +55,7 @@ export function AuthProvider({ children }) {
       userData.isOnboarded = savedUsers[userKey].isOnboarded;
       
       // Update backend token silently
-      axios.post(`${API_URL}/api/auth/onboarding`, { preferences: userData.preferences }, { headers: { Authorization: `Bearer ${newToken}` } }).then(res => {
+      axios.post(`/api/auth/onboarding`, { preferences: userData.preferences }, { headers: { Authorization: `Bearer ${newToken}` } }).then(res => {
         if (res.data.token) {
           localStorage.setItem('token', res.data.token);
           setToken(res.data.token);
@@ -79,7 +79,7 @@ export function AuthProvider({ children }) {
 
   const updatePreferences = async (preferences) => {
     try {
-      const res = await axios.post(`${API_URL}/api/auth/onboarding`, { preferences });
+      const res = await axios.post(`/api/auth/onboarding`, { preferences });
       
       if (res.data.token) {
         localStorage.setItem('token', res.data.token);
@@ -108,7 +108,7 @@ export function AuthProvider({ children }) {
 
   const updateProfile = async (profileData) => {
     try {
-      const res = await axios.put(`${API_URL}/api/auth/profile`, profileData);
+      const res = await axios.put(`/api/auth/profile`, profileData);
       
       if (res.data.token) {
         localStorage.setItem('token', res.data.token);

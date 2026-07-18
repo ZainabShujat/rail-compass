@@ -74,7 +74,7 @@ export default function TrainDetails() {
     const fetchTrainDetails = async () => {
       try {
         setLoading(true);
-        const res = await axios.get(`http://localhost:5000/api/trains/${id}`);
+        const res = await axios.get(`/api/trains/${id}`);
         setTrain(res.data);
       } catch (err) {
         console.error("Error fetching train details:", err);
@@ -94,7 +94,7 @@ export default function TrainDetails() {
         setLoadingReturn(true);
         // Reverse origin and destination
         const preferredClass = user?.preferences?.preferredClass || 'All';
-        const res = await axios.get(`http://localhost:5000/api/trains`, {
+        const res = await axios.get(`/api/trains`, {
           params: {
             origin: searchData.searchDestination || searchData.arrivalStation,
             destination: searchData.searchOrigin || searchData.departureStation,

@@ -236,10 +236,29 @@ export const getTrains = async (req, res) => {
 export const getTrainById = async (req, res) => {
   try {
     const tNum = req.params.id;
-    const train = trainsMap[tNum];
+    let train = trainsMap[tNum];
     const schedule = schedulesByTrain[tNum];
+    
     if (!train) {
-      return res.status(404).json({ message: 'Train not found' });
+      if (schedule && schedule.length > 0) {
+        train = {
+          number: tNum,
+          name: schedule[0].train_name || 'Unknown Train',
+          type: 'Express',
+          zone: 'Unknown',
+          first_ac: 0,
+          second_ac: 1,
+          third_ac: 1,
+          sleeper: 1,
+          chair_car: 0,
+          first_class: 0,
+          duration_h: 0,
+          duration_m: 0,
+          distance: 0
+        };
+      } else {
+        return res.status(404).json({ message: 'Train not found' });
+      }
     }
     res.json({ ...train, schedule });
   } catch (error) {

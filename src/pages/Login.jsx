@@ -17,11 +17,11 @@ export default function Login() {
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
 
-  const API_URL = import.meta.env.PROD ? '' : 'http://localhost:5000';
+
 
   const handleGoogleSuccess = async (credentialResponse) => {
     try {
-      const res = await axios.post(`${API_URL}/api/auth/google`, {
+      const res = await axios.post(`/api/auth/google`, {
         credential: credentialResponse.credential,
       });
       
@@ -46,7 +46,7 @@ export default function Login() {
     setError('');
     
     try {
-      const res = await axios.post(`${API_URL}/api/auth/login`, { email, password });
+      const res = await axios.post(`/api/auth/login`, { email, password });
       const { token, user } = res.data;
       login(token, user);
       

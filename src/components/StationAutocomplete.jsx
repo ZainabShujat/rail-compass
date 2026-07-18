@@ -7,7 +7,7 @@ export default function StationAutocomplete({ value, onChange, placeholder, icon
   const [showDropdown, setShowDropdown] = useState(false);
   const containerRef = useRef(null);
 
-  const API_URL = import.meta.env.PROD ? '' : 'http://localhost:5000';
+
 
   // Handle clicking outside
   useEffect(() => {
@@ -28,7 +28,7 @@ export default function StationAutocomplete({ value, onChange, placeholder, icon
     }
     const timer = setTimeout(async () => {
       try {
-        const res = await fetch(`${API_URL}/api/stations/search?q=${value}`);
+        const res = await fetch(`/api/stations/search?q=${value}`);
         if (res.ok) {
           const data = await res.json();
           setResults(data);
@@ -38,7 +38,7 @@ export default function StationAutocomplete({ value, onChange, placeholder, icon
       }
     }, 300);
     return () => clearTimeout(timer);
-  }, [value, API_URL]);
+  }, [value]);
 
   return (
     <div className={widgetMode ? "input-group" : ""} ref={containerRef} style={{ position: 'relative', width: '100%', marginBottom: 0 }}>
