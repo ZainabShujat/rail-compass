@@ -1,43 +1,73 @@
-# Rail Compass (Railway Recommendation System)
+<div align="center">
+  <img src="public/logo.png" alt="Rail Compass Logo" width="120" />
+  <h1>🚄 Rail Compass</h1>
+  <p><strong>A Smart & Personalized Railway Recommendation System</strong></p>
+  
+  <p>
+    <a href="https://railcompass.vercel.app/" target="_blank">
+      <img src="https://img.shields.io/badge/Live_Website-railcompass.vercel.app-blue?style=for-the-badge&logo=vercel" alt="Live Website" />
+    </a>
+    <img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
+    <img src="https://img.shields.io/badge/Node.js-Express-339933?style=for-the-badge&logo=nodedotjs" alt="Node" />
+    <img src="https://img.shields.io/badge/MongoDB-Mongoose-47A248?style=for-the-badge&logo=mongodb" alt="MongoDB" />
+    <img src="https://img.shields.io/badge/License-ISC-black?style=for-the-badge" alt="License" />
+  </p>
+</div>
 
-**Live Website:** [https://railcompass.vercel.app/](https://railcompass.vercel.app/)
+<br />
 
-**Rail Compass** is a smart and personalized railway recommendation system designed to help you find the perfect train for your journey. It analyzes duration, daytime efficiency, budget, and reliability to recommend the best options tailored specifically to your needs.
+**Rail Compass** is a next-generation railway recommendation engine tailored for Indian railways. Stop guessing which train to book—our intelligent algorithm analyzes duration, daytime efficiency, budget, and historical reliability to recommend the absolute best options tailored specifically to your personal travel needs.
 
-## Features
+---
 
-- **Smart Search**: Enter your journey details to instantly scan thousands of routes across India.
-- **Smart Analysis**: Our algorithm weighs multiple factors including duration, budget, comfort, and reliability based on your unique preferences.
-- **Top Recommendations**: Get clear, ranked train options so you always book the perfect ticket.
-- **Responsive UI**: A modern, glassmorphism-inspired UI designed for an optimal user experience across devices.
+## 🌟 Key Features
 
-## Tech Stack
+| Feature | Description |
+| :--- | :--- |
+| 🔍 **Smart Search** | Instantly scan thousands of routes across India by entering your journey details. |
+| 🧠 **Intelligent Analysis** | Our custom algorithm weighs multiple factors (duration, budget, comfort, reliability) based on unique user preferences. |
+| 🏆 **Top Recommendations** | Get clear, ranked train options prioritizing the best overall travel experience. |
+| 📱 **Responsive UI** | A modern, glassmorphism-inspired UI designed for an optimal, app-like user experience across all devices. |
+| 🔐 **Secure Authentication** | Seamless user accounts, profile management, and saved preferences. |
 
-### Frontend
-- **React 19**
-- **Vite**
-- **React Router** (for navigation)
-- **Lucide React** (for icons)
-- **Vanilla CSS** (for styling)
+## 🛠️ Tech Stack
 
-### Backend
-- **Node.js** & **Express**
-- **MongoDB** with **Mongoose**
-- Data ingestion and seeding scripts (for Kaggle dataset)
+We utilize a modern, robust MERN-inspired stack for high performance and scalability.
 
-## Getting Started
+| Category | Technologies |
+| :--- | :--- |
+| **Frontend** | React 19, Vite, React Router, Lucide React, Vanilla CSS (Glassmorphism UI) |
+| **Backend** | Node.js, Express.js |
+| **Database** | MongoDB, Mongoose |
+| **Data Processing** | Custom Python/Node ingestion scripts for Kaggle Indian Railways dataset |
+| **Deployment** | Vercel (Frontend), Railway/Render (Backend) |
+
+---
+
+## 🚀 Getting Started
+
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
-- Node.js (v18 or higher)
-- MongoDB (Running locally or a MongoDB Atlas URI)
 
-### 1. Clone the repository
+Ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (v18 or higher)
+- [MongoDB](https://www.mongodb.com/) (Running locally or a MongoDB Atlas URI)
+- Git
+
+### 1. Clone the Repository
+
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/YasirH05/railwise-recommendation-platform.git
 cd "Railway Recommendation System"
 ```
 
 ### 2. Backend Setup
+
+<details>
+<summary><b>Click to expand Backend Instructions</b></summary>
+<br/>
+
 1. Navigate to the backend directory:
    ```bash
    cd backend
@@ -46,54 +76,88 @@ cd "Railway Recommendation System"
    ```bash
    npm install
    ```
-3. Create a `.env` file in the `backend` directory with your configuration (e.g., `PORT=5000`, `MONGODB_URI=mongodb://127.0.0.1:27017/railwise`).
+3. Create a `.env` file in the `backend` directory with your configuration:
+   ```env
+   PORT=5000
+   MONGODB_URI=mongodb://127.0.0.1:27017/railwise
+   JWT_SECRET=your_jwt_secret_here
+   ```
 4. Seed the database with initial train/station data:
    ```bash
    npm run seed
    ```
-   *Alternatively, you can run `npm run ingest` to ingest data from the Kaggle dataset.*
-5. Start the backend server:
+   *(Alternatively, run `npm run ingest` to ingest data from the raw Kaggle dataset).*
+5. Start the backend development server:
    ```bash
-   npm run start
+   npm start
    ```
 
+</details>
+
 ### 3. Frontend Setup
+
+<details>
+<summary><b>Click to expand Frontend Instructions</b></summary>
+<br/>
+
 1. Open a new terminal and navigate to the project root directory.
 2. Install dependencies:
    ```bash
    npm install
    ```
-3. Start the Vite development server:
+3. Create a `.env` file in the root directory (if needed for API URLs):
+   ```env
+   VITE_API_URL=http://localhost:5000
+   ```
+4. Start the Vite development server:
    ```bash
    npm run dev
    ```
-4. Open your browser and navigate to the URL provided by Vite (usually `http://localhost:5173`).
+5. Open your browser and navigate to `http://localhost:5173`.
 
-## Project Structure
+</details>
+
+---
+
+## 📁 Project Structure
 
 ```text
 Railway Recommendation System/
-├── backend/                  # Express server, MongoDB models, routes, and controllers
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   ├── scripts/              # Data ingestion scripts
-│   ├── seed/                 # Database seeding scripts
-│   └── server.js             # Backend entry point
-├── public/                   # Static assets (images, logos, etc.)
+├── backend/                  # Backend API Server
+│   ├── controllers/          # Request handlers
+│   ├── models/               # Mongoose schemas
+│   ├── routes/               # API endpoints
+│   ├── scripts/              # Data ingestion logic
+│   ├── seed/                 # Database seeders
+│   └── server.js             # Express entry point
+├── public/                   # Static assets (images, logos)
 ├── src/                      # Frontend React application
 │   ├── components/           # Reusable UI components
-│   ├── pages/                # Application pages (Home, Results, Login, etc.)
-│   ├── App.jsx               # Main React component and routing
-│   └── index.css             # Global styles
-├── package.json              # Frontend dependencies and scripts
-└── vite.config.js            # Vite configuration
+│   ├── context/              # React Context (Auth, Theme)
+│   ├── pages/                # Application pages (Home, Results, Auth, etc.)
+│   ├── App.jsx               # Main React component & routing
+│   └── index.css             # Global UI styles & CSS variables
+├── package.json              # Frontend dependencies
+└── vite.config.js            # Vite bundler configuration
 ```
 
-## Contributing
+---
 
-Contributions, issues, and feature requests are welcome! Feel free to check the issues page if you want to contribute.
+## 🤝 Contributing
 
-## License
+Contributions, issues, and feature requests are highly welcome! 
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-This project is licensed under the ISC License.
+---
+
+## 📄 License
+
+This project is licensed under the **ISC License**.
+
+<div align="center">
+  <p>Built with ❤️ for Indian Railways travelers.</p>
+</div>
