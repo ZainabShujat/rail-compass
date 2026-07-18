@@ -60,6 +60,7 @@ function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showLogoutModal, setShowLogoutModal] = useState(false);
   const { user, logout } = useAuth();
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (theme === 'light') {
@@ -81,6 +82,8 @@ function Navigation() {
   const confirmLogout = () => {
     setShowLogoutModal(false);
     logout();
+    navigate('/');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleHomeClick = () => {
@@ -111,13 +114,23 @@ function Navigation() {
             )}
           </nav>
           
-          {/* Hamburger Icon */}
+          {/* Hamburger / Profile Icon */}
           <button 
-            className="mobile-menu-btn" 
+            className={user ? "user-profile-btn" : "mobile-menu-btn"} 
             onClick={() => setIsMenuOpen(true)} 
-            style={{ background: 'none', border: 'none', color: 'var(--text-main)', cursor: 'pointer', alignItems: 'center' }}
+            style={{ background: 'none', border: 'none', color: 'var(--text-main)', cursor: 'pointer', display: 'flex', alignItems: 'center' }}
           >
-            <Menu size={28} />
+            {user ? (
+              user.picture ? (
+                <img src={user.picture} alt={user.name} style={{ width: '36px', height: '36px', borderRadius: '50%', border: '2px solid var(--accent-fill)', objectFit: 'cover' }} />
+              ) : (
+                <div style={{ width: '36px', height: '36px', borderRadius: '50%', background: 'var(--accent-fill)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 2px 8px rgba(0,0,0,0.15)' }}>
+                  <span style={{ color: 'white', fontSize: '16px', fontWeight: 'bold' }}>{user.name.charAt(0).toUpperCase()}</span>
+                </div>
+              )
+            ) : (
+              <Menu size={28} />
+            )}
           </button>
         </div>
 
