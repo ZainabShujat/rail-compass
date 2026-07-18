@@ -1,6 +1,6 @@
 <div align="center">
   <img src="public/logo.png" alt="Rail Compass Logo" width="120" />
-  <h1>🚄 Rail Compass</h1>
+  <h1>Rail Compass</h1>
   <p><strong>A Smart & Personalized Railway Recommendation System</strong></p>
   
   <p>
@@ -20,17 +20,17 @@
 
 ---
 
-## 🌟 Key Features
+## Key Features
 
 | Feature | Description |
 | :--- | :--- |
-| 🔍 **Smart Search** | Instantly scan thousands of routes across India by entering your journey details. |
-| 🧠 **Intelligent Analysis** | Our custom algorithm weighs multiple factors (duration, budget, comfort, reliability) based on unique user preferences. |
-| 🏆 **Top Recommendations** | Get clear, ranked train options prioritizing the best overall travel experience. |
-| 📱 **Responsive UI** | A modern, glassmorphism-inspired UI designed for an optimal, app-like user experience across all devices. |
-| 🔐 **Secure Authentication** | Seamless user accounts, profile management, and saved preferences. |
+| **Smart Search** | Instantly scan thousands of routes across India by entering your journey details. |
+| **Intelligent Analysis** | Our custom algorithm weighs multiple factors (duration, budget, comfort, reliability) based on unique user preferences. |
+| **Top Recommendations** | Get clear, ranked train options prioritizing the best overall travel experience. |
+| **Responsive UI** | A modern, glassmorphism-inspired UI designed for an optimal, app-like user experience across all devices. |
+| **Secure Authentication** | Seamless user accounts, profile management, and saved preferences. |
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 We utilize a modern, robust MERN-inspired stack for high performance and scalability.
 
@@ -44,7 +44,7 @@ We utilize a modern, robust MERN-inspired stack for high performance and scalabi
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
@@ -55,14 +55,7 @@ Ensure you have the following installed:
 - [MongoDB](https://www.mongodb.com/) (Running locally or a MongoDB Atlas URI)
 - Git
 
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/YasirH05/railwise-recommendation-platform.git
-cd "Railway Recommendation System"
-```
-
-### 2. Backend Setup
+### 1. Backend Setup
 
 <details>
 <summary><b>Click to expand Backend Instructions</b></summary>
@@ -94,7 +87,7 @@ cd "Railway Recommendation System"
 
 </details>
 
-### 3. Frontend Setup
+### 2. Frontend Setup
 
 <details>
 <summary><b>Click to expand Frontend Instructions</b></summary>
@@ -119,7 +112,7 @@ cd "Railway Recommendation System"
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 Railway Recommendation System/
@@ -143,21 +136,10 @@ Railway Recommendation System/
 
 ---
 
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are highly welcome! 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
-
-## 📄 License
+## License
 
 This project is licensed under the **ISC License**.
 
 <div align="center">
-  <p>Built with ❤️ for Indian Railways travelers.</p>
+  <p>Built for Indian Railways travelers.</p>
 </div>
