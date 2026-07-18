@@ -45,6 +45,11 @@ export const initData = () => {
     console.log(`✅ Loaded ${Object.keys(trainsMap).length} trains.`);
 
     // 3. Load Schedules
+    if (process.env.VERCEL) {
+      console.log('⚠️ Skipping schedules.json.gz on Vercel to prevent Memory Limit (OOM) crashes.');
+      isLoaded = true;
+      return;
+    }
     const schedulesPath = path.join(process.cwd(), 'backend', 'data', 'schedules.json.gz');
     const schedulesData = JSON.parse(zlib.gunzipSync(fs.readFileSync(schedulesPath)).toString('utf8'));
     
