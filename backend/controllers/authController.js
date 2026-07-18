@@ -3,6 +3,7 @@ import jwt from 'jsonwebtoken';
 import bcrypt from 'bcryptjs';
 import mongoose from 'mongoose';
 import crypto from 'crypto';
+import dotenv from 'dotenv';
 import User from '../models/User.js';
 import { sendEmail } from '../utils/sendEmail.js';
 
@@ -413,6 +414,9 @@ export const forgotPassword = async (req, res) => {
     `;
 
     try {
+      // Force reload environment variables in case .env was updated while server was running
+      dotenv.config();
+
       await sendEmail({
         email: user.email,
         subject: 'Rail Compass - Password Reset Request',
@@ -424,7 +428,9 @@ export const forgotPassword = async (req, res) => {
       user.resetPasswordExpires = undefined;
       await user.save();
       console.error('=== EMAIL SENDING FAILED ===');
-      console.error('Error:', err);
+      console.error('\n🛠️  [DEV FALLBACK] Use this link to reset the password:');
+      console.error(`👉  ${resetUrl}\n`);
+      console.error('Error:', err.message);
       console.error('EMAIL_USER exists:', !!process.env.EMAIL_USER);
       console.error('EMAIL_PASS exists:', !!process.env.EMAIL_PASS);
       import('fs').then(fs => {
