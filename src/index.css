@@ -67,6 +67,11 @@ body.light-theme {
   --on-accent: #FFFFFF;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -104,6 +109,16 @@ a {
   border: 1px solid var(--border-color);
   border-radius: 8px; /* Slightly sharper for editorial feel */
   box-shadow: var(--glass-shadow);
+}
+
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(108, 147, 194, 0.12); /* Subtle brand glow */
+  border-color: var(--accent-text); /* Highlights the border */
 }
 
 .btn-primary {

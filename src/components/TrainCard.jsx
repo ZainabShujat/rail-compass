@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import { Clock, IndianRupee, Zap, Info, Award } from 'lucide-react';
 import './TrainCard.css';
 
-export default function TrainCard({ train, rank, preferredClass }) {
+export default function TrainCard({ train, rank, preferredClass, searchOrigin, searchDestination }) {
   const navigate = useNavigate();
 
   const getScoreColorClass = (score) => {
@@ -11,8 +11,21 @@ export default function TrainCard({ train, rank, preferredClass }) {
     return 'score-average';
   };
 
+  const getReasonColor = (reason) => {
+    if (!reason) return 'var(--text-main)';
+    const text = reason.toLowerCase();
+    if (text.includes('fast') || text.includes('time') || text.includes('hour') || text.includes('duration')) return '#10b981';
+    if (text.includes('budget') || text.includes('cheap') || text.includes('value') || text.includes('money')) return '#f59e0b';
+    if (text.includes('comfort') || text.includes('relax') || text.includes('premium') || text.includes('recommendation')) return '#3b82f6';
+    if (text.includes('night') || text.includes('daytime') || text.includes('custom')) return '#8b5cf6';
+    if (text.includes('solid') || text.includes('all-around') || text.includes('all round')) return '#06b6d4'; // Cyan
+    return 'var(--text-main)';
+  };
+
+  const reasonColor = getReasonColor(train.matchReason);
+
   return (
-    <div className={`train-card glass-panel animate-fade-in ${rank === 1 ? 'top-recommendation' : ''}`} onClick={() => navigate(`/train/${train._id}`)}>
+    <div className={`train-card glass-panel animate-fade-in ${rank === 1 ? 'top-recommendation' : ''}`}>
       {rank === 1 && (
         <div className="top-badge">
           BEST OVERALL MATCH
@@ -71,30 +84,13 @@ export default function TrainCard({ train, rank, preferredClass }) {
               </div>
             ))}
           </div>
-          <div className="seats mt-2 text-right">
-            {train.availableSeats > 50 ? (
-              <span style={{ color: 'var(--success-text)', fontWeight: 'bold', display: 'flex', alignItems: 'center', justifyContent: 'flex-end', gap: '6px' }}>
-                <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: 'var(--success)' }}></div>
-                Available ({train.availableSeats})
-              </span>
-            ) : train.availableSeats > 0 ? (
-              <span style={{ color: 'var(--warning-text)', fontWeight: 'bold', display: 'flex', alignItems: 'center', justifyContent: 'flex-end', gap: '6px' }}>
-                <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: 'var(--warning)' }}></div>
-                RAC ({train.availableSeats})
-              </span>
-            ) : (
-              <span style={{ color: 'var(--error-text)', fontWeight: 'bold', display: 'flex', alignItems: 'center', justifyContent: 'flex-end', gap: '6px' }}>
-                <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: 'var(--error)' }}></div>
-                Waitlisted (WL{Math.floor(Math.random() * 50) + 1})
-              </span>
-            )}
-          </div>
+
         </div>
       </div>
 
       <div className="train-footer" style={{ flexWrap: 'wrap', gap: '8px' }}>
-        <div className="match-reason">
-          <Zap size={16} className="text-secondary" />
+        <div className="match-reason" style={{ color: reasonColor }}>
+          <Zap size={16} style={{ color: reasonColor }} />
           <span>{train.matchReason}</span>
         </div>
         
@@ -112,15 +108,27 @@ export default function TrainCard({ train, rank, preferredClass }) {
             <div className="metric metric-food" title="Food">Food <span>{train.hasPantry === false ? 'N/A' : train.metrics?.foodRating}</span></div>
           </div>
           
-          <button 
-            className="irctc-book-btn"
-            onClick={(e) => {
-              e.stopPropagation(); // Prevents the card's overall click event
-              window.open('https://www.irctc.co.in/nget/train-search', '_blank', 'noopener,noreferrer');
-            }}
-          >
-            Book on IRCTC ↗
-          </button>
+          <div style={{ display: 'flex', gap: '12px' }}>
+            <button 
+              className="irctc-book-btn"
+              style={{ borderColor: 'var(--primary-color)', color: 'var(--primary-color)' }}
+              onClick={(e) => {
+                e.stopPropagation();
+                navigate(`/train/${train._id}`, { state: { searchData: { ...train, searchOrigin, searchDestination } } });
+              }}
+            >
+              View Details
+            </button>
+            <button 
+              className="irctc-book-btn"
+              onClick={(e) => {
+                e.stopPropagation(); // Prevents the card's overall click event
+                window.open('https://www.irctc.co.in/nget/train-search', '_blank', 'noopener,noreferrer');
+              }}
+            >
+              Book on IRCTC ↗
+            </button>
+          </div>
         </div>
       </div>
     </div>

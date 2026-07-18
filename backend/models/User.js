@@ -43,6 +43,12 @@ const userSchema = new mongoose.Schema({
   favouriteJourney: {
     origin: { type: String, default: '' },
     destination: { type: String, default: '' }
+  },
+  resetPasswordToken: {
+    type: String
+  },
+  resetPasswordExpires: {
+    type: Date
   }
 }, {
   timestamps: true

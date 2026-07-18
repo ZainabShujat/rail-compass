@@ -1,5 +1,5 @@
 import express from 'express';
-import { googleLogin, updatePreferences, getMe, protect, register, login, updateProfile } from '../controllers/authController.js';
+import { googleLogin, updatePreferences, getMe, protect, register, login, updateProfile, forgotPassword, resetPassword } from '../controllers/authController.js';
 
 const router = express.Router();
 
@@ -7,6 +7,8 @@ const router = express.Router();
 router.post('/google', googleLogin);
 router.post('/register', register);
 router.post('/login', login);
+router.post('/forgot-password', forgotPassword);
+router.post('/reset-password/:token', resetPassword);
 
 // Protected routes (require valid JWT)
 router.get('/me', protect, getMe);

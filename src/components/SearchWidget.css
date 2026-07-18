@@ -61,7 +61,7 @@
 }
 
 .input-field input::placeholder {
-  color: var(--border-color);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .input-field input[type="date"]::-webkit-calendar-picker-indicator {

@@ -115,21 +115,21 @@ export default function Profile() {
         <section className="glass-panel" style={{ padding: '30px' }}>
           <h2 style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '20px', fontSize: '1.4rem' }}><User size={24} /> Personal Details</h2>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
-            <div>
-              <label style={{ display: 'block', marginBottom: '8px', color: 'var(--text-secondary)' }}>Full Name</label>
-              <input type="text" value={name} onChange={e => setName(e.target.value)} required style={{ width: '100%', padding: '12px', background: 'var(--bg-input)', border: '1px solid var(--border-color)', borderRadius: '8px', color: 'white' }} />
+            <div className="auth-input-group">
+              <label>Full Name</label>
+              <input type="text" value={name} onChange={e => setName(e.target.value)} required placeholder="Zaheer Hasan" className="auth-input" />
             </div>
-            <div>
-              <label style={{ display: 'block', marginBottom: '8px', color: 'var(--text-secondary)' }}>Email (Read-only)</label>
-              <input type="email" value={email} readOnly style={{ width: '100%', padding: '12px', background: 'rgba(255,255,255,0.05)', border: '1px solid var(--border-color)', borderRadius: '8px', color: 'var(--text-muted)', cursor: 'not-allowed' }} />
+            <div className="auth-input-group">
+              <label>Email (Read-only)</label>
+              <input type="email" value={email} readOnly className="auth-input" style={{ opacity: 0.7, cursor: 'not-allowed' }} />
             </div>
-            <div>
-              <label style={{ display: 'block', marginBottom: '8px', color: 'var(--text-secondary)' }}>Age</label>
-              <input type="number" value={age} onChange={e => setAge(e.target.value)} min="1" max="120" style={{ width: '100%', padding: '12px', background: 'var(--bg-input)', border: '1px solid var(--border-color)', borderRadius: '8px', color: 'white' }} />
+            <div className="auth-input-group">
+              <label>Age</label>
+              <input type="number" value={age} onChange={e => setAge(e.target.value)} min="1" max="120" placeholder="e.g. 28" className="auth-input" />
             </div>
-            <div>
-              <label style={{ display: 'block', marginBottom: '8px', color: 'var(--text-secondary)' }}>Phone Number</label>
-              <input type="tel" value={phone} onChange={e => setPhone(e.target.value)} style={{ width: '100%', padding: '12px', background: 'var(--bg-input)', border: '1px solid var(--border-color)', borderRadius: '8px', color: 'white' }} />
+            <div className="auth-input-group">
+              <label>Phone Number</label>
+              <input type="tel" value={phone} onChange={e => setPhone(e.target.value)} placeholder="e.g. 9876543210" className="auth-input" />
             </div>
           </div>
         </section>
@@ -162,12 +162,12 @@ export default function Profile() {
         <section className="glass-panel" style={{ padding: '30px' }}>
           <h2 style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '20px', fontSize: '1.4rem' }}><Settings size={24} /> Travel DNA Preferences</h2>
           
-          <div style={{ marginBottom: '24px' }}>
-            <label style={{ display: 'block', marginBottom: '8px', color: 'var(--text-secondary)' }}>Preferred Class Filter</label>
+          <div className="auth-input-group" style={{ marginBottom: '24px' }}>
+            <label>Preferred Class Filter</label>
             <select 
               value={preferredClass} 
               onChange={e => setPreferredClass(e.target.value)}
-              style={{ width: '100%', padding: '12px', background: 'var(--bg-input)', color: 'white', border: '1px solid var(--border-color)', borderRadius: '8px', fontSize: '1rem' }}
+              className="auth-input"
             >
               <option value="All">All Classes (Auto-Budgeting)</option>
               <option value="1AC">1AC (First AC)</option>

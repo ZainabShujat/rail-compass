@@ -94,6 +94,14 @@ export const rankTrains = (trainsList, weights, preferredClass) => {
     let isUnorthodox = false;
     let matchReason = "Solid all-around option";
 
+    // Unorthodox Arrival Penalty (1 AM to 6 AM)
+    if (t.arrivalTime) {
+      const [arrH] = t.arrivalTime.split(':').map(Number);
+      if (arrH >= 1 && arrH < 6) {
+        isUnorthodox = true;
+      }
+    }
+
     if (!isStandardWeights) {
       // CUSTOM USER PREFERENCES MODE
       finalScore = 
@@ -104,7 +112,14 @@ export const rankTrains = (trainsList, weights, preferredClass) => {
         (comfortScore * (baseWeights.comfort / totalWeight)) +
         (foodScore * (baseWeights.food / totalWeight));
       
-      if (baseWeights.duration >= 0.5) matchReason = "Matched to Duration Preference";
+      if (isUnorthodox && t.durMins <= 10 * 60) {
+        finalScore -= 15;
+      }
+
+      if (durationScore > 90) matchReason = "Fastest route available";
+      else if (daytimeScore > 90) matchReason = "Saves your daytime hours";
+      else if (budgetScore > 90) matchReason = `Best value for money`;
+      else if (baseWeights.duration >= 0.5) matchReason = "Matched to Duration Preference";
       else if (baseWeights.budget >= 0.5) matchReason = "Matched to Budget Preference";
       else matchReason = "Matched to Custom Preferences";
 
@@ -143,13 +158,8 @@ export const rankTrains = (trainsList, weights, preferredClass) => {
             (foodScore * 0.05);
         }
 
-        // Unorthodox Arrival Penalty (1 AM to 6 AM)
-        if (t.arrivalTime) {
-          const [arrH] = t.arrivalTime.split(':').map(Number);
-          if (arrH >= 1 && arrH < 6) {
-            finalScore -= 15;
-            isUnorthodox = true;
-          }
+        if (isUnorthodox) {
+          finalScore -= 15;
         }
 
         if (durationScore > 90) matchReason = "Fastest route available";

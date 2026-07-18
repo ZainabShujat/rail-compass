@@ -21,6 +21,8 @@ import Home from './pages/Home';
 import Results from './pages/Results';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
+import ForgotPassword from './pages/ForgotPassword';
+import ResetPassword from './pages/ResetPassword';
 import About from './pages/About';
 import PremiumInsights from './pages/PremiumInsights';
 import ContactUs from './pages/ContactUs';
@@ -32,11 +34,26 @@ import Profile from './pages/Profile';
 import Footer from './components/Footer';
 import './index.css';
 
+import TrainDetails from './pages/TrainDetails';
+
 // Placeholder components for 7-step journey (Weeks 1-2 UI structure)
-const TrainDetails = () => <div className="page-container glass-panel animate-fade-in"><h2>Step 4: Train Details</h2><p>Compare amenities and metrics.</p></div>;
 const ClassSelection = () => <div className="page-container glass-panel animate-fade-in"><h2>Step 5: Class/Seat Selection</h2><p>Choose Sleeper, 3AC, etc.</p></div>;
 const PassengerDetails = () => <div className="page-container glass-panel animate-fade-in"><h2>Step 6: Passenger Details</h2><p>Enter traveler info.</p></div>;
 const BookingConfirmation = () => <div className="page-container glass-panel animate-fade-in"><h2>Step 7: Booking Confirmation</h2><p>Your ticket is booked!</p></div>;
+
+const ToastManager = () => {
+  const { welcomeMessage } = useAuth();
+  if (!welcomeMessage) return null;
+
+  return (
+    <div style={{ position: 'fixed', top: '15px', left: '50%', transform: 'translateX(-50%)', zIndex: 9999, pointerEvents: 'none' }}>
+      <div className="animate-fade-in" style={{ background: 'linear-gradient(135deg, var(--primary-color), var(--accent-fill))', color: 'white', padding: '8px 24px', borderRadius: '20px', boxShadow: '0 4px 20px rgba(37, 99, 235, 0.4)', fontSize: '1rem', fontWeight: '600', display: 'flex', alignItems: 'center', gap: '8px', pointerEvents: 'auto' }}>
+        <span style={{ fontSize: '1.2rem' }}>👋</span>
+        {welcomeMessage}
+      </div>
+    </div>
+  );
+};
 
 function Navigation() {
   const [theme, setTheme] = useState('dark');
@@ -85,15 +102,11 @@ function Navigation() {
               {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
             </button>
             <Link to="/" className="nav-link" onClick={handleHomeClick}>Home</Link>
-            {user ? (
-              <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                <Link to="/profile" style={{ fontWeight: '600', color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: '8px', textDecoration: 'none' }}>
-                  {user.picture ? <img src={user.picture} alt={user.name} style={{ width: '28px', height: '28px', borderRadius: '50%' }} /> : <div style={{ width: '28px', height: '28px', borderRadius: '50%', background: 'var(--accent-color)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><span style={{ color: 'white', fontSize: '12px' }}>{user.name.charAt(0)}</span></div>}
-                  Welcome, {user.name.split(' ')[0]}
-                </Link>
-                <button onClick={handleLogoutClick} className="btn-secondary" style={{ padding: '8px 16px', fontSize: '0.9rem' }}>Log out</button>
-              </div>
-            ) : (
+            <a href="#features" className="nav-link" onClick={() => setIsMenuOpen(false)}>Features</a>
+            <a href="#journeys" className="nav-link" onClick={() => setIsMenuOpen(false)}>Journeys</a>
+            <a href="#guide" className="nav-link" onClick={() => setIsMenuOpen(false)}>Guide</a>
+            <a href="#faq" className="nav-link" onClick={() => setIsMenuOpen(false)}>FAQ</a>
+            {!user && (
               <Link to="/login" className="btn-primary" style={{ padding: '8px 16px' }}>Sign In</Link>
             )}
           </nav>
@@ -124,12 +137,21 @@ function Navigation() {
                 <button onClick={() => setIsMenuOpen(false)} style={{ background: 'none', border: 'none', color: 'var(--text-main)', cursor: 'pointer' }}><X size={28} /></button>
               </div>
               
+              {user && (
+                <div style={{ display: 'flex', alignItems: 'center', gap: '15px', paddingBottom: '20px', borderBottom: '1px solid var(--border-color)', marginBottom: '5px' }}>
+                  {user.picture ? <img src={user.picture} alt={user.name} style={{ width: '48px', height: '48px', borderRadius: '50%' }} /> : <div style={{ width: '48px', height: '48px', borderRadius: '50%', background: 'var(--accent-color)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><span style={{ color: 'white', fontSize: '20px' }}>{user.name.charAt(0)}</span></div>}
+                  <div>
+                    <div style={{ fontSize: '1.2rem', fontWeight: '600', color: 'var(--text-main)' }}>Welcome,</div>
+                    <div style={{ fontSize: '1rem', color: 'var(--accent-color)' }}>{user.name.split(' ')[0]}</div>
+                  </div>
+                </div>
+              )}
+              
               <Link to="/" onClick={handleHomeClick} style={{ fontSize: '1.2rem', color: 'var(--text-main)', textDecoration: 'none', padding: '15px 0', borderBottom: '1px solid var(--border-color)', fontWeight: '500' }}>Home</Link>
               
               {user ? (
                 <>
                   <Link to="/profile" onClick={() => setIsMenuOpen(false)} style={{ fontSize: '1.2rem', color: 'var(--text-main)', textDecoration: 'none', padding: '15px 0', borderBottom: '1px solid var(--border-color)', fontWeight: '500', display: 'flex', alignItems: 'center', gap: '10px' }}>
-                    {user.picture ? <img src={user.picture} alt={user.name} style={{ width: '32px', height: '32px', borderRadius: '50%' }} /> : <div style={{ width: '32px', height: '32px', borderRadius: '50%', background: 'var(--accent-color)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><span style={{ color: 'white', fontSize: '14px' }}>{user.name.charAt(0)}</span></div>}
                     My Profile
                   </Link>
                   <button onClick={handleLogoutClick} style={{ fontSize: '1.2rem', color: '#ef4444', textDecoration: 'none', padding: '15px 0', borderBottom: '1px solid var(--border-color)', background: 'none', border: 'none', textAlign: 'left', cursor: 'pointer', fontWeight: '500' }}>Log out</button>
@@ -196,6 +218,7 @@ function App() {
       <BrowserRouter>
         <ScrollToTop />
         <div className="app-container">
+          <ToastManager />
           <Navigation />
           <main>
             <Routes>
@@ -203,6 +226,8 @@ function App() {
               <Route path="/results" element={<Results />} />
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
+              <Route path="/forgot-password" element={<ForgotPassword />} />
+              <Route path="/reset-password/:token" element={<ResetPassword />} />
               <Route path="/onboarding" element={<Onboarding />} />
               <Route path="/profile" element={<Profile />} />
               <Route path="/train/:id" element={<TrainDetails />} />

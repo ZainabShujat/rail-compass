@@ -25,27 +25,6 @@ export default function ContactUs() {
             <a href="#" className="social-link-item"><Camera className="icon" /> @railcompass.official</a>
           </div>
         </div>
-
-        <div className="app-download">
-          <h3>Download Our App</h3>
-          <p>Experience the best of Rail Compass on your mobile device.</p>
-          <div className="app-buttons">
-            <button className="btn-primary app-btn">
-              <Apple className="icon" />
-              <div className="app-btn-text">
-                <small>Download on the</small>
-                <span>App Store</span>
-              </div>
-            </button>
-            <button className="btn-primary app-btn">
-              <Smartphone className="icon" />
-              <div className="app-btn-text">
-                <small>GET IT ON</small>
-                <span>Google Play</span>
-              </div>
-            </button>
-          </div>
-        </div>
       </div>
     </div>
   );

@@ -12,6 +12,7 @@ export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
   const [token, setToken] = useState(localStorage.getItem('token') || null);
   const [loading, setLoading] = useState(true);
+  const [welcomeMessage, setWelcomeMessage] = useState('');
 
   const API_URL = import.meta.env.PROD ? '' : 'http://localhost:5000';
 
@@ -65,6 +66,9 @@ export function AuthProvider({ children }) {
     localStorage.setItem('token', newToken);
     setToken(newToken);
     setUser(userData);
+    
+    setWelcomeMessage(`Hi, ${userData.name || 'Traveler'}! Welcome aboard.`);
+    setTimeout(() => setWelcomeMessage(''), 4000);
   };
 
   const logout = () => {
@@ -132,7 +136,7 @@ export function AuthProvider({ children }) {
   };
 
   return (
-    <AuthContext.Provider value={{ user, token, loading, login, logout, updatePreferences, updateProfile }}>
+    <AuthContext.Provider value={{ user, token, loading, login, logout, updatePreferences, updateProfile, welcomeMessage }}>
       {children}
     </AuthContext.Provider>
   );

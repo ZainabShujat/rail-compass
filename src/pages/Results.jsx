@@ -120,18 +120,15 @@ export default function Results() {
           <p className="route-date">{date || 'Any Date'} • {trains.length} trains found</p>
         </div>
         
-        <button className="btn-secondary filter-btn">
-          <SlidersHorizontal size={18} />
-          RailPilot Settings
-        </button>
+
       </div>
 
       {/* Weather Banner */}
       <div className="weather-banner glass-panel" style={{ margin: '0 0 2rem 0', padding: '1rem 1.5rem', display: 'flex', alignItems: 'center', gap: '1rem', background: 'color-mix(in srgb, var(--accent-fill) 5%, transparent)' }}>
-        <span style={{ fontSize: '1.5rem' }}>🌤️</span>
+        <span style={{ fontSize: '1.5rem' }}>💡</span>
         <div>
-          <h4 style={{ margin: 0, fontSize: '1rem', color: 'var(--text-main)' }}>Expected Weather in {destination}</h4>
-          <p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--text-secondary)' }}>28°C, Partly Cloudy. Pack light!</p>
+          <h4 style={{ margin: 0, fontSize: '1rem', color: 'var(--text-main)' }}>RailPilot Insight for {destination}</h4>
+          <p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Booking meals in advance via eCatering can save money and ensure better food quality on this route.</p>
         </div>
       </div>
 
@@ -198,7 +195,7 @@ export default function Results() {
           ) : (
             <>
               {trains.map((train, index) => (
-                <TrainCard key={train._id} train={train} rank={index + 1} preferredClass={preferredClass} />
+                <TrainCard key={train._id} train={train} rank={index + 1} preferredClass={preferredClass} searchOrigin={origin} searchDestination={destination} />
               ))}
               {trains.length === 0 && (
                 <div className="glass-panel empty-state">

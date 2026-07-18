@@ -39,14 +39,14 @@ export default function Home() {
         </div>
       </div>
       
-      <div className="features-section-wrapper">
+      <div className="features-section-wrapper full-page-section" id="features">
         <div className="features-section">
           <h2 className="section-title">Why use Rail Compass?</h2>
           <div className="features-grid ticket-layout">
             <div className="feature-card">
               <div className="feature-number mono-text step-label">STEP 01</div>
               <h3 className="feature-title">Smart Search</h3>
-              <p className="feature-desc">Enter your journey details and we instantly scan thousands of routes across India.</p>
+              <p className="feature-desc">Enter your journey details and we instantly scan thousands of routes and historical schedules across India.</p>
             </div>
             
             <div className="ticket-divider"></div>
@@ -54,23 +54,31 @@ export default function Home() {
             <div className="feature-card">
               <div className="feature-number mono-text step-label">STEP 02</div>
               <h3 className="feature-title">Smart Analysis</h3>
-              <p className="feature-desc">Our algorithm weighs duration, budget, comfort, and reliability based on your unique needs.</p>
+              <p className="feature-desc">Our intelligent algorithm weighs duration, daytime efficiency, budget, comfort, and reliability based on your unique needs.</p>
             </div>
             
             <div className="ticket-divider"></div>
             
             <div className="feature-card">
               <div className="feature-number mono-text step-label">STEP 03</div>
+              <h3 className="feature-title">Precise Pricing</h3>
+              <p className="feature-desc">We calculate realistic fares by dynamically factoring in distance, class bases, superfast surcharges, and catering fees.</p>
+            </div>
+
+            <div className="ticket-divider"></div>
+            
+            <div className="feature-card">
+              <div className="feature-number mono-text step-label">STEP 04</div>
               <h3 className="feature-title">Top Recommendations</h3>
-              <p className="feature-desc">Get clear, ranked train options so you always book the perfect ticket.</p>
+              <p className="feature-desc">Get clear, comprehensively ranked train options so you can always book the absolute perfect ticket for your journey.</p>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="popular-routes-section-wrapper">
+      <div className="popular-routes-section-wrapper full-page-section" id="journeys">
         <div className="popular-routes-section">
-        <h2 className="section-title" style={{ textAlign: 'left', marginBottom: '2rem' }}>Popular Journeys</h2>
+        <h2 className="section-title" style={{ textAlign: 'center', marginBottom: '3rem' }}>Popular Journeys</h2>
         <div className="routes-grid">
           
           <div className="route-card" onClick={() => handleRouteClick('New Delhi', 'Lucknow')}>
@@ -125,7 +133,46 @@ export default function Home() {
       </div>
       </div>
 
-      <div className="faq-section-wrapper">
+      <div className="guide-section-wrapper full-page-section" id="guide" style={{ padding: '60px 20px', background: 'var(--bg-secondary)', borderTop: '1px solid var(--border-color)', borderBottom: '1px solid var(--border-color)' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          <h2 className="section-title" style={{ textAlign: 'center', marginBottom: '3rem' }}>Know Your Trains</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
+            
+            <div className="glass-panel hover-lift" style={{ padding: '24px', borderLeft: '4px solid #ef4444' }}>
+              <div style={{ fontSize: '1.2rem', fontWeight: 'bold', color: 'var(--text-main)', marginBottom: '8px' }}>Rajdhani (Raj)</div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: '1.5' }}>Fully Air-Conditioned premium trains connecting New Delhi to major states. Prioritizes food, speed, and supreme comfort.</p>
+            </div>
+            
+            <div className="glass-panel hover-lift" style={{ padding: '24px', borderLeft: '4px solid #10b981' }}>
+              <div style={{ fontSize: '1.2rem', fontWeight: 'bold', color: 'var(--text-main)', marginBottom: '8px' }}>Duronto (Drnt)</div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: '1.5' }}>Vibrant yellow-green premium trains running point-to-point with very few commercial stops for ultra-fast travel.</p>
+            </div>
+            
+            <div className="glass-panel hover-lift" style={{ padding: '24px', borderLeft: '4px solid #3b82f6' }}>
+              <div style={{ fontSize: '1.2rem', fontWeight: 'bold', color: 'var(--text-main)', marginBottom: '8px' }}>Shatabdi (Shtb)</div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: '1.5' }}>Fast, day-time, fully-seated premium intercity trains bridging major business and tourism hubs.</p>
+            </div>
+
+            <div className="glass-panel hover-lift" style={{ padding: '24px', borderLeft: '4px solid #f59e0b' }}>
+              <div style={{ fontSize: '1.2rem', fontWeight: 'bold', color: 'var(--text-main)', marginBottom: '8px' }}>Garib Rath (GR)</div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: '1.5' }}>Highly affordable, fully Air-Conditioned 3AC trains designed specifically for budget-conscious premium travel.</p>
+            </div>
+
+            <div className="glass-panel hover-lift" style={{ padding: '24px', borderLeft: '4px solid var(--accent-fill)' }}>
+              <div style={{ fontSize: '1.2rem', fontWeight: 'bold', color: 'var(--text-main)', marginBottom: '8px' }}>Superfast (SF)</div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: '1.5' }}>The absolute backbone of Indian Railways. Covers long distances swiftly with a mix of Sleeper and AC classes.</p>
+            </div>
+
+            <div className="glass-panel hover-lift" style={{ padding: '24px', borderLeft: '4px solid #8b5cf6' }}>
+              <div style={{ fontSize: '1.2rem', fontWeight: 'bold', color: 'var(--text-main)', marginBottom: '8px' }}>Jan Shatabdi (JShtb)</div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: '1.5' }}>An affordable version of Shatabdi with both AC and Non-AC seating options for quick intercity commutes.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div className="faq-section-wrapper full-page-section" id="faq">
         <FAQSection />
       </div>
 

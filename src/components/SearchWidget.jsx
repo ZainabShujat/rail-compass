@@ -8,8 +8,8 @@ import './SearchWidget.css';
 export default function SearchWidget() {
   const { user } = useAuth();
 
-  const [origin, setOrigin] = useState('New Delhi');
-  const [destination, setDestination] = useState('Lucknow');
+  const [origin, setOrigin] = useState('');
+  const [destination, setDestination] = useState('');
   const [date, setDate] = useState('');
   const [error, setError] = useState('');
   
@@ -47,7 +47,7 @@ export default function SearchWidget() {
           widgetMode={true}
           value={origin} 
           onChange={(val) => { setOrigin(val); setError(''); }} 
-          placeholder="Origin Station" 
+          placeholder="(From)" 
           iconColor="#2D9C6A" 
         />
         
@@ -59,7 +59,7 @@ export default function SearchWidget() {
           widgetMode={true}
           value={destination} 
           onChange={(val) => { setDestination(val); setError(''); }} 
-          placeholder="Destination Station" 
+          placeholder="(Destination)" 
           iconColor="#EF4444" 
         />
 

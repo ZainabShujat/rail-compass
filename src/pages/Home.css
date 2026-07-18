@@ -45,6 +45,13 @@
 
 
 
+.full-page-section {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .features-section-wrapper {
   background-color: var(--bg-secondary);
   padding: 60px 20px;
@@ -67,7 +74,7 @@
   flex-direction: row;
   align-items: stretch;
   justify-content: center;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -174,6 +181,8 @@
 }
 
 .popular-routes-section {
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   position: relative;
   z-index: 10;
@@ -235,6 +244,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  color: #ffffff;
 }
 
 .route-btn {

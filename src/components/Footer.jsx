@@ -17,10 +17,7 @@ export default function Footer() {
             India's premier personalized railway discovery platform.<br />
             Mastering your journey with precise routing, smart budget tracking, and premium travel insights.
           </p>
-          <div className="social-icons">
-            <a href="#" aria-label="Website" className="social-link"><Globe size={20} /></a>
-            <a href="#" aria-label="Contact" className="social-link"><Mail size={20} /></a>
-          </div>
+
         </div>
 
         {/* Middle Column: Company */}
@@ -29,7 +26,7 @@ export default function Footer() {
           <ul className="footer-links">
             <li><Link to="/about">About Rail Compass</Link></li>
             <li><Link to="/premium-insights">Premium Insights</Link></li>
-            <li><Link to="/contact">Contact Us</Link></li>
+            {/* <li><Link to="/contact">Contact Us</Link></li> */}
             <li><Link to="/support">Support</Link></li>
           </ul>
         </div>
@@ -47,7 +44,7 @@ export default function Footer() {
       
       <div className="footer-bottom">
         <p className="copyright text-muted">
-          &copy; {new Date().getFullYear()} RAIL COMPASS. ALL RIGHTS RESERVED.
+          &copy; {new Date().getFullYear()} RAIL COMPASS. ALL RIGHTS RESERVED. <span style={{ marginLeft: '12px', fontSize: '0.75rem', opacity: 0.6, letterSpacing: '1px' }}>v1.0.0</span>
         </p>
         <div className="bottom-links">
           <Link to="/privacy-policy">PRIVACY POLICY</Link>

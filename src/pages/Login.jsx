@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { GoogleLogin } from '@react-oauth/google';
 import axios from 'axios';
 import { useAuth } from '../context/AuthContext';
+import { Eye, EyeOff } from 'lucide-react';
 import './Auth.css';
 
 export default function Login() {
@@ -14,6 +15,7 @@ export default function Login() {
   // Native Auth State
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
 
   const API_URL = import.meta.env.PROD ? '' : 'http://localhost:5000';
 
@@ -73,16 +75,38 @@ export default function Login() {
         
         {error && <div style={{ color: '#ef4444', marginBottom: '20px', background: 'rgba(239, 68, 68, 0.1)', padding: '10px', borderRadius: '6px' }}>{error}</div>}
         
-        <form onSubmit={handleNativeSubmit} style={{ display: 'grid', gap: '15px' }}>
-          <div>
-            <label style={{ display: 'block', marginBottom: '5px', fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Email</label>
-            <input type="email" value={email} onChange={e => setEmail(e.target.value)} required style={{ width: '100%', padding: '12px', background: 'var(--bg-input)', border: '1px solid var(--border-color)', borderRadius: '8px', color: 'white' }} />
+        <form onSubmit={handleNativeSubmit} className="auth-form">
+          <div className="auth-input-group">
+            <label>Email</label>
+            <input type="email" value={email} onChange={e => setEmail(e.target.value)} required placeholder="you@example.com" className="auth-input" />
           </div>
-          <div>
-            <label style={{ display: 'block', marginBottom: '5px', fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Password</label>
-            <input type="password" value={password} onChange={e => setPassword(e.target.value)} required style={{ width: '100%', padding: '12px', background: 'var(--bg-input)', border: '1px solid var(--border-color)', borderRadius: '8px', color: 'white' }} />
+          <div className="auth-input-group">
+            <label>Password</label>
+            <div style={{ position: 'relative' }}>
+              <input 
+                type={showPassword ? "text" : "password"} 
+                value={password} 
+                onChange={e => setPassword(e.target.value)} 
+                required 
+                placeholder="••••••••" 
+                className="auth-input" 
+                style={{ paddingRight: '40px' }}
+              />
+              <button 
+                type="button" 
+                onClick={() => setShowPassword(!showPassword)}
+                style={{ position: 'absolute', right: '10px', top: '50%', transform: 'translateY(-50%)', background: 'none', border: 'none', color: 'var(--text-muted)', cursor: 'pointer', display: 'flex' }}
+              >
+                {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
+              </button>
+            </div>
+            <div style={{ textAlign: 'right', marginTop: '8px' }}>
+              <Link to="/forgot-password" style={{ fontSize: '0.85rem', color: 'var(--accent-text)', textDecoration: 'none' }}>
+                Forgot password?
+              </Link>
+            </div>
           </div>
-          <button type="submit" className="btn-primary" disabled={loading} style={{ width: '100%', padding: '12px', marginTop: '10px' }}>
+          <button type="submit" className="auth-button" disabled={loading}>
             {loading ? 'Signing In...' : 'Sign In'}
           </button>
         </form>

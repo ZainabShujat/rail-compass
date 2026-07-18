@@ -58,7 +58,7 @@
 }
 
 .filters-sidebar {
-  padding: 24px;
+  padding: 24px 28px 32px 24px;
   height: fit-content;
   max-height: calc(100vh - 120px);
   overflow-y: auto;

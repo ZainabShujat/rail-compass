@@ -2,7 +2,9 @@ import { OAuth2Client } from 'google-auth-library';
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcryptjs';
 import mongoose from 'mongoose';
+import crypto from 'crypto';
 import User from '../models/User.js';
+import { sendEmail } from '../utils/sendEmail.js';
 
 // We'll use a placeholder Client ID if one is not provided in env.
 const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID || '765017417232-fp5ui38tgrjkvsnvv9mpl8ga9pneliq3.apps.googleusercontent.com');
@@ -344,6 +346,127 @@ export const updateProfile = async (req, res) => {
     res.status(200).json({ success: true, user, token: newToken });
   } catch (error) {
     console.error('Profile update error:', error);
+    res.status(500).json({ success: false, message: 'Server Error' });
+  }
+};
+
+export const forgotPassword = async (req, res) => {
+  try {
+    if (mongoose.connection.readyState !== 1 && mongoose.connection.readyState !== 2) {
+      try {
+        console.log('Attempting inline DB reconnect...');
+        const rawUri = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/railwise';
+        await mongoose.connect(rawUri.replace(/\s+/g, ''));
+      } catch (dbErr) {
+        return res.status(503).json({ success: false, message: `DB Connection Failed: ${dbErr.message}` });
+      }
+    }
+
+    const user = await User.findOne({ email: req.body.email });
+    if (!user) {
+      return res.status(200).json({ success: true, message: 'If an account exists, a reset link has been sent' });
+    }
+
+    const resetToken = crypto.randomBytes(20).toString('hex');
+    user.resetPasswordToken = crypto.createHash('sha256').update(resetToken).digest('hex');
+    user.resetPasswordExpires = Date.now() + 3600000; // 1 hour
+
+    await user.save();
+
+    const resetUrl = `http://localhost:5173/reset-password/${resetToken}`;
+    const message = `
+      <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0f172a; color: #f8fafc; padding: 40px 20px; text-align: center;">
+        <div style="max-width: 600px; margin: 0 auto; background-color: #1e293b; padding: 40px; border-radius: 12px; border: 1px solid #334155; box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
+          
+          <div style="margin-bottom: 30px;">
+            <img src="http://localhost:5173/logo.png" alt="Rail Compass Logo" style="width: 80px; height: auto;" />
+            <h1 style="color: #3b82f6; margin-top: 15px; font-size: 24px; font-weight: 600; letter-spacing: 1px;">RAIL COMPASS</h1>
+          </div>
+
+          <h2 style="color: #f1f5f9; font-size: 20px; margin-bottom: 20px;">Password Reset Request</h2>
+          
+          <p style="color: #94a3b8; font-size: 16px; line-height: 1.6; margin-bottom: 30px; text-align: left;">
+            We received a request to reset the password for your Rail Compass account. 
+            Click the button below to securely set up a new password.
+          </p>
+
+          <a href="${resetUrl}" style="display: inline-block; background-color: #3b82f6; color: #ffffff; text-decoration: none; padding: 14px 28px; border-radius: 8px; font-weight: 600; font-size: 16px; margin-bottom: 30px; border: 1px solid #60a5fa;" clicktracking="off">
+            Reset Password
+          </a>
+
+          <p style="color: #64748b; font-size: 14px; line-height: 1.5; margin-bottom: 0; text-align: left;">
+            If you didn't request a password reset, you can safely ignore this email. Your password will not change until you access the link above and create a new one.
+          </p>
+          
+          <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #334155;">
+            <p style="color: #475569; font-size: 12px;">
+              &copy; ${new Date().getFullYear()} Rail Compass. All rights reserved.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    `;
+
+    try {
+      await sendEmail({
+        email: user.email,
+        subject: 'Rail Compass - Password Reset Request',
+        html: message
+      });
+      res.status(200).json({ success: true, message: 'Email sent' });
+    } catch (err) {
+      user.resetPasswordToken = undefined;
+      user.resetPasswordExpires = undefined;
+      await user.save();
+      console.error('=== EMAIL SENDING FAILED ===');
+      console.error('Error:', err);
+      console.error('EMAIL_USER exists:', !!process.env.EMAIL_USER);
+      console.error('EMAIL_PASS exists:', !!process.env.EMAIL_PASS);
+      import('fs').then(fs => {
+        fs.writeFileSync('email_error_dump.txt', 'Error: ' + err.message + '\nStack: ' + err.stack + '\n' + JSON.stringify(err, null, 2));
+      });
+      return res.status(500).json({ success: false, message: 'Email could not be sent. Have you added your Gmail App Password to the .env file?' });
+    }
+  } catch (err) {
+    console.error('Forgot password error:', err);
+    res.status(500).json({ success: false, message: 'Server Error' });
+  }
+};
+
+export const resetPassword = async (req, res) => {
+  try {
+    if (mongoose.connection.readyState !== 1 && mongoose.connection.readyState !== 2) {
+      try {
+        console.log('Attempting inline DB reconnect...');
+        const rawUri = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/railwise';
+        await mongoose.connect(rawUri.replace(/\s+/g, ''));
+      } catch (dbErr) {
+        return res.status(503).json({ success: false, message: `DB Connection Failed: ${dbErr.message}` });
+      }
+    }
+
+    const resetPasswordToken = crypto.createHash('sha256').update(req.params.token).digest('hex');
+
+    const user = await User.findOne({
+      resetPasswordToken,
+      resetPasswordExpires: { $gt: Date.now() }
+    });
+
+    if (!user) {
+      return res.status(400).json({ success: false, message: 'Invalid or expired token' });
+    }
+
+    const salt = await bcrypt.genSalt(10);
+    user.password = await bcrypt.hash(req.body.password, salt);
+    user.resetPasswordToken = undefined;
+    user.resetPasswordExpires = undefined;
+
+    await user.save();
+
+    res.status(200).json({ success: true, message: 'Password updated successfully' });
+  } catch (err) {
+    console.error('Reset password error:', err);
     res.status(500).json({ success: false, message: 'Server Error' });
   }
 };
