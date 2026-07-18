@@ -31,6 +31,9 @@
   --error-text: #D97D78;
   
   --on-accent: #FFFFFF;
+  
+  --placeholder-color: rgba(255, 255, 255, 0.4);
+  --calendar-invert: invert(1);
 }
 
 body.light-theme {
@@ -65,6 +68,9 @@ body.light-theme {
   --error-text: #9B3F3B;
   
   --on-accent: #FFFFFF;
+
+  --placeholder-color: rgba(0, 0, 0, 0.4);
+  --calendar-invert: none;
 }
 
 html {

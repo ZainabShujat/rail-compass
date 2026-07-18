@@ -61,11 +61,11 @@
 }
 
 .input-field input::placeholder {
-  color: rgba(255, 255, 255, 0.4);
+  color: var(--placeholder-color);
 }
 
 .input-field input[type="date"]::-webkit-calendar-picker-indicator {
-  filter: invert(1);
+  filter: var(--calendar-invert);
   opacity: 0.5;
   cursor: pointer;
 }

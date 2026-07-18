@@ -80,7 +80,7 @@ export default function StationAutocomplete({ value, onChange, placeholder, icon
               }}
               placeholder={placeholder}
               autoComplete="off"
-              style={{ width: '100%', padding: '12px', background: 'transparent', border: 'none', color: 'white', outline: 'none' }}
+              style={{ width: '100%', padding: '12px', background: 'transparent', border: 'none', color: 'var(--text-main)', outline: 'none' }}
             />
           </div>
         </>
