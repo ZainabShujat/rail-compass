@@ -4,8 +4,8 @@
   <p><strong>A Smart & Personalized Railway Recommendation System</strong></p>
   
   <p>
-    <a href="https://railcompass.vercel.app/" target="_blank">
-      <img src="https://img.shields.io/badge/Live_Website-railcompass.vercel.app-blue?style=for-the-badge&logo=vercel" alt="Live Website" />
+    <a href="https://railcompass.dev/" target="_blank">
+      <img src="https://img.shields.io/badge/Live_Website-railcompass.dev-blue?style=for-the-badge&logo=vercel" alt="Live Website" />
     </a>
     <img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
     <img src="https://img.shields.io/badge/Node.js-Express-339933?style=for-the-badge&logo=nodedotjs" alt="Node" />
