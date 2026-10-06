@@ -1,0 +1,532 @@
+{
+  "generated_at": "2026-10-05T19:00:35.351Z",
+  "parameters": {
+    "TOP_K": 3,
+    "TOP_N": 5,
+    "EARLY_ARRIVAL_START": 1,
+    "EARLY_ARRIVAL_END": 5
+  },
+  "metric1_top3_overlap": [
+    {
+      "route": "R1: Delhi→Jaipur",
+      "duration_only": {
+        "overlapCount": 2,
+        "percentage": 66.7
+      },
+      "cheapest_only": {
+        "overlapCount": 1,
+        "percentage": 33.3
+      },
+      "fixed_utility": {
+        "overlapCount": 3,
+        "percentage": 100
+      }
+    },
+    {
+      "route": "R2: Delhi→Lucknow",
+      "duration_only": {
+        "overlapCount": 0,
+        "percentage": 0
+      },
+      "cheapest_only": {
+        "overlapCount": 1,
+        "percentage": 33.3
+      },
+      "fixed_utility": {
+        "overlapCount": 2,
+        "percentage": 66.7
+      }
+    },
+    {
+      "route": "R3: Chennai→Bangalore",
+      "duration_only": {
+        "overlapCount": 0,
+        "percentage": 0
+      },
+      "cheapest_only": {
+        "overlapCount": 0,
+        "percentage": 0
+      },
+      "fixed_utility": {
+        "overlapCount": 2,
+        "percentage": 66.7
+      }
+    },
+    {
+      "route": "R4: Delhi→Mumbai",
+      "duration_only": {
+        "overlapCount": 3,
+        "percentage": 100
+      },
+      "cheapest_only": {
+        "overlapCount": 1,
+        "percentage": 33.3
+      },
+      "fixed_utility": {
+        "overlapCount": 3,
+        "percentage": 100
+      }
+    },
+    {
+      "route": "R5: Mumbai→Pune",
+      "duration_only": {
+        "overlapCount": 2,
+        "percentage": 66.7
+      },
+      "cheapest_only": {
+        "overlapCount": 0,
+        "percentage": 0
+      },
+      "fixed_utility": {
+        "overlapCount": 3,
+        "percentage": 100
+      }
+    },
+    {
+      "route": "R6: Lucknow→Delhi",
+      "duration_only": {
+        "overlapCount": 0,
+        "percentage": 0
+      },
+      "cheapest_only": {
+        "overlapCount": 1,
+        "percentage": 33.3
+      },
+      "fixed_utility": {
+        "overlapCount": 2,
+        "percentage": 66.7
+      }
+    },
+    {
+      "route": "R7: Delhi→Kolkata",
+      "duration_only": {
+        "overlapCount": 1,
+        "percentage": 33.3
+      },
+      "cheapest_only": {
+        "overlapCount": 0,
+        "percentage": 0
+      },
+      "fixed_utility": {
+        "overlapCount": 2,
+        "percentage": 66.7
+      }
+    },
+    {
+      "route": "R8: Ahmedabad→Mumbai",
+      "duration_only": {
+        "overlapCount": 2,
+        "percentage": 66.7
+      },
+      "cheapest_only": {
+        "overlapCount": 0,
+        "percentage": 0
+      },
+      "fixed_utility": {
+        "overlapCount": 2,
+        "percentage": 66.7
+      }
+    },
+    {
+      "route": "R9: Hyderabad→Chennai",
+      "duration_only": {
+        "overlapCount": 3,
+        "percentage": 100
+      },
+      "cheapest_only": {
+        "overlapCount": 3,
+        "percentage": 100
+      },
+      "fixed_utility": {
+        "overlapCount": 3,
+        "percentage": 100
+      }
+    },
+    {
+      "route": "R10: Bangalore→Hyderabad",
+      "duration_only": {
+        "overlapCount": 2,
+        "percentage": 66.7
+      },
+      "cheapest_only": {
+        "overlapCount": 1,
+        "percentage": 33.3
+      },
+      "fixed_utility": {
+        "overlapCount": 1,
+        "percentage": 33.3
+      }
+    }
+  ],
+  "metric2_spearman": [
+    {
+      "route": "R1: Delhi→Jaipur",
+      "duration_only": {
+        "rho": 0.5558,
+        "n": 21
+      },
+      "cheapest_only": {
+        "rho": 0.5,
+        "n": 21
+      },
+      "fixed_utility": {
+        "rho": 0.8545,
+        "n": 21
+      }
+    },
+    {
+      "route": "R2: Delhi→Lucknow",
+      "duration_only": {
+        "rho": 0.7647,
+        "n": 40
+      },
+      "cheapest_only": {
+        "rho": 0.7976,
+        "n": 40
+      },
+      "fixed_utility": {
+        "rho": 0.9413,
+        "n": 40
+      }
+    },
+    {
+      "route": "R3: Chennai→Bangalore",
+      "duration_only": {
+        "rho": 0.5769,
+        "n": 18
+      },
+      "cheapest_only": {
+        "rho": -0.3251,
+        "n": 18
+      },
+      "fixed_utility": {
+        "rho": 0.8885,
+        "n": 18
+      }
+    },
+    {
+      "route": "R4: Delhi→Mumbai",
+      "duration_only": {
+        "rho": 0.9804,
+        "n": 17
+      },
+      "cheapest_only": {
+        "rho": 0.3652,
+        "n": 17
+      },
+      "fixed_utility": {
+        "rho": 0.973,
+        "n": 17
+      }
+    },
+    {
+      "route": "R5: Mumbai→Pune",
+      "duration_only": {
+        "rho": 0.6459,
+        "n": 52
+      },
+      "cheapest_only": {
+        "rho": 0.0506,
+        "n": 52
+      },
+      "fixed_utility": {
+        "rho": 0.9273,
+        "n": 52
+      }
+    },
+    {
+      "route": "R6: Lucknow→Delhi",
+      "duration_only": {
+        "rho": 0.6814,
+        "n": 40
+      },
+      "cheapest_only": {
+        "rho": 0.6829,
+        "n": 40
+      },
+      "fixed_utility": {
+        "rho": 0.9295,
+        "n": 40
+      }
+    },
+    {
+      "route": "R7: Delhi→Kolkata",
+      "duration_only": {
+        "rho": 0.8791,
+        "n": 13
+      },
+      "cheapest_only": {
+        "rho": -0.0879,
+        "n": 13
+      },
+      "fixed_utility": {
+        "rho": 0.967,
+        "n": 13
+      }
+    },
+    {
+      "route": "R8: Ahmedabad→Mumbai",
+      "duration_only": {
+        "rho": 0.7601,
+        "n": 42
+      },
+      "cheapest_only": {
+        "rho": 0.5031,
+        "n": 42
+      },
+      "fixed_utility": {
+        "rho": 0.9363,
+        "n": 42
+      }
+    },
+    {
+      "route": "R9: Hyderabad→Chennai",
+      "duration_only": {
+        "rho": 1,
+        "n": 3
+      },
+      "cheapest_only": {
+        "rho": 1,
+        "n": 3
+      },
+      "fixed_utility": {
+        "rho": 1,
+        "n": 3
+      }
+    },
+    {
+      "route": "R10: Bangalore→Hyderabad",
+      "duration_only": {
+        "rho": 0.8303,
+        "n": 10
+      },
+      "cheapest_only": {
+        "rho": 0.1879,
+        "n": 10
+      },
+      "fixed_utility": {
+        "rho": 0.6606,
+        "n": 10
+      }
+    }
+  ],
+  "metric3_early_arrival": [
+    {
+      "route": "R1: Delhi→Jaipur",
+      "duration_only": 0,
+      "cheapest_only": 0,
+      "fixed_utility": 0,
+      "railcompass": 0
+    },
+    {
+      "route": "R2: Delhi→Lucknow",
+      "duration_only": 0,
+      "cheapest_only": 0,
+      "fixed_utility": 0,
+      "railcompass": 0
+    },
+    {
+      "route": "R3: Chennai→Bangalore",
+      "duration_only": 0,
+      "cheapest_only": 0,
+      "fixed_utility": 3,
+      "railcompass": 4
+    },
+    {
+      "route": "R4: Delhi→Mumbai",
+      "duration_only": 0,
+      "cheapest_only": 0,
+      "fixed_utility": 0,
+      "railcompass": 0
+    },
+    {
+      "route": "R5: Mumbai→Pune",
+      "duration_only": 0,
+      "cheapest_only": 2,
+      "fixed_utility": 0,
+      "railcompass": 0
+    },
+    {
+      "route": "R6: Lucknow→Delhi",
+      "duration_only": 0,
+      "cheapest_only": 0,
+      "fixed_utility": 0,
+      "railcompass": 0
+    },
+    {
+      "route": "R7: Delhi→Kolkata",
+      "duration_only": 0,
+      "cheapest_only": 0,
+      "fixed_utility": 0,
+      "railcompass": 0
+    },
+    {
+      "route": "R8: Ahmedabad→Mumbai",
+      "duration_only": 0,
+      "cheapest_only": 0,
+      "fixed_utility": 0,
+      "railcompass": 0
+    },
+    {
+      "route": "R9: Hyderabad→Chennai",
+      "duration_only": 0,
+      "cheapest_only": 0,
+      "fixed_utility": 0,
+      "railcompass": 0
+    },
+    {
+      "route": "R10: Bangalore→Hyderabad",
+      "duration_only": 0,
+      "cheapest_only": 0,
+      "fixed_utility": 0,
+      "railcompass": 0
+    }
+  ],
+  "metric4_adaptive_effect": [
+    {
+      "route": "R1: Delhi→Jaipur",
+      "fixedTop3": [
+        "12958",
+        "12414",
+        "09722"
+      ],
+      "railcompassTop3": [
+        "12958",
+        "09722",
+        "12414"
+      ],
+      "top3Changed": false
+    },
+    {
+      "route": "R2: Delhi→Lucknow",
+      "fixedTop3": [
+        "12230",
+        "12430",
+        "12004"
+      ],
+      "railcompassTop3": [
+        "12430",
+        "12272",
+        "12230"
+      ],
+      "top3Changed": true
+    },
+    {
+      "route": "R3: Chennai→Bangalore",
+      "fixedTop3": [
+        "12657",
+        "12577",
+        "12691"
+      ],
+      "railcompassTop3": [
+        "12657",
+        "12691",
+        "22682"
+      ],
+      "top3Changed": true
+    },
+    {
+      "route": "R4: Delhi→Mumbai",
+      "fixedTop3": [
+        "12952",
+        "12910",
+        "12954"
+      ],
+      "railcompassTop3": [
+        "12952",
+        "12954",
+        "12910"
+      ],
+      "top3Changed": false
+    },
+    {
+      "route": "R5: Mumbai→Pune",
+      "fixedTop3": [
+        "12525",
+        "12127",
+        "12264"
+      ],
+      "railcompassTop3": [
+        "12264",
+        "12525",
+        "12127"
+      ],
+      "top3Changed": false
+    },
+    {
+      "route": "R6: Lucknow→Delhi",
+      "fixedTop3": [
+        "12225",
+        "12553",
+        "12429"
+      ],
+      "railcompassTop3": [
+        "12225",
+        "12553",
+        "12271"
+      ],
+      "top3Changed": true
+    },
+    {
+      "route": "R7: Delhi→Kolkata",
+      "fixedTop3": [
+        "12302",
+        "12260",
+        "12314"
+      ],
+      "railcompassTop3": [
+        "12302",
+        "12314",
+        "12306"
+      ],
+      "top3Changed": true
+    },
+    {
+      "route": "R8: Ahmedabad→Mumbai",
+      "fixedTop3": [
+        "19006",
+        "12268",
+        "12489"
+      ],
+      "railcompassTop3": [
+        "19006",
+        "12268",
+        "12215"
+      ],
+      "top3Changed": true
+    },
+    {
+      "route": "R9: Hyderabad→Chennai",
+      "fixedTop3": [
+        "12604",
+        "12760",
+        "17652"
+      ],
+      "railcompassTop3": [
+        "12604",
+        "12760",
+        "17652"
+      ],
+      "top3Changed": false
+    },
+    {
+      "route": "R10: Bangalore→Hyderabad",
+      "fixedTop3": [
+        "12213",
+        "12649",
+        "12786"
+      ],
+      "railcompassTop3": [
+        "12213",
+        "22691",
+        "12493"
+      ],
+      "top3Changed": true
+    }
+  ],
+  "metric4_summary": {
+    "totalRoutes": 10,
+    "routesWithChange": 6,
+    "percentage": 60
+  }
+}

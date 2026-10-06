@@ -1,0 +1,61 @@
+Route_ID,Origin,Destination,Ablation_ID,Ablation_Label,Top1_Train,Top1_Score,Spearman_Rho,Top3_Overlap_Pct,Top1_Changed,Rank_Changes
+R1,Delhi,Jaipur,A0,"Full RailCompass (baseline)","New Delhi-Ahmedabad Swarna Jayanti Rajdhani Expres",90,,,,
+R1,Delhi,Jaipur,A1,"No branch adaptation","New Delhi-Ahmedabad Swarna Jayanti Rajdhani Expres",90,1,100,0,0
+R1,Delhi,Jaipur,A2,"No premium bonus","New Delhi-Ahmedabad Swarna Jayanti Rajdhani Expres",90,1,100,0,0
+R1,Delhi,Jaipur,A3,"No unorthodox penalty","Rajasthan Sampark Kranti Express",91,0.5597,33.3,1,18
+R1,Delhi,Jaipur,A4,"No overnight redistribution","New Delhi-Ahmedabad Swarna Jayanti Rajdhani Expres",90,0.9896,100,0,4
+R1,Delhi,Jaipur,A5,"No daytime drop (long)","New Delhi-Ahmedabad Swarna Jayanti Rajdhani Expres",90,1,100,0,0
+R2,Delhi,Lucknow,A0,"Full RailCompass (baseline)","New Delhi - Lucknow AC SF Express",95,,,,
+R2,Delhi,Lucknow,A1,"No branch adaptation","New Delhi - Lucknow AC SF Express",95,0.9144,100,0,18
+R2,Delhi,Lucknow,A2,"No premium bonus","New Delhi - Lucknow AC SF Express",95,1,100,0,0
+R2,Delhi,Lucknow,A3,"No unorthodox penalty","New Delhi - Lucknow AC SF Express",95,0.4302,66.7,0,38
+R2,Delhi,Lucknow,A4,"No overnight redistribution","New Delhi - Lucknow AC SF Express",94,1,100,0,0
+R2,Delhi,Lucknow,A5,"No daytime drop (long)","New Delhi - Lucknow AC SF Express",95,1,100,0,0
+R3,Chennai,Bangalore,A0,"Full RailCompass (baseline)","CHENNAI - BANGALORE Mail",72,,,,
+R3,Chennai,Bangalore,A1,"No branch adaptation","CHENNAI - BANGALORE Mail",72,1,100,0,0
+R3,Chennai,Bangalore,A2,"No premium bonus","CHENNAI - BANGALORE Mail",72,1,100,0,0
+R3,Chennai,Bangalore,A3,"No unorthodox penalty","CHENNAI - BANGALORE Mail",87,0.9794,100,0,5
+R3,Chennai,Bangalore,A4,"No overnight redistribution","CHENNAI - BANGALORE Mail",71,0.9917,66.7,0,5
+R3,Chennai,Bangalore,A5,"No daytime drop (long)","CHENNAI - BANGALORE Mail",72,1,100,0,0
+R4,Delhi,Mumbai,A0,"Full RailCompass (baseline)","Mumbai Rajdhani Express",103,,,,
+R4,Delhi,Mumbai,A1,"No branch adaptation","Mumbai Rajdhani Express",86,0.8824,100,0,12
+R4,Delhi,Mumbai,A2,"No premium bonus","Mumbai Rajdhani Express",85,0.9975,100,0,2
+R4,Delhi,Mumbai,A3,"No unorthodox penalty","Mumbai Rajdhani Express",103,1,100,0,0
+R4,Delhi,Mumbai,A4,"No overnight redistribution","Mumbai Rajdhani Express",103,1,100,0,0
+R4,Delhi,Mumbai,A5,"No daytime drop (long)","Mumbai Rajdhani Express",108,0.9828,100,0,6
+R5,Mumbai,Pune,A0,"Full RailCompass (baseline)","Hazrat Nizamuddin-Pune AC Duronto Express",75,,,,
+R5,Mumbai,Pune,A1,"No branch adaptation","Hazrat Nizamuddin-Pune AC Duronto Express",75,1,100,0,0
+R5,Mumbai,Pune,A2,"No premium bonus","Hazrat Nizamuddin-Pune AC Duronto Express",75,1,100,0,0
+R5,Mumbai,Pune,A3,"No unorthodox penalty","Hazrat Nizamuddin-Pune AC Duronto Express",75,0.6377,66.7,0,49
+R5,Mumbai,Pune,A4,"No overnight redistribution","Hazrat Nizamuddin-Pune AC Duronto Express",75,0.9961,100,0,20
+R5,Mumbai,Pune,A5,"No daytime drop (long)","Hazrat Nizamuddin-Pune AC Duronto Express",75,1,100,0,0
+R6,Lucknow,Delhi,A0,"Full RailCompass (baseline)","Kaifiat Express",75,,,,
+R6,Lucknow,Delhi,A1,"No branch adaptation","Kaifiat Express",75,0.9897,100,0,11
+R6,Lucknow,Delhi,A2,"No premium bonus","Kaifiat Express",75,1,100,0,0
+R6,Lucknow,Delhi,A3,"No unorthodox penalty","Kaifiat Express",75,0.8422,66.7,0,39
+R6,Lucknow,Delhi,A4,"No overnight redistribution","Kaifiat Express",74,0.9985,100,0,8
+R6,Lucknow,Delhi,A5,"No daytime drop (long)","Kaifiat Express",75,0.9946,100,0,7
+R7,Delhi,Kolkata,A0,"Full RailCompass (baseline)","New Delhi-Howrah Rajdhani Express",102,,,,
+R7,Delhi,Kolkata,A1,"No branch adaptation","New Delhi-Sealdah AC Duronto Express",87,0.9066,33.3,1,9
+R7,Delhi,Kolkata,A2,"No premium bonus","New Delhi-Howrah Rajdhani Express",84,0.9835,66.7,0,3
+R7,Delhi,Kolkata,A3,"No unorthodox penalty","New Delhi-Howrah Rajdhani Express",102,1,100,0,0
+R7,Delhi,Kolkata,A4,"No overnight redistribution","New Delhi-Howrah Rajdhani Express",102,1,100,0,0
+R7,Delhi,Kolkata,A5,"No daytime drop (long)","New Delhi-Howrah Rajdhani Express",106,0.978,100,0,5
+R8,Ahmedabad,Mumbai,A0,"Full RailCompass (baseline)","Saurashtra Mail",93,,,,
+R8,Ahmedabad,Mumbai,A1,"No branch adaptation","Saurashtra Mail",93,0.8373,100,0,22
+R8,Ahmedabad,Mumbai,A2,"No premium bonus","Saurashtra Mail",93,1,100,0,0
+R8,Ahmedabad,Mumbai,A3,"No unorthodox penalty","Gujarat Mail",93,0.8232,33.3,1,41
+R8,Ahmedabad,Mumbai,A4,"No overnight redistribution","Saurashtra Mail",92,0.9977,100,0,12
+R8,Ahmedabad,Mumbai,A5,"No daytime drop (long)","Saurashtra Mail",93,0.9768,100,0,22
+R9,Hyderabad,Chennai,A0,"Full RailCompass (baseline)","Hyderabad - Chennai Express",91,,,,
+R9,Hyderabad,Chennai,A1,"No branch adaptation","Hyderabad - Chennai Express",69,1,100,0,0
+R9,Hyderabad,Chennai,A2,"No premium bonus","Hyderabad - Chennai Express",91,1,100,0,0
+R9,Hyderabad,Chennai,A3,"No unorthodox penalty","Hyderabad - Chennai Express",91,1,100,0,0
+R9,Hyderabad,Chennai,A4,"No overnight redistribution","Hyderabad - Chennai Express",91,1,100,0,0
+R9,Hyderabad,Chennai,A5,"No daytime drop (long)","Hyderabad - Chennai Express",83,1,100,0,0
+R10,Bangalore,Hyderabad,A0,"Full RailCompass (baseline)","Yeswantpur-Delhi Sarai Rohilla AC Duronto Express",92,,,,
+R10,Bangalore,Hyderabad,A1,"No branch adaptation","Yeswantpur-Delhi Sarai Rohilla AC Duronto Express",92,0.6606,33.3,0,9
+R10,Bangalore,Hyderabad,A2,"No premium bonus","Yeswantpur-Delhi Sarai Rohilla AC Duronto Express",92,0.5758,33.3,0,7
+R10,Bangalore,Hyderabad,A3,"No unorthodox penalty","Yeswantpur-Delhi Sarai Rohilla AC Duronto Express",92,1,100,0,0
+R10,Bangalore,Hyderabad,A4,"No overnight redistribution","Yeswantpur-Delhi Sarai Rohilla AC Duronto Express",91,1,100,0,0
+R10,Bangalore,Hyderabad,A5,"No daytime drop (long)","Bangalore - Hazrat Nizamuddin Rajdhani Express",92,0.9394,100,1,7

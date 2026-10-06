@@ -1,0 +1,117 @@
+═══════════════════════════════════════════════════════════════════════════
+  ABLATION STUDY: Effect of Removing Individual Algorithm Components
+═══════════════════════════════════════════════════════════════════════════
+
+TABLE A1: Average Impact per Ablation (across all routes with trains)
+─────────────────────────────────────────────────────────────────────────
+Ablation                            | Avg ρ    | Avg Overlap  | Top-1 Δ  | Rank Δ  
+───────────────────────────────────-+-────────-+-────────────-+-────────-+-────────
+No branch adaptation                | 0.9191   | 86.7%        | 1/10     | 8.1     
+No premium bonus                    | 0.9557   | 90.0%        | 0/10     | 1.2     
+No unorthodox penalty               | 0.8272   | 76.7%        | 2/10     | 19.0    
+No overnight redistribution         | 0.9974   | 96.7%        | 0/10     | 4.9     
+No daytime drop (long)              | 0.9872   | 100.0%       | 1/10     | 4.7     
+
+
+TABLE A2: Per-Route Ablation Detail
+─────────────────────────────────────────────────────────────────────────
+
+R1: Delhi → Jaipur (Short daytime, 21 trains)
+  Variant                              | Top-1 Train                         | Score  | ρ        | Overlap 
+  ────────────────────────────────────-+-───────────────────────────────────-+-──────-+-────────-+-────────
+  Full RailCompass (baseline)          | New Delhi-Ahmedabad Swarna Jayanti  | 90     | —        | —       
+  No branch adaptation                 | New Delhi-Ahmedabad Swarna Jayanti  | 90     | 1.0000   | 100.0%  
+  No premium bonus                     | New Delhi-Ahmedabad Swarna Jayanti  | 90     | 1.0000   | 100.0%  
+  No unorthodox penalty                | Rajasthan Sampark Kranti Express    | 91     | 0.5597   | 33.3%   
+  No overnight redistribution          | New Delhi-Ahmedabad Swarna Jayanti  | 90     | 0.9896   | 100.0%  
+  No daytime drop (long)               | New Delhi-Ahmedabad Swarna Jayanti  | 90     | 1.0000   | 100.0%  
+
+R2: Delhi → Lucknow (Short overnight, 40 trains)
+  Variant                              | Top-1 Train                         | Score  | ρ        | Overlap 
+  ────────────────────────────────────-+-───────────────────────────────────-+-──────-+-────────-+-────────
+  Full RailCompass (baseline)          | New Delhi - Lucknow AC SF Express   | 95     | —        | —       
+  No branch adaptation                 | New Delhi - Lucknow AC SF Express   | 95     | 0.9144   | 100.0%  
+  No premium bonus                     | New Delhi - Lucknow AC SF Express   | 95     | 1.0000   | 100.0%  
+  No unorthodox penalty                | New Delhi - Lucknow AC SF Express   | 95     | 0.4302   | 66.7%   
+  No overnight redistribution          | New Delhi - Lucknow AC SF Express   | 94     | 1.0000   | 100.0%  
+  No daytime drop (long)               | New Delhi - Lucknow AC SF Express   | 95     | 1.0000   | 100.0%  
+
+R3: Chennai → Bangalore (Long daytime, 18 trains)
+  Variant                              | Top-1 Train                         | Score  | ρ        | Overlap 
+  ────────────────────────────────────-+-───────────────────────────────────-+-──────-+-────────-+-────────
+  Full RailCompass (baseline)          | CHENNAI - BANGALORE Mail            | 72     | —        | —       
+  No branch adaptation                 | CHENNAI - BANGALORE Mail            | 72     | 1.0000   | 100.0%  
+  No premium bonus                     | CHENNAI - BANGALORE Mail            | 72     | 1.0000   | 100.0%  
+  No unorthodox penalty                | CHENNAI - BANGALORE Mail            | 87     | 0.9794   | 100.0%  
+  No overnight redistribution          | CHENNAI - BANGALORE Mail            | 71     | 0.9917   | 66.7%   
+  No daytime drop (long)               | CHENNAI - BANGALORE Mail            | 72     | 1.0000   | 100.0%  
+
+R4: Delhi → Mumbai (Long overnight, 17 trains)
+  Variant                              | Top-1 Train                         | Score  | ρ        | Overlap 
+  ────────────────────────────────────-+-───────────────────────────────────-+-──────-+-────────-+-────────
+  Full RailCompass (baseline)          | Mumbai Rajdhani Express             | 103    | —        | —       
+  No branch adaptation                 | Mumbai Rajdhani Express             | 86     | 0.8824   | 100.0%  
+  No premium bonus                     | Mumbai Rajdhani Express             | 85     | 0.9975   | 100.0%  
+  No unorthodox penalty                | Mumbai Rajdhani Express             | 103    | 1.0000   | 100.0%  
+  No overnight redistribution          | Mumbai Rajdhani Express             | 103    | 1.0000   | 100.0%  
+  No daytime drop (long)               | Mumbai Rajdhani Express             | 108    | 0.9828   | 100.0%  
+
+R5: Mumbai → Pune (Multi-terminal origin, 52 trains)
+  Variant                              | Top-1 Train                         | Score  | ρ        | Overlap 
+  ────────────────────────────────────-+-───────────────────────────────────-+-──────-+-────────-+-────────
+  Full RailCompass (baseline)          | Hazrat Nizamuddin-Pune AC Duronto E | 75     | —        | —       
+  No branch adaptation                 | Hazrat Nizamuddin-Pune AC Duronto E | 75     | 1.0000   | 100.0%  
+  No premium bonus                     | Hazrat Nizamuddin-Pune AC Duronto E | 75     | 1.0000   | 100.0%  
+  No unorthodox penalty                | Hazrat Nizamuddin-Pune AC Duronto E | 75     | 0.6377   | 66.7%   
+  No overnight redistribution          | Hazrat Nizamuddin-Pune AC Duronto E | 75     | 0.9961   | 100.0%  
+  No daytime drop (long)               | Hazrat Nizamuddin-Pune AC Duronto E | 75     | 1.0000   | 100.0%  
+
+R6: Lucknow → Delhi (Multi-terminal destination, 40 trains)
+  Variant                              | Top-1 Train                         | Score  | ρ        | Overlap 
+  ────────────────────────────────────-+-───────────────────────────────────-+-──────-+-────────-+-────────
+  Full RailCompass (baseline)          | Kaifiat Express                     | 75     | —        | —       
+  No branch adaptation                 | Kaifiat Express                     | 75     | 0.9897   | 100.0%  
+  No premium bonus                     | Kaifiat Express                     | 75     | 1.0000   | 100.0%  
+  No unorthodox penalty                | Kaifiat Express                     | 75     | 0.8422   | 66.7%   
+  No overnight redistribution          | Kaifiat Express                     | 74     | 0.9985   | 100.0%  
+  No daytime drop (long)               | Kaifiat Express                     | 75     | 0.9946   | 100.0%  
+
+R7: Delhi → Kolkata (Premium vs non-premium, 13 trains)
+  Variant                              | Top-1 Train                         | Score  | ρ        | Overlap 
+  ────────────────────────────────────-+-───────────────────────────────────-+-──────-+-────────-+-────────
+  Full RailCompass (baseline)          | New Delhi-Howrah Rajdhani Express   | 102    | —        | —       
+  No branch adaptation                 | New Delhi-Sealdah AC Duronto Expres | 87     | 0.9066   | 33.3%   
+  No premium bonus                     | New Delhi-Howrah Rajdhani Express   | 84     | 0.9835   | 66.7%   
+  No unorthodox penalty                | New Delhi-Howrah Rajdhani Express   | 102    | 1.0000   | 100.0%  
+  No overnight redistribution          | New Delhi-Howrah Rajdhani Express   | 102    | 1.0000   | 100.0%  
+  No daytime drop (long)               | New Delhi-Howrah Rajdhani Express   | 106    | 0.9780   | 100.0%  
+
+R8: Ahmedabad → Mumbai (Cheap vs fast trade-off, 42 trains)
+  Variant                              | Top-1 Train                         | Score  | ρ        | Overlap 
+  ────────────────────────────────────-+-───────────────────────────────────-+-──────-+-────────-+-────────
+  Full RailCompass (baseline)          | Saurashtra Mail                     | 93     | —        | —       
+  No branch adaptation                 | Saurashtra Mail                     | 93     | 0.8373   | 100.0%  
+  No premium bonus                     | Saurashtra Mail                     | 93     | 1.0000   | 100.0%  
+  No unorthodox penalty                | Gujarat Mail                        | 93     | 0.8232   | 33.3%   
+  No overnight redistribution          | Saurashtra Mail                     | 92     | 0.9977   | 100.0%  
+  No daytime drop (long)               | Saurashtra Mail                     | 93     | 0.9768   | 100.0%  
+
+R9: Hyderabad → Chennai (Early-morning arrival, 3 trains)
+  Variant                              | Top-1 Train                         | Score  | ρ        | Overlap 
+  ────────────────────────────────────-+-───────────────────────────────────-+-──────-+-────────-+-────────
+  Full RailCompass (baseline)          | Hyderabad - Chennai Express         | 91     | —        | —       
+  No branch adaptation                 | Hyderabad - Chennai Express         | 69     | 1.0000   | 100.0%  
+  No premium bonus                     | Hyderabad - Chennai Express         | 91     | 1.0000   | 100.0%  
+  No unorthodox penalty                | Hyderabad - Chennai Express         | 91     | 1.0000   | 100.0%  
+  No overnight redistribution          | Hyderabad - Chennai Express         | 91     | 1.0000   | 100.0%  
+  No daytime drop (long)               | Hyderabad - Chennai Express         | 83     | 1.0000   | 100.0%  
+
+R10: Bangalore → Hyderabad (Several similar-duration, 10 trains)
+  Variant                              | Top-1 Train                         | Score  | ρ        | Overlap 
+  ────────────────────────────────────-+-───────────────────────────────────-+-──────-+-────────-+-────────
+  Full RailCompass (baseline)          | Yeswantpur-Delhi Sarai Rohilla AC D | 92     | —        | —       
+  No branch adaptation                 | Yeswantpur-Delhi Sarai Rohilla AC D | 92     | 0.6606   | 33.3%   
+  No premium bonus                     | Yeswantpur-Delhi Sarai Rohilla AC D | 92     | 0.5758   | 33.3%   
+  No unorthodox penalty                | Yeswantpur-Delhi Sarai Rohilla AC D | 92     | 1.0000   | 100.0%  
+  No overnight redistribution          | Yeswantpur-Delhi Sarai Rohilla AC D | 91     | 1.0000   | 100.0%  
+  No daytime drop (long)               | Bangalore - Hazrat Nizamuddin Rajdh | 92     | 0.9394   | 100.0%  

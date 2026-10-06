@@ -1,0 +1,247 @@
+[
+  {
+    "routeId": "R1",
+    "routeLabel": "Delhi → Jaipur",
+    "tag": "Short daytime",
+    "train": {
+      "number": "12958",
+      "name": "New Delhi-Ahmedabad Swarna Jayanti Rajdhani Expres",
+      "type": "Rajdhani"
+    },
+    "rawAttributes": {
+      "durMins": 263,
+      "daytime": 0,
+      "budgetPrice": 915,
+      "departureTime": "20:06",
+      "arrivalTime": "00:29"
+    },
+    "typeMetrics": {
+      "reliabilityRating": 9.5,
+      "comfortRating": 9,
+      "foodRating": 8.5
+    },
+    "normalizationContext": {
+      "minDur": 250,
+      "maxDur": 1040,
+      "minDaytime": 0,
+      "maxDaytime": 10,
+      "minPrice": 235,
+      "maxPrice": 1995,
+      "totalCandidates": 21
+    },
+    "normalizedScores": {
+      "D_duration": 98.35,
+      "T_daytime": 100,
+      "B_budget": 61.36,
+      "R_reliability": 95,
+      "C_comfort": 90,
+      "F_food": 85
+    },
+    "branch": "short_standard",
+    "modifiers": {
+      "isUnorthodox": false,
+      "isPremium": true,
+      "isOvernightNoPantry": false
+    },
+    "computedScore": 89.95,
+    "finalScore": 90,
+    "actualAiScore": 90,
+    "matchReason": "Fastest route available"
+  },
+  {
+    "routeId": "R2",
+    "routeLabel": "Delhi → Lucknow",
+    "tag": "Short overnight",
+    "train": {
+      "number": "12430",
+      "name": "New Delhi - Lucknow AC SF Express",
+      "type": "Superfast"
+    },
+    "rawAttributes": {
+      "durMins": 463,
+      "daytime": 0,
+      "budgetPrice": 960,
+      "departureTime": "23:47",
+      "arrivalTime": "07:30"
+    },
+    "typeMetrics": {
+      "reliabilityRating": 8.8,
+      "comfortRating": 8.8,
+      "foodRating": 7
+    },
+    "normalizationContext": {
+      "minDur": 361,
+      "maxDur": 2000,
+      "minDaytime": 0,
+      "maxDaytime": 14,
+      "minPrice": 850,
+      "maxPrice": 3800,
+      "totalCandidates": 40
+    },
+    "normalizedScores": {
+      "D_duration": 93.78,
+      "T_daytime": 100,
+      "B_budget": 96.27,
+      "R_reliability": 88,
+      "C_comfort": 88,
+      "F_food": 70
+    },
+    "branch": "short_overnight_no_pantry",
+    "modifiers": {
+      "isUnorthodox": false,
+      "isPremium": false,
+      "isOvernightNoPantry": true
+    },
+    "computedScore": 94.68,
+    "finalScore": 95,
+    "actualAiScore": 95,
+    "matchReason": "Fastest route available"
+  },
+  {
+    "routeId": "R4",
+    "routeLabel": "Delhi → Mumbai",
+    "tag": "Long overnight",
+    "train": {
+      "number": "12952",
+      "name": "Mumbai Rajdhani Express",
+      "type": "Rajdhani"
+    },
+    "rawAttributes": {
+      "durMins": 953,
+      "daytime": 3.8833333333333364,
+      "budgetPrice": 2665,
+      "departureTime": "16:34",
+      "arrivalTime": "08:27"
+    },
+    "typeMetrics": {
+      "reliabilityRating": 9.5,
+      "comfortRating": 9,
+      "foodRating": 8.5
+    },
+    "normalizationContext": {
+      "minDur": 953,
+      "maxDur": 1830,
+      "minDaytime": 3.8833333333333364,
+      "maxDaytime": 18.166666666666664,
+      "minPrice": 1295,
+      "maxPrice": 3480,
+      "totalCandidates": 17
+    },
+    "normalizedScores": {
+      "D_duration": 100,
+      "T_daytime": 100,
+      "B_budget": 37.3,
+      "R_reliability": 95,
+      "C_comfort": 90,
+      "F_food": 85
+    },
+    "branch": "long_journey",
+    "modifiers": {
+      "isUnorthodox": false,
+      "isPremium": true,
+      "isOvernightNoPantry": false
+    },
+    "computedScore": 103.34,
+    "finalScore": 103,
+    "actualAiScore": 103,
+    "matchReason": "Premium Long-Haul Experience"
+  },
+  {
+    "routeId": "R7",
+    "routeLabel": "Delhi → Kolkata",
+    "tag": "Premium vs non-premium",
+    "train": {
+      "number": "12302",
+      "name": "New Delhi-Howrah Rajdhani Express",
+      "type": "Rajdhani"
+    },
+    "rawAttributes": {
+      "durMins": 1007,
+      "daytime": 4.783333333333331,
+      "budgetPrice": 2800,
+      "departureTime": "17:08",
+      "arrivalTime": "09:55"
+    },
+    "typeMetrics": {
+      "reliabilityRating": 9.5,
+      "comfortRating": 9,
+      "foodRating": 8.5
+    },
+    "normalizationContext": {
+      "minDur": 972,
+      "maxDur": 2305,
+      "minDaytime": 4.416666666666664,
+      "maxDaytime": 16.333333333333336,
+      "minPrice": 500,
+      "maxPrice": 3950,
+      "totalCandidates": 13
+    },
+    "normalizedScores": {
+      "D_duration": 97.37,
+      "T_daytime": 96.92,
+      "B_budget": 33.33,
+      "R_reliability": 95,
+      "C_comfort": 90,
+      "F_food": 85
+    },
+    "branch": "long_journey",
+    "modifiers": {
+      "isUnorthodox": false,
+      "isPremium": true,
+      "isOvernightNoPantry": false
+    },
+    "computedScore": 101.83,
+    "finalScore": 102,
+    "actualAiScore": 102,
+    "matchReason": "Premium Long-Haul Experience"
+  },
+  {
+    "routeId": "R9",
+    "routeLabel": "Hyderabad → Chennai",
+    "tag": "Early-morning arrival",
+    "train": {
+      "number": "12604",
+      "name": "Hyderabad - Chennai Express",
+      "type": "SF"
+    },
+    "rawAttributes": {
+      "durMins": 755,
+      "daytime": 2.666666666666668,
+      "budgetPrice": 1460,
+      "departureTime": "17:20",
+      "arrivalTime": "05:55"
+    },
+    "typeMetrics": {
+      "reliabilityRating": 8.8,
+      "comfortRating": 8.8,
+      "foodRating": 7
+    },
+    "normalizationContext": {
+      "minDur": 755,
+      "maxDur": 829,
+      "minDaytime": 1.3333333333333321,
+      "maxDaytime": 4,
+      "minPrice": 1460,
+      "maxPrice": 1600,
+      "totalCandidates": 3
+    },
+    "normalizedScores": {
+      "D_duration": 100,
+      "T_daytime": 50,
+      "B_budget": 100,
+      "R_reliability": 88,
+      "C_comfort": 88,
+      "F_food": 70
+    },
+    "branch": "long_journey",
+    "modifiers": {
+      "isUnorthodox": true,
+      "isPremium": false,
+      "isOvernightNoPantry": false
+    },
+    "computedScore": 91.3,
+    "finalScore": 91,
+    "actualAiScore": 91,
+    "matchReason": "Fastest long-haul option"
+  }
+]

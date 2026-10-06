@@ -1,0 +1,939 @@
+{
+  "id": "R10",
+  "tag": "Several similar-duration",
+  "origin": "Bangalore",
+  "destination": "Hyderabad",
+  "preferredClass": "3AC",
+  "trainCount": 10,
+  "models": {
+    "duration_only": {
+      "label": "Duration-Only",
+      "weights": {
+        "weightDuration": "1.0",
+        "weightDaytime": "0.0",
+        "weightBudget": "0.0",
+        "weightReliability": "0.0",
+        "weightComfort": "0.0",
+        "weightFood": "0.0"
+      },
+      "totalTrained": 10,
+      "ranking": [
+        {
+          "rank": 1,
+          "trainNumber": "12213",
+          "trainName": "Yeswantpur-Delhi Sarai Rohilla AC Duronto Express",
+          "type": "Drnt",
+          "departureStation": "YESVANTPUR JN",
+          "arrivalStation": "LINGAMPALLI",
+          "departureTime": "23:40",
+          "arrivalTime": "08:57",
+          "durMins": 557,
+          "daytime": 0.9500000000000028,
+          "duration": "9h 17m",
+          "price": 1090,
+          "aiScore": 100,
+          "matchReason": "Fastest route available",
+          "isUnorthodox": false,
+          "metrics": {
+            "reliabilityRating": 7.5,
+            "comfortRating": 8.2,
+            "foodRating": 6
+          }
+        },
+        {
+          "rank": 2,
+          "trainNumber": "12649",
+          "trainName": "Karnataka Sampark Kranti Express",
+          "type": "SKr",
+          "departureStation": "YESVANTPUR JN",
+          "arrivalStation": "KACHEGUDA",
+          "departureTime": "22:10",
+          "arrivalTime": "08:25",
+          "durMins": 615,
+          "daytime": 0.4166666666666643,
+          "duration": "10h 15m",
+          "price": 1200,
+          "aiScore": 72,
+          "matchReason": "Saves your daytime hours",
+          "isUnorthodox": false,
+          "metrics": {
+            "reliabilityRating": 7.5,
+            "comfortRating": 8.2,
+            "foodRating": 6
+          }
+        },
+        {
+          "rank": 3,
+          "trainNumber": "22691",
+          "trainName": "Bangalore - Hazrat Nizamuddin Rajdhani Express",
+          "type": "Rajdhani",
+          "departureStation": "YESVANTPUR JN",
+          "arrivalStation": "LINGAMPALLI",
+          "departureTime": "20:25",
+          "arrivalTime": "07:12",
+          "durMins": 647,
+          "daytime": 0,
+          "duration": "10h 47m",
+          "price": 1890,
+          "aiScore": 57,
+          "matchReason": "Saves your daytime hours",
+          "isUnorthodox": false,
+          "metrics": {
+            "reliabilityRating": 9.5,
+            "comfortRating": 9,
+            "foodRating": 8.5
+          }
+        },
+        {
+          "rank": 4,
+          "trainNumber": "12251",
+          "trainName": "Wainganga express",
+          "type": "SF",
+          "departureStation": "YESVANTPUR JN",
+          "arrivalStation": "KACHEGUDA",
+          "departureTime": "23:40",
+          "arrivalTime": "10:35",
+          "durMins": 655,
+          "daytime": 2.5833333333333357,
+          "duration": "10h 55m",
+          "price": 1275,
+          "aiScore": 53,
+          "matchReason": "Matched to Duration Preference",
+          "isUnorthodox": false,
+          "metrics": {
+            "reliabilityRating": 8.8,
+            "comfortRating": 8.8,
+            "foodRating": 7
+          }
+        },
+        {
+          "rank": 5,
+          "trainNumber": "15024",
+          "trainName": "YESVANTPUR - GORAKHPUR Exp",
+          "type": "Exp",
+          "departureStation": "YESVANTPUR JN",
+          "arrivalStation": "KACHEGUDA",
+          "departureTime": "23:40",
+          "arrivalTime": "10:35",
+          "durMins": 655,
+          "daytime": 2.5833333333333357,
+          "duration": "10h 55m",
+          "price": 1275,
+          "aiScore": 53,
+          "matchReason": "Matched to Duration Preference",
+          "isUnorthodox": false,
+          "metrics": {
+            "reliabilityRating": 7.5,
+            "comfortRating": 8.2,
+            "foodRating": 6
+          }
+        },
+        {
+          "rank": 6,
+          "trainNumber": "12493",
+          "trainName": "Bangalore-Hazrat Nizammudin Rajdhani Express",
+          "type": "Rajdhani",
+          "departureStation": "YESVANTPUR JN",
+          "arrivalStation": "KACHEGUDA",
+          "departureTime": "20:25",
+          "arrivalTime": "07:33",
+          "durMins": 668,
+          "daytime": 0,
+          "duration": "11h 8m",
+          "price": 1940,
+          "aiScore": 47,
+          "matchReason": "Saves your daytime hours",
+          "isUnorthodox": false,
+          "metrics": {
+            "reliabilityRating": 9.5,
+            "comfortRating": 9,
+            "foodRating": 8.5
+          }
+        },
+        {
+          "rank": 7,
+          "trainNumber": "12786",
+          "trainName": "Bangalore-Kacheguda SF Express",
+          "type": "Superfast",
+          "departureStation": "BANGALORE CANT",
+          "arrivalStation": "KACHEGUDA",
+          "departureTime": "18:33",
+          "arrivalTime": "05:40",
+          "durMins": 667,
+          "daytime": 1.4499999999999993,
+          "duration": "11h 7m",
+          "price": 1345,
+          "aiScore": 47,
+          "matchReason": "Matched to Duration Preference",
+          "isUnorthodox": true,
+          "metrics": {
+            "reliabilityRating": 8.8,
+            "comfortRating": 8.8,
+            "foodRating": 7
+          }
+        },
+        {
+          "rank": 8,
+          "trainNumber": "12647",
+          "trainName": "Kongu Express",
+          "type": "SF",
+          "departureStation": "BANGALORE CANT",
+          "arrivalStation": "KACHEGUDA",
+          "departureTime": "23:28",
+          "arrivalTime": "10:35",
+          "durMins": 667,
+          "daytime": 2.5833333333333357,
+          "duration": "11h 7m",
+          "price": 1295,
+          "aiScore": 47,
+          "matchReason": "Matched to Duration Preference",
+          "isUnorthodox": false,
+          "metrics": {
+            "reliabilityRating": 8.8,
+            "comfortRating": 8.8,
+            "foodRating": 7
+          }
+        },
+        {
+          "rank": 9,
+          "trainNumber": "12975",
+          "trainName": "Mysore-Jaipur SF Express",
+          "type": "Superfast",
+          "departureStation": "BANGALORE CANT",
+          "arrivalStation": "KACHEGUDA",
+          "departureTime": "13:20",
+          "arrivalTime": "02:05",
+          "durMins": 765,
+          "daytime": 6.666666666666666,
+          "duration": "12h 45m",
+          "price": 1530,
+          "aiScore": 0,
+          "matchReason": "Matched to Duration Preference",
+          "isUnorthodox": true,
+          "metrics": {
+            "reliabilityRating": 8.8,
+            "comfortRating": 8.8,
+            "foodRating": 7
+          }
+        },
+        {
+          "rank": 10,
+          "trainNumber": "17604",
+          "trainName": "Prashanti Nilayam Express",
+          "type": "Exp",
+          "departureStation": "YESVANTPUR JN",
+          "arrivalStation": "KACHEGUDA",
+          "departureTime": "16:15",
+          "arrivalTime": "05:00",
+          "durMins": 765,
+          "daytime": 3.75,
+          "duration": "12h 45m",
+          "price": 1480,
+          "aiScore": 0,
+          "matchReason": "Matched to Duration Preference",
+          "isUnorthodox": true,
+          "metrics": {
+            "reliabilityRating": 7.5,
+            "comfortRating": 8.2,
+            "foodRating": 6
+          }
+        }
+      ]
+    },
+    "cheapest_only": {
+      "label": "Cheapest-Only",
+      "weights": {
+        "weightDuration": "0.0",
+        "weightDaytime": "0.0",
+        "weightBudget": "1.0",
+        "weightReliability": "0.0",
+        "weightComfort": "0.0",
+        "weightFood": "0.0"
+      },
+      "totalTrained": 10,
+      "ranking": [
+        {
+          "rank": 1,
+          "trainNumber": "12213",
+          "trainName": "Yeswantpur-Delhi Sarai Rohilla AC Duronto Express",
+          "type": "Drnt",
+          "departureStation": "YESVANTPUR JN",
+          "arrivalStation": "LINGAMPALLI",
+          "departureTime": "23:40",
+          "arrivalTime": "08:57",
+          "durMins": 557,
+          "daytime": 0.9500000000000028,
+          "duration": "9h 17m",
+          "price": 1090,
+          "aiScore": 100,
+          "matchReason": "Fastest route available",
+          "isUnorthodox": false,
+          "metrics": {
+            "reliabilityRating": 7.5,
+            "comfortRating": 8.2,
+            "foodRating": 6
+          }
+        },
+        {
+          "rank": 2,
+          "trainNumber": "12649",
+          "trainName": "Karnataka Sampark Kranti Express",
+          "type": "SKr",
+          "departureStation": "YESVANTPUR JN",
+          "arrivalStation": "KACHEGUDA",
+          "departureTime": "22:10",
+          "arrivalTime": "08:25",
+          "durMins": 615,
+          "daytime": 0.4166666666666643,
+          "duration": "10h 15m",
+          "price": 1200,
+          "aiScore": 87,
+          "matchReason": "Saves your daytime hours",
+          "isUnorthodox": false,
+          "metrics": {
+            "reliabilityRating": 7.5,
+            "comfortRating": 8.2,
+            "foodRating": 6
+          }
+        },
+        {
+          "rank": 3,
+          "trainNumber": "12251",
+          "trainName": "Wainganga express",
+          "type": "SF",
+          "departureStation": "YESVANTPUR JN",
+          "arrivalStation": "KACHEGUDA",
+          "departureTime": "23:40",
+          "arrivalTime": "10:35",
+          "durMins": 655,
+          "daytime": 2.5833333333333357,
+          "duration": "10h 55m",
+          "price": 1275,
+          "aiScore": 78,
+          "matchReason": "Matched to Budget Preference",
+          "isUnorthodox": false,
+          "metrics": {
+            "reliabilityRating": 8.8,
+            "comfortRating": 8.8,
+            "foodRating": 7
+          }
+        },
+        {
+          "rank": 4,
+          "trainNumber": "15024",
+          "trainName": "YESVANTPUR - GORAKHPUR Exp",
+          "type": "Exp",
+          "departureStation": "YESVANTPUR JN",
+          "arrivalStation": "KACHEGUDA",
+          "departureTime": "23:40",
+          "arrivalTime": "10:35",
+          "durMins": 655,
+          "daytime": 2.5833333333333357,
+          "duration": "10h 55m",
+          "price": 1275,
+          "aiScore": 78,
+          "matchReason": "Matched to Budget Preference",
+          "isUnorthodox": false,
+          "metrics": {
+            "reliabilityRating": 7.5,
+            "comfortRating": 8.2,
+            "foodRating": 6
+          }
+        },
+        {
+          "rank": 5,
+          "trainNumber": "12647",
+          "trainName": "Kongu Express",
+          "type": "SF",
+          "departureStation": "BANGALORE CANT",
+          "arrivalStation": "KACHEGUDA",
+          "departureTime": "23:28",
+          "arrivalTime": "10:35",
+          "durMins": 667,
+          "daytime": 2.5833333333333357,
+          "duration": "11h 7m",
+          "price": 1295,
+          "aiScore": 76,
+          "matchReason": "Matched to Budget Preference",
+          "isUnorthodox": false,
+          "metrics": {
+            "reliabilityRating": 8.8,
+            "comfortRating": 8.8,
+            "foodRating": 7
+          }
+        },
+        {
+          "rank": 6,
+          "trainNumber": "12786",
+          "trainName": "Bangalore-Kacheguda SF Express",
+          "type": "Superfast",
+          "departureStation": "BANGALORE CANT",
+          "arrivalStation": "KACHEGUDA",
+          "departureTime": "18:33",
+          "arrivalTime": "05:40",
+          "durMins": 667,
+          "daytime": 1.4499999999999993,
+          "duration": "11h 7m",
+          "price": 1345,
+          "aiScore": 70,
+          "matchReason": "Matched to Budget Preference",
+          "isUnorthodox": true,
+          "metrics": {
+            "reliabilityRating": 8.8,
+            "comfortRating": 8.8,
+            "foodRating": 7
+          }
+        },
+        {
+          "rank": 7,
+          "trainNumber": "17604",
+          "trainName": "Prashanti Nilayam Express",
+          "type": "Exp",
+          "departureStation": "YESVANTPUR JN",
+          "arrivalStation": "KACHEGUDA",
+          "departureTime": "16:15",
+          "arrivalTime": "05:00",
+          "durMins": 765,
+          "daytime": 3.75,
+          "duration": "12h 45m",
+          "price": 1480,
+          "aiScore": 54,
+          "matchReason": "Matched to Budget Preference",
+          "isUnorthodox": true,
+          "metrics": {
+            "reliabilityRating": 7.5,
+            "comfortRating": 8.2,
+            "foodRating": 6
+          }
+        },
+        {
+          "rank": 8,
+          "trainNumber": "12975",
+          "trainName": "Mysore-Jaipur SF Express",
+          "type": "Superfast",
+          "departureStation": "BANGALORE CANT",
+          "arrivalStation": "KACHEGUDA",
+          "departureTime": "13:20",
+          "arrivalTime": "02:05",
+          "durMins": 765,
+          "daytime": 6.666666666666666,
+          "duration": "12h 45m",
+          "price": 1530,
+          "aiScore": 48,
+          "matchReason": "Matched to Budget Preference",
+          "isUnorthodox": true,
+          "metrics": {
+            "reliabilityRating": 8.8,
+            "comfortRating": 8.8,
+            "foodRating": 7
+          }
+        },
+        {
+          "rank": 9,
+          "trainNumber": "22691",
+          "trainName": "Bangalore - Hazrat Nizamuddin Rajdhani Express",
+          "type": "Rajdhani",
+          "departureStation": "YESVANTPUR JN",
+          "arrivalStation": "LINGAMPALLI",
+          "departureTime": "20:25",
+          "arrivalTime": "07:12",
+          "durMins": 647,
+          "daytime": 0,
+          "duration": "10h 47m",
+          "price": 1890,
+          "aiScore": 6,
+          "matchReason": "Saves your daytime hours",
+          "isUnorthodox": false,
+          "metrics": {
+            "reliabilityRating": 9.5,
+            "comfortRating": 9,
+            "foodRating": 8.5
+          }
+        },
+        {
+          "rank": 10,
+          "trainNumber": "12493",
+          "trainName": "Bangalore-Hazrat Nizammudin Rajdhani Express",
+          "type": "Rajdhani",
+          "departureStation": "YESVANTPUR JN",
+          "arrivalStation": "KACHEGUDA",
+          "departureTime": "20:25",
+          "arrivalTime": "07:33",
+          "durMins": 668,
+          "daytime": 0,
+          "duration": "11h 8m",
+          "price": 1940,
+          "aiScore": 0,
+          "matchReason": "Saves your daytime hours",
+          "isUnorthodox": false,
+          "metrics": {
+            "reliabilityRating": 9.5,
+            "comfortRating": 9,
+            "foodRating": 8.5
+          }
+        }
+      ]
+    },
+    "fixed_utility": {
+      "label": "Fixed Equal-Weight Utility",
+      "weights": {
+        "weightDuration": "0.167",
+        "weightDaytime": "0.167",
+        "weightBudget": "0.167",
+        "weightReliability": "0.167",
+        "weightComfort": "0.166",
+        "weightFood": "0.166"
+      },
+      "totalTrained": 10,
+      "ranking": [
+        {
+          "rank": 1,
+          "trainNumber": "12213",
+          "trainName": "Yeswantpur-Delhi Sarai Rohilla AC Duronto Express",
+          "type": "Drnt",
+          "departureStation": "YESVANTPUR JN",
+          "arrivalStation": "LINGAMPALLI",
+          "departureTime": "23:40",
+          "arrivalTime": "08:57",
+          "durMins": 557,
+          "daytime": 0.9500000000000028,
+          "duration": "9h 17m",
+          "price": 1090,
+          "aiScore": 84,
+          "matchReason": "Fastest route available",
+          "isUnorthodox": false,
+          "metrics": {
+            "reliabilityRating": 7.5,
+            "comfortRating": 8.2,
+            "foodRating": 6
+          }
+        },
+        {
+          "rank": 2,
+          "trainNumber": "12649",
+          "trainName": "Karnataka Sampark Kranti Express",
+          "type": "SKr",
+          "departureStation": "YESVANTPUR JN",
+          "arrivalStation": "KACHEGUDA",
+          "departureTime": "22:10",
+          "arrivalTime": "08:25",
+          "durMins": 615,
+          "daytime": 0.4166666666666643,
+          "duration": "10h 15m",
+          "price": 1200,
+          "aiScore": 78,
+          "matchReason": "Saves your daytime hours",
+          "isUnorthodox": false,
+          "metrics": {
+            "reliabilityRating": 7.5,
+            "comfortRating": 8.2,
+            "foodRating": 6
+          }
+        },
+        {
+          "rank": 3,
+          "trainNumber": "12786",
+          "trainName": "Bangalore-Kacheguda SF Express",
+          "type": "Superfast",
+          "departureStation": "BANGALORE CANT",
+          "arrivalStation": "KACHEGUDA",
+          "departureTime": "18:33",
+          "arrivalTime": "05:40",
+          "durMins": 667,
+          "daytime": 1.4499999999999993,
+          "duration": "11h 7m",
+          "price": 1345,
+          "aiScore": 74,
+          "matchReason": "Matched to Custom Preferences",
+          "isUnorthodox": true,
+          "metrics": {
+            "reliabilityRating": 8.8,
+            "comfortRating": 8.8,
+            "foodRating": 7
+          }
+        },
+        {
+          "rank": 4,
+          "trainNumber": "12251",
+          "trainName": "Wainganga express",
+          "type": "SF",
+          "departureStation": "YESVANTPUR JN",
+          "arrivalStation": "KACHEGUDA",
+          "departureTime": "23:40",
+          "arrivalTime": "10:35",
+          "durMins": 655,
+          "daytime": 2.5833333333333357,
+          "duration": "10h 55m",
+          "price": 1275,
+          "aiScore": 73,
+          "matchReason": "Matched to Custom Preferences",
+          "isUnorthodox": false,
+          "metrics": {
+            "reliabilityRating": 8.8,
+            "comfortRating": 8.8,
+            "foodRating": 7
+          }
+        },
+        {
+          "rank": 5,
+          "trainNumber": "12647",
+          "trainName": "Kongu Express",
+          "type": "SF",
+          "departureStation": "BANGALORE CANT",
+          "arrivalStation": "KACHEGUDA",
+          "departureTime": "23:28",
+          "arrivalTime": "10:35",
+          "durMins": 667,
+          "daytime": 2.5833333333333357,
+          "duration": "11h 7m",
+          "price": 1295,
+          "aiScore": 72,
+          "matchReason": "Matched to Custom Preferences",
+          "isUnorthodox": false,
+          "metrics": {
+            "reliabilityRating": 8.8,
+            "comfortRating": 8.8,
+            "foodRating": 7
+          }
+        },
+        {
+          "rank": 6,
+          "trainNumber": "22691",
+          "trainName": "Bangalore - Hazrat Nizamuddin Rajdhani Express",
+          "type": "Rajdhani",
+          "departureStation": "YESVANTPUR JN",
+          "arrivalStation": "LINGAMPALLI",
+          "departureTime": "20:25",
+          "arrivalTime": "07:12",
+          "durMins": 647,
+          "daytime": 0,
+          "duration": "10h 47m",
+          "price": 1890,
+          "aiScore": 72,
+          "matchReason": "Saves your daytime hours",
+          "isUnorthodox": false,
+          "metrics": {
+            "reliabilityRating": 9.5,
+            "comfortRating": 9,
+            "foodRating": 8.5
+          }
+        },
+        {
+          "rank": 7,
+          "trainNumber": "12493",
+          "trainName": "Bangalore-Hazrat Nizammudin Rajdhani Express",
+          "type": "Rajdhani",
+          "departureStation": "YESVANTPUR JN",
+          "arrivalStation": "KACHEGUDA",
+          "departureTime": "20:25",
+          "arrivalTime": "07:33",
+          "durMins": 668,
+          "daytime": 0,
+          "duration": "11h 8m",
+          "price": 1940,
+          "aiScore": 69,
+          "matchReason": "Saves your daytime hours",
+          "isUnorthodox": false,
+          "metrics": {
+            "reliabilityRating": 9.5,
+            "comfortRating": 9,
+            "foodRating": 8.5
+          }
+        },
+        {
+          "rank": 8,
+          "trainNumber": "15024",
+          "trainName": "YESVANTPUR - GORAKHPUR Exp",
+          "type": "Exp",
+          "departureStation": "YESVANTPUR JN",
+          "arrivalStation": "KACHEGUDA",
+          "departureTime": "23:40",
+          "arrivalTime": "10:35",
+          "durMins": 655,
+          "daytime": 2.5833333333333357,
+          "duration": "10h 55m",
+          "price": 1275,
+          "aiScore": 68,
+          "matchReason": "Matched to Custom Preferences",
+          "isUnorthodox": false,
+          "metrics": {
+            "reliabilityRating": 7.5,
+            "comfortRating": 8.2,
+            "foodRating": 6
+          }
+        },
+        {
+          "rank": 9,
+          "trainNumber": "17604",
+          "trainName": "Prashanti Nilayam Express",
+          "type": "Exp",
+          "departureStation": "YESVANTPUR JN",
+          "arrivalStation": "KACHEGUDA",
+          "departureTime": "16:15",
+          "arrivalTime": "05:00",
+          "durMins": 765,
+          "daytime": 3.75,
+          "duration": "12h 45m",
+          "price": 1480,
+          "aiScore": 52,
+          "matchReason": "Matched to Custom Preferences",
+          "isUnorthodox": true,
+          "metrics": {
+            "reliabilityRating": 7.5,
+            "comfortRating": 8.2,
+            "foodRating": 6
+          }
+        },
+        {
+          "rank": 10,
+          "trainNumber": "12975",
+          "trainName": "Mysore-Jaipur SF Express",
+          "type": "Superfast",
+          "departureStation": "BANGALORE CANT",
+          "arrivalStation": "KACHEGUDA",
+          "departureTime": "13:20",
+          "arrivalTime": "02:05",
+          "durMins": 765,
+          "daytime": 6.666666666666666,
+          "duration": "12h 45m",
+          "price": 1530,
+          "aiScore": 49,
+          "matchReason": "Matched to Custom Preferences",
+          "isUnorthodox": true,
+          "metrics": {
+            "reliabilityRating": 8.8,
+            "comfortRating": 8.8,
+            "foodRating": 7
+          }
+        }
+      ]
+    },
+    "railcompass": {
+      "label": "RailCompass (Adaptive)",
+      "weights": {},
+      "totalTrained": 10,
+      "ranking": [
+        {
+          "rank": 1,
+          "trainNumber": "12213",
+          "trainName": "Yeswantpur-Delhi Sarai Rohilla AC Duronto Express",
+          "type": "Drnt",
+          "departureStation": "YESVANTPUR JN",
+          "arrivalStation": "LINGAMPALLI",
+          "departureTime": "23:40",
+          "arrivalTime": "08:57",
+          "durMins": 557,
+          "daytime": 0.9500000000000028,
+          "duration": "9h 17m",
+          "price": 1090,
+          "aiScore": 92,
+          "matchReason": "Fastest route available",
+          "isUnorthodox": false,
+          "metrics": {
+            "reliabilityRating": 7.5,
+            "comfortRating": 8.2,
+            "foodRating": "NA"
+          }
+        },
+        {
+          "rank": 2,
+          "trainNumber": "22691",
+          "trainName": "Bangalore - Hazrat Nizamuddin Rajdhani Express",
+          "type": "Rajdhani",
+          "departureStation": "YESVANTPUR JN",
+          "arrivalStation": "LINGAMPALLI",
+          "departureTime": "20:25",
+          "arrivalTime": "07:12",
+          "durMins": 647,
+          "daytime": 0,
+          "duration": "10h 47m",
+          "price": 1890,
+          "aiScore": 83,
+          "matchReason": "Solid all-around option",
+          "isUnorthodox": false,
+          "metrics": {
+            "reliabilityRating": 9.5,
+            "comfortRating": 9,
+            "foodRating": 8.5
+          }
+        },
+        {
+          "rank": 3,
+          "trainNumber": "12493",
+          "trainName": "Bangalore-Hazrat Nizammudin Rajdhani Express",
+          "type": "Rajdhani",
+          "departureStation": "YESVANTPUR JN",
+          "arrivalStation": "KACHEGUDA",
+          "departureTime": "20:25",
+          "arrivalTime": "07:33",
+          "durMins": 668,
+          "daytime": 0,
+          "duration": "11h 8m",
+          "price": 1940,
+          "aiScore": 79,
+          "matchReason": "Solid all-around option",
+          "isUnorthodox": false,
+          "metrics": {
+            "reliabilityRating": 9.5,
+            "comfortRating": 9,
+            "foodRating": 8.5
+          }
+        },
+        {
+          "rank": 4,
+          "trainNumber": "12649",
+          "trainName": "Karnataka Sampark Kranti Express",
+          "type": "SKr",
+          "departureStation": "YESVANTPUR JN",
+          "arrivalStation": "KACHEGUDA",
+          "departureTime": "22:10",
+          "arrivalTime": "08:25",
+          "durMins": 615,
+          "daytime": 0.4166666666666643,
+          "duration": "10h 15m",
+          "price": 1200,
+          "aiScore": 75,
+          "matchReason": "Solid all-around option",
+          "isUnorthodox": false,
+          "metrics": {
+            "reliabilityRating": 7.5,
+            "comfortRating": 8.2,
+            "foodRating": 6
+          }
+        },
+        {
+          "rank": 5,
+          "trainNumber": "12251",
+          "trainName": "Wainganga express",
+          "type": "SF",
+          "departureStation": "YESVANTPUR JN",
+          "arrivalStation": "KACHEGUDA",
+          "departureTime": "23:40",
+          "arrivalTime": "10:35",
+          "durMins": 655,
+          "daytime": 2.5833333333333357,
+          "duration": "10h 55m",
+          "price": 1275,
+          "aiScore": 72,
+          "matchReason": "Solid all-around option",
+          "isUnorthodox": false,
+          "metrics": {
+            "reliabilityRating": 8.8,
+            "comfortRating": 8.8,
+            "foodRating": 7
+          }
+        },
+        {
+          "rank": 6,
+          "trainNumber": "12647",
+          "trainName": "Kongu Express",
+          "type": "SF",
+          "departureStation": "BANGALORE CANT",
+          "arrivalStation": "KACHEGUDA",
+          "departureTime": "23:28",
+          "arrivalTime": "10:35",
+          "durMins": 667,
+          "daytime": 2.5833333333333357,
+          "duration": "11h 7m",
+          "price": 1295,
+          "aiScore": 69,
+          "matchReason": "Solid all-around option",
+          "isUnorthodox": false,
+          "metrics": {
+            "reliabilityRating": 8.8,
+            "comfortRating": 8.8,
+            "foodRating": 7
+          }
+        },
+        {
+          "rank": 7,
+          "trainNumber": "12786",
+          "trainName": "Bangalore-Kacheguda SF Express",
+          "type": "Superfast",
+          "departureStation": "BANGALORE CANT",
+          "arrivalStation": "KACHEGUDA",
+          "departureTime": "18:33",
+          "arrivalTime": "05:40",
+          "durMins": 667,
+          "daytime": 1.4499999999999993,
+          "duration": "11h 7m",
+          "price": 1345,
+          "aiScore": 68,
+          "matchReason": "Solid all-around option",
+          "isUnorthodox": true,
+          "metrics": {
+            "reliabilityRating": 8.8,
+            "comfortRating": 8.8,
+            "foodRating": 7
+          }
+        },
+        {
+          "rank": 8,
+          "trainNumber": "15024",
+          "trainName": "YESVANTPUR - GORAKHPUR Exp",
+          "type": "Exp",
+          "departureStation": "YESVANTPUR JN",
+          "arrivalStation": "KACHEGUDA",
+          "departureTime": "23:40",
+          "arrivalTime": "10:35",
+          "durMins": 655,
+          "daytime": 2.5833333333333357,
+          "duration": "10h 55m",
+          "price": 1275,
+          "aiScore": 67,
+          "matchReason": "Solid all-around option",
+          "isUnorthodox": false,
+          "metrics": {
+            "reliabilityRating": 7.5,
+            "comfortRating": 8.2,
+            "foodRating": 6
+          }
+        },
+        {
+          "rank": 9,
+          "trainNumber": "12975",
+          "trainName": "Mysore-Jaipur SF Express",
+          "type": "Superfast",
+          "departureStation": "BANGALORE CANT",
+          "arrivalStation": "KACHEGUDA",
+          "departureTime": "13:20",
+          "arrivalTime": "02:05",
+          "durMins": 765,
+          "daytime": 6.666666666666666,
+          "duration": "12h 45m",
+          "price": 1530,
+          "aiScore": 49,
+          "matchReason": "Solid all-around option",
+          "isUnorthodox": true,
+          "metrics": {
+            "reliabilityRating": 8.8,
+            "comfortRating": 8.8,
+            "foodRating": 7
+          }
+        },
+        {
+          "rank": 10,
+          "trainNumber": "17604",
+          "trainName": "Prashanti Nilayam Express",
+          "type": "Exp",
+          "departureStation": "YESVANTPUR JN",
+          "arrivalStation": "KACHEGUDA",
+          "departureTime": "16:15",
+          "arrivalTime": "05:00",
+          "durMins": 765,
+          "daytime": 3.75,
+          "duration": "12h 45m",
+          "price": 1480,
+          "aiScore": 45,
+          "matchReason": "Solid all-around option",
+          "isUnorthodox": true,
+          "metrics": {
+            "reliabilityRating": 7.5,
+            "comfortRating": 8.2,
+            "foodRating": 6
+          }
+        }
+      ]
+    }
+  }
+}

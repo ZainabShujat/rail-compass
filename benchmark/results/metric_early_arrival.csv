@@ -1,0 +1,11 @@
+Route,Duration_Count,Cheapest_Count,Fixed_Count,RailCompass_Count
+"R1: Delhi→Jaipur",0,0,0,0
+"R2: Delhi→Lucknow",0,0,0,0
+"R3: Chennai→Bangalore",0,0,3,4
+"R4: Delhi→Mumbai",0,0,0,0
+"R5: Mumbai→Pune",0,2,0,0
+"R6: Lucknow→Delhi",0,0,0,0
+"R7: Delhi→Kolkata",0,0,0,0
+"R8: Ahmedabad→Mumbai",0,0,0,0
+"R9: Hyderabad→Chennai",0,0,0,0
+"R10: Bangalore→Hyderabad",0,0,0,0

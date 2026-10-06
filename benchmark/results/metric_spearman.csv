@@ -1,0 +1,11 @@
+Route,Duration_Rho,Cheapest_Rho,Fixed_Rho
+"R1: Delhi→Jaipur",0.5558,0.5000,0.8545
+"R2: Delhi→Lucknow",0.7647,0.7976,0.9413
+"R3: Chennai→Bangalore",0.5769,-0.3251,0.8885
+"R4: Delhi→Mumbai",0.9804,0.3652,0.9730
+"R5: Mumbai→Pune",0.6459,0.0506,0.9273
+"R6: Lucknow→Delhi",0.6814,0.6829,0.9295
+"R7: Delhi→Kolkata",0.8791,-0.0879,0.9670
+"R8: Ahmedabad→Mumbai",0.7601,0.5031,0.9363
+"R9: Hyderabad→Chennai",1.0000,1.0000,1.0000
+"R10: Bangalore→Hyderabad",0.8303,0.1879,0.6606

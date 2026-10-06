@@ -1,0 +1,272 @@
+═══════════════════════════════════════════════════════════════
+  WORKED EXAMPLES: Full Scoring Arithmetic Walk-Through
+═══════════════════════════════════════════════════════════════
+
+
+═════════════════════════════════════════════════════════════════
+  R1: Delhi → Jaipur  (Short daytime)
+  Train: New Delhi-Ahmedabad Swarna Jayanti Rajdhani Expres (12958)
+═════════════════════════════════════════════════════════════════
+
+  STEP 1: Raw Attributes
+  ─────────────────────────────────────────────────
+  Duration (minutes):     263
+  Daytime hours consumed: 0.00
+  Budget price (₹):       915
+  Train type:             Rajdhani
+  Departure time:         20:06
+  Arrival time:           00:29
+
+  STEP 2: Type-Derived Metrics (from getMetricsForType)
+  ─────────────────────────────────────────────────
+  Reliability rating:     9.5 / 10
+  Comfort rating:         9 / 10
+  Food rating:            8.5 / 10
+
+  STEP 3: Min–Max Normalization (across 21 candidates)
+  ─────────────────────────────────────────────────
+  Duration range:  [250, 1040] min
+  Daytime range:   [0.00, 10.00] hrs
+  Price range:     [₹235, ₹1995]
+
+  Normalized Scores (0–100, higher = better):
+    D (Duration)    = 100 - ((263 - 250) / (1040 - 250)) × 100  =  98.35
+    T (Daytime)     = 100 - ((0.00 - 0.00) / (10.00 - 0.00)) × 100  =  100.00
+    B (Budget)      = 100 - ((915 - 235) / (1995 - 235)) × 100  =  61.36
+    R (Reliability) = 9.5 × 10  =  95.00
+    C (Comfort)     = 9 × 10  =  90.00
+    F (Food)        = 8.5 × 10  =  85.00
+
+  STEP 4: Algorithm Branch Selection
+  ─────────────────────────────────────────────────
+  Journey duration: 263 min  →  ≤ 600 (SHORT journey)
+  Overnight-no-pantry check: dep=20:06, arr=00:29  →  NO (standard 6-weight)
+  Unorthodox arrival (01:00–05:59): NO
+
+  STEP 5: Weighted Utility (Standard Short Branch)
+  ─────────────────────────────────────────────────
+  U = 0.35·D + 0.25·T + 0.20·B + 0.10·R + 0.05·C + 0.05·F
+    = 0.35(98.35) + 0.25(100.00) + 0.20(61.36) + 0.10(95.00) + 0.05(90.00) + 0.05(85.00)
+    = 89.95
+
+  STEP 6: Final Score
+  ─────────────────────────────────────────────────
+  round(max(0, 89.95)) = 90
+  Match reason: "Fastest route available"
+  Actual aiScore from benchmark: 90
+
+═════════════════════════════════════════════════════════════════
+  R2: Delhi → Lucknow  (Short overnight)
+  Train: New Delhi - Lucknow AC SF Express (12430)
+═════════════════════════════════════════════════════════════════
+
+  STEP 1: Raw Attributes
+  ─────────────────────────────────────────────────
+  Duration (minutes):     463
+  Daytime hours consumed: 0.00
+  Budget price (₹):       960
+  Train type:             Superfast
+  Departure time:         23:47
+  Arrival time:           07:30
+
+  STEP 2: Type-Derived Metrics (from getMetricsForType)
+  ─────────────────────────────────────────────────
+  Reliability rating:     8.8 / 10
+  Comfort rating:         8.8 / 10
+  Food rating:            7 / 10
+
+  STEP 3: Min–Max Normalization (across 40 candidates)
+  ─────────────────────────────────────────────────
+  Duration range:  [361, 2000] min
+  Daytime range:   [0.00, 14.00] hrs
+  Price range:     [₹850, ₹3800]
+
+  Normalized Scores (0–100, higher = better):
+    D (Duration)    = 100 - ((463 - 361) / (2000 - 361)) × 100  =  93.78
+    T (Daytime)     = 100 - ((0.00 - 0.00) / (14.00 - 0.00)) × 100  =  100.00
+    B (Budget)      = 100 - ((960 - 850) / (3800 - 850)) × 100  =  96.27
+    R (Reliability) = 8.8 × 10  =  88.00
+    C (Comfort)     = 8.8 × 10  =  88.00
+    F (Food)        = 7 × 10  =  70.00
+
+  STEP 4: Algorithm Branch Selection
+  ─────────────────────────────────────────────────
+  Journey duration: 463 min  →  ≤ 600 (SHORT journey)
+  Overnight-no-pantry check: dep=23:47, arr=07:30  →  YES (food weight → comfort)
+  Unorthodox arrival (01:00–05:59): NO
+
+  STEP 5: Weighted Utility (Overnight-Short Branch)
+  ─────────────────────────────────────────────────
+  U = 0.35·D + 0.25·T + 0.20·B + 0.10·R + 0.10·C
+    = 0.35(93.78) + 0.25(100.00) + 0.20(96.27) + 0.10(88.00) + 0.10(88.00)
+    = 94.68
+
+  STEP 6: Final Score
+  ─────────────────────────────────────────────────
+  round(max(0, 94.68)) = 95
+  Match reason: "Fastest route available"
+  Actual aiScore from benchmark: 95
+
+═════════════════════════════════════════════════════════════════
+  R4: Delhi → Mumbai  (Long overnight)
+  Train: Mumbai Rajdhani Express (12952)
+═════════════════════════════════════════════════════════════════
+
+  STEP 1: Raw Attributes
+  ─────────────────────────────────────────────────
+  Duration (minutes):     953
+  Daytime hours consumed: 3.88
+  Budget price (₹):       2665
+  Train type:             Rajdhani
+  Departure time:         16:34
+  Arrival time:           08:27
+
+  STEP 2: Type-Derived Metrics (from getMetricsForType)
+  ─────────────────────────────────────────────────
+  Reliability rating:     9.5 / 10
+  Comfort rating:         9 / 10
+  Food rating:            8.5 / 10
+
+  STEP 3: Min–Max Normalization (across 17 candidates)
+  ─────────────────────────────────────────────────
+  Duration range:  [953, 1830] min
+  Daytime range:   [3.88, 18.17] hrs
+  Price range:     [₹1295, ₹3480]
+
+  Normalized Scores (0–100, higher = better):
+    D (Duration)    = 100 - ((953 - 953) / (1830 - 953)) × 100  =  100.00
+    T (Daytime)     = 100 - ((3.88 - 3.88) / (18.17 - 3.88)) × 100  =  100.00
+    B (Budget)      = 100 - ((2665 - 1295) / (3480 - 1295)) × 100  =  37.30
+    R (Reliability) = 9.5 × 10  =  95.00
+    C (Comfort)     = 9 × 10  =  90.00
+    F (Food)        = 8.5 × 10  =  85.00
+
+  STEP 4: Algorithm Branch Selection
+  ─────────────────────────────────────────────────
+  Journey duration: 953 min  →  > 600 (LONG journey)
+  Premium train: YES (+18 bonus)
+  Note: Daytime weight dropped, unorthodox penalty not applied.
+
+  STEP 5: Weighted Utility (Long Journey Branch)
+  ─────────────────────────────────────────────────
+  U = 0.35·D + 0.25·C + 0.15·B + 0.15·F + 0.10·R
+    = 0.35(100.00) + 0.25(90.00) + 0.15(37.30) + 0.15(85.00) + 0.10(95.00)
+    = 85.34
+
+  Premium bonus: 85.34 + 18 = 103.34
+
+  STEP 6: Final Score
+  ─────────────────────────────────────────────────
+  round(max(0, 103.34)) = 103
+  Match reason: "Premium Long-Haul Experience"
+  Actual aiScore from benchmark: 103
+
+═════════════════════════════════════════════════════════════════
+  R7: Delhi → Kolkata  (Premium vs non-premium)
+  Train: New Delhi-Howrah Rajdhani Express (12302)
+═════════════════════════════════════════════════════════════════
+
+  STEP 1: Raw Attributes
+  ─────────────────────────────────────────────────
+  Duration (minutes):     1007
+  Daytime hours consumed: 4.78
+  Budget price (₹):       2800
+  Train type:             Rajdhani
+  Departure time:         17:08
+  Arrival time:           09:55
+
+  STEP 2: Type-Derived Metrics (from getMetricsForType)
+  ─────────────────────────────────────────────────
+  Reliability rating:     9.5 / 10
+  Comfort rating:         9 / 10
+  Food rating:            8.5 / 10
+
+  STEP 3: Min–Max Normalization (across 13 candidates)
+  ─────────────────────────────────────────────────
+  Duration range:  [972, 2305] min
+  Daytime range:   [4.42, 16.33] hrs
+  Price range:     [₹500, ₹3950]
+
+  Normalized Scores (0–100, higher = better):
+    D (Duration)    = 100 - ((1007 - 972) / (2305 - 972)) × 100  =  97.37
+    T (Daytime)     = 100 - ((4.78 - 4.42) / (16.33 - 4.42)) × 100  =  96.92
+    B (Budget)      = 100 - ((2800 - 500) / (3950 - 500)) × 100  =  33.33
+    R (Reliability) = 9.5 × 10  =  95.00
+    C (Comfort)     = 9 × 10  =  90.00
+    F (Food)        = 8.5 × 10  =  85.00
+
+  STEP 4: Algorithm Branch Selection
+  ─────────────────────────────────────────────────
+  Journey duration: 1007 min  →  > 600 (LONG journey)
+  Premium train: YES (+18 bonus)
+  Note: Daytime weight dropped, unorthodox penalty not applied.
+
+  STEP 5: Weighted Utility (Long Journey Branch)
+  ─────────────────────────────────────────────────
+  U = 0.35·D + 0.25·C + 0.15·B + 0.15·F + 0.10·R
+    = 0.35(97.37) + 0.25(90.00) + 0.15(33.33) + 0.15(85.00) + 0.10(95.00)
+    = 83.83
+
+  Premium bonus: 83.83 + 18 = 101.83
+
+  STEP 6: Final Score
+  ─────────────────────────────────────────────────
+  round(max(0, 101.83)) = 102
+  Match reason: "Premium Long-Haul Experience"
+  Actual aiScore from benchmark: 102
+
+═════════════════════════════════════════════════════════════════
+  R9: Hyderabad → Chennai  (Early-morning arrival)
+  Train: Hyderabad - Chennai Express (12604)
+═════════════════════════════════════════════════════════════════
+
+  STEP 1: Raw Attributes
+  ─────────────────────────────────────────────────
+  Duration (minutes):     755
+  Daytime hours consumed: 2.67
+  Budget price (₹):       1460
+  Train type:             SF
+  Departure time:         17:20
+  Arrival time:           05:55
+
+  STEP 2: Type-Derived Metrics (from getMetricsForType)
+  ─────────────────────────────────────────────────
+  Reliability rating:     8.8 / 10
+  Comfort rating:         8.8 / 10
+  Food rating:            7 / 10
+
+  STEP 3: Min–Max Normalization (across 3 candidates)
+  ─────────────────────────────────────────────────
+  Duration range:  [755, 829] min
+  Daytime range:   [1.33, 4.00] hrs
+  Price range:     [₹1460, ₹1600]
+
+  Normalized Scores (0–100, higher = better):
+    D (Duration)    = 100 - ((755 - 755) / (829 - 755)) × 100  =  100.00
+    T (Daytime)     = 100 - ((2.67 - 1.33) / (4.00 - 1.33)) × 100  =  50.00
+    B (Budget)      = 100 - ((1460 - 1460) / (1600 - 1460)) × 100  =  100.00
+    R (Reliability) = 8.8 × 10  =  88.00
+    C (Comfort)     = 8.8 × 10  =  88.00
+    F (Food)        = 7 × 10  =  70.00
+
+  STEP 4: Algorithm Branch Selection
+  ─────────────────────────────────────────────────
+  Journey duration: 755 min  →  > 600 (LONG journey)
+  Premium train: NO
+  Note: Daytime weight dropped, unorthodox penalty not applied.
+
+  STEP 5: Weighted Utility (Long Journey Branch)
+  ─────────────────────────────────────────────────
+  U = 0.35·D + 0.25·C + 0.15·B + 0.15·F + 0.10·R
+    = 0.35(100.00) + 0.25(88.00) + 0.15(100.00) + 0.15(70.00) + 0.10(88.00)
+    = 91.30
+
+  STEP 6: Final Score
+  ─────────────────────────────────────────────────
+  round(max(0, 91.30)) = 91
+  Match reason: "Fastest long-haul option"
+  Actual aiScore from benchmark: 91
+
+═════════════════════════════════════════════════════════════════
+  End of worked examples.
+═════════════════════════════════════════════════════════════════

@@ -1,0 +1,11 @@
+Route,Duration_Overlap_Pct,Cheapest_Overlap_Pct,Fixed_Overlap_Pct
+"R1: Delhi→Jaipur",66.7,33.3,100.0
+"R2: Delhi→Lucknow",0.0,33.3,66.7
+"R3: Chennai→Bangalore",0.0,0.0,66.7
+"R4: Delhi→Mumbai",100.0,33.3,100.0
+"R5: Mumbai→Pune",66.7,0.0,100.0
+"R6: Lucknow→Delhi",0.0,33.3,66.7
+"R7: Delhi→Kolkata",33.3,0.0,66.7
+"R8: Ahmedabad→Mumbai",66.7,0.0,66.7
+"R9: Hyderabad→Chennai",100.0,100.0,100.0
+"R10: Bangalore→Hyderabad",66.7,33.3,33.3

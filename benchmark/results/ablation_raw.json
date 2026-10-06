@@ -1,0 +1,1617 @@
+{
+  "generated_at": "2026-10-05T19:05:50.563Z",
+  "ablations": [
+    {
+      "id": "A0",
+      "label": "Full RailCompass (baseline)",
+      "removed": "None"
+    },
+    {
+      "id": "A1",
+      "label": "No branch adaptation",
+      "removed": "Short/long branching + premium bonus"
+    },
+    {
+      "id": "A2",
+      "label": "No premium bonus",
+      "removed": "+18 premium bonus on long-haul"
+    },
+    {
+      "id": "A3",
+      "label": "No unorthodox penalty",
+      "removed": "−15 early-arrival penalty"
+    },
+    {
+      "id": "A4",
+      "label": "No overnight redistribution",
+      "removed": "Food→comfort reweight for overnight"
+    },
+    {
+      "id": "A5",
+      "label": "No daytime drop (long)",
+      "removed": "Daytime weight zeroed on long journeys"
+    }
+  ],
+  "routes": [
+    {
+      "id": "R1",
+      "tag": "Short daytime",
+      "origin": "Delhi",
+      "destination": "Jaipur",
+      "trainCount": 21,
+      "ablations": {
+        "A0": {
+          "top3": [
+            {
+              "rank": 1,
+              "trainNumber": "12958",
+              "trainName": "New Delhi-Ahmedabad Swarna Jayanti Rajdhani Expres",
+              "aiScore": 90
+            },
+            {
+              "rank": 1,
+              "trainNumber": "09722",
+              "trainName": "Delhi Sarai Rohilla -Jaipur SF Special",
+              "aiScore": 87
+            },
+            {
+              "rank": 1,
+              "trainNumber": "12414",
+              "trainName": "Pooja Express",
+              "aiScore": 86
+            }
+          ],
+          "top1": "New Delhi-Ahmedabad Swarna Jayanti Rajdhani Expres",
+          "top1Score": 90
+        },
+        "A1": {
+          "top3": [
+            {
+              "trainNumber": "12958",
+              "trainName": "New Delhi-Ahmedabad Swarna Jayanti Rajdhani Expres",
+              "aiScore": 90
+            },
+            {
+              "trainNumber": "09722",
+              "trainName": "Delhi Sarai Rohilla -Jaipur SF Special",
+              "aiScore": 87
+            },
+            {
+              "trainNumber": "12414",
+              "trainName": "Pooja Express",
+              "aiScore": 86
+            }
+          ],
+          "top1": "New Delhi-Ahmedabad Swarna Jayanti Rajdhani Expres",
+          "top1Score": 90,
+          "top3Overlap": 100,
+          "spearmanRho": 1,
+          "rankChanges": 0,
+          "top1Changed": false
+        },
+        "A2": {
+          "top3": [
+            {
+              "trainNumber": "12958",
+              "trainName": "New Delhi-Ahmedabad Swarna Jayanti Rajdhani Expres",
+              "aiScore": 90
+            },
+            {
+              "trainNumber": "09722",
+              "trainName": "Delhi Sarai Rohilla -Jaipur SF Special",
+              "aiScore": 87
+            },
+            {
+              "trainNumber": "12414",
+              "trainName": "Pooja Express",
+              "aiScore": 86
+            }
+          ],
+          "top1": "New Delhi-Ahmedabad Swarna Jayanti Rajdhani Expres",
+          "top1Score": 90,
+          "top3Overlap": 100,
+          "spearmanRho": 1,
+          "rankChanges": 0,
+          "top1Changed": false
+        },
+        "A3": {
+          "top3": [
+            {
+              "trainNumber": "12463",
+              "trainName": "Rajasthan Sampark Kranti Express",
+              "aiScore": 91
+            },
+            {
+              "trainNumber": "12463-Slip",
+              "trainName": "Rajasthan Sampark Kranti Express Slip",
+              "aiScore": 91
+            },
+            {
+              "trainNumber": "12958",
+              "trainName": "New Delhi-Ahmedabad Swarna Jayanti Rajdhani Expres",
+              "aiScore": 90
+            }
+          ],
+          "top1": "Rajasthan Sampark Kranti Express",
+          "top1Score": 91,
+          "top3Overlap": 33.3,
+          "spearmanRho": 0.5597,
+          "rankChanges": 18,
+          "top1Changed": true
+        },
+        "A4": {
+          "top3": [
+            {
+              "trainNumber": "12958",
+              "trainName": "New Delhi-Ahmedabad Swarna Jayanti Rajdhani Expres",
+              "aiScore": 90
+            },
+            {
+              "trainNumber": "09722",
+              "trainName": "Delhi Sarai Rohilla -Jaipur SF Special",
+              "aiScore": 87
+            },
+            {
+              "trainNumber": "12414",
+              "trainName": "Pooja Express",
+              "aiScore": 86
+            }
+          ],
+          "top1": "New Delhi-Ahmedabad Swarna Jayanti Rajdhani Expres",
+          "top1Score": 90,
+          "top3Overlap": 100,
+          "spearmanRho": 0.9896,
+          "rankChanges": 4,
+          "top1Changed": false
+        },
+        "A5": {
+          "top3": [
+            {
+              "trainNumber": "12958",
+              "trainName": "New Delhi-Ahmedabad Swarna Jayanti Rajdhani Expres",
+              "aiScore": 90
+            },
+            {
+              "trainNumber": "09722",
+              "trainName": "Delhi Sarai Rohilla -Jaipur SF Special",
+              "aiScore": 87
+            },
+            {
+              "trainNumber": "12414",
+              "trainName": "Pooja Express",
+              "aiScore": 86
+            }
+          ],
+          "top1": "New Delhi-Ahmedabad Swarna Jayanti Rajdhani Expres",
+          "top1Score": 90,
+          "top3Overlap": 100,
+          "spearmanRho": 1,
+          "rankChanges": 0,
+          "top1Changed": false
+        }
+      }
+    },
+    {
+      "id": "R2",
+      "tag": "Short overnight",
+      "origin": "Delhi",
+      "destination": "Lucknow",
+      "trainCount": 40,
+      "ablations": {
+        "A0": {
+          "top3": [
+            {
+              "rank": 1,
+              "trainNumber": "12430",
+              "trainName": "New Delhi - Lucknow AC SF Express",
+              "aiScore": 95
+            },
+            {
+              "rank": 1,
+              "trainNumber": "12272",
+              "trainName": "New Delhi-Lucknow AC Duronto Express",
+              "aiScore": 94
+            },
+            {
+              "rank": 1,
+              "trainNumber": "12230",
+              "trainName": "Lucknow Mail",
+              "aiScore": 94
+            }
+          ],
+          "top1": "New Delhi - Lucknow AC SF Express",
+          "top1Score": 95
+        },
+        "A1": {
+          "top3": [
+            {
+              "trainNumber": "12430",
+              "trainName": "New Delhi - Lucknow AC SF Express",
+              "aiScore": 95
+            },
+            {
+              "trainNumber": "12272",
+              "trainName": "New Delhi-Lucknow AC Duronto Express",
+              "aiScore": 94
+            },
+            {
+              "trainNumber": "12230",
+              "trainName": "Lucknow Mail",
+              "aiScore": 94
+            }
+          ],
+          "top1": "New Delhi - Lucknow AC SF Express",
+          "top1Score": 95,
+          "top3Overlap": 100,
+          "spearmanRho": 0.9144,
+          "rankChanges": 18,
+          "top1Changed": false
+        },
+        "A2": {
+          "top3": [
+            {
+              "trainNumber": "12430",
+              "trainName": "New Delhi - Lucknow AC SF Express",
+              "aiScore": 95
+            },
+            {
+              "trainNumber": "12272",
+              "trainName": "New Delhi-Lucknow AC Duronto Express",
+              "aiScore": 94
+            },
+            {
+              "trainNumber": "12230",
+              "trainName": "Lucknow Mail",
+              "aiScore": 94
+            }
+          ],
+          "top1": "New Delhi - Lucknow AC SF Express",
+          "top1Score": 95,
+          "top3Overlap": 100,
+          "spearmanRho": 1,
+          "rankChanges": 0,
+          "top1Changed": false
+        },
+        "A3": {
+          "top3": [
+            {
+              "trainNumber": "12430",
+              "trainName": "New Delhi - Lucknow AC SF Express",
+              "aiScore": 95
+            },
+            {
+              "trainNumber": "12554",
+              "trainName": "Vaishali SF Express",
+              "aiScore": 94
+            },
+            {
+              "trainNumber": "12272",
+              "trainName": "New Delhi-Lucknow AC Duronto Express",
+              "aiScore": 94
+            }
+          ],
+          "top1": "New Delhi - Lucknow AC SF Express",
+          "top1Score": 95,
+          "top3Overlap": 66.7,
+          "spearmanRho": 0.4302,
+          "rankChanges": 38,
+          "top1Changed": false
+        },
+        "A4": {
+          "top3": [
+            {
+              "trainNumber": "12430",
+              "trainName": "New Delhi - Lucknow AC SF Express",
+              "aiScore": 94
+            },
+            {
+              "trainNumber": "12272",
+              "trainName": "New Delhi-Lucknow AC Duronto Express",
+              "aiScore": 93
+            },
+            {
+              "trainNumber": "12230",
+              "trainName": "Lucknow Mail",
+              "aiScore": 93
+            }
+          ],
+          "top1": "New Delhi - Lucknow AC SF Express",
+          "top1Score": 94,
+          "top3Overlap": 100,
+          "spearmanRho": 1,
+          "rankChanges": 0,
+          "top1Changed": false
+        },
+        "A5": {
+          "top3": [
+            {
+              "trainNumber": "12430",
+              "trainName": "New Delhi - Lucknow AC SF Express",
+              "aiScore": 95
+            },
+            {
+              "trainNumber": "12272",
+              "trainName": "New Delhi-Lucknow AC Duronto Express",
+              "aiScore": 94
+            },
+            {
+              "trainNumber": "12230",
+              "trainName": "Lucknow Mail",
+              "aiScore": 94
+            }
+          ],
+          "top1": "New Delhi - Lucknow AC SF Express",
+          "top1Score": 95,
+          "top3Overlap": 100,
+          "spearmanRho": 1,
+          "rankChanges": 0,
+          "top1Changed": false
+        }
+      }
+    },
+    {
+      "id": "R3",
+      "tag": "Long daytime",
+      "origin": "Chennai",
+      "destination": "Bangalore",
+      "trainCount": 18,
+      "ablations": {
+        "A0": {
+          "top3": [
+            {
+              "rank": 1,
+              "trainNumber": "12657",
+              "trainName": "CHENNAI - BANGALORE Mail",
+              "aiScore": 72
+            },
+            {
+              "rank": 1,
+              "trainNumber": "12691",
+              "trainName": "CHENNAI - SSP NILAYAM SF Exp",
+              "aiScore": 68
+            },
+            {
+              "rank": 1,
+              "trainNumber": "22682",
+              "trainName": "CHENNAI - MYSORE Weekly SF Exp",
+              "aiScore": 68
+            }
+          ],
+          "top1": "CHENNAI - BANGALORE Mail",
+          "top1Score": 72
+        },
+        "A1": {
+          "top3": [
+            {
+              "trainNumber": "12657",
+              "trainName": "CHENNAI - BANGALORE Mail",
+              "aiScore": 72
+            },
+            {
+              "trainNumber": "12691",
+              "trainName": "CHENNAI - SSP NILAYAM SF Exp",
+              "aiScore": 68
+            },
+            {
+              "trainNumber": "22682",
+              "trainName": "CHENNAI - MYSORE Weekly SF Exp",
+              "aiScore": 68
+            }
+          ],
+          "top1": "CHENNAI - BANGALORE Mail",
+          "top1Score": 72,
+          "top3Overlap": 100,
+          "spearmanRho": 1,
+          "rankChanges": 0,
+          "top1Changed": false
+        },
+        "A2": {
+          "top3": [
+            {
+              "trainNumber": "12657",
+              "trainName": "CHENNAI - BANGALORE Mail",
+              "aiScore": 72
+            },
+            {
+              "trainNumber": "12691",
+              "trainName": "CHENNAI - SSP NILAYAM SF Exp",
+              "aiScore": 68
+            },
+            {
+              "trainNumber": "22682",
+              "trainName": "CHENNAI - MYSORE Weekly SF Exp",
+              "aiScore": 68
+            }
+          ],
+          "top1": "CHENNAI - BANGALORE Mail",
+          "top1Score": 72,
+          "top3Overlap": 100,
+          "spearmanRho": 1,
+          "rankChanges": 0,
+          "top1Changed": false
+        },
+        "A3": {
+          "top3": [
+            {
+              "trainNumber": "12657",
+              "trainName": "CHENNAI - BANGALORE Mail",
+              "aiScore": 87
+            },
+            {
+              "trainNumber": "12691",
+              "trainName": "CHENNAI - SSP NILAYAM SF Exp",
+              "aiScore": 83
+            },
+            {
+              "trainNumber": "22682",
+              "trainName": "CHENNAI - MYSORE Weekly SF Exp",
+              "aiScore": 83
+            }
+          ],
+          "top1": "CHENNAI - BANGALORE Mail",
+          "top1Score": 87,
+          "top3Overlap": 100,
+          "spearmanRho": 0.9794,
+          "rankChanges": 5,
+          "top1Changed": false
+        },
+        "A4": {
+          "top3": [
+            {
+              "trainNumber": "12657",
+              "trainName": "CHENNAI - BANGALORE Mail",
+              "aiScore": 71
+            },
+            {
+              "trainNumber": "12691",
+              "trainName": "CHENNAI - SSP NILAYAM SF Exp",
+              "aiScore": 67
+            },
+            {
+              "trainNumber": "12027",
+              "trainName": "CHENNAI CENT - BANGALORE CITY Shatabdi Exp",
+              "aiScore": 67
+            }
+          ],
+          "top1": "CHENNAI - BANGALORE Mail",
+          "top1Score": 71,
+          "top3Overlap": 66.7,
+          "spearmanRho": 0.9917,
+          "rankChanges": 5,
+          "top1Changed": false
+        },
+        "A5": {
+          "top3": [
+            {
+              "trainNumber": "12657",
+              "trainName": "CHENNAI - BANGALORE Mail",
+              "aiScore": 72
+            },
+            {
+              "trainNumber": "12691",
+              "trainName": "CHENNAI - SSP NILAYAM SF Exp",
+              "aiScore": 68
+            },
+            {
+              "trainNumber": "22682",
+              "trainName": "CHENNAI - MYSORE Weekly SF Exp",
+              "aiScore": 68
+            }
+          ],
+          "top1": "CHENNAI - BANGALORE Mail",
+          "top1Score": 72,
+          "top3Overlap": 100,
+          "spearmanRho": 1,
+          "rankChanges": 0,
+          "top1Changed": false
+        }
+      }
+    },
+    {
+      "id": "R4",
+      "tag": "Long overnight",
+      "origin": "Delhi",
+      "destination": "Mumbai",
+      "trainCount": 17,
+      "ablations": {
+        "A0": {
+          "top3": [
+            {
+              "rank": 1,
+              "trainNumber": "12952",
+              "trainName": "Mumbai Rajdhani Express",
+              "aiScore": 103
+            },
+            {
+              "rank": 1,
+              "trainNumber": "12954",
+              "trainName": "August Kranti Rajdhani Express",
+              "aiScore": 98
+            },
+            {
+              "rank": 1,
+              "trainNumber": "12910",
+              "trainName": "H.Nizamuddin-Bandra Terminus Garib Rath Express",
+              "aiScore": 81
+            }
+          ],
+          "top1": "Mumbai Rajdhani Express",
+          "top1Score": 103
+        },
+        "A1": {
+          "top3": [
+            {
+              "trainNumber": "12952",
+              "trainName": "Mumbai Rajdhani Express",
+              "aiScore": 86
+            },
+            {
+              "trainNumber": "12910",
+              "trainName": "H.Nizamuddin-Bandra Terminus Garib Rath Express",
+              "aiScore": 86
+            },
+            {
+              "trainNumber": "12954",
+              "trainName": "August Kranti Rajdhani Express",
+              "aiScore": 77
+            }
+          ],
+          "top1": "Mumbai Rajdhani Express",
+          "top1Score": 86,
+          "top3Overlap": 100,
+          "spearmanRho": 0.8824,
+          "rankChanges": 12,
+          "top1Changed": false
+        },
+        "A2": {
+          "top3": [
+            {
+              "trainNumber": "12952",
+              "trainName": "Mumbai Rajdhani Express",
+              "aiScore": 85
+            },
+            {
+              "trainNumber": "12910",
+              "trainName": "H.Nizamuddin-Bandra Terminus Garib Rath Express",
+              "aiScore": 81
+            },
+            {
+              "trainNumber": "12954",
+              "trainName": "August Kranti Rajdhani Express",
+              "aiScore": 80
+            }
+          ],
+          "top1": "Mumbai Rajdhani Express",
+          "top1Score": 85,
+          "top3Overlap": 100,
+          "spearmanRho": 0.9975,
+          "rankChanges": 2,
+          "top1Changed": false
+        },
+        "A3": {
+          "top3": [
+            {
+              "trainNumber": "12952",
+              "trainName": "Mumbai Rajdhani Express",
+              "aiScore": 103
+            },
+            {
+              "trainNumber": "12954",
+              "trainName": "August Kranti Rajdhani Express",
+              "aiScore": 98
+            },
+            {
+              "trainNumber": "12910",
+              "trainName": "H.Nizamuddin-Bandra Terminus Garib Rath Express",
+              "aiScore": 81
+            }
+          ],
+          "top1": "Mumbai Rajdhani Express",
+          "top1Score": 103,
+          "top3Overlap": 100,
+          "spearmanRho": 1,
+          "rankChanges": 0,
+          "top1Changed": false
+        },
+        "A4": {
+          "top3": [
+            {
+              "trainNumber": "12952",
+              "trainName": "Mumbai Rajdhani Express",
+              "aiScore": 103
+            },
+            {
+              "trainNumber": "12954",
+              "trainName": "August Kranti Rajdhani Express",
+              "aiScore": 98
+            },
+            {
+              "trainNumber": "12910",
+              "trainName": "H.Nizamuddin-Bandra Terminus Garib Rath Express",
+              "aiScore": 81
+            }
+          ],
+          "top1": "Mumbai Rajdhani Express",
+          "top1Score": 103,
+          "top3Overlap": 100,
+          "spearmanRho": 1,
+          "rankChanges": 0,
+          "top1Changed": false
+        },
+        "A5": {
+          "top3": [
+            {
+              "trainNumber": "12952",
+              "trainName": "Mumbai Rajdhani Express",
+              "aiScore": 108
+            },
+            {
+              "trainNumber": "12954",
+              "trainName": "August Kranti Rajdhani Express",
+              "aiScore": 102
+            },
+            {
+              "trainNumber": "12910",
+              "trainName": "H.Nizamuddin-Bandra Terminus Garib Rath Express",
+              "aiScore": 85
+            }
+          ],
+          "top1": "Mumbai Rajdhani Express",
+          "top1Score": 108,
+          "top3Overlap": 100,
+          "spearmanRho": 0.9828,
+          "rankChanges": 6,
+          "top1Changed": false
+        }
+      }
+    },
+    {
+      "id": "R5",
+      "tag": "Multi-terminal origin",
+      "origin": "Mumbai",
+      "destination": "Pune",
+      "trainCount": 52,
+      "ablations": {
+        "A0": {
+          "top3": [
+            {
+              "rank": 1,
+              "trainNumber": "12264",
+              "trainName": "Hazrat Nizamuddin-Pune AC Duronto Express",
+              "aiScore": 75
+            },
+            {
+              "rank": 1,
+              "trainNumber": "12525",
+              "trainName": "Indrayani SF Express",
+              "aiScore": 71
+            },
+            {
+              "rank": 1,
+              "trainNumber": "12127",
+              "trainName": "MumbaiCST-Pune SF InterCity",
+              "aiScore": 65
+            }
+          ],
+          "top1": "Hazrat Nizamuddin-Pune AC Duronto Express",
+          "top1Score": 75
+        },
+        "A1": {
+          "top3": [
+            {
+              "trainNumber": "12264",
+              "trainName": "Hazrat Nizamuddin-Pune AC Duronto Express",
+              "aiScore": 75
+            },
+            {
+              "trainNumber": "12525",
+              "trainName": "Indrayani SF Express",
+              "aiScore": 71
+            },
+            {
+              "trainNumber": "12127",
+              "trainName": "MumbaiCST-Pune SF InterCity",
+              "aiScore": 65
+            }
+          ],
+          "top1": "Hazrat Nizamuddin-Pune AC Duronto Express",
+          "top1Score": 75,
+          "top3Overlap": 100,
+          "spearmanRho": 1,
+          "rankChanges": 0,
+          "top1Changed": false
+        },
+        "A2": {
+          "top3": [
+            {
+              "trainNumber": "12264",
+              "trainName": "Hazrat Nizamuddin-Pune AC Duronto Express",
+              "aiScore": 75
+            },
+            {
+              "trainNumber": "12525",
+              "trainName": "Indrayani SF Express",
+              "aiScore": 71
+            },
+            {
+              "trainNumber": "12127",
+              "trainName": "MumbaiCST-Pune SF InterCity",
+              "aiScore": 65
+            }
+          ],
+          "top1": "Hazrat Nizamuddin-Pune AC Duronto Express",
+          "top1Score": 75,
+          "top3Overlap": 100,
+          "spearmanRho": 1,
+          "rankChanges": 0,
+          "top1Changed": false
+        },
+        "A3": {
+          "top3": [
+            {
+              "trainNumber": "12264",
+              "trainName": "Hazrat Nizamuddin-Pune AC Duronto Express",
+              "aiScore": 75
+            },
+            {
+              "trainNumber": "12525",
+              "trainName": "Indrayani SF Express",
+              "aiScore": 71
+            },
+            {
+              "trainNumber": "12219",
+              "trainName": "Lokmanya Tilak (T)-Secunderabad AC Duronto Express",
+              "aiScore": 70
+            }
+          ],
+          "top1": "Hazrat Nizamuddin-Pune AC Duronto Express",
+          "top1Score": 75,
+          "top3Overlap": 66.7,
+          "spearmanRho": 0.6377,
+          "rankChanges": 49,
+          "top1Changed": false
+        },
+        "A4": {
+          "top3": [
+            {
+              "trainNumber": "12264",
+              "trainName": "Hazrat Nizamuddin-Pune AC Duronto Express",
+              "aiScore": 75
+            },
+            {
+              "trainNumber": "12525",
+              "trainName": "Indrayani SF Express",
+              "aiScore": 71
+            },
+            {
+              "trainNumber": "12127",
+              "trainName": "MumbaiCST-Pune SF InterCity",
+              "aiScore": 65
+            }
+          ],
+          "top1": "Hazrat Nizamuddin-Pune AC Duronto Express",
+          "top1Score": 75,
+          "top3Overlap": 100,
+          "spearmanRho": 0.9961,
+          "rankChanges": 20,
+          "top1Changed": false
+        },
+        "A5": {
+          "top3": [
+            {
+              "trainNumber": "12264",
+              "trainName": "Hazrat Nizamuddin-Pune AC Duronto Express",
+              "aiScore": 75
+            },
+            {
+              "trainNumber": "12525",
+              "trainName": "Indrayani SF Express",
+              "aiScore": 71
+            },
+            {
+              "trainNumber": "12127",
+              "trainName": "MumbaiCST-Pune SF InterCity",
+              "aiScore": 65
+            }
+          ],
+          "top1": "Hazrat Nizamuddin-Pune AC Duronto Express",
+          "top1Score": 75,
+          "top3Overlap": 100,
+          "spearmanRho": 1,
+          "rankChanges": 0,
+          "top1Changed": false
+        }
+      }
+    },
+    {
+      "id": "R6",
+      "tag": "Multi-terminal destination",
+      "origin": "Lucknow",
+      "destination": "Delhi",
+      "trainCount": 40,
+      "ablations": {
+        "A0": {
+          "top3": [
+            {
+              "rank": 1,
+              "trainNumber": "12225",
+              "trainName": "Kaifiat Express",
+              "aiScore": 75
+            },
+            {
+              "rank": 1,
+              "trainNumber": "12553",
+              "trainName": "Vaishali SF Express",
+              "aiScore": 74
+            },
+            {
+              "rank": 1,
+              "trainNumber": "12271",
+              "trainName": "Lucknow-New Delhi AC Duronto Express",
+              "aiScore": 72
+            }
+          ],
+          "top1": "Kaifiat Express",
+          "top1Score": 75
+        },
+        "A1": {
+          "top3": [
+            {
+              "trainNumber": "12225",
+              "trainName": "Kaifiat Express",
+              "aiScore": 75
+            },
+            {
+              "trainNumber": "12553",
+              "trainName": "Vaishali SF Express",
+              "aiScore": 74
+            },
+            {
+              "trainNumber": "12271",
+              "trainName": "Lucknow-New Delhi AC Duronto Express",
+              "aiScore": 72
+            }
+          ],
+          "top1": "Kaifiat Express",
+          "top1Score": 75,
+          "top3Overlap": 100,
+          "spearmanRho": 0.9897,
+          "rankChanges": 11,
+          "top1Changed": false
+        },
+        "A2": {
+          "top3": [
+            {
+              "trainNumber": "12225",
+              "trainName": "Kaifiat Express",
+              "aiScore": 75
+            },
+            {
+              "trainNumber": "12553",
+              "trainName": "Vaishali SF Express",
+              "aiScore": 74
+            },
+            {
+              "trainNumber": "12271",
+              "trainName": "Lucknow-New Delhi AC Duronto Express",
+              "aiScore": 72
+            }
+          ],
+          "top1": "Kaifiat Express",
+          "top1Score": 75,
+          "top3Overlap": 100,
+          "spearmanRho": 1,
+          "rankChanges": 0,
+          "top1Changed": false
+        },
+        "A3": {
+          "top3": [
+            {
+              "trainNumber": "12225",
+              "trainName": "Kaifiat Express",
+              "aiScore": 75
+            },
+            {
+              "trainNumber": "12555",
+              "trainName": "Gorakhdham Express",
+              "aiScore": 74
+            },
+            {
+              "trainNumber": "12553",
+              "trainName": "Vaishali SF Express",
+              "aiScore": 74
+            }
+          ],
+          "top1": "Kaifiat Express",
+          "top1Score": 75,
+          "top3Overlap": 66.7,
+          "spearmanRho": 0.8422,
+          "rankChanges": 39,
+          "top1Changed": false
+        },
+        "A4": {
+          "top3": [
+            {
+              "trainNumber": "12225",
+              "trainName": "Kaifiat Express",
+              "aiScore": 74
+            },
+            {
+              "trainNumber": "12553",
+              "trainName": "Vaishali SF Express",
+              "aiScore": 73
+            },
+            {
+              "trainNumber": "12271",
+              "trainName": "Lucknow-New Delhi AC Duronto Express",
+              "aiScore": 71
+            }
+          ],
+          "top1": "Kaifiat Express",
+          "top1Score": 74,
+          "top3Overlap": 100,
+          "spearmanRho": 0.9985,
+          "rankChanges": 8,
+          "top1Changed": false
+        },
+        "A5": {
+          "top3": [
+            {
+              "trainNumber": "12225",
+              "trainName": "Kaifiat Express",
+              "aiScore": 75
+            },
+            {
+              "trainNumber": "12553",
+              "trainName": "Vaishali SF Express",
+              "aiScore": 74
+            },
+            {
+              "trainNumber": "12271",
+              "trainName": "Lucknow-New Delhi AC Duronto Express",
+              "aiScore": 72
+            }
+          ],
+          "top1": "Kaifiat Express",
+          "top1Score": 75,
+          "top3Overlap": 100,
+          "spearmanRho": 0.9946,
+          "rankChanges": 7,
+          "top1Changed": false
+        }
+      }
+    },
+    {
+      "id": "R7",
+      "tag": "Premium vs non-premium",
+      "origin": "Delhi",
+      "destination": "Kolkata",
+      "trainCount": 13,
+      "ablations": {
+        "A0": {
+          "top3": [
+            {
+              "rank": 1,
+              "trainNumber": "12302",
+              "trainName": "New Delhi-Howrah Rajdhani Express",
+              "aiScore": 102
+            },
+            {
+              "rank": 1,
+              "trainNumber": "12314",
+              "trainName": "NEW DELHI - KOL SEALDAH Rajdhani Exp",
+              "aiScore": 100
+            },
+            {
+              "rank": 1,
+              "trainNumber": "12306",
+              "trainName": "New Delhi-Howrah Rajdhani Express",
+              "aiScore": 96
+            }
+          ],
+          "top1": "New Delhi-Howrah Rajdhani Express",
+          "top1Score": 102
+        },
+        "A1": {
+          "top3": [
+            {
+              "trainNumber": "12260",
+              "trainName": "New Delhi-Sealdah AC Duronto Express",
+              "aiScore": 87
+            },
+            {
+              "trainNumber": "12302",
+              "trainName": "New Delhi-Howrah Rajdhani Express",
+              "aiScore": 83
+            },
+            {
+              "trainNumber": "12274",
+              "trainName": "New Delhi-Howrah Duronto Express",
+              "aiScore": 80
+            }
+          ],
+          "top1": "New Delhi-Sealdah AC Duronto Express",
+          "top1Score": 87,
+          "top3Overlap": 33.3,
+          "spearmanRho": 0.9066,
+          "rankChanges": 9,
+          "top1Changed": true
+        },
+        "A2": {
+          "top3": [
+            {
+              "trainNumber": "12302",
+              "trainName": "New Delhi-Howrah Rajdhani Express",
+              "aiScore": 84
+            },
+            {
+              "trainNumber": "12314",
+              "trainName": "NEW DELHI - KOL SEALDAH Rajdhani Exp",
+              "aiScore": 82
+            },
+            {
+              "trainNumber": "12260",
+              "trainName": "New Delhi-Sealdah AC Duronto Express",
+              "aiScore": 81
+            }
+          ],
+          "top1": "New Delhi-Howrah Rajdhani Express",
+          "top1Score": 84,
+          "top3Overlap": 66.7,
+          "spearmanRho": 0.9835,
+          "rankChanges": 3,
+          "top1Changed": false
+        },
+        "A3": {
+          "top3": [
+            {
+              "trainNumber": "12302",
+              "trainName": "New Delhi-Howrah Rajdhani Express",
+              "aiScore": 102
+            },
+            {
+              "trainNumber": "12314",
+              "trainName": "NEW DELHI - KOL SEALDAH Rajdhani Exp",
+              "aiScore": 100
+            },
+            {
+              "trainNumber": "12306",
+              "trainName": "New Delhi-Howrah Rajdhani Express",
+              "aiScore": 96
+            }
+          ],
+          "top1": "New Delhi-Howrah Rajdhani Express",
+          "top1Score": 102,
+          "top3Overlap": 100,
+          "spearmanRho": 1,
+          "rankChanges": 0,
+          "top1Changed": false
+        },
+        "A4": {
+          "top3": [
+            {
+              "trainNumber": "12302",
+              "trainName": "New Delhi-Howrah Rajdhani Express",
+              "aiScore": 102
+            },
+            {
+              "trainNumber": "12314",
+              "trainName": "NEW DELHI - KOL SEALDAH Rajdhani Exp",
+              "aiScore": 100
+            },
+            {
+              "trainNumber": "12306",
+              "trainName": "New Delhi-Howrah Rajdhani Express",
+              "aiScore": 96
+            }
+          ],
+          "top1": "New Delhi-Howrah Rajdhani Express",
+          "top1Score": 102,
+          "top3Overlap": 100,
+          "spearmanRho": 1,
+          "rankChanges": 0,
+          "top1Changed": false
+        },
+        "A5": {
+          "top3": [
+            {
+              "trainNumber": "12302",
+              "trainName": "New Delhi-Howrah Rajdhani Express",
+              "aiScore": 106
+            },
+            {
+              "trainNumber": "12314",
+              "trainName": "NEW DELHI - KOL SEALDAH Rajdhani Exp",
+              "aiScore": 103
+            },
+            {
+              "trainNumber": "12306",
+              "trainName": "New Delhi-Howrah Rajdhani Express",
+              "aiScore": 96
+            }
+          ],
+          "top1": "New Delhi-Howrah Rajdhani Express",
+          "top1Score": 106,
+          "top3Overlap": 100,
+          "spearmanRho": 0.978,
+          "rankChanges": 5,
+          "top1Changed": false
+        }
+      }
+    },
+    {
+      "id": "R8",
+      "tag": "Cheap vs fast trade-off",
+      "origin": "Ahmedabad",
+      "destination": "Mumbai",
+      "trainCount": 42,
+      "ablations": {
+        "A0": {
+          "top3": [
+            {
+              "rank": 1,
+              "trainNumber": "19006",
+              "trainName": "Saurashtra Mail",
+              "aiScore": 93
+            },
+            {
+              "rank": 1,
+              "trainNumber": "12268",
+              "trainName": "Ahmedabad-Mumbai Central AC Duronto Express",
+              "aiScore": 92
+            },
+            {
+              "rank": 1,
+              "trainNumber": "12215",
+              "trainName": "Delhi Sarai Rohilla-Mumbai BandraT Garib Rath",
+              "aiScore": 91
+            }
+          ],
+          "top1": "Saurashtra Mail",
+          "top1Score": 93
+        },
+        "A1": {
+          "top3": [
+            {
+              "trainNumber": "19006",
+              "trainName": "Saurashtra Mail",
+              "aiScore": 93
+            },
+            {
+              "trainNumber": "12268",
+              "trainName": "Ahmedabad-Mumbai Central AC Duronto Express",
+              "aiScore": 92
+            },
+            {
+              "trainNumber": "12215",
+              "trainName": "Delhi Sarai Rohilla-Mumbai BandraT Garib Rath",
+              "aiScore": 91
+            }
+          ],
+          "top1": "Saurashtra Mail",
+          "top1Score": 93,
+          "top3Overlap": 100,
+          "spearmanRho": 0.8373,
+          "rankChanges": 22,
+          "top1Changed": false
+        },
+        "A2": {
+          "top3": [
+            {
+              "trainNumber": "19006",
+              "trainName": "Saurashtra Mail",
+              "aiScore": 93
+            },
+            {
+              "trainNumber": "12268",
+              "trainName": "Ahmedabad-Mumbai Central AC Duronto Express",
+              "aiScore": 92
+            },
+            {
+              "trainNumber": "12215",
+              "trainName": "Delhi Sarai Rohilla-Mumbai BandraT Garib Rath",
+              "aiScore": 91
+            }
+          ],
+          "top1": "Saurashtra Mail",
+          "top1Score": 93,
+          "top3Overlap": 100,
+          "spearmanRho": 1,
+          "rankChanges": 0,
+          "top1Changed": false
+        },
+        "A3": {
+          "top3": [
+            {
+              "trainNumber": "12902",
+              "trainName": "Gujarat Mail",
+              "aiScore": 93
+            },
+            {
+              "trainNumber": "19006",
+              "trainName": "Saurashtra Mail",
+              "aiScore": 93
+            },
+            {
+              "trainNumber": "09002",
+              "trainName": "Ahmedabad Mumbai Central Superfast Special",
+              "aiScore": 92
+            }
+          ],
+          "top1": "Gujarat Mail",
+          "top1Score": 93,
+          "top3Overlap": 33.3,
+          "spearmanRho": 0.8232,
+          "rankChanges": 41,
+          "top1Changed": true
+        },
+        "A4": {
+          "top3": [
+            {
+              "trainNumber": "19006",
+              "trainName": "Saurashtra Mail",
+              "aiScore": 92
+            },
+            {
+              "trainNumber": "12268",
+              "trainName": "Ahmedabad-Mumbai Central AC Duronto Express",
+              "aiScore": 91
+            },
+            {
+              "trainNumber": "12215",
+              "trainName": "Delhi Sarai Rohilla-Mumbai BandraT Garib Rath",
+              "aiScore": 89
+            }
+          ],
+          "top1": "Saurashtra Mail",
+          "top1Score": 92,
+          "top3Overlap": 100,
+          "spearmanRho": 0.9977,
+          "rankChanges": 12,
+          "top1Changed": false
+        },
+        "A5": {
+          "top3": [
+            {
+              "trainNumber": "19006",
+              "trainName": "Saurashtra Mail",
+              "aiScore": 93
+            },
+            {
+              "trainNumber": "12268",
+              "trainName": "Ahmedabad-Mumbai Central AC Duronto Express",
+              "aiScore": 92
+            },
+            {
+              "trainNumber": "12215",
+              "trainName": "Delhi Sarai Rohilla-Mumbai BandraT Garib Rath",
+              "aiScore": 91
+            }
+          ],
+          "top1": "Saurashtra Mail",
+          "top1Score": 93,
+          "top3Overlap": 100,
+          "spearmanRho": 0.9768,
+          "rankChanges": 22,
+          "top1Changed": false
+        }
+      }
+    },
+    {
+      "id": "R9",
+      "tag": "Early-morning arrival",
+      "origin": "Hyderabad",
+      "destination": "Chennai",
+      "trainCount": 3,
+      "ablations": {
+        "A0": {
+          "top3": [
+            {
+              "rank": 1,
+              "trainNumber": "12604",
+              "trainName": "Hyderabad - Chennai Express",
+              "aiScore": 91
+            },
+            {
+              "rank": 1,
+              "trainNumber": "12760",
+              "trainName": "Charminar Express",
+              "aiScore": 61
+            },
+            {
+              "rank": 1,
+              "trainNumber": "17652",
+              "trainName": "Kacheguda Chennai Egmore Express",
+              "aiScore": 37
+            }
+          ],
+          "top1": "Hyderabad - Chennai Express",
+          "top1Score": 91
+        },
+        "A1": {
+          "top3": [
+            {
+              "trainNumber": "12604",
+              "trainName": "Hyderabad - Chennai Express",
+              "aiScore": 69
+            },
+            {
+              "trainNumber": "12760",
+              "trainName": "Charminar Express",
+              "aiScore": 63
+            },
+            {
+              "trainNumber": "17652",
+              "trainName": "Kacheguda Chennai Egmore Express",
+              "aiScore": 0
+            }
+          ],
+          "top1": "Hyderabad - Chennai Express",
+          "top1Score": 69,
+          "top3Overlap": 100,
+          "spearmanRho": 1,
+          "rankChanges": 0,
+          "top1Changed": false
+        },
+        "A2": {
+          "top3": [
+            {
+              "trainNumber": "12604",
+              "trainName": "Hyderabad - Chennai Express",
+              "aiScore": 91
+            },
+            {
+              "trainNumber": "12760",
+              "trainName": "Charminar Express",
+              "aiScore": 61
+            },
+            {
+              "trainNumber": "17652",
+              "trainName": "Kacheguda Chennai Egmore Express",
+              "aiScore": 37
+            }
+          ],
+          "top1": "Hyderabad - Chennai Express",
+          "top1Score": 91,
+          "top3Overlap": 100,
+          "spearmanRho": 1,
+          "rankChanges": 0,
+          "top1Changed": false
+        },
+        "A3": {
+          "top3": [
+            {
+              "trainNumber": "12604",
+              "trainName": "Hyderabad - Chennai Express",
+              "aiScore": 91
+            },
+            {
+              "trainNumber": "12760",
+              "trainName": "Charminar Express",
+              "aiScore": 61
+            },
+            {
+              "trainNumber": "17652",
+              "trainName": "Kacheguda Chennai Egmore Express",
+              "aiScore": 37
+            }
+          ],
+          "top1": "Hyderabad - Chennai Express",
+          "top1Score": 91,
+          "top3Overlap": 100,
+          "spearmanRho": 1,
+          "rankChanges": 0,
+          "top1Changed": false
+        },
+        "A4": {
+          "top3": [
+            {
+              "trainNumber": "12604",
+              "trainName": "Hyderabad - Chennai Express",
+              "aiScore": 91
+            },
+            {
+              "trainNumber": "12760",
+              "trainName": "Charminar Express",
+              "aiScore": 61
+            },
+            {
+              "trainNumber": "17652",
+              "trainName": "Kacheguda Chennai Egmore Express",
+              "aiScore": 37
+            }
+          ],
+          "top1": "Hyderabad - Chennai Express",
+          "top1Score": 91,
+          "top3Overlap": 100,
+          "spearmanRho": 1,
+          "rankChanges": 0,
+          "top1Changed": false
+        },
+        "A5": {
+          "top3": [
+            {
+              "trainNumber": "12604",
+              "trainName": "Hyderabad - Chennai Express",
+              "aiScore": 83
+            },
+            {
+              "trainNumber": "12760",
+              "trainName": "Charminar Express",
+              "aiScore": 69
+            },
+            {
+              "trainNumber": "17652",
+              "trainName": "Kacheguda Chennai Egmore Express",
+              "aiScore": 30
+            }
+          ],
+          "top1": "Hyderabad - Chennai Express",
+          "top1Score": 83,
+          "top3Overlap": 100,
+          "spearmanRho": 1,
+          "rankChanges": 0,
+          "top1Changed": false
+        }
+      }
+    },
+    {
+      "id": "R10",
+      "tag": "Several similar-duration",
+      "origin": "Bangalore",
+      "destination": "Hyderabad",
+      "trainCount": 10,
+      "ablations": {
+        "A0": {
+          "top3": [
+            {
+              "rank": 1,
+              "trainNumber": "12213",
+              "trainName": "Yeswantpur-Delhi Sarai Rohilla AC Duronto Express",
+              "aiScore": 92
+            },
+            {
+              "rank": 1,
+              "trainNumber": "22691",
+              "trainName": "Bangalore - Hazrat Nizamuddin Rajdhani Express",
+              "aiScore": 83
+            },
+            {
+              "rank": 1,
+              "trainNumber": "12493",
+              "trainName": "Bangalore-Hazrat Nizammudin Rajdhani Express",
+              "aiScore": 79
+            }
+          ],
+          "top1": "Yeswantpur-Delhi Sarai Rohilla AC Duronto Express",
+          "top1Score": 92
+        },
+        "A1": {
+          "top3": [
+            {
+              "trainNumber": "12213",
+              "trainName": "Yeswantpur-Delhi Sarai Rohilla AC Duronto Express",
+              "aiScore": 92
+            },
+            {
+              "trainNumber": "12649",
+              "trainName": "Karnataka Sampark Kranti Express",
+              "aiScore": 82
+            },
+            {
+              "trainNumber": "12251",
+              "trainName": "Wainganga express",
+              "aiScore": 67
+            }
+          ],
+          "top1": "Yeswantpur-Delhi Sarai Rohilla AC Duronto Express",
+          "top1Score": 92,
+          "top3Overlap": 33.3,
+          "spearmanRho": 0.6606,
+          "rankChanges": 9,
+          "top1Changed": false
+        },
+        "A2": {
+          "top3": [
+            {
+              "trainNumber": "12213",
+              "trainName": "Yeswantpur-Delhi Sarai Rohilla AC Duronto Express",
+              "aiScore": 92
+            },
+            {
+              "trainNumber": "12649",
+              "trainName": "Karnataka Sampark Kranti Express",
+              "aiScore": 75
+            },
+            {
+              "trainNumber": "12251",
+              "trainName": "Wainganga express",
+              "aiScore": 72
+            }
+          ],
+          "top1": "Yeswantpur-Delhi Sarai Rohilla AC Duronto Express",
+          "top1Score": 92,
+          "top3Overlap": 33.3,
+          "spearmanRho": 0.5758,
+          "rankChanges": 7,
+          "top1Changed": false
+        },
+        "A3": {
+          "top3": [
+            {
+              "trainNumber": "12213",
+              "trainName": "Yeswantpur-Delhi Sarai Rohilla AC Duronto Express",
+              "aiScore": 92
+            },
+            {
+              "trainNumber": "22691",
+              "trainName": "Bangalore - Hazrat Nizamuddin Rajdhani Express",
+              "aiScore": 83
+            },
+            {
+              "trainNumber": "12493",
+              "trainName": "Bangalore-Hazrat Nizammudin Rajdhani Express",
+              "aiScore": 79
+            }
+          ],
+          "top1": "Yeswantpur-Delhi Sarai Rohilla AC Duronto Express",
+          "top1Score": 92,
+          "top3Overlap": 100,
+          "spearmanRho": 1,
+          "rankChanges": 0,
+          "top1Changed": false
+        },
+        "A4": {
+          "top3": [
+            {
+              "trainNumber": "12213",
+              "trainName": "Yeswantpur-Delhi Sarai Rohilla AC Duronto Express",
+              "aiScore": 91
+            },
+            {
+              "trainNumber": "22691",
+              "trainName": "Bangalore - Hazrat Nizamuddin Rajdhani Express",
+              "aiScore": 83
+            },
+            {
+              "trainNumber": "12493",
+              "trainName": "Bangalore-Hazrat Nizammudin Rajdhani Express",
+              "aiScore": 79
+            }
+          ],
+          "top1": "Yeswantpur-Delhi Sarai Rohilla AC Duronto Express",
+          "top1Score": 91,
+          "top3Overlap": 100,
+          "spearmanRho": 1,
+          "rankChanges": 0,
+          "top1Changed": false
+        },
+        "A5": {
+          "top3": [
+            {
+              "trainNumber": "22691",
+              "trainName": "Bangalore - Hazrat Nizamuddin Rajdhani Express",
+              "aiScore": 92
+            },
+            {
+              "trainNumber": "12213",
+              "trainName": "Yeswantpur-Delhi Sarai Rohilla AC Duronto Express",
+              "aiScore": 92
+            },
+            {
+              "trainNumber": "12493",
+              "trainName": "Bangalore-Hazrat Nizammudin Rajdhani Express",
+              "aiScore": 88
+            }
+          ],
+          "top1": "Bangalore - Hazrat Nizamuddin Rajdhani Express",
+          "top1Score": 92,
+          "top3Overlap": 100,
+          "spearmanRho": 0.9394,
+          "rankChanges": 7,
+          "top1Changed": true
+        }
+      }
+    }
+  ]
+}

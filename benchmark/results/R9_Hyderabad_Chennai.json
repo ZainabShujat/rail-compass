@@ -1,0 +1,323 @@
+{
+  "id": "R9",
+  "tag": "Early-morning arrival",
+  "origin": "Hyderabad",
+  "destination": "Chennai",
+  "preferredClass": "3AC",
+  "trainCount": 3,
+  "models": {
+    "duration_only": {
+      "label": "Duration-Only",
+      "weights": {
+        "weightDuration": "1.0",
+        "weightDaytime": "0.0",
+        "weightBudget": "0.0",
+        "weightReliability": "0.0",
+        "weightComfort": "0.0",
+        "weightFood": "0.0"
+      },
+      "totalTrained": 3,
+      "ranking": [
+        {
+          "rank": 1,
+          "trainNumber": "12604",
+          "trainName": "Hyderabad - Chennai Express",
+          "type": "SF",
+          "departureStation": "SECUNDERABAD JN",
+          "arrivalStation": "CHENNAI CENTRAL",
+          "departureTime": "17:20",
+          "arrivalTime": "05:55",
+          "durMins": 755,
+          "daytime": 2.666666666666668,
+          "duration": "12h 35m",
+          "price": 1460,
+          "aiScore": 100,
+          "matchReason": "Fastest route available",
+          "isUnorthodox": true,
+          "metrics": {
+            "reliabilityRating": 8.8,
+            "comfortRating": 8.8,
+            "foodRating": 7
+          }
+        },
+        {
+          "rank": 2,
+          "trainNumber": "12760",
+          "trainName": "Charminar Express",
+          "type": "SF",
+          "departureStation": "SECUNDERABAD JN",
+          "arrivalStation": "CHENNAI CENTRAL",
+          "departureTime": "18:55",
+          "arrivalTime": "08:15",
+          "durMins": 800,
+          "daytime": 1.3333333333333321,
+          "duration": "13h 20m",
+          "price": 1545,
+          "aiScore": 39,
+          "matchReason": "Saves your daytime hours",
+          "isUnorthodox": false,
+          "metrics": {
+            "reliabilityRating": 8.8,
+            "comfortRating": 8.8,
+            "foodRating": 7
+          }
+        },
+        {
+          "rank": 3,
+          "trainNumber": "17652",
+          "trainName": "Kacheguda Chennai Egmore Express",
+          "type": "Exp",
+          "departureStation": "KACHEGUDA",
+          "arrivalStation": "PERAMBUR",
+          "departureTime": "16:00",
+          "arrivalTime": "05:49",
+          "durMins": 829,
+          "daytime": 4,
+          "duration": "13h 49m",
+          "price": 1600,
+          "aiScore": 0,
+          "matchReason": "Matched to Duration Preference",
+          "isUnorthodox": true,
+          "metrics": {
+            "reliabilityRating": 7.5,
+            "comfortRating": 8.2,
+            "foodRating": 6
+          }
+        }
+      ]
+    },
+    "cheapest_only": {
+      "label": "Cheapest-Only",
+      "weights": {
+        "weightDuration": "0.0",
+        "weightDaytime": "0.0",
+        "weightBudget": "1.0",
+        "weightReliability": "0.0",
+        "weightComfort": "0.0",
+        "weightFood": "0.0"
+      },
+      "totalTrained": 3,
+      "ranking": [
+        {
+          "rank": 1,
+          "trainNumber": "12604",
+          "trainName": "Hyderabad - Chennai Express",
+          "type": "SF",
+          "departureStation": "SECUNDERABAD JN",
+          "arrivalStation": "CHENNAI CENTRAL",
+          "departureTime": "17:20",
+          "arrivalTime": "05:55",
+          "durMins": 755,
+          "daytime": 2.666666666666668,
+          "duration": "12h 35m",
+          "price": 1460,
+          "aiScore": 100,
+          "matchReason": "Fastest route available",
+          "isUnorthodox": true,
+          "metrics": {
+            "reliabilityRating": 8.8,
+            "comfortRating": 8.8,
+            "foodRating": 7
+          }
+        },
+        {
+          "rank": 2,
+          "trainNumber": "12760",
+          "trainName": "Charminar Express",
+          "type": "SF",
+          "departureStation": "SECUNDERABAD JN",
+          "arrivalStation": "CHENNAI CENTRAL",
+          "departureTime": "18:55",
+          "arrivalTime": "08:15",
+          "durMins": 800,
+          "daytime": 1.3333333333333321,
+          "duration": "13h 20m",
+          "price": 1545,
+          "aiScore": 39,
+          "matchReason": "Saves your daytime hours",
+          "isUnorthodox": false,
+          "metrics": {
+            "reliabilityRating": 8.8,
+            "comfortRating": 8.8,
+            "foodRating": 7
+          }
+        },
+        {
+          "rank": 3,
+          "trainNumber": "17652",
+          "trainName": "Kacheguda Chennai Egmore Express",
+          "type": "Exp",
+          "departureStation": "KACHEGUDA",
+          "arrivalStation": "PERAMBUR",
+          "departureTime": "16:00",
+          "arrivalTime": "05:49",
+          "durMins": 829,
+          "daytime": 4,
+          "duration": "13h 49m",
+          "price": 1600,
+          "aiScore": 0,
+          "matchReason": "Matched to Budget Preference",
+          "isUnorthodox": true,
+          "metrics": {
+            "reliabilityRating": 7.5,
+            "comfortRating": 8.2,
+            "foodRating": 6
+          }
+        }
+      ]
+    },
+    "fixed_utility": {
+      "label": "Fixed Equal-Weight Utility",
+      "weights": {
+        "weightDuration": "0.167",
+        "weightDaytime": "0.167",
+        "weightBudget": "0.167",
+        "weightReliability": "0.167",
+        "weightComfort": "0.166",
+        "weightFood": "0.166"
+      },
+      "totalTrained": 3,
+      "ranking": [
+        {
+          "rank": 1,
+          "trainNumber": "12604",
+          "trainName": "Hyderabad - Chennai Express",
+          "type": "SF",
+          "departureStation": "SECUNDERABAD JN",
+          "arrivalStation": "CHENNAI CENTRAL",
+          "departureTime": "17:20",
+          "arrivalTime": "05:55",
+          "durMins": 755,
+          "daytime": 2.666666666666668,
+          "duration": "12h 35m",
+          "price": 1460,
+          "aiScore": 83,
+          "matchReason": "Fastest route available",
+          "isUnorthodox": true,
+          "metrics": {
+            "reliabilityRating": 8.8,
+            "comfortRating": 8.8,
+            "foodRating": 7
+          }
+        },
+        {
+          "rank": 2,
+          "trainNumber": "12760",
+          "trainName": "Charminar Express",
+          "type": "SF",
+          "departureStation": "SECUNDERABAD JN",
+          "arrivalStation": "CHENNAI CENTRAL",
+          "departureTime": "18:55",
+          "arrivalTime": "08:15",
+          "durMins": 800,
+          "daytime": 1.3333333333333321,
+          "duration": "13h 20m",
+          "price": 1545,
+          "aiScore": 71,
+          "matchReason": "Saves your daytime hours",
+          "isUnorthodox": false,
+          "metrics": {
+            "reliabilityRating": 8.8,
+            "comfortRating": 8.8,
+            "foodRating": 7
+          }
+        },
+        {
+          "rank": 3,
+          "trainNumber": "17652",
+          "trainName": "Kacheguda Chennai Egmore Express",
+          "type": "Exp",
+          "departureStation": "KACHEGUDA",
+          "arrivalStation": "PERAMBUR",
+          "departureTime": "16:00",
+          "arrivalTime": "05:49",
+          "durMins": 829,
+          "daytime": 4,
+          "duration": "13h 49m",
+          "price": 1600,
+          "aiScore": 36,
+          "matchReason": "Matched to Custom Preferences",
+          "isUnorthodox": true,
+          "metrics": {
+            "reliabilityRating": 7.5,
+            "comfortRating": 8.2,
+            "foodRating": 6
+          }
+        }
+      ]
+    },
+    "railcompass": {
+      "label": "RailCompass (Adaptive)",
+      "weights": {},
+      "totalTrained": 3,
+      "ranking": [
+        {
+          "rank": 1,
+          "trainNumber": "12604",
+          "trainName": "Hyderabad - Chennai Express",
+          "type": "SF",
+          "departureStation": "SECUNDERABAD JN",
+          "arrivalStation": "CHENNAI CENTRAL",
+          "departureTime": "17:20",
+          "arrivalTime": "05:55",
+          "durMins": 755,
+          "daytime": 2.666666666666668,
+          "duration": "12h 35m",
+          "price": 1460,
+          "aiScore": 91,
+          "matchReason": "Fastest long-haul option",
+          "isUnorthodox": true,
+          "metrics": {
+            "reliabilityRating": 8.8,
+            "comfortRating": 8.8,
+            "foodRating": 7
+          }
+        },
+        {
+          "rank": 2,
+          "trainNumber": "12760",
+          "trainName": "Charminar Express",
+          "type": "SF",
+          "departureStation": "SECUNDERABAD JN",
+          "arrivalStation": "CHENNAI CENTRAL",
+          "departureTime": "18:55",
+          "arrivalTime": "08:15",
+          "durMins": 800,
+          "daytime": 1.3333333333333321,
+          "duration": "13h 20m",
+          "price": 1545,
+          "aiScore": 61,
+          "matchReason": "Solid all-around option",
+          "isUnorthodox": false,
+          "metrics": {
+            "reliabilityRating": 8.8,
+            "comfortRating": 8.8,
+            "foodRating": 7
+          }
+        },
+        {
+          "rank": 3,
+          "trainNumber": "17652",
+          "trainName": "Kacheguda Chennai Egmore Express",
+          "type": "Exp",
+          "departureStation": "KACHEGUDA",
+          "arrivalStation": "PERAMBUR",
+          "departureTime": "16:00",
+          "arrivalTime": "05:49",
+          "durMins": 829,
+          "daytime": 4,
+          "duration": "13h 49m",
+          "price": 1600,
+          "aiScore": 37,
+          "matchReason": "Solid all-around option",
+          "isUnorthodox": true,
+          "metrics": {
+            "reliabilityRating": 7.5,
+            "comfortRating": 8.2,
+            "foodRating": 6
+          }
+        }
+      ]
+    }
+  }
+}

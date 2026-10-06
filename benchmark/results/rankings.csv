@@ -1,0 +1,1025 @@
+Route_ID,Route_Tag,Origin,Destination,Model,Rank,Train_Number,Train_Name,Type,Departure,Arrival,Duration_Min,Daytime_Hrs,Price,Score,Match_Reason,Is_Unorthodox
+R1,"Short daytime",Delhi,Jaipur,duration_only,1,12015,"New Delhi-Ajmer Shatabdi",Shatabdi,06:16,10:26,250,2.43,1790,100,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,duration_only,2,09722,"Delhi Sarai Rohilla -Jaipur SF Special",Superfast,17:35,21:51,256,2.42,570,99,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,duration_only,3,12958,"New Delhi-Ahmedabad Swarna Jayanti Rajdhani Expres",Rajdhani,20:06,00:29,263,0.00,915,98,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,duration_only,4,14311,"BAREILLY - BHUJ Ala Hazrat Exp",Exp,11:57,16:50,293,4.88,595,95,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,duration_only,5,14321,"BAREILLY - BHUJ Ala Hazrat Exp",Exp,11:57,16:50,293,4.88,595,95,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,duration_only,6,12215,"Delhi Sarai Rohilla-Mumbai BandraT Garib Rath",GR,09:20,14:07,287,4.78,585,95,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,duration_only,7,12916,"Ashram SF Express",Superfast,15:20,20:19,299,4.67,655,94,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,duration_only,8,19604,"Sultanpur Ajmer Express",Exp,06:40,11:41,301,3.68,610,94,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,duration_only,9,19566,"Uttranchal Express",Exp,13:52,18:56,304,5.07,235,93,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,duration_only,10,12414,"Pooja Express",SF,04:30,09:33,303,1.55,615,93,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,duration_only,11,19264,"Delhi SaraiRohilla-Porbandar Express",Exp,08:20,13:27,307,5.12,620,93,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,duration_only,12,19270,"Muzaffarpur-Porbandar Express",Exp,13:10,18:27,317,5.28,640,92,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,duration_only,13,14659,"Delhi-Jaisalmer Express",Exp,17:50,23:13,323,2.17,650,91,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,duration_only,14,14659-Slip,"Delhi-Jaisalmer Express Slip",Exp,17:50,23:13,323,2.17,650,91,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,duration_only,15,15715,"Garib Nawaz Express",Exp,13:50,19:12,322,5.37,650,91,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,duration_only,16,19602,"New Jalpaiguri Ajmer Weekly Express",Exp,12:30,18:56,386,6.43,770,83,"Matched to Duration Preference",0
+R1,"Short daytime",Delhi,Jaipur,duration_only,17,12463,"Rajasthan Sampark Kranti Express",SKr,22:25,03:02,277,0.00,565,82,"Fastest route available",1
+R1,"Short daytime",Delhi,Jaipur,duration_only,18,12463-Slip,"Rajasthan Sampark Kranti Express Slip",SKr,22:35,03:06,271,0.00,555,82,"Fastest route available",1
+R1,"Short daytime",Delhi,Jaipur,duration_only,19,12461,"Mandore Express",SF,20:55,02:04,309,0.00,625,78,"Fastest route available",1
+R1,"Short daytime",Delhi,Jaipur,duration_only,20,19106,"Haridwar-Ahmedabad Mail",Mail,22:25,04:06,341,0.00,685,73,"Saves your daytime hours",1
+R1,"Short daytime",Delhi,Jaipur,duration_only,21,19603,"Ajmer-Sultanpur Weekly Express",Exp,00:40,18:00,1040,10.00,1995,0,"Matched to Duration Preference",0
+R1,"Short daytime",Delhi,Jaipur,cheapest_only,1,19566,"Uttranchal Express",Exp,13:52,18:56,304,5.07,235,100,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,cheapest_only,2,09722,"Delhi Sarai Rohilla -Jaipur SF Special",Superfast,17:35,21:51,256,2.42,570,81,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,cheapest_only,3,14311,"BAREILLY - BHUJ Ala Hazrat Exp",Exp,11:57,16:50,293,4.88,595,80,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,cheapest_only,4,14321,"BAREILLY - BHUJ Ala Hazrat Exp",Exp,11:57,16:50,293,4.88,595,80,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,cheapest_only,5,12215,"Delhi Sarai Rohilla-Mumbai BandraT Garib Rath",GR,09:20,14:07,287,4.78,585,80,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,cheapest_only,6,19604,"Sultanpur Ajmer Express",Exp,06:40,11:41,301,3.68,610,79,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,cheapest_only,7,12414,"Pooja Express",SF,04:30,09:33,303,1.55,615,78,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,cheapest_only,8,19264,"Delhi SaraiRohilla-Porbandar Express",Exp,08:20,13:27,307,5.12,620,78,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,cheapest_only,9,19270,"Muzaffarpur-Porbandar Express",Exp,13:10,18:27,317,5.28,640,77,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,cheapest_only,10,14659,"Delhi-Jaisalmer Express",Exp,17:50,23:13,323,2.17,650,76,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,cheapest_only,11,12916,"Ashram SF Express",Superfast,15:20,20:19,299,4.67,655,76,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,cheapest_only,12,14659-Slip,"Delhi-Jaisalmer Express Slip",Exp,17:50,23:13,323,2.17,650,76,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,cheapest_only,13,15715,"Garib Nawaz Express",Exp,13:50,19:12,322,5.37,650,76,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,cheapest_only,14,19602,"New Jalpaiguri Ajmer Weekly Express",Exp,12:30,18:56,386,6.43,770,70,"Matched to Budget Preference",0
+R1,"Short daytime",Delhi,Jaipur,cheapest_only,15,12463-Slip,"Rajasthan Sampark Kranti Express Slip",SKr,22:35,03:06,271,0.00,555,67,"Fastest route available",1
+R1,"Short daytime",Delhi,Jaipur,cheapest_only,16,12463,"Rajasthan Sampark Kranti Express",SKr,22:25,03:02,277,0.00,565,66,"Fastest route available",1
+R1,"Short daytime",Delhi,Jaipur,cheapest_only,17,12461,"Mandore Express",SF,20:55,02:04,309,0.00,625,63,"Fastest route available",1
+R1,"Short daytime",Delhi,Jaipur,cheapest_only,18,12958,"New Delhi-Ahmedabad Swarna Jayanti Rajdhani Expres",Rajdhani,20:06,00:29,263,0.00,915,61,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,cheapest_only,19,19106,"Haridwar-Ahmedabad Mail",Mail,22:25,04:06,341,0.00,685,59,"Saves your daytime hours",1
+R1,"Short daytime",Delhi,Jaipur,cheapest_only,20,12015,"New Delhi-Ajmer Shatabdi",Shatabdi,06:16,10:26,250,2.43,1790,12,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,cheapest_only,21,19603,"Ajmer-Sultanpur Weekly Express",Exp,00:40,18:00,1040,10.00,1995,0,"Matched to Budget Preference",0
+R1,"Short daytime",Delhi,Jaipur,fixed_utility,1,12958,"New Delhi-Ahmedabad Swarna Jayanti Rajdhani Expres",Rajdhani,20:06,00:29,263,0.00,915,88,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,fixed_utility,2,12414,"Pooja Express",SF,04:30,09:33,303,1.55,615,84,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,fixed_utility,3,09722,"Delhi Sarai Rohilla -Jaipur SF Special",Superfast,17:35,21:51,256,2.42,570,84,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,fixed_utility,4,12916,"Ashram SF Express",Superfast,15:20,20:19,299,4.67,655,78,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,fixed_utility,5,19566,"Uttranchal Express",Exp,13:52,18:56,304,5.07,235,77,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,fixed_utility,6,14659,"Delhi-Jaisalmer Express",Exp,17:50,23:13,323,2.17,650,77,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,fixed_utility,7,14659-Slip,"Delhi-Jaisalmer Express Slip",Exp,17:50,23:13,323,2.17,650,77,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,fixed_utility,8,19604,"Sultanpur Ajmer Express",Exp,06:40,11:41,301,3.68,610,75,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,fixed_utility,9,12015,"New Delhi-Ajmer Shatabdi",Shatabdi,06:16,10:26,250,2.43,1790,74,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,fixed_utility,10,14311,"BAREILLY - BHUJ Ala Hazrat Exp",Exp,11:57,16:50,293,4.88,595,74,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,fixed_utility,11,14321,"BAREILLY - BHUJ Ala Hazrat Exp",Exp,11:57,16:50,293,4.88,595,74,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,fixed_utility,12,12215,"Delhi Sarai Rohilla-Mumbai BandraT Garib Rath",GR,09:20,14:07,287,4.78,585,74,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,fixed_utility,13,19264,"Delhi SaraiRohilla-Porbandar Express",Exp,08:20,13:27,307,5.12,620,73,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,fixed_utility,14,19270,"Muzaffarpur-Porbandar Express",Exp,13:10,18:27,317,5.28,640,72,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,fixed_utility,15,15715,"Garib Nawaz Express",Exp,13:50,19:12,322,5.37,650,72,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,fixed_utility,16,12461,"Mandore Express",SF,20:55,02:04,309,0.00,625,71,"Fastest route available",1
+R1,"Short daytime",Delhi,Jaipur,fixed_utility,17,19106,"Haridwar-Ahmedabad Mail",Mail,22:25,04:06,341,0.00,685,70,"Saves your daytime hours",1
+R1,"Short daytime",Delhi,Jaipur,fixed_utility,18,19602,"New Jalpaiguri Ajmer Weekly Express",Exp,12:30,18:56,386,6.43,770,68,"Matched to Custom Preferences",0
+R1,"Short daytime",Delhi,Jaipur,fixed_utility,19,12463-Slip,"Rajasthan Sampark Kranti Express Slip",SKr,22:35,03:06,271,0.00,555,68,"Fastest route available",1
+R1,"Short daytime",Delhi,Jaipur,fixed_utility,20,12463,"Rajasthan Sampark Kranti Express",SKr,22:25,03:02,277,0.00,565,67,"Fastest route available",1
+R1,"Short daytime",Delhi,Jaipur,fixed_utility,21,19603,"Ajmer-Sultanpur Weekly Express",Exp,00:40,18:00,1040,10.00,1995,36,"Matched to Custom Preferences",0
+R1,"Short daytime",Delhi,Jaipur,railcompass,1,12958,"New Delhi-Ahmedabad Swarna Jayanti Rajdhani Expres",Rajdhani,20:06,00:29,263,0.00,915,90,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,railcompass,2,09722,"Delhi Sarai Rohilla -Jaipur SF Special",Superfast,17:35,21:51,256,2.42,570,87,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,railcompass,3,12414,"Pooja Express",SF,04:30,09:33,303,1.55,615,86,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,railcompass,4,14659,"Delhi-Jaisalmer Express",Exp,17:50,23:13,323,2.17,650,81,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,railcompass,5,14659-Slip,"Delhi-Jaisalmer Express Slip",Exp,17:50,23:13,323,2.17,650,81,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,railcompass,6,19566,"Uttranchal Express",Exp,13:52,18:56,304,5.07,235,80,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,railcompass,7,19604,"Sultanpur Ajmer Express",Exp,06:40,11:41,301,3.68,610,79,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,railcompass,8,12916,"Ashram SF Express",Superfast,15:20,20:19,299,4.67,655,78,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,railcompass,9,12215,"Delhi Sarai Rohilla-Mumbai BandraT Garib Rath",GR,09:20,14:07,287,4.78,585,77,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,railcompass,10,14311,"BAREILLY - BHUJ Ala Hazrat Exp",Exp,11:57,16:50,293,4.88,595,76,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,railcompass,11,14321,"BAREILLY - BHUJ Ala Hazrat Exp",Exp,11:57,16:50,293,4.88,595,76,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,railcompass,12,12463,"Rajasthan Sampark Kranti Express",SKr,22:25,03:02,277,0.00,565,76,"Fastest route available",1
+R1,"Short daytime",Delhi,Jaipur,railcompass,13,12463-Slip,"Rajasthan Sampark Kranti Express Slip",SKr,22:35,03:06,271,0.00,555,76,"Fastest route available",1
+R1,"Short daytime",Delhi,Jaipur,railcompass,14,12461,"Mandore Express",SF,20:55,02:04,309,0.00,625,75,"Fastest route available",1
+R1,"Short daytime",Delhi,Jaipur,railcompass,15,19264,"Delhi SaraiRohilla-Porbandar Express",Exp,08:20,13:27,307,5.12,620,75,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,railcompass,16,12015,"New Delhi-Ajmer Shatabdi",Shatabdi,06:16,10:26,250,2.43,1790,74,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,railcompass,17,19270,"Muzaffarpur-Porbandar Express",Exp,13:10,18:27,317,5.28,640,74,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,railcompass,18,19106,"Haridwar-Ahmedabad Mail",Mail,22:25,04:06,341,0.00,685,73,"Saves your daytime hours",1
+R1,"Short daytime",Delhi,Jaipur,railcompass,19,15715,"Garib Nawaz Express",Exp,13:50,19:12,322,5.37,650,73,"Fastest route available",0
+R1,"Short daytime",Delhi,Jaipur,railcompass,20,19602,"New Jalpaiguri Ajmer Weekly Express",Exp,12:30,18:56,386,6.43,770,66,"Solid all-around option",0
+R1,"Short daytime",Delhi,Jaipur,railcompass,21,19603,"Ajmer-Sultanpur Weekly Express",Exp,00:40,18:00,1040,10.00,1995,37,"Solid all-around option",0
+R2,"Short overnight",Delhi,Lucknow,duration_only,1,12004,"NewDelh-Lucknowi Swarn Shatabdi Express",Shatabdi,06:29,12:30,361,4.50,1055,100,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,duration_only,2,12566,"Bihar Sampark Kranti Express",SKr,14:40,21:50,430,5.33,850,96,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,duration_only,3,12204,"Amritsar Saharsa Garib Rath",GR,11:27,18:40,433,7.22,855,96,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,duration_only,4,12272,"New Delhi-Lucknow AC Duronto Express",Drnt,23:42,07:10,448,0.00,885,95,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,duration_only,5,12392,"Shramjeevi Express",SF,13:33,21:15,462,6.45,910,94,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,duration_only,6,12236,"NEW DELHI - DIBRUGARH Rajdhani Exp",Rajdhani,09:42,17:25,463,7.72,1420,94,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,duration_only,7,12876,"NEW DELHI - PURI Neelanchal SF Exp",Superfast,06:30,14:05,455,6.08,945,94,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,duration_only,8,12436,"NEW DELHI - DIBRUGARH TOWN Rajdhani Exp",Rajdhani,09:42,17:25,463,7.72,1420,94,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,duration_only,9,12430,"New Delhi - Lucknow AC SF Express",Superfast,23:47,07:30,463,0.00,960,94,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,duration_only,10,12558,"Sapt Kranti SF Express",Superfast,14:50,22:40,470,5.17,975,93,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,duration_only,11,12230,"Lucknow Mail",Mail,22:27,06:45,498,0.00,980,92,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,duration_only,12,12524,"New Delhi New Jalpaiguri SuperFast Express",Superfast,15:31,23:35,484,4.48,1000,92,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,duration_only,13,12420,"Gomti Express",SF,12:57,21:25,508,7.05,1470,91,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,duration_only,14,19601,"Ajmer New Jalpaiguri Weekly Express",Exp,15:05,23:40,515,4.92,1010,91,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,duration_only,15,15708,"Amrapali Express",Exp,15:30,00:25,535,4.50,1050,89,"Best value for money",0
+R2,"Short overnight",Delhi,Lucknow,duration_only,16,14674,"Shaheed Express",Exp,21:15,06:10,535,0.00,1050,89,"Saves your daytime hours",0
+R2,"Short overnight",Delhi,Lucknow,duration_only,17,14650,"Saryu Yamuna Express",Exp,21:15,06:10,535,0.00,1050,89,"Saves your daytime hours",0
+R2,"Short overnight",Delhi,Lucknow,duration_only,18,04202,"New Delhi-Lucknow tri-weekly Special",Exp,00:22,09:45,563,1.75,1100,88,"Best value for money",0
+R2,"Short overnight",Delhi,Lucknow,duration_only,19,13414,"Farakka Express",Exp,21:50,07:14,564,0.00,1105,88,"Saves your daytime hours",0
+R2,"Short overnight",Delhi,Lucknow,duration_only,20,13484,"Farakka Express",Exp,21:50,07:14,564,0.00,1105,88,"Saves your daytime hours",0
+R2,"Short overnight",Delhi,Lucknow,duration_only,21,14258,"Kashi Vishwanath Express",Exp,11:58,21:35,577,8.03,1125,87,"Best value for money",0
+R2,"Short overnight",Delhi,Lucknow,duration_only,22,15610,"Awadh Assam Express",Exp,07:50,17:45,595,9.75,1160,86,"Matched to Duration Preference",0
+R2,"Short overnight",Delhi,Lucknow,duration_only,23,14018,"Sadbhavana Expres",Exp,16:20,03:25,665,3.67,1295,81,"Matched to Duration Preference",1
+R2,"Short overnight",Delhi,Lucknow,duration_only,24,14008,"Old Delhi-Muzaffarpur Sadbhavana Express",Exp,16:20,03:25,665,3.67,1295,81,"Matched to Duration Preference",1
+R2,"Short overnight",Delhi,Lucknow,duration_only,25,14016,"Sadbhavana Express",Exp,16:20,03:25,665,3.67,1295,81,"Matched to Duration Preference",1
+R2,"Short overnight",Delhi,Lucknow,duration_only,26,14014,"Sadbhavna Express",Exp,16:20,03:25,665,3.67,1295,81,"Matched to Duration Preference",1
+R2,"Short overnight",Delhi,Lucknow,duration_only,27,12554,"Vaishali SF Express",Superfast,20:05,03:45,460,0.00,955,79,"Fastest route available",1
+R2,"Short overnight",Delhi,Lucknow,duration_only,28,12226,"Kaifiat Express",SF,19:20,03:00,460,0.67,910,79,"Fastest route available",1
+R2,"Short overnight",Delhi,Lucknow,duration_only,29,14004,"New Delhi-New Farakka Express",Exp,18:13,02:25,492,1.78,970,77,"Fastest route available",1
+R2,"Short overnight",Delhi,Lucknow,duration_only,30,12556,"Gorakhdham Express",SF,20:36,04:45,489,0.00,960,77,"Fastest route available",1
+R2,"Short overnight",Delhi,Lucknow,duration_only,31,12212,"Anand Vihar T.- Muzaffarpur Garib Rath",GR,21:10,05:20,490,0.00,965,77,"Fastest route available",1
+R2,"Short overnight",Delhi,Lucknow,duration_only,32,22408,"Delhi Anand Vihar Terminus-Varanasi Garib Rath",GR,18:10,02:25,495,1.83,975,77,"Fastest route available",1
+R2,"Short overnight",Delhi,Lucknow,duration_only,33,14208,"Padmavat Express",Exp,19:50,04:20,510,0.17,1000,76,"Fastest route available",1
+R2,"Short overnight",Delhi,Lucknow,duration_only,34,15716-Slip,"Garib Nawaz Express",Exp,20:40,05:20,520,0.00,1020,75,"Fastest route available",1
+R2,"Short overnight",Delhi,Lucknow,duration_only,35,15716,"Garib Nawaz Express Slip",Exp,20:40,05:20,520,0.00,1020,75,"Fastest route available",1
+R2,"Short overnight",Delhi,Lucknow,duration_only,36,19269,"Porbandar Muzaffarpur Express",Exp,20:40,05:20,520,0.00,1020,75,"Fastest route available",1
+R2,"Short overnight",Delhi,Lucknow,duration_only,37,14206,"Delhi-Faizabad Express",Exp,18:40,03:50,550,1.33,1075,73,"Saves your daytime hours",1
+R2,"Short overnight",Delhi,Lucknow,duration_only,38,04204,"Delhi Jn. -Varanasi Special",Exp,19:30,04:45,555,0.50,1085,73,"Saves your daytime hours",1
+R2,"Short overnight",Delhi,Lucknow,duration_only,39,15280,"Poorabiya Express",Exp,16:45,02:05,560,3.25,1095,73,"Best value for money",1
+R2,"Short overnight",Delhi,Lucknow,duration_only,40,19603,"Ajmer-Sultanpur Weekly Express",Exp,00:40,10:00,2000,14.00,3800,0,"Matched to Duration Preference",0
+R2,"Short overnight",Delhi,Lucknow,cheapest_only,1,12566,"Bihar Sampark Kranti Express",SKr,14:40,21:50,430,5.33,850,100,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,cheapest_only,2,12204,"Amritsar Saharsa Garib Rath",GR,11:27,18:40,433,7.22,855,100,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,cheapest_only,3,12272,"New Delhi-Lucknow AC Duronto Express",Drnt,23:42,07:10,448,0.00,885,99,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,cheapest_only,4,12392,"Shramjeevi Express",SF,13:33,21:15,462,6.45,910,98,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,cheapest_only,5,12876,"NEW DELHI - PURI Neelanchal SF Exp",Superfast,06:30,14:05,455,6.08,945,97,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,cheapest_only,6,12230,"Lucknow Mail",Mail,22:27,06:45,498,0.00,980,96,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,cheapest_only,7,12430,"New Delhi - Lucknow AC SF Express",Superfast,23:47,07:30,463,0.00,960,96,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,cheapest_only,8,12558,"Sapt Kranti SF Express",Superfast,14:50,22:40,470,5.17,975,96,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,cheapest_only,9,12524,"New Delhi New Jalpaiguri SuperFast Express",Superfast,15:31,23:35,484,4.48,1000,95,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,cheapest_only,10,19601,"Ajmer New Jalpaiguri Weekly Express",Exp,15:05,23:40,515,4.92,1010,95,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,cheapest_only,11,12004,"NewDelh-Lucknowi Swarn Shatabdi Express",Shatabdi,06:29,12:30,361,4.50,1055,93,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,cheapest_only,12,15708,"Amrapali Express",Exp,15:30,00:25,535,4.50,1050,93,"Best value for money",0
+R2,"Short overnight",Delhi,Lucknow,cheapest_only,13,14674,"Shaheed Express",Exp,21:15,06:10,535,0.00,1050,93,"Saves your daytime hours",0
+R2,"Short overnight",Delhi,Lucknow,cheapest_only,14,14650,"Saryu Yamuna Express",Exp,21:15,06:10,535,0.00,1050,93,"Saves your daytime hours",0
+R2,"Short overnight",Delhi,Lucknow,cheapest_only,15,04202,"New Delhi-Lucknow tri-weekly Special",Exp,00:22,09:45,563,1.75,1100,92,"Best value for money",0
+R2,"Short overnight",Delhi,Lucknow,cheapest_only,16,14258,"Kashi Vishwanath Express",Exp,11:58,21:35,577,8.03,1125,91,"Best value for money",0
+R2,"Short overnight",Delhi,Lucknow,cheapest_only,17,13414,"Farakka Express",Exp,21:50,07:14,564,0.00,1105,91,"Saves your daytime hours",0
+R2,"Short overnight",Delhi,Lucknow,cheapest_only,18,13484,"Farakka Express",Exp,21:50,07:14,564,0.00,1105,91,"Saves your daytime hours",0
+R2,"Short overnight",Delhi,Lucknow,cheapest_only,19,15610,"Awadh Assam Express",Exp,07:50,17:45,595,9.75,1160,89,"Matched to Budget Preference",0
+R2,"Short overnight",Delhi,Lucknow,cheapest_only,20,14018,"Sadbhavana Expres",Exp,16:20,03:25,665,3.67,1295,85,"Matched to Budget Preference",1
+R2,"Short overnight",Delhi,Lucknow,cheapest_only,21,14008,"Old Delhi-Muzaffarpur Sadbhavana Express",Exp,16:20,03:25,665,3.67,1295,85,"Matched to Budget Preference",1
+R2,"Short overnight",Delhi,Lucknow,cheapest_only,22,14016,"Sadbhavana Express",Exp,16:20,03:25,665,3.67,1295,85,"Matched to Budget Preference",1
+R2,"Short overnight",Delhi,Lucknow,cheapest_only,23,14014,"Sadbhavna Express",Exp,16:20,03:25,665,3.67,1295,85,"Matched to Budget Preference",1
+R2,"Short overnight",Delhi,Lucknow,cheapest_only,24,12226,"Kaifiat Express",SF,19:20,03:00,460,0.67,910,83,"Fastest route available",1
+R2,"Short overnight",Delhi,Lucknow,cheapest_only,25,12554,"Vaishali SF Express",Superfast,20:05,03:45,460,0.00,955,81,"Fastest route available",1
+R2,"Short overnight",Delhi,Lucknow,cheapest_only,26,14004,"New Delhi-New Farakka Express",Exp,18:13,02:25,492,1.78,970,81,"Fastest route available",1
+R2,"Short overnight",Delhi,Lucknow,cheapest_only,27,12236,"NEW DELHI - DIBRUGARH Rajdhani Exp",Rajdhani,09:42,17:25,463,7.72,1420,81,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,cheapest_only,28,12436,"NEW DELHI - DIBRUGARH TOWN Rajdhani Exp",Rajdhani,09:42,17:25,463,7.72,1420,81,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,cheapest_only,29,12556,"Gorakhdham Express",SF,20:36,04:45,489,0.00,960,81,"Fastest route available",1
+R2,"Short overnight",Delhi,Lucknow,cheapest_only,30,12212,"Anand Vihar T.- Muzaffarpur Garib Rath",GR,21:10,05:20,490,0.00,965,81,"Fastest route available",1
+R2,"Short overnight",Delhi,Lucknow,cheapest_only,31,22408,"Delhi Anand Vihar Terminus-Varanasi Garib Rath",GR,18:10,02:25,495,1.83,975,81,"Fastest route available",1
+R2,"Short overnight",Delhi,Lucknow,cheapest_only,32,14208,"Padmavat Express",Exp,19:50,04:20,510,0.17,1000,80,"Fastest route available",1
+R2,"Short overnight",Delhi,Lucknow,cheapest_only,33,12420,"Gomti Express",SF,12:57,21:25,508,7.05,1470,79,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,cheapest_only,34,15716-Slip,"Garib Nawaz Express",Exp,20:40,05:20,520,0.00,1020,79,"Fastest route available",1
+R2,"Short overnight",Delhi,Lucknow,cheapest_only,35,15716,"Garib Nawaz Express Slip",Exp,20:40,05:20,520,0.00,1020,79,"Fastest route available",1
+R2,"Short overnight",Delhi,Lucknow,cheapest_only,36,19269,"Porbandar Muzaffarpur Express",Exp,20:40,05:20,520,0.00,1020,79,"Fastest route available",1
+R2,"Short overnight",Delhi,Lucknow,cheapest_only,37,14206,"Delhi-Faizabad Express",Exp,18:40,03:50,550,1.33,1075,77,"Saves your daytime hours",1
+R2,"Short overnight",Delhi,Lucknow,cheapest_only,38,04204,"Delhi Jn. -Varanasi Special",Exp,19:30,04:45,555,0.50,1085,77,"Saves your daytime hours",1
+R2,"Short overnight",Delhi,Lucknow,cheapest_only,39,15280,"Poorabiya Express",Exp,16:45,02:05,560,3.25,1095,77,"Best value for money",1
+R2,"Short overnight",Delhi,Lucknow,cheapest_only,40,19603,"Ajmer-Sultanpur Weekly Express",Exp,00:40,10:00,2000,14.00,3800,0,"Matched to Budget Preference",0
+R2,"Short overnight",Delhi,Lucknow,fixed_utility,1,12230,"Lucknow Mail",Mail,22:27,06:45,498,0.00,980,89,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,fixed_utility,2,12430,"New Delhi - Lucknow AC SF Express",Superfast,23:47,07:30,463,0.00,960,89,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,fixed_utility,3,12004,"NewDelh-Lucknowi Swarn Shatabdi Express",Shatabdi,06:29,12:30,361,4.50,1055,86,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,fixed_utility,4,12272,"New Delhi-Lucknow AC Duronto Express",Drnt,23:42,07:10,448,0.00,885,85,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,fixed_utility,5,12524,"New Delhi New Jalpaiguri SuperFast Express",Superfast,15:31,23:35,484,4.48,1000,84,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,fixed_utility,6,13414,"Farakka Express",Exp,21:50,07:14,564,0.00,1105,83,"Saves your daytime hours",0
+R2,"Short overnight",Delhi,Lucknow,fixed_utility,7,13484,"Farakka Express",Exp,21:50,07:14,564,0.00,1105,83,"Saves your daytime hours",0
+R2,"Short overnight",Delhi,Lucknow,fixed_utility,8,14674,"Shaheed Express",Exp,21:15,06:10,535,0.00,1050,83,"Saves your daytime hours",0
+R2,"Short overnight",Delhi,Lucknow,fixed_utility,9,14650,"Saryu Yamuna Express",Exp,21:15,06:10,535,0.00,1050,83,"Saves your daytime hours",0
+R2,"Short overnight",Delhi,Lucknow,fixed_utility,10,12558,"Sapt Kranti SF Express",Superfast,14:50,22:40,470,5.17,975,83,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,fixed_utility,11,12392,"Shramjeevi Express",SF,13:33,21:15,462,6.45,910,82,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,fixed_utility,12,12236,"NEW DELHI - DIBRUGARH Rajdhani Exp",Rajdhani,09:42,17:25,463,7.72,1420,82,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,fixed_utility,13,12876,"NEW DELHI - PURI Neelanchal SF Exp",Superfast,06:30,14:05,455,6.08,945,82,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,fixed_utility,14,12436,"NEW DELHI - DIBRUGARH TOWN Rajdhani Exp",Rajdhani,09:42,17:25,463,7.72,1420,82,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,fixed_utility,15,04202,"New Delhi-Lucknow tri-weekly Special",Exp,00:22,09:45,563,1.75,1100,81,"Best value for money",0
+R2,"Short overnight",Delhi,Lucknow,fixed_utility,16,12566,"Bihar Sampark Kranti Express",SKr,14:40,21:50,430,5.33,850,79,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,fixed_utility,17,12420,"Gomti Express",SF,12:57,21:25,508,7.05,1470,78,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,fixed_utility,18,19601,"Ajmer New Jalpaiguri Weekly Express",Exp,15:05,23:40,515,4.92,1010,78,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,fixed_utility,19,15708,"Amrapali Express",Exp,15:30,00:25,535,4.50,1050,78,"Best value for money",0
+R2,"Short overnight",Delhi,Lucknow,fixed_utility,20,12204,"Amritsar Saharsa Garib Rath",GR,11:27,18:40,433,7.22,855,77,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,fixed_utility,21,14018,"Sadbhavana Expres",Exp,16:20,03:25,665,3.67,1295,76,"Matched to Custom Preferences",1
+R2,"Short overnight",Delhi,Lucknow,fixed_utility,22,14008,"Old Delhi-Muzaffarpur Sadbhavana Express",Exp,16:20,03:25,665,3.67,1295,76,"Matched to Custom Preferences",1
+R2,"Short overnight",Delhi,Lucknow,fixed_utility,23,14016,"Sadbhavana Express",Exp,16:20,03:25,665,3.67,1295,76,"Matched to Custom Preferences",1
+R2,"Short overnight",Delhi,Lucknow,fixed_utility,24,14014,"Sadbhavna Express",Exp,16:20,03:25,665,3.67,1295,76,"Matched to Custom Preferences",1
+R2,"Short overnight",Delhi,Lucknow,fixed_utility,25,12554,"Vaishali SF Express",Superfast,20:05,03:45,460,0.00,955,74,"Fastest route available",1
+R2,"Short overnight",Delhi,Lucknow,fixed_utility,26,12556,"Gorakhdham Express",SF,20:36,04:45,489,0.00,960,74,"Fastest route available",1
+R2,"Short overnight",Delhi,Lucknow,fixed_utility,27,12226,"Kaifiat Express",SF,19:20,03:00,460,0.67,910,74,"Fastest route available",1
+R2,"Short overnight",Delhi,Lucknow,fixed_utility,28,14258,"Kashi Vishwanath Express",Exp,11:58,21:35,577,8.03,1125,73,"Best value for money",0
+R2,"Short overnight",Delhi,Lucknow,fixed_utility,29,15610,"Awadh Assam Express",Exp,07:50,17:45,595,9.75,1160,70,"Matched to Custom Preferences",0
+R2,"Short overnight",Delhi,Lucknow,fixed_utility,30,14208,"Padmavat Express",Exp,19:50,04:20,510,0.17,1000,69,"Fastest route available",1
+R2,"Short overnight",Delhi,Lucknow,fixed_utility,31,15716-Slip,"Garib Nawaz Express",Exp,20:40,05:20,520,0.00,1020,69,"Fastest route available",1
+R2,"Short overnight",Delhi,Lucknow,fixed_utility,32,15716,"Garib Nawaz Express Slip",Exp,20:40,05:20,520,0.00,1020,69,"Fastest route available",1
+R2,"Short overnight",Delhi,Lucknow,fixed_utility,33,19269,"Porbandar Muzaffarpur Express",Exp,20:40,05:20,520,0.00,1020,69,"Fastest route available",1
+R2,"Short overnight",Delhi,Lucknow,fixed_utility,34,12212,"Anand Vihar T.- Muzaffarpur Garib Rath",GR,21:10,05:20,490,0.00,965,69,"Fastest route available",1
+R2,"Short overnight",Delhi,Lucknow,fixed_utility,35,14004,"New Delhi-New Farakka Express",Exp,18:13,02:25,492,1.78,970,67,"Fastest route available",1
+R2,"Short overnight",Delhi,Lucknow,fixed_utility,36,04204,"Delhi Jn. -Varanasi Special",Exp,19:30,04:45,555,0.50,1085,67,"Saves your daytime hours",1
+R2,"Short overnight",Delhi,Lucknow,fixed_utility,37,22408,"Delhi Anand Vihar Terminus-Varanasi Garib Rath",GR,18:10,02:25,495,1.83,975,67,"Fastest route available",1
+R2,"Short overnight",Delhi,Lucknow,fixed_utility,38,14206,"Delhi-Faizabad Express",Exp,18:40,03:50,550,1.33,1075,66,"Saves your daytime hours",1
+R2,"Short overnight",Delhi,Lucknow,fixed_utility,39,15280,"Poorabiya Express",Exp,16:45,02:05,560,3.25,1095,64,"Best value for money",1
+R2,"Short overnight",Delhi,Lucknow,fixed_utility,40,19603,"Ajmer-Sultanpur Weekly Express",Exp,00:40,10:00,2000,14.00,3800,36,"Matched to Custom Preferences",0
+R2,"Short overnight",Delhi,Lucknow,railcompass,1,12430,"New Delhi - Lucknow AC SF Express",Superfast,23:47,07:30,463,0.00,960,95,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,railcompass,2,12272,"New Delhi-Lucknow AC Duronto Express",Drnt,23:42,07:10,448,0.00,885,94,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,railcompass,3,12230,"Lucknow Mail",Mail,22:27,06:45,498,0.00,980,94,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,railcompass,4,14674,"Shaheed Express",Exp,21:15,06:10,535,0.00,1050,91,"Saves your daytime hours",0
+R2,"Short overnight",Delhi,Lucknow,railcompass,5,14650,"Saryu Yamuna Express",Exp,21:15,06:10,535,0.00,1050,91,"Saves your daytime hours",0
+R2,"Short overnight",Delhi,Lucknow,railcompass,6,13414,"Farakka Express",Exp,21:50,07:14,564,0.00,1105,90,"Saves your daytime hours",0
+R2,"Short overnight",Delhi,Lucknow,railcompass,7,13484,"Farakka Express",Exp,21:50,07:14,564,0.00,1105,90,"Saves your daytime hours",0
+R2,"Short overnight",Delhi,Lucknow,railcompass,8,12004,"NewDelh-Lucknowi Swarn Shatabdi Express",Shatabdi,06:29,12:30,361,4.50,1055,88,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,railcompass,9,04202,"New Delhi-Lucknow tri-weekly Special",Exp,00:22,09:45,563,1.75,1100,87,"Best value for money",0
+R2,"Short overnight",Delhi,Lucknow,railcompass,10,12524,"New Delhi New Jalpaiguri SuperFast Express",Superfast,15:31,23:35,484,4.48,1000,85,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,railcompass,11,12566,"Bihar Sampark Kranti Express",SKr,14:40,21:50,430,5.33,850,84,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,railcompass,12,12558,"Sapt Kranti SF Express",Superfast,14:50,22:40,470,5.17,975,84,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,railcompass,13,12392,"Shramjeevi Express",SF,13:33,21:15,462,6.45,910,83,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,railcompass,14,12876,"NEW DELHI - PURI Neelanchal SF Exp",Superfast,06:30,14:05,455,6.08,945,83,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,railcompass,15,19601,"Ajmer New Jalpaiguri Weekly Express",Exp,15:05,23:40,515,4.92,1010,81,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,railcompass,16,15708,"Amrapali Express",Exp,15:30,00:25,535,4.50,1050,81,"Best value for money",0
+R2,"Short overnight",Delhi,Lucknow,railcompass,17,12204,"Amritsar Saharsa Garib Rath",GR,11:27,18:40,433,7.22,855,80,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,railcompass,18,12554,"Vaishali SF Express",Superfast,20:05,03:45,460,0.00,955,79,"Fastest route available",1
+R2,"Short overnight",Delhi,Lucknow,railcompass,19,12236,"NEW DELHI - DIBRUGARH Rajdhani Exp",Rajdhani,09:42,17:25,463,7.72,1420,78,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,railcompass,20,12436,"NEW DELHI - DIBRUGARH TOWN Rajdhani Exp",Rajdhani,09:42,17:25,463,7.72,1420,78,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,railcompass,21,12556,"Gorakhdham Express",SF,20:36,04:45,489,0.00,960,78,"Fastest route available",1
+R2,"Short overnight",Delhi,Lucknow,railcompass,22,14018,"Sadbhavana Expres",Exp,16:20,03:25,665,3.67,1295,78,"Solid all-around option",1
+R2,"Short overnight",Delhi,Lucknow,railcompass,23,12226,"Kaifiat Express",SF,19:20,03:00,460,0.67,910,78,"Fastest route available",1
+R2,"Short overnight",Delhi,Lucknow,railcompass,24,14008,"Old Delhi-Muzaffarpur Sadbhavana Express",Exp,16:20,03:25,665,3.67,1295,78,"Solid all-around option",1
+R2,"Short overnight",Delhi,Lucknow,railcompass,25,14016,"Sadbhavana Express",Exp,16:20,03:25,665,3.67,1295,78,"Solid all-around option",1
+R2,"Short overnight",Delhi,Lucknow,railcompass,26,14014,"Sadbhavna Express",Exp,16:20,03:25,665,3.67,1295,78,"Solid all-around option",1
+R2,"Short overnight",Delhi,Lucknow,railcompass,27,12420,"Gomti Express",SF,12:57,21:25,508,7.05,1470,77,"Fastest route available",0
+R2,"Short overnight",Delhi,Lucknow,railcompass,28,12212,"Anand Vihar T.- Muzaffarpur Garib Rath",GR,21:10,05:20,490,0.00,965,77,"Fastest route available",1
+R2,"Short overnight",Delhi,Lucknow,railcompass,29,14208,"Padmavat Express",Exp,19:50,04:20,510,0.17,1000,75,"Fastest route available",1
+R2,"Short overnight",Delhi,Lucknow,railcompass,30,15716-Slip,"Garib Nawaz Express",Exp,20:40,05:20,520,0.00,1020,75,"Fastest route available",1
+R2,"Short overnight",Delhi,Lucknow,railcompass,31,15716,"Garib Nawaz Express Slip",Exp,20:40,05:20,520,0.00,1020,75,"Fastest route available",1
+R2,"Short overnight",Delhi,Lucknow,railcompass,32,19269,"Porbandar Muzaffarpur Express",Exp,20:40,05:20,520,0.00,1020,75,"Fastest route available",1
+R2,"Short overnight",Delhi,Lucknow,railcompass,33,14258,"Kashi Vishwanath Express",Exp,11:58,21:35,577,8.03,1125,74,"Best value for money",0
+R2,"Short overnight",Delhi,Lucknow,railcompass,34,14004,"New Delhi-New Farakka Express",Exp,18:13,02:25,492,1.78,970,73,"Fastest route available",1
+R2,"Short overnight",Delhi,Lucknow,railcompass,35,04204,"Delhi Jn. -Varanasi Special",Exp,19:30,04:45,555,0.50,1085,73,"Saves your daytime hours",1
+R2,"Short overnight",Delhi,Lucknow,railcompass,36,22408,"Delhi Anand Vihar Terminus-Varanasi Garib Rath",GR,18:10,02:25,495,1.83,975,73,"Fastest route available",1
+R2,"Short overnight",Delhi,Lucknow,railcompass,37,14206,"Delhi-Faizabad Express",Exp,18:40,03:50,550,1.33,1075,72,"Saves your daytime hours",1
+R2,"Short overnight",Delhi,Lucknow,railcompass,38,15610,"Awadh Assam Express",Exp,07:50,17:45,595,9.75,1160,70,"Solid all-around option",0
+R2,"Short overnight",Delhi,Lucknow,railcompass,39,15280,"Poorabiya Express",Exp,16:45,02:05,560,3.25,1095,68,"Best value for money",1
+R2,"Short overnight",Delhi,Lucknow,railcompass,40,19603,"Ajmer-Sultanpur Weekly Express",Exp,00:40,10:00,2000,14.00,3800,37,"Solid all-around option",0
+R3,"Long daytime",Chennai,Bangalore,duration_only,1,12027,"CHENNAI CENT - BANGALORE CITY Shatabdi Exp",Shatabdi,17:34,22:01,267,2.43,845,100,"Fastest route available",0
+R3,"Long daytime",Chennai,Bangalore,duration_only,2,12007,"CHENNAI CENT - MYSORE Shatabdi Express",Shatabdi,06:04,10:38,274,2.63,860,93,"Fastest route available",0
+R3,"Long daytime",Chennai,Bangalore,duration_only,3,12577,"DARBHANGA - MYSORE BAGMATI SF Exp",Superfast,14:50,19:54,304,5.07,265,65,"Best value for money",0
+R3,"Long daytime",Chennai,Bangalore,duration_only,4,12607,"CHENNAI CENTRAL - BANGALORE Lalbagh Exp",SF,15:47,20:53,306,4.22,550,63,"Matched to Duration Preference",0
+R3,"Long daytime",Chennai,Bangalore,duration_only,5,12639,"CHENNAI CENT - BANGALORE Brindavan Exp",SF,07:20,12:30,310,4.50,555,59,"Matched to Duration Preference",0
+R3,"Long daytime",Chennai,Bangalore,duration_only,6,12657,"CHENNAI - BANGALORE Mail",Mail,23:20,04:18,298,0.00,230,56,"Saves your daytime hours",1
+R3,"Long daytime",Chennai,Bangalore,duration_only,7,12691,"CHENNAI - SSP NILAYAM SF Exp",Superfast,23:35,04:43,308,0.00,270,46,"Saves your daytime hours",1
+R3,"Long daytime",Chennai,Bangalore,duration_only,8,22682,"CHENNAI - MYSORE Weekly SF Exp",Superfast,23:35,04:43,308,0.00,270,46,"Saves your daytime hours",1
+R3,"Long daytime",Chennai,Bangalore,duration_only,9,12292,"CHENNAI - YESVANTPUR SF Exp",Superfast,23:35,04:43,308,0.00,270,46,"Saves your daytime hours",1
+R3,"Long daytime",Chennai,Bangalore,duration_only,10,22601,"CHENNAI CENT - SAINAGAR SHIRDI SF Exp",Superfast,10:15,15:40,325,5.42,280,45,"Best value for money",0
+R3,"Long daytime",Chennai,Bangalore,duration_only,11,12296,"PATLIPUTRA - BANGALORE Sanghamitra SF Exp",Superfast,14:05,19:36,331,5.52,285,40,"Best value for money",0
+R3,"Long daytime",Chennai,Bangalore,duration_only,12,12609,"CHENNAI CENT - BANGALORE SF Intercity Exp",Superfast,13:39,19:13,334,5.57,645,37,"Matched to Duration Preference",0
+R3,"Long daytime",Chennai,Bangalore,duration_only,13,15228,"MUZAFFARPUR - YESVANTPUR Weekly Exp",Exp,04:20,09:58,338,1.97,260,33,"Best value for money",0
+R3,"Long daytime",Chennai,Bangalore,duration_only,14,17313,"CHENNAI CENT - HUBLI Weekly Exp",Exp,14:15,20:08,353,5.75,270,19,"Best value for money",0
+R3,"Long daytime",Chennai,Bangalore,duration_only,15,17311,"CHENNAI CENT - VASCO DA GAMA Exp",Exp,14:15,20:08,353,5.75,270,19,"Best value for money",0
+R3,"Long daytime",Chennai,Bangalore,duration_only,16,16222,"Kaveri Express",Exp,21:34,03:13,339,0.00,260,17,"Saves your daytime hours",1
+R3,"Long daytime",Chennai,Bangalore,duration_only,17,12510,"GUWAHATI - BENGALURU (Kaziranga) SF Express",Superfast,04:46,10:43,357,2.72,305,15,"Matched to Duration Preference",0
+R3,"Long daytime",Chennai,Bangalore,duration_only,18,15902,"DIBRUGARH - BENGALURU CITY Weekly Exp",Exp,04:30,10:43,373,2.72,285,0,"Best value for money",0
+R3,"Long daytime",Chennai,Bangalore,cheapest_only,1,15228,"MUZAFFARPUR - YESVANTPUR Weekly Exp",Exp,04:20,09:58,338,1.97,260,95,"Best value for money",0
+R3,"Long daytime",Chennai,Bangalore,cheapest_only,2,17313,"CHENNAI CENT - HUBLI Weekly Exp",Exp,14:15,20:08,353,5.75,270,94,"Best value for money",0
+R3,"Long daytime",Chennai,Bangalore,cheapest_only,3,17311,"CHENNAI CENT - VASCO DA GAMA Exp",Exp,14:15,20:08,353,5.75,270,94,"Best value for money",0
+R3,"Long daytime",Chennai,Bangalore,cheapest_only,4,12577,"DARBHANGA - MYSORE BAGMATI SF Exp",Superfast,14:50,19:54,304,5.07,265,94,"Best value for money",0
+R3,"Long daytime",Chennai,Bangalore,cheapest_only,5,22601,"CHENNAI CENT - SAINAGAR SHIRDI SF Exp",Superfast,10:15,15:40,325,5.42,280,92,"Best value for money",0
+R3,"Long daytime",Chennai,Bangalore,cheapest_only,6,12296,"PATLIPUTRA - BANGALORE Sanghamitra SF Exp",Superfast,14:05,19:36,331,5.52,285,91,"Best value for money",0
+R3,"Long daytime",Chennai,Bangalore,cheapest_only,7,15902,"DIBRUGARH - BENGALURU CITY Weekly Exp",Exp,04:30,10:43,373,2.72,285,91,"Best value for money",0
+R3,"Long daytime",Chennai,Bangalore,cheapest_only,8,12510,"GUWAHATI - BENGALURU (Kaziranga) SF Express",Superfast,04:46,10:43,357,2.72,305,88,"Matched to Budget Preference",0
+R3,"Long daytime",Chennai,Bangalore,cheapest_only,9,12657,"CHENNAI - BANGALORE Mail",Mail,23:20,04:18,298,0.00,230,85,"Saves your daytime hours",1
+R3,"Long daytime",Chennai,Bangalore,cheapest_only,10,16222,"Kaveri Express",Exp,21:34,03:13,339,0.00,260,80,"Saves your daytime hours",1
+R3,"Long daytime",Chennai,Bangalore,cheapest_only,11,12691,"CHENNAI - SSP NILAYAM SF Exp",Superfast,23:35,04:43,308,0.00,270,79,"Saves your daytime hours",1
+R3,"Long daytime",Chennai,Bangalore,cheapest_only,12,22682,"CHENNAI - MYSORE Weekly SF Exp",Superfast,23:35,04:43,308,0.00,270,79,"Saves your daytime hours",1
+R3,"Long daytime",Chennai,Bangalore,cheapest_only,13,12292,"CHENNAI - YESVANTPUR SF Exp",Superfast,23:35,04:43,308,0.00,270,79,"Saves your daytime hours",1
+R3,"Long daytime",Chennai,Bangalore,cheapest_only,14,12607,"CHENNAI CENTRAL - BANGALORE Lalbagh Exp",SF,15:47,20:53,306,4.22,550,49,"Matched to Budget Preference",0
+R3,"Long daytime",Chennai,Bangalore,cheapest_only,15,12639,"CHENNAI CENT - BANGALORE Brindavan Exp",SF,07:20,12:30,310,4.50,555,48,"Matched to Budget Preference",0
+R3,"Long daytime",Chennai,Bangalore,cheapest_only,16,12609,"CHENNAI CENT - BANGALORE SF Intercity Exp",Superfast,13:39,19:13,334,5.57,645,34,"Matched to Budget Preference",0
+R3,"Long daytime",Chennai,Bangalore,cheapest_only,17,12027,"CHENNAI CENT - BANGALORE CITY Shatabdi Exp",Shatabdi,17:34,22:01,267,2.43,845,2,"Fastest route available",0
+R3,"Long daytime",Chennai,Bangalore,cheapest_only,18,12007,"CHENNAI CENT - MYSORE Shatabdi Express",Shatabdi,06:04,10:38,274,2.63,860,0,"Fastest route available",0
+R3,"Long daytime",Chennai,Bangalore,fixed_utility,1,12657,"CHENNAI - BANGALORE Mail",Mail,23:20,04:18,298,0.00,230,71,"Saves your daytime hours",1
+R3,"Long daytime",Chennai,Bangalore,fixed_utility,2,12577,"DARBHANGA - MYSORE BAGMATI SF Exp",Superfast,14:50,19:54,304,5.07,265,70,"Best value for money",0
+R3,"Long daytime",Chennai,Bangalore,fixed_utility,3,12691,"CHENNAI - SSP NILAYAM SF Exp",Superfast,23:35,04:43,308,0.00,270,69,"Saves your daytime hours",1
+R3,"Long daytime",Chennai,Bangalore,fixed_utility,4,12027,"CHENNAI CENT - BANGALORE CITY Shatabdi Exp",Shatabdi,17:34,22:01,267,2.43,845,69,"Fastest route available",0
+R3,"Long daytime",Chennai,Bangalore,fixed_utility,5,22682,"CHENNAI - MYSORE Weekly SF Exp",Superfast,23:35,04:43,308,0.00,270,69,"Saves your daytime hours",1
+R3,"Long daytime",Chennai,Bangalore,fixed_utility,6,12292,"CHENNAI - YESVANTPUR SF Exp",Superfast,23:35,04:43,308,0.00,270,69,"Saves your daytime hours",1
+R3,"Long daytime",Chennai,Bangalore,fixed_utility,7,15228,"MUZAFFARPUR - YESVANTPUR Weekly Exp",Exp,04:20,09:58,338,1.97,260,69,"Best value for money",0
+R3,"Long daytime",Chennai,Bangalore,fixed_utility,8,12007,"CHENNAI CENT - MYSORE Shatabdi Express",Shatabdi,06:04,10:38,274,2.63,860,67,"Fastest route available",0
+R3,"Long daytime",Chennai,Bangalore,fixed_utility,9,12510,"GUWAHATI - BENGALURU (Kaziranga) SF Express",Superfast,04:46,10:43,357,2.72,305,67,"Matched to Custom Preferences",0
+R3,"Long daytime",Chennai,Bangalore,fixed_utility,10,22601,"CHENNAI CENT - SAINAGAR SHIRDI SF Exp",Superfast,10:15,15:40,325,5.42,280,65,"Best value for money",0
+R3,"Long daytime",Chennai,Bangalore,fixed_utility,11,12607,"CHENNAI CENTRAL - BANGALORE Lalbagh Exp",SF,15:47,20:53,306,4.22,550,64,"Matched to Custom Preferences",0
+R3,"Long daytime",Chennai,Bangalore,fixed_utility,12,12639,"CHENNAI CENT - BANGALORE Brindavan Exp",SF,07:20,12:30,310,4.50,555,63,"Matched to Custom Preferences",0
+R3,"Long daytime",Chennai,Bangalore,fixed_utility,13,12296,"PATLIPUTRA - BANGALORE Sanghamitra SF Exp",Superfast,14:05,19:36,331,5.52,285,63,"Best value for money",0
+R3,"Long daytime",Chennai,Bangalore,fixed_utility,14,15902,"DIBRUGARH - BENGALURU CITY Weekly Exp",Exp,04:30,10:43,373,2.72,285,60,"Best value for money",0
+R3,"Long daytime",Chennai,Bangalore,fixed_utility,15,16222,"Kaveri Express",Exp,21:34,03:13,339,0.00,260,59,"Saves your daytime hours",1
+R3,"Long daytime",Chennai,Bangalore,fixed_utility,16,17313,"CHENNAI CENT - HUBLI Weekly Exp",Exp,14:15,20:08,353,5.75,270,55,"Best value for money",0
+R3,"Long daytime",Chennai,Bangalore,fixed_utility,17,17311,"CHENNAI CENT - VASCO DA GAMA Exp",Exp,14:15,20:08,353,5.75,270,55,"Best value for money",0
+R3,"Long daytime",Chennai,Bangalore,fixed_utility,18,12609,"CHENNAI CENT - BANGALORE SF Intercity Exp",Superfast,13:39,19:13,334,5.57,645,53,"Matched to Custom Preferences",0
+R3,"Long daytime",Chennai,Bangalore,railcompass,1,12657,"CHENNAI - BANGALORE Mail",Mail,23:20,04:18,298,0.00,230,72,"Saves your daytime hours",1
+R3,"Long daytime",Chennai,Bangalore,railcompass,2,12691,"CHENNAI - SSP NILAYAM SF Exp",Superfast,23:35,04:43,308,0.00,270,68,"Saves your daytime hours",1
+R3,"Long daytime",Chennai,Bangalore,railcompass,3,22682,"CHENNAI - MYSORE Weekly SF Exp",Superfast,23:35,04:43,308,0.00,270,68,"Saves your daytime hours",1
+R3,"Long daytime",Chennai,Bangalore,railcompass,4,12292,"CHENNAI - YESVANTPUR SF Exp",Superfast,23:35,04:43,308,0.00,270,68,"Saves your daytime hours",1
+R3,"Long daytime",Chennai,Bangalore,railcompass,5,12027,"CHENNAI CENT - BANGALORE CITY Shatabdi Exp",Shatabdi,17:34,22:01,267,2.43,845,67,"Fastest route available",0
+R3,"Long daytime",Chennai,Bangalore,railcompass,6,12007,"CHENNAI CENT - MYSORE Shatabdi Express",Shatabdi,06:04,10:38,274,2.63,860,64,"Fastest route available",0
+R3,"Long daytime",Chennai,Bangalore,railcompass,7,15228,"MUZAFFARPUR - YESVANTPUR Weekly Exp",Exp,04:20,09:58,338,1.97,260,62,"Best value for money",0
+R3,"Long daytime",Chennai,Bangalore,railcompass,8,12577,"DARBHANGA - MYSORE BAGMATI SF Exp",Superfast,14:50,19:54,304,5.07,265,61,"Best value for money",0
+R3,"Long daytime",Chennai,Bangalore,railcompass,9,16222,"Kaveri Express",Exp,21:34,03:13,339,0.00,260,56,"Saves your daytime hours",1
+R3,"Long daytime",Chennai,Bangalore,railcompass,10,12607,"CHENNAI CENTRAL - BANGALORE Lalbagh Exp",SF,15:47,20:53,306,4.22,550,55,"Solid all-around option",0
+R3,"Long daytime",Chennai,Bangalore,railcompass,11,12639,"CHENNAI CENT - BANGALORE Brindavan Exp",SF,07:20,12:30,310,4.50,555,53,"Solid all-around option",0
+R3,"Long daytime",Chennai,Bangalore,railcompass,12,12510,"GUWAHATI - BENGALURU (Kaziranga) SF Express",Superfast,04:46,10:43,357,2.72,305,53,"Solid all-around option",0
+R3,"Long daytime",Chennai,Bangalore,railcompass,13,22601,"CHENNAI CENT - SAINAGAR SHIRDI SF Exp",Superfast,10:15,15:40,325,5.42,280,52,"Best value for money",0
+R3,"Long daytime",Chennai,Bangalore,railcompass,14,12296,"PATLIPUTRA - BANGALORE Sanghamitra SF Exp",Superfast,14:05,19:36,331,5.52,285,50,"Best value for money",0
+R3,"Long daytime",Chennai,Bangalore,railcompass,15,15902,"DIBRUGARH - BENGALURU CITY Weekly Exp",Exp,04:30,10:43,373,2.72,285,46,"Best value for money",0
+R3,"Long daytime",Chennai,Bangalore,railcompass,16,17313,"CHENNAI CENT - HUBLI Weekly Exp",Exp,14:15,20:08,353,5.75,270,40,"Best value for money",0
+R3,"Long daytime",Chennai,Bangalore,railcompass,17,17311,"CHENNAI CENT - VASCO DA GAMA Exp",Exp,14:15,20:08,353,5.75,270,40,"Best value for money",0
+R3,"Long daytime",Chennai,Bangalore,railcompass,18,12609,"CHENNAI CENT - BANGALORE SF Intercity Exp",Superfast,13:39,19:13,334,5.57,645,37,"Solid all-around option",0
+R4,"Long overnight",Delhi,Mumbai,duration_only,1,12952,"Mumbai Rajdhani Express",Rajdhani,16:34,08:27,953,3.88,2665,100,"Fastest route available",0
+R4,"Long overnight",Delhi,Mumbai,duration_only,2,12910,"H.Nizamuddin-Bandra Terminus Garib Rath Express",GR,15:40,08:10,990,4.50,1905,96,"Fastest route available",0
+R4,"Long overnight",Delhi,Mumbai,duration_only,3,12954,"August Kranti Rajdhani Express",Rajdhani,16:55,10:18,1043,5.38,2890,90,"Matched to Duration Preference",0
+R4,"Long overnight",Delhi,Mumbai,duration_only,4,12264,"Hazrat Nizamuddin-Pune AC Duronto Express",Drnt,11:00,05:14,1094,9.00,2100,84,"Matched to Duration Preference",1
+R4,"Long overnight",Delhi,Mumbai,duration_only,5,12472,"Jammu Tawi - Mumbai Bandra (T.) SF Swaraj Express",Superfast,21:57,18:05,1208,10.08,2360,71,"Matched to Duration Preference",0
+R4,"Long overnight",Delhi,Mumbai,duration_only,6,12908,"Maharashtra Sampark Kranti Express",SKr,21:35,17:50,1215,9.83,2325,70,"Matched to Duration Preference",0
+R4,"Long overnight",Delhi,Mumbai,duration_only,7,09022,"JAMMU TAWI - BANDRA TERMINUS AC Suvidha Special (Starts 5 April)",SF,21:08,17:50,1242,9.83,2375,67,"Matched to Duration Preference",0
+R4,"Long overnight",Delhi,Mumbai,duration_only,8,12904,"Golden Temple Mail",Mail,07:40,05:04,1284,12.00,2455,62,"Matched to Duration Preference",1
+R4,"Long overnight",Delhi,Mumbai,duration_only,9,22926,"Paschim Express",SF,17:03,15:15,1332,10.20,2545,57,"Matched to Duration Preference",0
+R4,"Long overnight",Delhi,Mumbai,duration_only,10,12926,"Paschim Express",SF,17:03,15:15,1332,10.20,2545,57,"Matched to Duration Preference",0
+R4,"Long overnight",Delhi,Mumbai,duration_only,11,12215,"Delhi Sarai Rohilla-Mumbai BandraT Garib Rath",GR,09:20,08:10,1370,10.83,2615,52,"Matched to Duration Preference",0
+R4,"Long overnight",Delhi,Mumbai,duration_only,12,12618,"NEW DELHI H NIZAMUDDIN - ERNAKULAM Mangala Lakshadweep Exp",SF,09:20,08:30,1390,11.17,2655,50,"Matched to Duration Preference",0
+R4,"Long overnight",Delhi,Mumbai,duration_only,13,12172,"Haridwar-Mumbai LTT AC Express",SF,23:15,22:58,1423,12.00,2715,46,"Matched to Duration Preference",0
+R4,"Long overnight",Delhi,Mumbai,duration_only,14,12138,"Punjab Mail",Mail,05:29,06:20,1491,12.00,2845,39,"Matched to Duration Preference",0
+R4,"Long overnight",Delhi,Mumbai,duration_only,15,11058,"Amritsar Dadar Express",Exp,21:09,02:50,1781,12.00,3385,6,"Matched to Duration Preference",1
+R4,"Long overnight",Delhi,Mumbai,duration_only,16,19024,"Firozpur Mumbai Janata Express",Exp,13:28,19:38,1810,18.17,1295,2,"Best value for money",0
+R4,"Long overnight",Delhi,Mumbai,duration_only,17,19020,"Dehradun - Bandra Terminus Express",Exp,21:55,04:25,1830,12.00,3480,0,"Matched to Duration Preference",1
+R4,"Long overnight",Delhi,Mumbai,cheapest_only,1,19024,"Firozpur Mumbai Janata Express",Exp,13:28,19:38,1810,18.17,1295,100,"Best value for money",0
+R4,"Long overnight",Delhi,Mumbai,cheapest_only,2,12910,"H.Nizamuddin-Bandra Terminus Garib Rath Express",GR,15:40,08:10,990,4.50,1905,72,"Fastest route available",0
+R4,"Long overnight",Delhi,Mumbai,cheapest_only,3,12264,"Hazrat Nizamuddin-Pune AC Duronto Express",Drnt,11:00,05:14,1094,9.00,2100,63,"Matched to Budget Preference",1
+R4,"Long overnight",Delhi,Mumbai,cheapest_only,4,12908,"Maharashtra Sampark Kranti Express",SKr,21:35,17:50,1215,9.83,2325,53,"Matched to Budget Preference",0
+R4,"Long overnight",Delhi,Mumbai,cheapest_only,5,09022,"JAMMU TAWI - BANDRA TERMINUS AC Suvidha Special (Starts 5 April)",SF,21:08,17:50,1242,9.83,2375,51,"Matched to Budget Preference",0
+R4,"Long overnight",Delhi,Mumbai,cheapest_only,6,12472,"Jammu Tawi - Mumbai Bandra (T.) SF Swaraj Express",Superfast,21:57,18:05,1208,10.08,2360,51,"Matched to Budget Preference",0
+R4,"Long overnight",Delhi,Mumbai,cheapest_only,7,12904,"Golden Temple Mail",Mail,07:40,05:04,1284,12.00,2455,47,"Matched to Budget Preference",1
+R4,"Long overnight",Delhi,Mumbai,cheapest_only,8,22926,"Paschim Express",SF,17:03,15:15,1332,10.20,2545,43,"Matched to Budget Preference",0
+R4,"Long overnight",Delhi,Mumbai,cheapest_only,9,12926,"Paschim Express",SF,17:03,15:15,1332,10.20,2545,43,"Matched to Budget Preference",0
+R4,"Long overnight",Delhi,Mumbai,cheapest_only,10,12215,"Delhi Sarai Rohilla-Mumbai BandraT Garib Rath",GR,09:20,08:10,1370,10.83,2615,40,"Matched to Budget Preference",0
+R4,"Long overnight",Delhi,Mumbai,cheapest_only,11,12618,"NEW DELHI H NIZAMUDDIN - ERNAKULAM Mangala Lakshadweep Exp",SF,09:20,08:30,1390,11.17,2655,38,"Matched to Budget Preference",0
+R4,"Long overnight",Delhi,Mumbai,cheapest_only,12,12952,"Mumbai Rajdhani Express",Rajdhani,16:34,08:27,953,3.88,2665,37,"Fastest route available",0
+R4,"Long overnight",Delhi,Mumbai,cheapest_only,13,12172,"Haridwar-Mumbai LTT AC Express",SF,23:15,22:58,1423,12.00,2715,35,"Matched to Budget Preference",0
+R4,"Long overnight",Delhi,Mumbai,cheapest_only,14,12138,"Punjab Mail",Mail,05:29,06:20,1491,12.00,2845,29,"Matched to Budget Preference",0
+R4,"Long overnight",Delhi,Mumbai,cheapest_only,15,12954,"August Kranti Rajdhani Express",Rajdhani,16:55,10:18,1043,5.38,2890,27,"Matched to Budget Preference",0
+R4,"Long overnight",Delhi,Mumbai,cheapest_only,16,11058,"Amritsar Dadar Express",Exp,21:09,02:50,1781,12.00,3385,4,"Matched to Budget Preference",1
+R4,"Long overnight",Delhi,Mumbai,cheapest_only,17,19020,"Dehradun - Bandra Terminus Express",Exp,21:55,04:25,1830,12.00,3480,0,"Matched to Budget Preference",1
+R4,"Long overnight",Delhi,Mumbai,fixed_utility,1,12952,"Mumbai Rajdhani Express",Rajdhani,16:34,08:27,953,3.88,2665,85,"Fastest route available",0
+R4,"Long overnight",Delhi,Mumbai,fixed_utility,2,12910,"H.Nizamuddin-Bandra Terminus Garib Rath Express",GR,15:40,08:10,990,4.50,1905,80,"Fastest route available",0
+R4,"Long overnight",Delhi,Mumbai,fixed_utility,3,12954,"August Kranti Rajdhani Express",Rajdhani,16:55,10:18,1043,5.38,2890,79,"Matched to Custom Preferences",0
+R4,"Long overnight",Delhi,Mumbai,fixed_utility,4,12472,"Jammu Tawi - Mumbai Bandra (T.) SF Swaraj Express",Superfast,21:57,18:05,1208,10.08,2360,71,"Matched to Custom Preferences",0
+R4,"Long overnight",Delhi,Mumbai,fixed_utility,5,12264,"Hazrat Nizamuddin-Pune AC Duronto Express",Drnt,11:00,05:14,1094,9.00,2100,71,"Matched to Custom Preferences",1
+R4,"Long overnight",Delhi,Mumbai,fixed_utility,6,09022,"JAMMU TAWI - BANDRA TERMINUS AC Suvidha Special (Starts 5 April)",SF,21:08,17:50,1242,9.83,2375,70,"Matched to Custom Preferences",0
+R4,"Long overnight",Delhi,Mumbai,fixed_utility,7,22926,"Paschim Express",SF,17:03,15:15,1332,10.20,2545,67,"Matched to Custom Preferences",0
+R4,"Long overnight",Delhi,Mumbai,fixed_utility,8,12926,"Paschim Express",SF,17:03,15:15,1332,10.20,2545,67,"Matched to Custom Preferences",0
+R4,"Long overnight",Delhi,Mumbai,fixed_utility,9,12908,"Maharashtra Sampark Kranti Express",SKr,21:35,17:50,1215,9.83,2325,66,"Matched to Custom Preferences",0
+R4,"Long overnight",Delhi,Mumbai,fixed_utility,10,12904,"Golden Temple Mail",Mail,07:40,05:04,1284,12.00,2455,66,"Matched to Custom Preferences",1
+R4,"Long overnight",Delhi,Mumbai,fixed_utility,11,12618,"NEW DELHI H NIZAMUDDIN - ERNAKULAM Mangala Lakshadweep Exp",SF,09:20,08:30,1390,11.17,2655,64,"Matched to Custom Preferences",0
+R4,"Long overnight",Delhi,Mumbai,fixed_utility,12,12172,"Haridwar-Mumbai LTT AC Express",SF,23:15,22:58,1423,12.00,2715,62,"Matched to Custom Preferences",0
+R4,"Long overnight",Delhi,Mumbai,fixed_utility,13,12215,"Delhi Sarai Rohilla-Mumbai BandraT Garib Rath",GR,09:20,08:10,1370,10.83,2615,60,"Matched to Custom Preferences",0
+R4,"Long overnight",Delhi,Mumbai,fixed_utility,14,12138,"Punjab Mail",Mail,05:29,06:20,1491,12.00,2845,59,"Matched to Custom Preferences",0
+R4,"Long overnight",Delhi,Mumbai,fixed_utility,15,19024,"Firozpur Mumbai Janata Express",Exp,13:28,19:38,1810,18.17,1295,53,"Best value for money",0
+R4,"Long overnight",Delhi,Mumbai,fixed_utility,16,11058,"Amritsar Dadar Express",Exp,21:09,02:50,1781,12.00,3385,45,"Matched to Custom Preferences",1
+R4,"Long overnight",Delhi,Mumbai,fixed_utility,17,19020,"Dehradun - Bandra Terminus Express",Exp,21:55,04:25,1830,12.00,3480,43,"Matched to Custom Preferences",1
+R4,"Long overnight",Delhi,Mumbai,railcompass,1,12952,"Mumbai Rajdhani Express",Rajdhani,16:34,08:27,953,3.88,2665,103,"Premium Long-Haul Experience",0
+R4,"Long overnight",Delhi,Mumbai,railcompass,2,12954,"August Kranti Rajdhani Express",Rajdhani,16:55,10:18,1043,5.38,2890,98,"Premium Long-Haul Experience",0
+R4,"Long overnight",Delhi,Mumbai,railcompass,3,12910,"H.Nizamuddin-Bandra Terminus Garib Rath Express",GR,15:40,08:10,990,4.50,1905,81,"Fastest long-haul option",0
+R4,"Long overnight",Delhi,Mumbai,railcompass,4,12264,"Hazrat Nizamuddin-Pune AC Duronto Express",Drnt,11:00,05:14,1094,9.00,2100,76,"Solid all-around option",1
+R4,"Long overnight",Delhi,Mumbai,railcompass,5,12472,"Jammu Tawi - Mumbai Bandra (T.) SF Swaraj Express",Superfast,21:57,18:05,1208,10.08,2360,74,"Solid all-around option",0
+R4,"Long overnight",Delhi,Mumbai,railcompass,6,09022,"JAMMU TAWI - BANDRA TERMINUS AC Suvidha Special (Starts 5 April)",SF,21:08,17:50,1242,9.83,2375,72,"Solid all-around option",0
+R4,"Long overnight",Delhi,Mumbai,railcompass,7,12904,"Golden Temple Mail",Mail,07:40,05:04,1284,12.00,2455,70,"Solid all-around option",1
+R4,"Long overnight",Delhi,Mumbai,railcompass,8,12908,"Maharashtra Sampark Kranti Express",SKr,21:35,17:50,1215,9.83,2325,69,"Solid all-around option",0
+R4,"Long overnight",Delhi,Mumbai,railcompass,9,22926,"Paschim Express",SF,17:03,15:15,1332,10.20,2545,68,"Solid all-around option",0
+R4,"Long overnight",Delhi,Mumbai,railcompass,10,12926,"Paschim Express",SF,17:03,15:15,1332,10.20,2545,68,"Solid all-around option",0
+R4,"Long overnight",Delhi,Mumbai,railcompass,11,12618,"NEW DELHI H NIZAMUDDIN - ERNAKULAM Mangala Lakshadweep Exp",SF,09:20,08:30,1390,11.17,2655,65,"Solid all-around option",0
+R4,"Long overnight",Delhi,Mumbai,railcompass,12,12172,"Haridwar-Mumbai LTT AC Express",SF,23:15,22:58,1423,12.00,2715,63,"Solid all-around option",0
+R4,"Long overnight",Delhi,Mumbai,railcompass,13,12215,"Delhi Sarai Rohilla-Mumbai BandraT Garib Rath",GR,09:20,08:10,1370,10.83,2615,61,"Solid all-around option",0
+R4,"Long overnight",Delhi,Mumbai,railcompass,14,12138,"Punjab Mail",Mail,05:29,06:20,1491,12.00,2845,59,"Solid all-around option",0
+R4,"Long overnight",Delhi,Mumbai,railcompass,15,19024,"Firozpur Mumbai Janata Express",Exp,13:28,19:38,1810,18.17,1295,53,"Best long-haul value",0
+R4,"Long overnight",Delhi,Mumbai,railcompass,16,11058,"Amritsar Dadar Express",Exp,21:09,02:50,1781,12.00,3385,40,"Solid all-around option",1
+R4,"Long overnight",Delhi,Mumbai,railcompass,17,19020,"Dehradun - Bandra Terminus Express",Exp,21:55,04:25,1830,12.00,3480,37,"Solid all-around option",1
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,1,12264,"Hazrat Nizamuddin-Pune AC Duronto Express",Drnt,05:14,07:00,106,0.00,450,100,"Fastest route available",0
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,2,12525,"Indrayani SF Express",Superfast,06:37,08:50,133,0.83,350,79,"Matched to Duration Preference",0
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,3,12123,"Deccan Queen SF Express",Superfast,17:55,20:08,133,2.08,350,79,"Matched to Duration Preference",0
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,4,12127,"MumbaiCST-Pune SF InterCity",Superfast,07:37,09:50,133,1.83,350,79,"Matched to Duration Preference",0
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,5,12125,"Pragati Superfast Express",Superfast,17:16,19:36,140,2.33,350,73,"Matched to Duration Preference",0
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,6,12750,"Mumbai LTT-Visakhapatnam SF Express",Superfast,13:04,15:28,144,2.40,450,70,"Matched to Duration Preference",0
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,7,12219,"Lokmanya Tilak (T)-Secunderabad AC Duronto Express",Drnt,23:40,01:47,127,0.00,450,69,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,8,09405,"Ahmedabad Yesvantpur (Weekly) Special",Exp,04:50,07:17,147,0.00,450,68,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,9,06502,"Ahmedabad -Yesvantpur Garib Rath Special",GR,04:50,07:18,148,0.00,450,67,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,10,16339,"MUMBAI CST - NAGERCOIL Exp",Exp,13:10,15:42,152,2.53,450,64,"Matched to Duration Preference",0
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,11,16351,"MUMBAI CST - NAGERCOIL Balaji Exp",Exp,13:10,15:42,152,2.53,450,64,"Matched to Duration Preference",0
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,12,09221,"Porbandar Secunderabad Weekly Special",Exp,19:50,22:22,152,0.17,450,64,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,13,16381,"Mumbai CST - Kanyakumari Express",Exp,16:40,19:13,153,2.55,450,63,"Matched to Duration Preference",0
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,14,16331,"MUMBAI CST - TRIVANDRUM Exp",Exp,13:10,15:43,153,2.55,450,63,"Matched to Duration Preference",0
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,15,12527,"Mumbai CST-Latur Superfast Express.",Superfast,21:53,00:28,155,0.00,450,62,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,16,16529,"Udyan Express",Exp,09:00,11:37,157,2.62,450,60,"Matched to Duration Preference",0
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,17,11007,"Deccan Express",Exp,08:10,10:48,158,2.63,350,59,"Matched to Duration Preference",0
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,18,17203,"Bhavnagar(T)-Kakinada Town Express",Exp,19:45,22:23,158,0.25,450,59,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,19,11049,"Ahmedabad-Kolhapur Express",Exp,05:20,07:58,158,0.00,450,59,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,20,16613,"RAJKOT - COIMBATORE Exp",Exp,19:45,22:23,158,0.25,450,59,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,21,17017,"Rajkot Secunderabad Express",Exp,19:45,22:23,158,0.25,450,59,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,22,19568,"OKHA - TUTICORIN Exp",Exp,19:45,22:23,158,0.25,450,59,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,23,11041,"Mumbai - Chennai Express",Exp,15:05,17:47,162,2.70,450,56,"Matched to Duration Preference",0
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,24,17031,"Mumbai CST-Hyderabad Express",Exp,13:45,16:27,162,2.70,450,56,"Matched to Duration Preference",0
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,25,11035,"Dadar-Mysore Sharavati Express",Exp,22:15,00:57,162,0.00,450,56,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,26,11011,"Mahalaxmi Express",Exp,21:25,00:08,163,0.00,450,55,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,27,11023,"Sahyadri Express",Exp,18:50,21:33,163,1.17,450,55,"Matched to Duration Preference",0
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,28,11029,"Koyna Express",Exp,09:35,12:18,163,2.72,350,55,"Matched to Duration Preference",0
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,29,11009,"Sinhagad Express",Exp,15:30,18:13,163,2.72,350,55,"Matched to Duration Preference",0
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,30,11017,"Chalukya Express",Exp,22:15,00:58,163,0.00,450,55,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,31,12940,"Jaipur-Pune SF Express",Superfast,05:20,08:04,164,0.07,450,55,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,32,11019,"Konark Express",Exp,16:10,18:57,167,2.78,450,52,"Matched to Duration Preference",0
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,33,12163,"DADAR - CHENNAI EGMORE SF Exp",Superfast,21:15,00:02,167,0.00,450,52,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,34,19312,"Indore Pune Express",Exp,05:20,08:07,167,0.12,450,52,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,35,11095,"Ahimsa Express",Exp,01:50,04:18,148,0.00,450,52,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,36,11091,"BHUJ - PUNE Ahimsa Exp",Exp,01:50,04:18,148,0.00,450,52,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,37,11089,"BHAGAT KI KOTHI - PUNE Exp",Exp,01:50,04:18,148,0.00,450,52,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,38,11087,"Veraval Pune Express",Exp,01:50,04:18,148,0.00,450,52,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,39,11013,"Mumbai LTT-Coimbatore Express",Exp,23:18,01:49,151,0.00,450,50,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,40,12115,"Siddheshwar Express",SF,23:40,02:13,153,0.00,450,48,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,41,12701,"Hussain Sagar Express",SF,22:45,01:19,154,0.00,450,48,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,42,11027,"Mumbai CST-Chennai Mail",Mail,00:40,03:16,156,0.00,450,46,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,43,11043,"MUMBAI LTT - MADURAI Exp",Exp,01:00,03:53,173,0.00,450,33,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,44,16533,"BHAGAT KI KOTHI - BANGALORE CITY Exp",Exp,01:10,04:08,178,0.00,450,29,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,45,16505,"GANDHIDHAM - BANGALORE Exp",Exp,01:10,04:08,178,0.00,450,29,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,46,16531,"Garib Nawaz Express",Exp,01:10,04:08,178,0.00,450,29,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,47,16507,"BHAGAT KI KOTHI - BANGALORE Exp",Exp,01:10,04:08,178,0.00,450,29,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,48,16209,"Ajmer-Mysore Express",Exp,01:10,04:09,179,0.00,450,28,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,49,51027,"MumbaiCST-Pandharpur Fast Passenger",Pass,23:55,03:28,213,0.00,170,1,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,50,51029,"Bijapur Fast Passenger",Pass,23:55,03:28,213,0.00,170,1,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,51,51033,"Mumbai Sainagar Shirdi Fast Pass(Via Daund)",Pass,23:55,03:28,213,0.00,450,1,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,duration_only,52,11025,"Manmad Pune Express(Via Nasik)",Exp,08:05,11:59,234,3.90,430,0,"Matched to Duration Preference",0
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,1,51027,"MumbaiCST-Pandharpur Fast Passenger",Pass,23:55,03:28,213,0.00,170,85,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,2,51029,"Bijapur Fast Passenger",Pass,23:55,03:28,213,0.00,170,85,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,3,11007,"Deccan Express",Exp,08:10,10:48,158,2.63,350,36,"Matched to Budget Preference",0
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,4,12525,"Indrayani SF Express",Superfast,06:37,08:50,133,0.83,350,36,"Matched to Budget Preference",0
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,5,12125,"Pragati Superfast Express",Superfast,17:16,19:36,140,2.33,350,36,"Matched to Budget Preference",0
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,6,11029,"Koyna Express",Exp,09:35,12:18,163,2.72,350,36,"Matched to Budget Preference",0
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,7,11009,"Sinhagad Express",Exp,15:30,18:13,163,2.72,350,36,"Matched to Budget Preference",0
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,8,12123,"Deccan Queen SF Express",Superfast,17:55,20:08,133,2.08,350,36,"Matched to Budget Preference",0
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,9,12127,"MumbaiCST-Pune SF InterCity",Superfast,07:37,09:50,133,1.83,350,36,"Matched to Budget Preference",0
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,10,11025,"Manmad Pune Express(Via Nasik)",Exp,08:05,11:59,234,3.90,430,7,"Matched to Budget Preference",0
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,11,16381,"Mumbai CST - Kanyakumari Express",Exp,16:40,19:13,153,2.55,450,0,"Matched to Budget Preference",0
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,12,12115,"Siddheshwar Express",SF,23:40,02:13,153,0.00,450,0,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,13,16331,"MUMBAI CST - TRIVANDRUM Exp",Exp,13:10,15:43,153,2.55,450,0,"Matched to Budget Preference",0
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,14,11011,"Mahalaxmi Express",Exp,21:25,00:08,163,0.00,450,0,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,15,16339,"MUMBAI CST - NAGERCOIL Exp",Exp,13:10,15:42,152,2.53,450,0,"Matched to Budget Preference",0
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,16,11023,"Sahyadri Express",Exp,18:50,21:33,163,1.17,450,0,"Matched to Budget Preference",0
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,17,11041,"Mumbai - Chennai Express",Exp,15:05,17:47,162,2.70,450,0,"Matched to Budget Preference",0
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,18,17031,"Mumbai CST-Hyderabad Express",Exp,13:45,16:27,162,2.70,450,0,"Matched to Budget Preference",0
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,19,12701,"Hussain Sagar Express",SF,22:45,01:19,154,0.00,450,0,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,20,11019,"Konark Express",Exp,16:10,18:57,167,2.78,450,0,"Matched to Budget Preference",0
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,21,12527,"Mumbai CST-Latur Superfast Express.",Superfast,21:53,00:28,155,0.00,450,0,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,22,16529,"Udyan Express",Exp,09:00,11:37,157,2.62,450,0,"Matched to Budget Preference",0
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,23,11027,"Mumbai CST-Chennai Mail",Mail,00:40,03:16,156,0.00,450,0,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,24,16351,"MUMBAI CST - NAGERCOIL Balaji Exp",Exp,13:10,15:42,152,2.53,450,0,"Matched to Budget Preference",0
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,25,51033,"Mumbai Sainagar Shirdi Fast Pass(Via Daund)",Pass,23:55,03:28,213,0.00,450,0,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,26,12219,"Lokmanya Tilak (T)-Secunderabad AC Duronto Express",Drnt,23:40,01:47,127,0.00,450,0,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,27,12750,"Mumbai LTT-Visakhapatnam SF Express",Superfast,13:04,15:28,144,2.40,450,0,"Matched to Budget Preference",0
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,28,11013,"Mumbai LTT-Coimbatore Express",Exp,23:18,01:49,151,0.00,450,0,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,29,11043,"MUMBAI LTT - MADURAI Exp",Exp,01:00,03:53,173,0.00,450,0,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,30,11017,"Chalukya Express",Exp,22:15,00:58,163,0.00,450,0,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,31,11035,"Dadar-Mysore Sharavati Express",Exp,22:15,00:57,162,0.00,450,0,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,32,12163,"DADAR - CHENNAI EGMORE SF Exp",Superfast,21:15,00:02,167,0.00,450,0,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,33,12264,"Hazrat Nizamuddin-Pune AC Duronto Express",Drnt,05:14,07:00,106,0.00,450,0,"Fastest route available",0
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,34,06502,"Ahmedabad -Yesvantpur Garib Rath Special",GR,04:50,07:18,148,0.00,450,0,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,35,12940,"Jaipur-Pune SF Express",Superfast,05:20,08:04,164,0.07,450,0,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,36,09405,"Ahmedabad Yesvantpur (Weekly) Special",Exp,04:50,07:17,147,0.00,450,0,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,37,17203,"Bhavnagar(T)-Kakinada Town Express",Exp,19:45,22:23,158,0.25,450,0,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,38,16533,"BHAGAT KI KOTHI - BANGALORE CITY Exp",Exp,01:10,04:08,178,0.00,450,0,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,39,11049,"Ahmedabad-Kolhapur Express",Exp,05:20,07:58,158,0.00,450,0,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,40,16505,"GANDHIDHAM - BANGALORE Exp",Exp,01:10,04:08,178,0.00,450,0,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,41,19312,"Indore Pune Express",Exp,05:20,08:07,167,0.12,450,0,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,42,16613,"RAJKOT - COIMBATORE Exp",Exp,19:45,22:23,158,0.25,450,0,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,43,11095,"Ahimsa Express",Exp,01:50,04:18,148,0.00,450,0,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,44,17017,"Rajkot Secunderabad Express",Exp,19:45,22:23,158,0.25,450,0,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,45,19568,"OKHA - TUTICORIN Exp",Exp,19:45,22:23,158,0.25,450,0,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,46,16531,"Garib Nawaz Express",Exp,01:10,04:08,178,0.00,450,0,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,47,09221,"Porbandar Secunderabad Weekly Special",Exp,19:50,22:22,152,0.17,450,0,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,48,16209,"Ajmer-Mysore Express",Exp,01:10,04:09,179,0.00,450,0,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,49,11091,"BHUJ - PUNE Ahimsa Exp",Exp,01:50,04:18,148,0.00,450,0,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,50,16507,"BHAGAT KI KOTHI - BANGALORE Exp",Exp,01:10,04:08,178,0.00,450,0,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,51,11089,"BHAGAT KI KOTHI - PUNE Exp",Exp,01:50,04:18,148,0.00,450,0,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,cheapest_only,52,11087,"Veraval Pune Express",Exp,01:50,04:18,148,0.00,450,0,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,1,12525,"Indrayani SF Express",Superfast,06:37,08:50,133,0.83,350,73,"Matched to Custom Preferences",0
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,2,12127,"MumbaiCST-Pune SF InterCity",Superfast,07:37,09:50,133,1.83,350,69,"Matched to Custom Preferences",0
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,3,12264,"Hazrat Nizamuddin-Pune AC Duronto Express",Drnt,05:14,07:00,106,0.00,450,69,"Fastest route available",0
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,4,12527,"Mumbai CST-Latur Superfast Express.",Superfast,21:53,00:28,155,0.00,450,68,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,5,12123,"Deccan Queen SF Express",Superfast,17:55,20:08,133,2.08,350,68,"Matched to Custom Preferences",0
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,6,12125,"Pragati Superfast Express",Superfast,17:16,19:36,140,2.33,350,66,"Matched to Custom Preferences",0
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,7,12163,"DADAR - CHENNAI EGMORE SF Exp",Superfast,21:15,00:02,167,0.00,450,66,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,8,12940,"Jaipur-Pune SF Express",Superfast,05:20,08:04,164,0.07,450,66,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,9,06502,"Ahmedabad -Yesvantpur Garib Rath Special",GR,04:50,07:18,148,0.00,450,64,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,10,09405,"Ahmedabad Yesvantpur (Weekly) Special",Exp,04:50,07:17,147,0.00,450,64,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,11,11049,"Ahmedabad-Kolhapur Express",Exp,05:20,07:58,158,0.00,450,63,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,12,09221,"Porbandar Secunderabad Weekly Special",Exp,19:50,22:22,152,0.17,450,63,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,13,11011,"Mahalaxmi Express",Exp,21:25,00:08,163,0.00,450,62,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,14,11017,"Chalukya Express",Exp,22:15,00:58,163,0.00,450,62,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,15,11035,"Dadar-Mysore Sharavati Express",Exp,22:15,00:57,162,0.00,450,62,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,16,17203,"Bhavnagar(T)-Kakinada Town Express",Exp,19:45,22:23,158,0.25,450,62,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,17,16613,"RAJKOT - COIMBATORE Exp",Exp,19:45,22:23,158,0.25,450,62,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,18,17017,"Rajkot Secunderabad Express",Exp,19:45,22:23,158,0.25,450,62,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,19,19568,"OKHA - TUTICORIN Exp",Exp,19:45,22:23,158,0.25,450,62,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,20,19312,"Indore Pune Express",Exp,05:20,08:07,167,0.12,450,61,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,21,12750,"Mumbai LTT-Visakhapatnam SF Express",Superfast,13:04,15:28,144,2.40,450,59,"Matched to Custom Preferences",0
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,22,11007,"Deccan Express",Exp,08:10,10:48,158,2.63,350,57,"Matched to Custom Preferences",0
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,23,11023,"Sahyadri Express",Exp,18:50,21:33,163,1.17,450,57,"Matched to Custom Preferences",0
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,24,11029,"Koyna Express",Exp,09:35,12:18,163,2.72,350,56,"Matched to Custom Preferences",0
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,25,11009,"Sinhagad Express",Exp,15:30,18:13,163,2.72,350,56,"Matched to Custom Preferences",0
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,26,12115,"Siddheshwar Express",SF,23:40,02:13,153,0.00,450,53,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,27,16339,"MUMBAI CST - NAGERCOIL Exp",Exp,13:10,15:42,152,2.53,450,53,"Matched to Custom Preferences",0
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,28,12701,"Hussain Sagar Express",SF,22:45,01:19,154,0.00,450,53,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,29,11027,"Mumbai CST-Chennai Mail",Mail,00:40,03:16,156,0.00,450,53,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,30,16351,"MUMBAI CST - NAGERCOIL Balaji Exp",Exp,13:10,15:42,152,2.53,450,53,"Matched to Custom Preferences",0
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,31,16381,"Mumbai CST - Kanyakumari Express",Exp,16:40,19:13,153,2.55,450,52,"Matched to Custom Preferences",0
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,32,16331,"MUMBAI CST - TRIVANDRUM Exp",Exp,13:10,15:43,153,2.55,450,52,"Matched to Custom Preferences",0
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,33,16529,"Udyan Express",Exp,09:00,11:37,157,2.62,450,52,"Matched to Custom Preferences",0
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,34,12219,"Lokmanya Tilak (T)-Secunderabad AC Duronto Express",Drnt,23:40,01:47,127,0.00,450,52,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,35,11041,"Mumbai - Chennai Express",Exp,15:05,17:47,162,2.70,450,51,"Matched to Custom Preferences",0
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,36,17031,"Mumbai CST-Hyderabad Express",Exp,13:45,16:27,162,2.70,450,51,"Matched to Custom Preferences",0
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,37,11019,"Konark Express",Exp,16:10,18:57,167,2.78,450,50,"Matched to Custom Preferences",0
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,38,11013,"Mumbai LTT-Coimbatore Express",Exp,23:18,01:49,151,0.00,450,49,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,39,11095,"Ahimsa Express",Exp,01:50,04:18,148,0.00,450,49,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,40,11091,"BHUJ - PUNE Ahimsa Exp",Exp,01:50,04:18,148,0.00,450,49,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,41,11089,"BHAGAT KI KOTHI - PUNE Exp",Exp,01:50,04:18,148,0.00,450,49,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,42,11087,"Veraval Pune Express",Exp,01:50,04:18,148,0.00,450,49,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,43,11043,"MUMBAI LTT - MADURAI Exp",Exp,01:00,03:53,173,0.00,450,46,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,44,16533,"BHAGAT KI KOTHI - BANGALORE CITY Exp",Exp,01:10,04:08,178,0.00,450,45,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,45,16505,"GANDHIDHAM - BANGALORE Exp",Exp,01:10,04:08,178,0.00,450,45,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,46,16531,"Garib Nawaz Express",Exp,01:10,04:08,178,0.00,450,45,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,47,16209,"Ajmer-Mysore Express",Exp,01:10,04:09,179,0.00,450,45,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,48,16507,"BHAGAT KI KOTHI - BANGALORE Exp",Exp,01:10,04:08,178,0.00,450,45,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,49,51027,"MumbaiCST-Pandharpur Fast Passenger",Pass,23:55,03:28,213,0.00,170,44,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,50,51029,"Bijapur Fast Passenger",Pass,23:55,03:28,213,0.00,170,44,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,51,11025,"Manmad Pune Express(Via Nasik)",Exp,08:05,11:59,234,3.90,430,37,"Matched to Custom Preferences",0
+R5,"Multi-terminal origin",Mumbai,Pune,fixed_utility,52,51033,"Mumbai Sainagar Shirdi Fast Pass(Via Daund)",Pass,23:55,03:28,213,0.00,450,28,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,1,12264,"Hazrat Nizamuddin-Pune AC Duronto Express",Drnt,05:14,07:00,106,0.00,450,75,"Fastest route available",0
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,2,12525,"Indrayani SF Express",Superfast,06:37,08:50,133,0.83,350,71,"Solid all-around option",0
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,3,12127,"MumbaiCST-Pune SF InterCity",Superfast,07:37,09:50,133,1.83,350,65,"Solid all-around option",0
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,4,12527,"Mumbai CST-Latur Superfast Express.",Superfast,21:53,00:28,155,0.00,450,64,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,5,12123,"Deccan Queen SF Express",Superfast,17:55,20:08,133,2.08,350,63,"Solid all-around option",0
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,6,06502,"Ahmedabad -Yesvantpur Garib Rath Special",GR,04:50,07:18,148,0.00,450,63,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,7,09405,"Ahmedabad Yesvantpur (Weekly) Special",Exp,04:50,07:17,147,0.00,450,63,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,8,12163,"DADAR - CHENNAI EGMORE SF Exp",Superfast,21:15,00:02,167,0.00,450,61,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,9,09221,"Porbandar Secunderabad Weekly Special",Exp,19:50,22:22,152,0.17,450,61,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,10,11011,"Mahalaxmi Express",Exp,21:25,00:08,163,0.00,450,60,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,11,12125,"Pragati Superfast Express",Superfast,17:16,19:36,140,2.33,350,60,"Solid all-around option",0
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,12,11017,"Chalukya Express",Exp,22:15,00:58,163,0.00,450,60,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,13,11035,"Dadar-Mysore Sharavati Express",Exp,22:15,00:57,162,0.00,450,60,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,14,12940,"Jaipur-Pune SF Express",Superfast,05:20,08:04,164,0.07,450,60,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,15,11049,"Ahmedabad-Kolhapur Express",Exp,05:20,07:58,158,0.00,450,60,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,16,17203,"Bhavnagar(T)-Kakinada Town Express",Exp,19:45,22:23,158,0.25,450,59,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,17,16613,"RAJKOT - COIMBATORE Exp",Exp,19:45,22:23,158,0.25,450,59,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,18,17017,"Rajkot Secunderabad Express",Exp,19:45,22:23,158,0.25,450,59,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,19,19568,"OKHA - TUTICORIN Exp",Exp,19:45,22:23,158,0.25,450,59,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,20,19312,"Indore Pune Express",Exp,05:20,08:07,167,0.12,450,57,"Saves your daytime hours",0
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,21,12219,"Lokmanya Tilak (T)-Secunderabad AC Duronto Express",Drnt,23:40,01:47,127,0.00,450,55,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,22,11023,"Sahyadri Express",Exp,18:50,21:33,163,1.17,450,52,"Solid all-around option",0
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,23,11007,"Deccan Express",Exp,08:10,10:48,158,2.63,350,51,"Solid all-around option",0
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,24,12750,"Mumbai LTT-Visakhapatnam SF Express",Superfast,13:04,15:28,144,2.40,450,51,"Solid all-around option",0
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,25,12115,"Siddheshwar Express",SF,23:40,02:13,153,0.00,450,50,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,26,12701,"Hussain Sagar Express",SF,22:45,01:19,154,0.00,450,49,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,27,11029,"Koyna Express",Exp,09:35,12:18,163,2.72,350,49,"Solid all-around option",0
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,28,11027,"Mumbai CST-Chennai Mail",Mail,00:40,03:16,156,0.00,450,49,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,29,11009,"Sinhagad Express",Exp,15:30,18:13,163,2.72,350,49,"Solid all-around option",0
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,30,11095,"Ahimsa Express",Exp,01:50,04:18,148,0.00,450,49,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,31,11091,"BHUJ - PUNE Ahimsa Exp",Exp,01:50,04:18,148,0.00,450,49,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,32,11089,"BHAGAT KI KOTHI - PUNE Exp",Exp,01:50,04:18,148,0.00,450,49,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,33,11087,"Veraval Pune Express",Exp,01:50,04:18,148,0.00,450,49,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,34,11013,"Mumbai LTT-Coimbatore Express",Exp,23:18,01:49,151,0.00,450,48,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,35,51027,"MumbaiCST-Pandharpur Fast Passenger",Pass,23:55,03:28,213,0.00,170,47,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,36,51029,"Bijapur Fast Passenger",Pass,23:55,03:28,213,0.00,170,47,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,37,16339,"MUMBAI CST - NAGERCOIL Exp",Exp,13:10,15:42,152,2.53,450,46,"Solid all-around option",0
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,38,16351,"MUMBAI CST - NAGERCOIL Balaji Exp",Exp,13:10,15:42,152,2.53,450,46,"Solid all-around option",0
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,39,16381,"Mumbai CST - Kanyakumari Express",Exp,16:40,19:13,153,2.55,450,45,"Solid all-around option",0
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,40,16331,"MUMBAI CST - TRIVANDRUM Exp",Exp,13:10,15:43,153,2.55,450,45,"Solid all-around option",0
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,41,16529,"Udyan Express",Exp,09:00,11:37,157,2.62,450,44,"Solid all-around option",0
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,42,11041,"Mumbai - Chennai Express",Exp,15:05,17:47,162,2.70,450,42,"Solid all-around option",0
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,43,17031,"Mumbai CST-Hyderabad Express",Exp,13:45,16:27,162,2.70,450,42,"Solid all-around option",0
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,44,11043,"MUMBAI LTT - MADURAI Exp",Exp,01:00,03:53,173,0.00,450,42,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,45,16533,"BHAGAT KI KOTHI - BANGALORE CITY Exp",Exp,01:10,04:08,178,0.00,450,41,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,46,16505,"GANDHIDHAM - BANGALORE Exp",Exp,01:10,04:08,178,0.00,450,41,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,47,16531,"Garib Nawaz Express",Exp,01:10,04:08,178,0.00,450,41,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,48,16209,"Ajmer-Mysore Express",Exp,01:10,04:09,179,0.00,450,41,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,49,16507,"BHAGAT KI KOTHI - BANGALORE Exp",Exp,01:10,04:08,178,0.00,450,41,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,50,11019,"Konark Express",Exp,16:10,18:57,167,2.78,450,40,"Solid all-around option",0
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,51,51033,"Mumbai Sainagar Shirdi Fast Pass(Via Daund)",Pass,23:55,03:28,213,0.00,450,27,"Saves your daytime hours",1
+R5,"Multi-terminal origin",Mumbai,Pune,railcompass,52,11025,"Manmad Pune Express(Via Nasik)",Exp,08:05,11:59,234,3.90,430,16,"Solid all-around option",0
+R6,"Multi-terminal destination",Lucknow,Delhi,duration_only,1,12003,"Lucknow-NewDelhi Swarn Shatabdi Express",Shatabdi,15:35,21:47,372,4.42,1080,100,"Fastest route available",0
+R6,"Multi-terminal destination",Lucknow,Delhi,duration_only,2,12203,"Saharsa Amritsar Garib Rath",GR,06:10,13:33,443,5.55,875,73,"Matched to Duration Preference",0
+R6,"Multi-terminal destination",Lucknow,Delhi,duration_only,3,12235,"DIBRUGARH - NEW DELHI Rajdhani Exp",Rajdhani,06:10,13:33,443,5.55,1370,73,"Matched to Duration Preference",0
+R6,"Multi-terminal destination",Lucknow,Delhi,duration_only,4,12435,"DIBRUGARH TOWN - NEW DELHI Rajdhani Exp",Rajdhani,06:10,13:34,444,5.57,1375,73,"Matched to Duration Preference",0
+R6,"Multi-terminal destination",Lucknow,Delhi,duration_only,5,12225,"Kaifiat Express",SF,23:15,07:00,465,0.00,915,65,"Saves your daytime hours",0
+R6,"Multi-terminal destination",Lucknow,Delhi,duration_only,6,12553,"Vaishali SF Express",Superfast,22:25,06:11,466,0.00,965,64,"Saves your daytime hours",0
+R6,"Multi-terminal destination",Lucknow,Delhi,duration_only,7,12271,"Lucknow-New Delhi AC Duronto Express",Drnt,23:30,07:22,472,0.00,930,62,"Saves your daytime hours",0
+R6,"Multi-terminal destination",Lucknow,Delhi,duration_only,8,12211,"Muzaffarpur-Anand Vihar(T) Garib Rath Exp.",GR,04:30,12:25,475,4.42,935,61,"Matched to Duration Preference",0
+R6,"Multi-terminal destination",Lucknow,Delhi,duration_only,9,12875,"PURI - NEW DELHI Neelanchal SF Exp",Superfast,13:45,21:40,475,6.25,985,61,"Matched to Duration Preference",0
+R6,"Multi-terminal destination",Lucknow,Delhi,duration_only,10,12429,"Lucknow - New Delhi AC SF Express",Superfast,23:30,07:30,480,0.00,995,59,"Saves your daytime hours",0
+R6,"Multi-terminal destination",Lucknow,Delhi,duration_only,11,19270,"Muzaffarpur-Porbandar Express",Exp,04:30,12:40,490,4.67,965,55,"Matched to Duration Preference",0
+R6,"Multi-terminal destination",Lucknow,Delhi,duration_only,12,25715,"Radhikapur Delhi Link Express",Exp,04:55,13:05,490,5.08,370,55,"Best value for money",0
+R6,"Multi-terminal destination",Lucknow,Delhi,duration_only,13,15715,"Garib Nawaz Express",Exp,04:55,13:05,490,5.08,965,55,"Matched to Duration Preference",0
+R6,"Multi-terminal destination",Lucknow,Delhi,duration_only,14,14003,"New Farakka-New Delhi Express",Exp,05:50,14:04,494,6.07,970,54,"Matched to Duration Preference",0
+R6,"Multi-terminal destination",Lucknow,Delhi,duration_only,15,12419,"Gomti Express",SF,05:25,13:41,496,5.68,1435,53,"Matched to Duration Preference",0
+R6,"Multi-terminal destination",Lucknow,Delhi,duration_only,16,12229,"Lucknow Mail",Mail,22:10,06:28,498,0.00,980,52,"Saves your daytime hours",0
+R6,"Multi-terminal destination",Lucknow,Delhi,duration_only,17,12523,"New Jalpaiguri-New Delhi Superfast Express",Superfast,03:30,11:49,499,3.82,1030,52,"Matched to Duration Preference",0
+R6,"Multi-terminal destination",Lucknow,Delhi,duration_only,18,12555,"Gorakhdham Express",SF,21:50,05:39,469,0.00,925,48,"Saves your daytime hours",1
+R6,"Multi-terminal destination",Lucknow,Delhi,duration_only,19,22407,"Varanasi-Delhi Anand Vihar Terminus Garib Rath",GR,01:30,10:00,510,2.00,1000,48,"Matched to Duration Preference",0
+R6,"Multi-terminal destination",Lucknow,Delhi,duration_only,20,12557,"Sapt Kranti SF Express",Superfast,20:10,04:05,475,0.00,985,46,"Saves your daytime hours",1
+R6,"Multi-terminal destination",Lucknow,Delhi,duration_only,21,12565,"Bihar Sampark Kranti Express",SKr,21:20,05:20,480,0.00,945,44,"Saves your daytime hours",1
+R6,"Multi-terminal destination",Lucknow,Delhi,duration_only,22,19602,"New Jalpaiguri Ajmer Weekly Express",Exp,03:30,12:10,520,4.17,1020,44,"Matched to Duration Preference",0
+R6,"Multi-terminal destination",Lucknow,Delhi,duration_only,23,15279,"Poorbiya Express",Exp,03:30,12:10,520,4.17,1020,44,"Matched to Duration Preference",0
+R6,"Multi-terminal destination",Lucknow,Delhi,duration_only,24,14205,"Faizabad Delhi Express",Exp,00:50,09:35,525,1.58,1030,42,"Matched to Duration Preference",0
+R6,"Multi-terminal destination",Lucknow,Delhi,duration_only,25,12391,"Shramjeevi Express",SF,20:35,04:46,491,0.00,965,40,"Saves your daytime hours",1
+R6,"Multi-terminal destination",Lucknow,Delhi,duration_only,26,04203,"Varanasi-Old Delhi Special",Exp,01:08,10:10,542,2.17,1060,35,"Matched to Duration Preference",0
+R6,"Multi-terminal destination",Lucknow,Delhi,duration_only,27,04201,"Lucknow -New Delhi Special",Exp,22:45,07:52,547,0.00,1070,33,"Saves your daytime hours",0
+R6,"Multi-terminal destination",Lucknow,Delhi,duration_only,28,19604,"Sultanpur Ajmer Express",Exp,21:15,06:25,550,0.00,1075,32,"Saves your daytime hours",0
+R6,"Multi-terminal destination",Lucknow,Delhi,duration_only,29,15707,"Amrapali Express",Exp,18:10,02:50,520,1.83,1020,29,"Matched to Duration Preference",1
+R6,"Multi-terminal destination",Lucknow,Delhi,duration_only,30,14207,"Padmavat Express",Exp,21:30,07:10,580,0.00,1135,21,"Saves your daytime hours",0
+R6,"Multi-terminal destination",Lucknow,Delhi,duration_only,31,14257,"Kashi Vishwanath Express",Exp,20:50,05:50,540,0.00,1060,21,"Saves your daytime hours",1
+R6,"Multi-terminal destination",Lucknow,Delhi,duration_only,32,13413,"Farakka Express",Exp,19:25,04:30,545,0.58,1065,19,"Saves your daytime hours",1
+R6,"Multi-terminal destination",Lucknow,Delhi,duration_only,33,13483,"Farakka Express",Exp,19:25,04:30,545,0.58,1065,19,"Saves your daytime hours",1
+R6,"Multi-terminal destination",Lucknow,Delhi,duration_only,34,15609,"Awadh Assam Express",Exp,05:35,15:50,615,7.83,1200,8,"Matched to Duration Preference",0
+R6,"Multi-terminal destination",Lucknow,Delhi,duration_only,35,14013,"Sadbhavna Express",Exp,18:50,04:50,600,1.17,1170,0,"Matched to Duration Preference",1
+R6,"Multi-terminal destination",Lucknow,Delhi,duration_only,36,14007,"Muzaffarpur-Old Delhi Sadbhavna Express",Exp,18:50,04:50,600,1.17,1170,0,"Matched to Duration Preference",1
+R6,"Multi-terminal destination",Lucknow,Delhi,duration_only,37,14017,"Sadbhavna Express",Exp,18:50,04:50,600,1.17,1170,0,"Matched to Duration Preference",1
+R6,"Multi-terminal destination",Lucknow,Delhi,duration_only,38,14015,"Sadbhavna Express",Exp,18:50,04:50,600,1.17,1170,0,"Matched to Duration Preference",1
+R6,"Multi-terminal destination",Lucknow,Delhi,duration_only,39,14673,"Shaheed Express",Exp,01:15,11:50,635,3.83,1235,0,"Matched to Duration Preference",0
+R6,"Multi-terminal destination",Lucknow,Delhi,duration_only,40,14649,"Saryu Yamuna Express",Exp,01:15,11:50,635,3.83,1235,0,"Matched to Duration Preference",0
+R6,"Multi-terminal destination",Lucknow,Delhi,cheapest_only,1,25715,"Radhikapur Delhi Link Express",Exp,04:55,13:05,490,5.08,370,100,"Best value for money",0
+R6,"Multi-terminal destination",Lucknow,Delhi,cheapest_only,2,12203,"Saharsa Amritsar Garib Rath",GR,06:10,13:33,443,5.55,875,53,"Matched to Budget Preference",0
+R6,"Multi-terminal destination",Lucknow,Delhi,cheapest_only,3,12225,"Kaifiat Express",SF,23:15,07:00,465,0.00,915,49,"Saves your daytime hours",0
+R6,"Multi-terminal destination",Lucknow,Delhi,cheapest_only,4,12271,"Lucknow-New Delhi AC Duronto Express",Drnt,23:30,07:22,472,0.00,930,47,"Saves your daytime hours",0
+R6,"Multi-terminal destination",Lucknow,Delhi,cheapest_only,5,12211,"Muzaffarpur-Anand Vihar(T) Garib Rath Exp.",GR,04:30,12:25,475,4.42,935,47,"Matched to Budget Preference",0
+R6,"Multi-terminal destination",Lucknow,Delhi,cheapest_only,6,19270,"Muzaffarpur-Porbandar Express",Exp,04:30,12:40,490,4.67,965,44,"Matched to Budget Preference",0
+R6,"Multi-terminal destination",Lucknow,Delhi,cheapest_only,7,15715,"Garib Nawaz Express",Exp,04:55,13:05,490,5.08,965,44,"Matched to Budget Preference",0
+R6,"Multi-terminal destination",Lucknow,Delhi,cheapest_only,8,14003,"New Farakka-New Delhi Express",Exp,05:50,14:04,494,6.07,970,44,"Matched to Budget Preference",0
+R6,"Multi-terminal destination",Lucknow,Delhi,cheapest_only,9,12553,"Vaishali SF Express",Superfast,22:25,06:11,466,0.00,965,44,"Saves your daytime hours",0
+R6,"Multi-terminal destination",Lucknow,Delhi,cheapest_only,10,12229,"Lucknow Mail",Mail,22:10,06:28,498,0.00,980,43,"Saves your daytime hours",0
+R6,"Multi-terminal destination",Lucknow,Delhi,cheapest_only,11,12875,"PURI - NEW DELHI Neelanchal SF Exp",Superfast,13:45,21:40,475,6.25,985,42,"Matched to Budget Preference",0
+R6,"Multi-terminal destination",Lucknow,Delhi,cheapest_only,12,22407,"Varanasi-Delhi Anand Vihar Terminus Garib Rath",GR,01:30,10:00,510,2.00,1000,41,"Matched to Budget Preference",0
+R6,"Multi-terminal destination",Lucknow,Delhi,cheapest_only,13,12429,"Lucknow - New Delhi AC SF Express",Superfast,23:30,07:30,480,0.00,995,41,"Saves your daytime hours",0
+R6,"Multi-terminal destination",Lucknow,Delhi,cheapest_only,14,19602,"New Jalpaiguri Ajmer Weekly Express",Exp,03:30,12:10,520,4.17,1020,39,"Matched to Budget Preference",0
+R6,"Multi-terminal destination",Lucknow,Delhi,cheapest_only,15,15279,"Poorbiya Express",Exp,03:30,12:10,520,4.17,1020,39,"Matched to Budget Preference",0
+R6,"Multi-terminal destination",Lucknow,Delhi,cheapest_only,16,14205,"Faizabad Delhi Express",Exp,00:50,09:35,525,1.58,1030,38,"Matched to Budget Preference",0
+R6,"Multi-terminal destination",Lucknow,Delhi,cheapest_only,17,12523,"New Jalpaiguri-New Delhi Superfast Express",Superfast,03:30,11:49,499,3.82,1030,38,"Matched to Budget Preference",0
+R6,"Multi-terminal destination",Lucknow,Delhi,cheapest_only,18,04203,"Varanasi-Old Delhi Special",Exp,01:08,10:10,542,2.17,1060,35,"Matched to Budget Preference",0
+R6,"Multi-terminal destination",Lucknow,Delhi,cheapest_only,19,04201,"Lucknow -New Delhi Special",Exp,22:45,07:52,547,0.00,1070,34,"Saves your daytime hours",0
+R6,"Multi-terminal destination",Lucknow,Delhi,cheapest_only,20,19604,"Sultanpur Ajmer Express",Exp,21:15,06:25,550,0.00,1075,34,"Saves your daytime hours",0
+R6,"Multi-terminal destination",Lucknow,Delhi,cheapest_only,21,12003,"Lucknow-NewDelhi Swarn Shatabdi Express",Shatabdi,15:35,21:47,372,4.42,1080,33,"Fastest route available",0
+R6,"Multi-terminal destination",Lucknow,Delhi,cheapest_only,22,12555,"Gorakhdham Express",SF,21:50,05:39,469,0.00,925,33,"Saves your daytime hours",1
+R6,"Multi-terminal destination",Lucknow,Delhi,cheapest_only,23,12565,"Bihar Sampark Kranti Express",SKr,21:20,05:20,480,0.00,945,31,"Saves your daytime hours",1
+R6,"Multi-terminal destination",Lucknow,Delhi,cheapest_only,24,12391,"Shramjeevi Express",SF,20:35,04:46,491,0.00,965,29,"Saves your daytime hours",1
+R6,"Multi-terminal destination",Lucknow,Delhi,cheapest_only,25,14207,"Padmavat Express",Exp,21:30,07:10,580,0.00,1135,28,"Saves your daytime hours",0
+R6,"Multi-terminal destination",Lucknow,Delhi,cheapest_only,26,12557,"Sapt Kranti SF Express",Superfast,20:10,04:05,475,0.00,985,27,"Saves your daytime hours",1
+R6,"Multi-terminal destination",Lucknow,Delhi,cheapest_only,27,15707,"Amrapali Express",Exp,18:10,02:50,520,1.83,1020,24,"Matched to Budget Preference",1
+R6,"Multi-terminal destination",Lucknow,Delhi,cheapest_only,28,15609,"Awadh Assam Express",Exp,05:35,15:50,615,7.83,1200,22,"Matched to Budget Preference",0
+R6,"Multi-terminal destination",Lucknow,Delhi,cheapest_only,29,14257,"Kashi Vishwanath Express",Exp,20:50,05:50,540,0.00,1060,20,"Saves your daytime hours",1
+R6,"Multi-terminal destination",Lucknow,Delhi,cheapest_only,30,13413,"Farakka Express",Exp,19:25,04:30,545,0.58,1065,20,"Saves your daytime hours",1
+R6,"Multi-terminal destination",Lucknow,Delhi,cheapest_only,31,13483,"Farakka Express",Exp,19:25,04:30,545,0.58,1065,20,"Saves your daytime hours",1
+R6,"Multi-terminal destination",Lucknow,Delhi,cheapest_only,32,14673,"Shaheed Express",Exp,01:15,11:50,635,3.83,1235,19,"Matched to Budget Preference",0
+R6,"Multi-terminal destination",Lucknow,Delhi,cheapest_only,33,14649,"Saryu Yamuna Express",Exp,01:15,11:50,635,3.83,1235,19,"Matched to Budget Preference",0
+R6,"Multi-terminal destination",Lucknow,Delhi,cheapest_only,34,14013,"Sadbhavna Express",Exp,18:50,04:50,600,1.17,1170,10,"Matched to Budget Preference",1
+R6,"Multi-terminal destination",Lucknow,Delhi,cheapest_only,35,14007,"Muzaffarpur-Old Delhi Sadbhavna Express",Exp,18:50,04:50,600,1.17,1170,10,"Matched to Budget Preference",1
+R6,"Multi-terminal destination",Lucknow,Delhi,cheapest_only,36,14017,"Sadbhavna Express",Exp,18:50,04:50,600,1.17,1170,10,"Matched to Budget Preference",1
+R6,"Multi-terminal destination",Lucknow,Delhi,cheapest_only,37,14015,"Sadbhavna Express",Exp,18:50,04:50,600,1.17,1170,10,"Matched to Budget Preference",1
+R6,"Multi-terminal destination",Lucknow,Delhi,cheapest_only,38,12235,"DIBRUGARH - NEW DELHI Rajdhani Exp",Rajdhani,06:10,13:33,443,5.55,1370,6,"Matched to Budget Preference",0
+R6,"Multi-terminal destination",Lucknow,Delhi,cheapest_only,39,12435,"DIBRUGARH TOWN - NEW DELHI Rajdhani Exp",Rajdhani,06:10,13:34,444,5.57,1375,6,"Matched to Budget Preference",0
+R6,"Multi-terminal destination",Lucknow,Delhi,cheapest_only,40,12419,"Gomti Express",SF,05:25,13:41,496,5.68,1435,0,"Matched to Budget Preference",0
+R6,"Multi-terminal destination",Lucknow,Delhi,fixed_utility,1,12225,"Kaifiat Express",SF,23:15,07:00,465,0.00,915,77,"Saves your daytime hours",0
+R6,"Multi-terminal destination",Lucknow,Delhi,fixed_utility,2,12553,"Vaishali SF Express",Superfast,22:25,06:11,466,0.00,965,76,"Saves your daytime hours",0
+R6,"Multi-terminal destination",Lucknow,Delhi,fixed_utility,3,12429,"Lucknow - New Delhi AC SF Express",Superfast,23:30,07:30,480,0.00,995,74,"Saves your daytime hours",0
+R6,"Multi-terminal destination",Lucknow,Delhi,fixed_utility,4,12229,"Lucknow Mail",Mail,22:10,06:28,498,0.00,980,73,"Saves your daytime hours",0
+R6,"Multi-terminal destination",Lucknow,Delhi,fixed_utility,5,12003,"Lucknow-NewDelhi Swarn Shatabdi Express",Shatabdi,15:35,21:47,372,4.42,1080,72,"Fastest route available",0
+R6,"Multi-terminal destination",Lucknow,Delhi,fixed_utility,6,12271,"Lucknow-New Delhi AC Duronto Express",Drnt,23:30,07:22,472,0.00,930,71,"Saves your daytime hours",0
+R6,"Multi-terminal destination",Lucknow,Delhi,fixed_utility,7,25715,"Radhikapur Delhi Link Express",Exp,04:55,13:05,490,5.08,370,68,"Best value for money",0
+R6,"Multi-terminal destination",Lucknow,Delhi,fixed_utility,8,04201,"Lucknow -New Delhi Special",Exp,22:45,07:52,547,0.00,1070,64,"Saves your daytime hours",0
+R6,"Multi-terminal destination",Lucknow,Delhi,fixed_utility,9,19604,"Sultanpur Ajmer Express",Exp,21:15,06:25,550,0.00,1075,64,"Saves your daytime hours",0
+R6,"Multi-terminal destination",Lucknow,Delhi,fixed_utility,10,12523,"New Jalpaiguri-New Delhi Superfast Express",Superfast,03:30,11:49,499,3.82,1030,64,"Matched to Custom Preferences",0
+R6,"Multi-terminal destination",Lucknow,Delhi,fixed_utility,11,14205,"Faizabad Delhi Express",Exp,00:50,09:35,525,1.58,1030,63,"Matched to Custom Preferences",0
+R6,"Multi-terminal destination",Lucknow,Delhi,fixed_utility,12,22407,"Varanasi-Delhi Anand Vihar Terminus Garib Rath",GR,01:30,10:00,510,2.00,1000,63,"Matched to Custom Preferences",0
+R6,"Multi-terminal destination",Lucknow,Delhi,fixed_utility,13,12235,"DIBRUGARH - NEW DELHI Rajdhani Exp",Rajdhani,06:10,13:33,443,5.55,1370,63,"Matched to Custom Preferences",0
+R6,"Multi-terminal destination",Lucknow,Delhi,fixed_utility,14,12435,"DIBRUGARH TOWN - NEW DELHI Rajdhani Exp",Rajdhani,06:10,13:34,444,5.57,1375,63,"Matched to Custom Preferences",0
+R6,"Multi-terminal destination",Lucknow,Delhi,fixed_utility,15,12203,"Saharsa Amritsar Garib Rath",GR,06:10,13:33,443,5.55,875,62,"Matched to Custom Preferences",0
+R6,"Multi-terminal destination",Lucknow,Delhi,fixed_utility,16,12875,"PURI - NEW DELHI Neelanchal SF Exp",Superfast,13:45,21:40,475,6.25,985,62,"Matched to Custom Preferences",0
+R6,"Multi-terminal destination",Lucknow,Delhi,fixed_utility,17,12555,"Gorakhdham Express",SF,21:50,05:39,469,0.00,925,61,"Saves your daytime hours",1
+R6,"Multi-terminal destination",Lucknow,Delhi,fixed_utility,18,14207,"Padmavat Express",Exp,21:30,07:10,580,0.00,1135,61,"Saves your daytime hours",0
+R6,"Multi-terminal destination",Lucknow,Delhi,fixed_utility,19,12211,"Muzaffarpur-Anand Vihar(T) Garib Rath Exp.",GR,04:30,12:25,475,4.42,935,61,"Matched to Custom Preferences",0
+R6,"Multi-terminal destination",Lucknow,Delhi,fixed_utility,20,04203,"Varanasi-Old Delhi Special",Exp,01:08,10:10,542,2.17,1060,60,"Matched to Custom Preferences",0
+R6,"Multi-terminal destination",Lucknow,Delhi,fixed_utility,21,12557,"Sapt Kranti SF Express",Superfast,20:10,04:05,475,0.00,985,60,"Saves your daytime hours",1
+R6,"Multi-terminal destination",Lucknow,Delhi,fixed_utility,22,19270,"Muzaffarpur-Porbandar Express",Exp,04:30,12:40,490,4.67,965,59,"Matched to Custom Preferences",0
+R6,"Multi-terminal destination",Lucknow,Delhi,fixed_utility,23,15715,"Garib Nawaz Express",Exp,04:55,13:05,490,5.08,965,59,"Matched to Custom Preferences",0
+R6,"Multi-terminal destination",Lucknow,Delhi,fixed_utility,24,12391,"Shramjeevi Express",SF,20:35,04:46,491,0.00,965,59,"Saves your daytime hours",1
+R6,"Multi-terminal destination",Lucknow,Delhi,fixed_utility,25,19602,"New Jalpaiguri Ajmer Weekly Express",Exp,03:30,12:10,520,4.17,1020,58,"Matched to Custom Preferences",0
+R6,"Multi-terminal destination",Lucknow,Delhi,fixed_utility,26,15279,"Poorbiya Express",Exp,03:30,12:10,520,4.17,1020,58,"Matched to Custom Preferences",0
+R6,"Multi-terminal destination",Lucknow,Delhi,fixed_utility,27,14003,"New Farakka-New Delhi Express",Exp,05:50,14:04,494,6.07,970,56,"Matched to Custom Preferences",0
+R6,"Multi-terminal destination",Lucknow,Delhi,fixed_utility,28,12565,"Bihar Sampark Kranti Express",SKr,21:20,05:20,480,0.00,945,55,"Saves your daytime hours",1
+R6,"Multi-terminal destination",Lucknow,Delhi,fixed_utility,29,12419,"Gomti Express",SF,05:25,13:41,496,5.68,1435,54,"Matched to Custom Preferences",0
+R6,"Multi-terminal destination",Lucknow,Delhi,fixed_utility,30,14257,"Kashi Vishwanath Express",Exp,20:50,05:50,540,0.00,1060,50,"Saves your daytime hours",1
+R6,"Multi-terminal destination",Lucknow,Delhi,fixed_utility,31,15707,"Amrapali Express",Exp,18:10,02:50,520,1.83,1020,48,"Matched to Custom Preferences",1
+R6,"Multi-terminal destination",Lucknow,Delhi,fixed_utility,32,14673,"Shaheed Express",Exp,01:15,11:50,635,3.83,1235,48,"Matched to Custom Preferences",0
+R6,"Multi-terminal destination",Lucknow,Delhi,fixed_utility,33,14649,"Saryu Yamuna Express",Exp,01:15,11:50,635,3.83,1235,48,"Matched to Custom Preferences",0
+R6,"Multi-terminal destination",Lucknow,Delhi,fixed_utility,34,13413,"Farakka Express",Exp,19:25,04:30,545,0.58,1065,48,"Saves your daytime hours",1
+R6,"Multi-terminal destination",Lucknow,Delhi,fixed_utility,35,13483,"Farakka Express",Exp,19:25,04:30,545,0.58,1065,48,"Saves your daytime hours",1
+R6,"Multi-terminal destination",Lucknow,Delhi,fixed_utility,36,14013,"Sadbhavna Express",Exp,18:50,04:50,600,1.17,1170,42,"Matched to Custom Preferences",1
+R6,"Multi-terminal destination",Lucknow,Delhi,fixed_utility,37,14007,"Muzaffarpur-Old Delhi Sadbhavna Express",Exp,18:50,04:50,600,1.17,1170,42,"Matched to Custom Preferences",1
+R6,"Multi-terminal destination",Lucknow,Delhi,fixed_utility,38,14017,"Sadbhavna Express",Exp,18:50,04:50,600,1.17,1170,42,"Matched to Custom Preferences",1
+R6,"Multi-terminal destination",Lucknow,Delhi,fixed_utility,39,14015,"Sadbhavna Express",Exp,18:50,04:50,600,1.17,1170,42,"Matched to Custom Preferences",1
+R6,"Multi-terminal destination",Lucknow,Delhi,fixed_utility,40,15609,"Awadh Assam Express",Exp,05:35,15:50,615,7.83,1200,41,"Matched to Custom Preferences",0
+R6,"Multi-terminal destination",Lucknow,Delhi,railcompass,1,12225,"Kaifiat Express",SF,23:15,07:00,465,0.00,915,75,"Saves your daytime hours",0
+R6,"Multi-terminal destination",Lucknow,Delhi,railcompass,2,12553,"Vaishali SF Express",Superfast,22:25,06:11,466,0.00,965,74,"Saves your daytime hours",0
+R6,"Multi-terminal destination",Lucknow,Delhi,railcompass,3,12271,"Lucknow-New Delhi AC Duronto Express",Drnt,23:30,07:22,472,0.00,930,72,"Saves your daytime hours",0
+R6,"Multi-terminal destination",Lucknow,Delhi,railcompass,4,12429,"Lucknow - New Delhi AC SF Express",Superfast,23:30,07:30,480,0.00,995,71,"Saves your daytime hours",0
+R6,"Multi-terminal destination",Lucknow,Delhi,railcompass,5,12003,"Lucknow-NewDelhi Swarn Shatabdi Express",Shatabdi,15:35,21:47,372,4.42,1080,70,"Fastest route available",0
+R6,"Multi-terminal destination",Lucknow,Delhi,railcompass,6,12229,"Lucknow Mail",Mail,22:10,06:28,498,0.00,980,69,"Saves your daytime hours",0
+R6,"Multi-terminal destination",Lucknow,Delhi,railcompass,7,25715,"Radhikapur Delhi Link Express",Exp,04:55,13:05,490,5.08,370,63,"Best value for money",0
+R6,"Multi-terminal destination",Lucknow,Delhi,railcompass,8,04201,"Lucknow -New Delhi Special",Exp,22:45,07:52,547,0.00,1070,59,"Saves your daytime hours",0
+R6,"Multi-terminal destination",Lucknow,Delhi,railcompass,9,19604,"Sultanpur Ajmer Express",Exp,21:15,06:25,550,0.00,1075,59,"Saves your daytime hours",0
+R6,"Multi-terminal destination",Lucknow,Delhi,railcompass,10,12555,"Gorakhdham Express",SF,21:50,05:39,469,0.00,925,59,"Saves your daytime hours",1
+R6,"Multi-terminal destination",Lucknow,Delhi,railcompass,11,22407,"Varanasi-Delhi Anand Vihar Terminus Garib Rath",GR,01:30,10:00,510,2.00,1000,59,"Solid all-around option",0
+R6,"Multi-terminal destination",Lucknow,Delhi,railcompass,12,14205,"Faizabad Delhi Express",Exp,00:50,09:35,525,1.58,1030,58,"Solid all-around option",0
+R6,"Multi-terminal destination",Lucknow,Delhi,railcompass,13,12203,"Saharsa Amritsar Garib Rath",GR,06:10,13:33,443,5.55,875,58,"Solid all-around option",0
+R6,"Multi-terminal destination",Lucknow,Delhi,railcompass,14,12211,"Muzaffarpur-Anand Vihar(T) Garib Rath Exp.",GR,04:30,12:25,475,4.42,935,56,"Solid all-around option",0
+R6,"Multi-terminal destination",Lucknow,Delhi,railcompass,15,12565,"Bihar Sampark Kranti Express",SKr,21:20,05:20,480,0.00,945,56,"Saves your daytime hours",1
+R6,"Multi-terminal destination",Lucknow,Delhi,railcompass,16,12557,"Sapt Kranti SF Express",Superfast,20:10,04:05,475,0.00,985,56,"Saves your daytime hours",1
+R6,"Multi-terminal destination",Lucknow,Delhi,railcompass,17,12523,"New Jalpaiguri-New Delhi Superfast Express",Superfast,03:30,11:49,499,3.82,1030,56,"Solid all-around option",0
+R6,"Multi-terminal destination",Lucknow,Delhi,railcompass,18,12391,"Shramjeevi Express",SF,20:35,04:46,491,0.00,965,55,"Saves your daytime hours",1
+R6,"Multi-terminal destination",Lucknow,Delhi,railcompass,19,14207,"Padmavat Express",Exp,21:30,07:10,580,0.00,1135,54,"Saves your daytime hours",0
+R6,"Multi-terminal destination",Lucknow,Delhi,railcompass,20,04203,"Varanasi-Old Delhi Special",Exp,01:08,10:10,542,2.17,1060,53,"Solid all-around option",0
+R6,"Multi-terminal destination",Lucknow,Delhi,railcompass,21,19270,"Muzaffarpur-Porbandar Express",Exp,04:30,12:40,490,4.67,965,53,"Solid all-around option",0
+R6,"Multi-terminal destination",Lucknow,Delhi,railcompass,22,12235,"DIBRUGARH - NEW DELHI Rajdhani Exp",Rajdhani,06:10,13:33,443,5.55,1370,52,"Solid all-around option",0
+R6,"Multi-terminal destination",Lucknow,Delhi,railcompass,23,12435,"DIBRUGARH TOWN - NEW DELHI Rajdhani Exp",Rajdhani,06:10,13:34,444,5.57,1375,52,"Solid all-around option",0
+R6,"Multi-terminal destination",Lucknow,Delhi,railcompass,24,15715,"Garib Nawaz Express",Exp,04:55,13:05,490,5.08,965,51,"Solid all-around option",0
+R6,"Multi-terminal destination",Lucknow,Delhi,railcompass,25,12875,"PURI - NEW DELHI Neelanchal SF Exp",Superfast,13:45,21:40,475,6.25,985,51,"Solid all-around option",0
+R6,"Multi-terminal destination",Lucknow,Delhi,railcompass,26,19602,"New Jalpaiguri Ajmer Weekly Express",Exp,03:30,12:10,520,4.17,1020,49,"Solid all-around option",0
+R6,"Multi-terminal destination",Lucknow,Delhi,railcompass,27,15279,"Poorbiya Express",Exp,03:30,12:10,520,4.17,1020,49,"Solid all-around option",0
+R6,"Multi-terminal destination",Lucknow,Delhi,railcompass,28,14003,"New Farakka-New Delhi Express",Exp,05:50,14:04,494,6.07,970,48,"Solid all-around option",0
+R6,"Multi-terminal destination",Lucknow,Delhi,railcompass,29,14257,"Kashi Vishwanath Express",Exp,20:50,05:50,540,0.00,1060,44,"Saves your daytime hours",1
+R6,"Multi-terminal destination",Lucknow,Delhi,railcompass,30,15609,"Awadh Assam Express",Exp,05:35,15:50,615,7.83,1200,43,"Solid all-around option",0
+R6,"Multi-terminal destination",Lucknow,Delhi,railcompass,31,12419,"Gomti Express",SF,05:25,13:41,496,5.68,1435,42,"Solid all-around option",0
+R6,"Multi-terminal destination",Lucknow,Delhi,railcompass,32,15707,"Amrapali Express",Exp,18:10,02:50,520,1.83,1020,42,"Solid all-around option",1
+R6,"Multi-terminal destination",Lucknow,Delhi,railcompass,33,13413,"Farakka Express",Exp,19:25,04:30,545,0.58,1065,42,"Saves your daytime hours",1
+R6,"Multi-terminal destination",Lucknow,Delhi,railcompass,34,13483,"Farakka Express",Exp,19:25,04:30,545,0.58,1065,42,"Saves your daytime hours",1
+R6,"Multi-terminal destination",Lucknow,Delhi,railcompass,35,14673,"Shaheed Express",Exp,01:15,11:50,635,3.83,1235,40,"Solid all-around option",0
+R6,"Multi-terminal destination",Lucknow,Delhi,railcompass,36,14649,"Saryu Yamuna Express",Exp,01:15,11:50,635,3.83,1235,40,"Solid all-around option",0
+R6,"Multi-terminal destination",Lucknow,Delhi,railcompass,37,14013,"Sadbhavna Express",Exp,18:50,04:50,600,1.17,1170,31,"Solid all-around option",1
+R6,"Multi-terminal destination",Lucknow,Delhi,railcompass,38,14007,"Muzaffarpur-Old Delhi Sadbhavna Express",Exp,18:50,04:50,600,1.17,1170,31,"Solid all-around option",1
+R6,"Multi-terminal destination",Lucknow,Delhi,railcompass,39,14017,"Sadbhavna Express",Exp,18:50,04:50,600,1.17,1170,31,"Solid all-around option",1
+R6,"Multi-terminal destination",Lucknow,Delhi,railcompass,40,14015,"Sadbhavna Express",Exp,18:50,04:50,600,1.17,1170,31,"Solid all-around option",1
+R7,"Premium vs non-premium",Delhi,Kolkata,duration_only,1,12260,"New Delhi-Sealdah AC Duronto Express",Drnt,20:13,12:25,972,4.42,1870,100,"Fastest route available",0
+R7,"Premium vs non-premium",Delhi,Kolkata,duration_only,2,12302,"New Delhi-Howrah Rajdhani Express",Rajdhani,17:08,09:55,1007,4.78,2800,97,"Fastest route available",0
+R7,"Premium vs non-premium",Delhi,Kolkata,duration_only,3,12274,"New Delhi-Howrah Duronto Express",Drnt,13:09,06:00,1011,6.85,1940,97,"Fastest route available",0
+R7,"Premium vs non-premium",Delhi,Kolkata,duration_only,4,12314,"NEW DELHI - KOL SEALDAH Rajdhani Exp",Rajdhani,16:30,10:15,1065,5.75,2950,93,"Fastest route available",0
+R7,"Premium vs non-premium",Delhi,Kolkata,duration_only,5,12306,"New Delhi-Howrah Rajdhani Express",Rajdhani,17:08,12:40,1172,7.53,3220,85,"Matched to Duration Preference",0
+R7,"Premium vs non-premium",Delhi,Kolkata,duration_only,6,12330,"West Bengal Sampark Kranti Express",SKr,19:10,17:25,1335,10.25,2550,73,"Matched to Duration Preference",0
+R7,"Premium vs non-premium",Delhi,Kolkata,duration_only,7,12380,"Amritsar - Sealdah Superfast Express",Superfast,19:10,17:25,1335,10.25,2595,73,"Matched to Duration Preference",0
+R7,"Premium vs non-premium",Delhi,Kolkata,duration_only,8,12324,"New Delhi-Howrah SF Express",Superfast,07:20,06:00,1360,12.00,2645,71,"Matched to Duration Preference",0
+R7,"Premium vs non-premium",Delhi,Kolkata,duration_only,9,12382,"Poorva Express",SF,16:37,16:45,1448,12.13,2760,64,"Matched to Duration Preference",0
+R7,"Premium vs non-premium",Delhi,Kolkata,duration_only,10,12304,"Poorva Express",SF,16:37,16:45,1448,12.13,2760,64,"Matched to Duration Preference",0
+R7,"Premium vs non-premium",Delhi,Kolkata,duration_only,11,12312,"Kalka Mail",Mail,07:00,07:30,1470,12.00,2805,63,"Matched to Duration Preference",0
+R7,"Premium vs non-premium",Delhi,Kolkata,duration_only,12,13112,"Lal Quila Express",Exp,20:50,07:30,2080,12.00,3950,17,"Matched to Duration Preference",0
+R7,"Premium vs non-premium",Delhi,Kolkata,duration_only,13,13040,"Janata Express",Exp,15:40,06:05,2305,16.33,500,0,"Best value for money",0
+R7,"Premium vs non-premium",Delhi,Kolkata,cheapest_only,1,13040,"Janata Express",Exp,15:40,06:05,2305,16.33,500,100,"Best value for money",0
+R7,"Premium vs non-premium",Delhi,Kolkata,cheapest_only,2,12260,"New Delhi-Sealdah AC Duronto Express",Drnt,20:13,12:25,972,4.42,1870,60,"Fastest route available",0
+R7,"Premium vs non-premium",Delhi,Kolkata,cheapest_only,3,12274,"New Delhi-Howrah Duronto Express",Drnt,13:09,06:00,1011,6.85,1940,58,"Fastest route available",0
+R7,"Premium vs non-premium",Delhi,Kolkata,cheapest_only,4,12330,"West Bengal Sampark Kranti Express",SKr,19:10,17:25,1335,10.25,2550,41,"Matched to Budget Preference",0
+R7,"Premium vs non-premium",Delhi,Kolkata,cheapest_only,5,12380,"Amritsar - Sealdah Superfast Express",Superfast,19:10,17:25,1335,10.25,2595,39,"Matched to Budget Preference",0
+R7,"Premium vs non-premium",Delhi,Kolkata,cheapest_only,6,12324,"New Delhi-Howrah SF Express",Superfast,07:20,06:00,1360,12.00,2645,38,"Matched to Budget Preference",0
+R7,"Premium vs non-premium",Delhi,Kolkata,cheapest_only,7,12382,"Poorva Express",SF,16:37,16:45,1448,12.13,2760,34,"Matched to Budget Preference",0
+R7,"Premium vs non-premium",Delhi,Kolkata,cheapest_only,8,12304,"Poorva Express",SF,16:37,16:45,1448,12.13,2760,34,"Matched to Budget Preference",0
+R7,"Premium vs non-premium",Delhi,Kolkata,cheapest_only,9,12302,"New Delhi-Howrah Rajdhani Express",Rajdhani,17:08,09:55,1007,4.78,2800,33,"Fastest route available",0
+R7,"Premium vs non-premium",Delhi,Kolkata,cheapest_only,10,12312,"Kalka Mail",Mail,07:00,07:30,1470,12.00,2805,33,"Matched to Budget Preference",0
+R7,"Premium vs non-premium",Delhi,Kolkata,cheapest_only,11,12314,"NEW DELHI - KOL SEALDAH Rajdhani Exp",Rajdhani,16:30,10:15,1065,5.75,2950,29,"Fastest route available",0
+R7,"Premium vs non-premium",Delhi,Kolkata,cheapest_only,12,12306,"New Delhi-Howrah Rajdhani Express",Rajdhani,17:08,12:40,1172,7.53,3220,21,"Matched to Budget Preference",0
+R7,"Premium vs non-premium",Delhi,Kolkata,cheapest_only,13,13112,"Lal Quila Express",Exp,20:50,07:30,2080,12.00,3950,0,"Matched to Budget Preference",0
+R7,"Premium vs non-premium",Delhi,Kolkata,fixed_utility,1,12302,"New Delhi-Howrah Rajdhani Express",Rajdhani,17:08,09:55,1007,4.78,2800,83,"Fastest route available",0
+R7,"Premium vs non-premium",Delhi,Kolkata,fixed_utility,2,12260,"New Delhi-Sealdah AC Duronto Express",Drnt,20:13,12:25,972,4.42,1870,80,"Fastest route available",0
+R7,"Premium vs non-premium",Delhi,Kolkata,fixed_utility,3,12314,"NEW DELHI - KOL SEALDAH Rajdhani Exp",Rajdhani,16:30,10:15,1065,5.75,2950,80,"Fastest route available",0
+R7,"Premium vs non-premium",Delhi,Kolkata,fixed_utility,4,12306,"New Delhi-Howrah Rajdhani Express",Rajdhani,17:08,12:40,1172,7.53,3220,75,"Matched to Custom Preferences",0
+R7,"Premium vs non-premium",Delhi,Kolkata,fixed_utility,5,12274,"New Delhi-Howrah Duronto Express",Drnt,13:09,06:00,1011,6.85,1940,75,"Fastest route available",0
+R7,"Premium vs non-premium",Delhi,Kolkata,fixed_utility,6,12380,"Amritsar - Sealdah Superfast Express",Superfast,19:10,17:25,1335,10.25,2595,68,"Matched to Custom Preferences",0
+R7,"Premium vs non-premium",Delhi,Kolkata,fixed_utility,7,12324,"New Delhi-Howrah SF Express",Superfast,07:20,06:00,1360,12.00,2645,65,"Matched to Custom Preferences",0
+R7,"Premium vs non-premium",Delhi,Kolkata,fixed_utility,8,12330,"West Bengal Sampark Kranti Express",SKr,19:10,17:25,1335,10.25,2550,64,"Matched to Custom Preferences",0
+R7,"Premium vs non-premium",Delhi,Kolkata,fixed_utility,9,12382,"Poorva Express",SF,16:37,16:45,1448,12.13,2760,63,"Matched to Custom Preferences",0
+R7,"Premium vs non-premium",Delhi,Kolkata,fixed_utility,10,12304,"Poorva Express",SF,16:37,16:45,1448,12.13,2760,63,"Matched to Custom Preferences",0
+R7,"Premium vs non-premium",Delhi,Kolkata,fixed_utility,11,12312,"Kalka Mail",Mail,07:00,07:30,1470,12.00,2805,63,"Matched to Custom Preferences",0
+R7,"Premium vs non-premium",Delhi,Kolkata,fixed_utility,12,13040,"Janata Express",Exp,15:40,06:05,2305,16.33,500,53,"Best value for money",0
+R7,"Premium vs non-premium",Delhi,Kolkata,fixed_utility,13,13112,"Lal Quila Express",Exp,20:50,07:30,2080,12.00,3950,45,"Matched to Custom Preferences",0
+R7,"Premium vs non-premium",Delhi,Kolkata,railcompass,1,12302,"New Delhi-Howrah Rajdhani Express",Rajdhani,17:08,09:55,1007,4.78,2800,102,"Premium Long-Haul Experience",0
+R7,"Premium vs non-premium",Delhi,Kolkata,railcompass,2,12314,"NEW DELHI - KOL SEALDAH Rajdhani Exp",Rajdhani,16:30,10:15,1065,5.75,2950,100,"Premium Long-Haul Experience",0
+R7,"Premium vs non-premium",Delhi,Kolkata,railcompass,3,12306,"New Delhi-Howrah Rajdhani Express",Rajdhani,17:08,12:40,1172,7.53,3220,96,"Premium Long-Haul Experience",0
+R7,"Premium vs non-premium",Delhi,Kolkata,railcompass,4,12260,"New Delhi-Sealdah AC Duronto Express",Drnt,20:13,12:25,972,4.42,1870,81,"Fastest long-haul option",0
+R7,"Premium vs non-premium",Delhi,Kolkata,railcompass,5,12274,"New Delhi-Howrah Duronto Express",Drnt,13:09,06:00,1011,6.85,1940,80,"Fastest long-haul option",0
+R7,"Premium vs non-premium",Delhi,Kolkata,railcompass,6,12380,"Amritsar - Sealdah Superfast Express",Superfast,19:10,17:25,1335,10.25,2595,73,"Solid all-around option",0
+R7,"Premium vs non-premium",Delhi,Kolkata,railcompass,7,12324,"New Delhi-Howrah SF Express",Superfast,07:20,06:00,1360,12.00,2645,72,"Solid all-around option",0
+R7,"Premium vs non-premium",Delhi,Kolkata,railcompass,8,12382,"Poorva Express",SF,16:37,16:45,1448,12.13,2760,69,"Solid all-around option",0
+R7,"Premium vs non-premium",Delhi,Kolkata,railcompass,9,12304,"Poorva Express",SF,16:37,16:45,1448,12.13,2760,69,"Solid all-around option",0
+R7,"Premium vs non-premium",Delhi,Kolkata,railcompass,10,12330,"West Bengal Sampark Kranti Express",SKr,19:10,17:25,1335,10.25,2550,69,"Solid all-around option",0
+R7,"Premium vs non-premium",Delhi,Kolkata,railcompass,11,12312,"Kalka Mail",Mail,07:00,07:30,1470,12.00,2805,68,"Solid all-around option",0
+R7,"Premium vs non-premium",Delhi,Kolkata,railcompass,12,13040,"Janata Express",Exp,15:40,06:05,2305,16.33,500,52,"Best long-haul value",0
+R7,"Premium vs non-premium",Delhi,Kolkata,railcompass,13,13112,"Lal Quila Express",Exp,20:50,07:30,2080,12.00,3950,43,"Solid all-around option",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,duration_only,1,12268,"Ahmedabad-Mumbai Central AC Duronto Express",Drnt,23:45,06:11,386,0.00,770,100,"Fastest route available",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,duration_only,2,12215,"Delhi Sarai Rohilla-Mumbai BandraT Garib Rath",GR,01:30,08:10,400,0.17,795,98,"Fastest route available",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,duration_only,3,12010,"Ahmedabad-Mumbai Central Shatabdi",Shatabdi,14:30,21:21,411,5.50,2680,96,"Fastest route available",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,duration_only,4,12934,"Karnavati Express",SF,04:55,12:20,445,4.33,780,90,"Matched to Duration Preference",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,duration_only,5,12489,"Bikaner-Dadar Express",SF,04:40,12:06,446,4.10,335,90,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,duration_only,6,12960,"BHUJ - MUMBAI DADAR SF Exp",Superfast,04:40,12:09,449,4.15,370,89,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,duration_only,7,12990,"Ajmer-Dadar SF Express",Superfast,04:55,12:43,468,4.72,380,86,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,duration_only,8,19006,"Saurashtra Mail",Mail,22:50,06:36,466,0.00,350,86,"Saves your daytime hours",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,duration_only,9,59460,"Veraval Mumbai Central Passenger Express",Pass,22:50,06:36,466,0.00,350,86,"Saves your daytime hours",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,duration_only,10,04727,"Bikaner-Mumbai BandraT SF Special",Superfast,05:05,12:55,470,4.92,385,85,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,duration_only,11,12479,"JODHPUR - MUMBAI BANDRA Suryanagari SF Exp",Superfast,03:50,11:45,475,3.75,385,84,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,duration_only,12,19066,"BHAGAT KI KOTHI - MUMBAI BANDRA Exp",Exp,04:55,13:05,490,5.08,370,82,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,duration_only,13,19708,"Aravalli Express",Exp,22:35,06:45,490,0.00,370,82,"Saves your daytime hours",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,duration_only,14,12972,"Bhavnagar Bandra Express",SF,02:15,10:35,500,2.58,375,80,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,duration_only,15,19132,"BHUJ - MUMBAI BANDRA Kutch Exp",Exp,03:05,11:30,505,3.50,380,79,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,duration_only,16,19116,"BHUJ - MUMBAI BANDRA Sayaji Nagari Exp",Exp,05:25,13:55,510,5.92,380,78,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,duration_only,17,19012,"Gujarat Express",Exp,07:00,15:51,531,7.85,920,75,"Matched to Duration Preference",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,duration_only,18,19144,"Lokshakti Express",Exp,21:05,06:05,540,0.00,405,73,"Saves your daytime hours",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,duration_only,19,12902,"Gujarat Mail",Mail,22:00,05:41,461,0.00,345,72,"Saves your daytime hours",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,duration_only,20,09002,"Ahmedabad Mumbai Central Superfast Special",Superfast,21:40,05:26,466,0.00,380,71,"Saves your daytime hours",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,duration_only,21,14707,"BIKANER - MUMBAI BANDRA Ranakpur Exp",Exp,01:40,10:55,555,2.92,415,70,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,duration_only,22,09562,"Okha - Bandra Terminus Weekly Special",Exp,21:30,05:35,485,0.00,365,68,"Saves your daytime hours",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,duration_only,23,17017,"Rajkot Secunderabad Express",Exp,10:00,19:40,580,9.67,430,66,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,duration_only,24,16613,"RAJKOT - COIMBATORE Exp",Exp,10:00,19:40,580,9.67,430,66,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,duration_only,25,17203,"Bhavnagar(T)-Kakinada Town Express",Exp,10:00,19:40,580,9.67,430,66,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,duration_only,26,19568,"OKHA - TUTICORIN Exp",Exp,10:00,19:40,580,9.67,430,66,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,duration_only,27,09221,"Porbandar Secunderabad Weekly Special",Exp,10:00,19:40,580,9.67,430,66,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,duration_only,28,06502,"Ahmedabad -Yesvantpur Garib Rath Special",GR,20:15,04:45,510,0.00,1000,63,"Saves your daytime hours",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,duration_only,29,16533,"BHAGAT KI KOTHI - BANGALORE CITY Exp",Exp,14:55,01:05,610,5.08,450,61,"Best value for money",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,duration_only,30,16531,"Garib Nawaz Express",Exp,14:55,01:05,610,5.08,450,61,"Best value for money",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,duration_only,31,16209,"Ajmer-Mysore Express",Exp,14:55,01:05,610,5.08,450,61,"Best value for money",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,duration_only,32,16507,"BHAGAT KI KOTHI - BANGALORE Exp",Exp,14:55,01:05,610,5.08,450,61,"Best value for money",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,duration_only,33,16505,"GANDHIDHAM - BANGALORE Exp",Exp,14:55,01:08,613,5.08,455,60,"Best value for money",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,duration_only,34,19018,"Saurashtra Janata Express",Exp,20:35,05:45,550,0.00,410,56,"Saves your daytime hours",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,duration_only,35,09405,"Ahmedabad Yesvantpur (Weekly) Special",Exp,19:30,04:45,555,0.50,415,55,"Saves your daytime hours",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,duration_only,36,11095,"Ahimsa Express",Exp,16:00,01:45,585,4.00,435,50,"Best value for money",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,duration_only,37,11049,"Ahmedabad-Kolhapur Express",Exp,19:30,05:15,585,0.50,435,50,"Saves your daytime hours",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,duration_only,38,11091,"BHUJ - PUNE Ahimsa Exp",Exp,16:00,01:45,585,4.00,435,50,"Best value for money",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,duration_only,39,11089,"BHAGAT KI KOTHI - PUNE Exp",Exp,16:00,01:45,585,4.00,435,50,"Best value for money",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,duration_only,40,11087,"Veraval Pune Express",Exp,16:00,01:45,585,4.00,435,50,"Best value for money",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,duration_only,41,19216,"Saurashtra Express",Exp,07:10,18:35,685,10.58,505,48,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,duration_only,42,59442,"Ahmedabad Mumbai Central Passenger",Pass,12:05,04:03,958,7.92,695,0,"Matched to Duration Preference",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,cheapest_only,1,12489,"Bikaner-Dadar Express",SF,04:40,12:06,446,4.10,335,100,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,cheapest_only,2,19066,"BHAGAT KI KOTHI - MUMBAI BANDRA Exp",Exp,04:55,13:05,490,5.08,370,99,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,cheapest_only,3,12960,"BHUJ - MUMBAI DADAR SF Exp",Superfast,04:40,12:09,449,4.15,370,99,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,cheapest_only,4,19006,"Saurashtra Mail",Mail,22:50,06:36,466,0.00,350,99,"Saves your daytime hours",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,cheapest_only,5,59460,"Veraval Mumbai Central Passenger Express",Pass,22:50,06:36,466,0.00,350,99,"Saves your daytime hours",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,cheapest_only,6,19708,"Aravalli Express",Exp,22:35,06:45,490,0.00,370,99,"Saves your daytime hours",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,cheapest_only,7,12972,"Bhavnagar Bandra Express",SF,02:15,10:35,500,2.58,375,98,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,cheapest_only,8,19132,"BHUJ - MUMBAI BANDRA Kutch Exp",Exp,03:05,11:30,505,3.50,380,98,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,cheapest_only,9,19116,"BHUJ - MUMBAI BANDRA Sayaji Nagari Exp",Exp,05:25,13:55,510,5.92,380,98,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,cheapest_only,10,12479,"JODHPUR - MUMBAI BANDRA Suryanagari SF Exp",Superfast,03:50,11:45,475,3.75,385,98,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,cheapest_only,11,12990,"Ajmer-Dadar SF Express",Superfast,04:55,12:43,468,4.72,380,98,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,cheapest_only,12,04727,"Bikaner-Mumbai BandraT SF Special",Superfast,05:05,12:55,470,4.92,385,98,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,cheapest_only,13,19144,"Lokshakti Express",Exp,21:05,06:05,540,0.00,405,97,"Saves your daytime hours",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,cheapest_only,14,14707,"BIKANER - MUMBAI BANDRA Ranakpur Exp",Exp,01:40,10:55,555,2.92,415,97,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,cheapest_only,15,17017,"Rajkot Secunderabad Express",Exp,10:00,19:40,580,9.67,430,96,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,cheapest_only,16,16613,"RAJKOT - COIMBATORE Exp",Exp,10:00,19:40,580,9.67,430,96,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,cheapest_only,17,17203,"Bhavnagar(T)-Kakinada Town Express",Exp,10:00,19:40,580,9.67,430,96,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,cheapest_only,18,19568,"OKHA - TUTICORIN Exp",Exp,10:00,19:40,580,9.67,430,96,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,cheapest_only,19,09221,"Porbandar Secunderabad Weekly Special",Exp,10:00,19:40,580,9.67,430,96,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,cheapest_only,20,16533,"BHAGAT KI KOTHI - BANGALORE CITY Exp",Exp,14:55,01:05,610,5.08,450,95,"Best value for money",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,cheapest_only,21,16505,"GANDHIDHAM - BANGALORE Exp",Exp,14:55,01:08,613,5.08,455,95,"Best value for money",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,cheapest_only,22,16531,"Garib Nawaz Express",Exp,14:55,01:05,610,5.08,450,95,"Best value for money",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,cheapest_only,23,16209,"Ajmer-Mysore Express",Exp,14:55,01:05,610,5.08,450,95,"Best value for money",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,cheapest_only,24,16507,"BHAGAT KI KOTHI - BANGALORE Exp",Exp,14:55,01:05,610,5.08,450,95,"Best value for money",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,cheapest_only,25,19216,"Saurashtra Express",Exp,07:10,18:35,685,10.58,505,93,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,cheapest_only,26,59442,"Ahmedabad Mumbai Central Passenger",Pass,12:05,04:03,958,7.92,695,85,"Matched to Budget Preference",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,cheapest_only,27,12902,"Gujarat Mail",Mail,22:00,05:41,461,0.00,345,85,"Saves your daytime hours",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,cheapest_only,28,09562,"Okha - Bandra Terminus Weekly Special",Exp,21:30,05:35,485,0.00,365,84,"Saves your daytime hours",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,cheapest_only,29,09002,"Ahmedabad Mumbai Central Superfast Special",Superfast,21:40,05:26,466,0.00,380,83,"Saves your daytime hours",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,cheapest_only,30,09405,"Ahmedabad Yesvantpur (Weekly) Special",Exp,19:30,04:45,555,0.50,415,82,"Saves your daytime hours",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,cheapest_only,31,19018,"Saurashtra Janata Express",Exp,20:35,05:45,550,0.00,410,82,"Saves your daytime hours",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,cheapest_only,32,11095,"Ahimsa Express",Exp,16:00,01:45,585,4.00,435,81,"Best value for money",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,cheapest_only,33,11049,"Ahmedabad-Kolhapur Express",Exp,19:30,05:15,585,0.50,435,81,"Saves your daytime hours",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,cheapest_only,34,12268,"Ahmedabad-Mumbai Central AC Duronto Express",Drnt,23:45,06:11,386,0.00,770,81,"Fastest route available",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,cheapest_only,35,12934,"Karnavati Express",SF,04:55,12:20,445,4.33,780,81,"Matched to Budget Preference",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,cheapest_only,36,11091,"BHUJ - PUNE Ahimsa Exp",Exp,16:00,01:45,585,4.00,435,81,"Best value for money",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,cheapest_only,37,11089,"BHAGAT KI KOTHI - PUNE Exp",Exp,16:00,01:45,585,4.00,435,81,"Best value for money",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,cheapest_only,38,11087,"Veraval Pune Express",Exp,16:00,01:45,585,4.00,435,81,"Best value for money",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,cheapest_only,39,12215,"Delhi Sarai Rohilla-Mumbai BandraT Garib Rath",GR,01:30,08:10,400,0.17,795,80,"Fastest route available",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,cheapest_only,40,19012,"Gujarat Express",Exp,07:00,15:51,531,7.85,920,75,"Matched to Budget Preference",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,cheapest_only,41,06502,"Ahmedabad -Yesvantpur Garib Rath Special",GR,20:15,04:45,510,0.00,1000,57,"Saves your daytime hours",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,cheapest_only,42,12010,"Ahmedabad-Mumbai Central Shatabdi",Shatabdi,14:30,21:21,411,5.50,2680,0,"Fastest route available",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,fixed_utility,1,19006,"Saurashtra Mail",Mail,22:50,06:36,466,0.00,350,89,"Saves your daytime hours",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,fixed_utility,2,12268,"Ahmedabad-Mumbai Central AC Duronto Express",Drnt,23:45,06:11,386,0.00,770,83,"Fastest route available",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,fixed_utility,3,12489,"Bikaner-Dadar Express",SF,04:40,12:06,446,4.10,335,83,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,fixed_utility,4,12972,"Bhavnagar Bandra Express",SF,02:15,10:35,500,2.58,375,83,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,fixed_utility,5,19708,"Aravalli Express",Exp,22:35,06:45,490,0.00,370,83,"Saves your daytime hours",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,fixed_utility,6,12479,"JODHPUR - MUMBAI BANDRA Suryanagari SF Exp",Superfast,03:50,11:45,475,3.75,385,82,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,fixed_utility,7,12215,"Delhi Sarai Rohilla-Mumbai BandraT Garib Rath",GR,01:30,08:10,400,0.17,795,82,"Fastest route available",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,fixed_utility,8,12960,"BHUJ - MUMBAI DADAR SF Exp",Superfast,04:40,12:09,449,4.15,370,82,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,fixed_utility,9,19144,"Lokshakti Express",Exp,21:05,06:05,540,0.00,405,81,"Saves your daytime hours",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,fixed_utility,10,12990,"Ajmer-Dadar SF Express",Superfast,04:55,12:43,468,4.72,380,81,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,fixed_utility,11,04727,"Bikaner-Mumbai BandraT SF Special",Superfast,05:05,12:55,470,4.92,385,80,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,fixed_utility,12,12934,"Karnavati Express",SF,04:55,12:20,445,4.33,780,79,"Matched to Custom Preferences",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,fixed_utility,13,19132,"BHUJ - MUMBAI BANDRA Kutch Exp",Exp,03:05,11:30,505,3.50,380,77,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,fixed_utility,14,14707,"BIKANER - MUMBAI BANDRA Ranakpur Exp",Exp,01:40,10:55,555,2.92,415,76,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,fixed_utility,15,19066,"BHAGAT KI KOTHI - MUMBAI BANDRA Exp",Exp,04:55,13:05,490,5.08,370,75,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,fixed_utility,16,12902,"Gujarat Mail",Mail,22:00,05:41,461,0.00,345,74,"Saves your daytime hours",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,fixed_utility,17,09002,"Ahmedabad Mumbai Central Superfast Special",Superfast,21:40,05:26,466,0.00,380,73,"Saves your daytime hours",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,fixed_utility,18,19116,"BHUJ - MUMBAI BANDRA Sayaji Nagari Exp",Exp,05:25,13:55,510,5.92,380,73,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,fixed_utility,19,16533,"BHAGAT KI KOTHI - BANGALORE CITY Exp",Exp,14:55,01:05,610,5.08,450,71,"Best value for money",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,fixed_utility,20,16505,"GANDHIDHAM - BANGALORE Exp",Exp,14:55,01:08,613,5.08,455,71,"Best value for money",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,fixed_utility,21,16531,"Garib Nawaz Express",Exp,14:55,01:05,610,5.08,450,71,"Best value for money",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,fixed_utility,22,16209,"Ajmer-Mysore Express",Exp,14:55,01:05,610,5.08,450,71,"Best value for money",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,fixed_utility,23,16507,"BHAGAT KI KOTHI - BANGALORE Exp",Exp,14:55,01:05,610,5.08,450,71,"Best value for money",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,fixed_utility,24,59460,"Veraval Mumbai Central Passenger Express",Pass,22:50,06:36,466,0.00,350,71,"Saves your daytime hours",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,fixed_utility,25,09562,"Okha - Bandra Terminus Weekly Special",Exp,21:30,05:35,485,0.00,365,68,"Saves your daytime hours",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,fixed_utility,26,12010,"Ahmedabad-Mumbai Central Shatabdi",Shatabdi,14:30,21:21,411,5.50,2680,67,"Fastest route available",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,fixed_utility,27,19018,"Saurashtra Janata Express",Exp,20:35,05:45,550,0.00,410,66,"Saves your daytime hours",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,fixed_utility,28,09405,"Ahmedabad Yesvantpur (Weekly) Special",Exp,19:30,04:45,555,0.50,415,65,"Saves your daytime hours",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,fixed_utility,29,19012,"Gujarat Express",Exp,07:00,15:51,531,7.85,920,65,"Matched to Custom Preferences",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,fixed_utility,30,17017,"Rajkot Secunderabad Express",Exp,10:00,19:40,580,9.67,430,65,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,fixed_utility,31,16613,"RAJKOT - COIMBATORE Exp",Exp,10:00,19:40,580,9.67,430,65,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,fixed_utility,32,17203,"Bhavnagar(T)-Kakinada Town Express",Exp,10:00,19:40,580,9.67,430,65,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,fixed_utility,33,19568,"OKHA - TUTICORIN Exp",Exp,10:00,19:40,580,9.67,430,65,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,fixed_utility,34,09221,"Porbandar Secunderabad Weekly Special",Exp,10:00,19:40,580,9.67,430,65,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,fixed_utility,35,11049,"Ahmedabad-Kolhapur Express",Exp,19:30,05:15,585,0.50,435,64,"Saves your daytime hours",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,fixed_utility,36,06502,"Ahmedabad -Yesvantpur Garib Rath Special",GR,20:15,04:45,510,0.00,1000,63,"Saves your daytime hours",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,fixed_utility,37,19216,"Saurashtra Express",Exp,07:10,18:35,685,10.58,505,60,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,fixed_utility,38,11095,"Ahimsa Express",Exp,16:00,01:45,585,4.00,435,58,"Best value for money",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,fixed_utility,39,11091,"BHUJ - PUNE Ahimsa Exp",Exp,16:00,01:45,585,4.00,435,58,"Best value for money",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,fixed_utility,40,11089,"BHAGAT KI KOTHI - PUNE Exp",Exp,16:00,01:45,585,4.00,435,58,"Best value for money",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,fixed_utility,41,11087,"Veraval Pune Express",Exp,16:00,01:45,585,4.00,435,58,"Best value for money",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,fixed_utility,42,59442,"Ahmedabad Mumbai Central Passenger",Pass,12:05,04:03,958,7.92,695,42,"Matched to Custom Preferences",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,railcompass,1,19006,"Saurashtra Mail",Mail,22:50,06:36,466,0.00,350,93,"Saves your daytime hours",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,railcompass,2,12268,"Ahmedabad-Mumbai Central AC Duronto Express",Drnt,23:45,06:11,386,0.00,770,92,"Fastest route available",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,railcompass,3,12215,"Delhi Sarai Rohilla-Mumbai BandraT Garib Rath",GR,01:30,08:10,400,0.17,795,91,"Fastest route available",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,railcompass,4,19708,"Aravalli Express",Exp,22:35,06:45,490,0.00,370,89,"Saves your daytime hours",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,railcompass,5,19144,"Lokshakti Express",Exp,21:05,06:05,540,0.00,405,86,"Saves your daytime hours",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,railcompass,6,59460,"Veraval Mumbai Central Passenger Express",Pass,22:50,06:36,466,0.00,350,86,"Saves your daytime hours",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,railcompass,7,12972,"Bhavnagar Bandra Express",SF,02:15,10:35,500,2.58,375,84,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,railcompass,8,12489,"Bikaner-Dadar Express",SF,04:40,12:06,446,4.10,335,83,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,railcompass,9,12479,"JODHPUR - MUMBAI BANDRA Suryanagari SF Exp",Superfast,03:50,11:45,475,3.75,385,83,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,railcompass,10,12960,"BHUJ - MUMBAI DADAR SF Exp",Superfast,04:40,12:09,449,4.15,370,83,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,railcompass,11,19132,"BHUJ - MUMBAI BANDRA Kutch Exp",Exp,03:05,11:30,505,3.50,380,80,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,railcompass,12,12990,"Ajmer-Dadar SF Express",Superfast,04:55,12:43,468,4.72,380,80,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,railcompass,13,04727,"Bikaner-Mumbai BandraT SF Special",Superfast,05:05,12:55,470,4.92,385,80,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,railcompass,14,12934,"Karnavati Express",SF,04:55,12:20,445,4.33,780,79,"Solid all-around option",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,railcompass,15,12902,"Gujarat Mail",Mail,22:00,05:41,461,0.00,345,78,"Saves your daytime hours",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,railcompass,16,14707,"BIKANER - MUMBAI BANDRA Ranakpur Exp",Exp,01:40,10:55,555,2.92,415,78,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,railcompass,17,09002,"Ahmedabad Mumbai Central Superfast Special",Superfast,21:40,05:26,466,0.00,380,77,"Saves your daytime hours",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,railcompass,18,19066,"BHAGAT KI KOTHI - MUMBAI BANDRA Exp",Exp,04:55,13:05,490,5.08,370,76,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,railcompass,19,09562,"Okha - Bandra Terminus Weekly Special",Exp,21:30,05:35,485,0.00,365,74,"Saves your daytime hours",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,railcompass,20,16533,"BHAGAT KI KOTHI - BANGALORE CITY Exp",Exp,14:55,01:05,610,5.08,450,73,"Best long-haul value",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,railcompass,21,16531,"Garib Nawaz Express",Exp,14:55,01:05,610,5.08,450,73,"Best long-haul value",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,railcompass,22,16209,"Ajmer-Mysore Express",Exp,14:55,01:05,610,5.08,450,73,"Best long-haul value",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,railcompass,23,16507,"BHAGAT KI KOTHI - BANGALORE Exp",Exp,14:55,01:05,610,5.08,450,73,"Best long-haul value",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,railcompass,24,19116,"BHUJ - MUMBAI BANDRA Sayaji Nagari Exp",Exp,05:25,13:55,510,5.92,380,73,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,railcompass,25,16505,"GANDHIDHAM - BANGALORE Exp",Exp,14:55,01:08,613,5.08,455,72,"Best long-haul value",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,railcompass,26,19018,"Saurashtra Janata Express",Exp,20:35,05:45,550,0.00,410,69,"Saves your daytime hours",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,railcompass,27,19216,"Saurashtra Express",Exp,07:10,18:35,685,10.58,505,68,"Best long-haul value",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,railcompass,28,09405,"Ahmedabad Yesvantpur (Weekly) Special",Exp,19:30,04:45,555,0.50,415,67,"Saves your daytime hours",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,railcompass,29,06502,"Ahmedabad -Yesvantpur Garib Rath Special",GR,20:15,04:45,510,0.00,1000,66,"Saves your daytime hours",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,railcompass,30,11049,"Ahmedabad-Kolhapur Express",Exp,19:30,05:15,585,0.50,435,65,"Saves your daytime hours",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,railcompass,31,12010,"Ahmedabad-Mumbai Central Shatabdi",Shatabdi,14:30,21:21,411,5.50,2680,63,"Fastest route available",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,railcompass,32,19012,"Gujarat Express",Exp,07:00,15:51,531,7.85,920,62,"Solid all-around option",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,railcompass,33,17017,"Rajkot Secunderabad Express",Exp,10:00,19:40,580,9.67,430,59,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,railcompass,34,16613,"RAJKOT - COIMBATORE Exp",Exp,10:00,19:40,580,9.67,430,59,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,railcompass,35,17203,"Bhavnagar(T)-Kakinada Town Express",Exp,10:00,19:40,580,9.67,430,59,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,railcompass,36,19568,"OKHA - TUTICORIN Exp",Exp,10:00,19:40,580,9.67,430,59,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,railcompass,37,09221,"Porbandar Secunderabad Weekly Special",Exp,10:00,19:40,580,9.67,430,59,"Best value for money",0
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,railcompass,38,11095,"Ahimsa Express",Exp,16:00,01:45,585,4.00,435,57,"Best value for money",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,railcompass,39,11091,"BHUJ - PUNE Ahimsa Exp",Exp,16:00,01:45,585,4.00,435,57,"Best value for money",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,railcompass,40,11089,"BHAGAT KI KOTHI - PUNE Exp",Exp,16:00,01:45,585,4.00,435,57,"Best value for money",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,railcompass,41,11087,"Veraval Pune Express",Exp,16:00,01:45,585,4.00,435,57,"Best value for money",1
+R8,"Cheap vs fast trade-off",Ahmedabad,Mumbai,railcompass,42,59442,"Ahmedabad Mumbai Central Passenger",Pass,12:05,04:03,958,7.92,695,36,"Solid all-around option",1
+R9,"Early-morning arrival",Hyderabad,Chennai,duration_only,1,12604,"Hyderabad - Chennai Express",SF,17:20,05:55,755,2.67,1460,100,"Fastest route available",1
+R9,"Early-morning arrival",Hyderabad,Chennai,duration_only,2,12760,"Charminar Express",SF,18:55,08:15,800,1.33,1545,39,"Saves your daytime hours",0
+R9,"Early-morning arrival",Hyderabad,Chennai,duration_only,3,17652,"Kacheguda Chennai Egmore Express",Exp,16:00,05:49,829,4.00,1600,0,"Matched to Duration Preference",1
+R9,"Early-morning arrival",Hyderabad,Chennai,cheapest_only,1,12604,"Hyderabad - Chennai Express",SF,17:20,05:55,755,2.67,1460,100,"Fastest route available",1
+R9,"Early-morning arrival",Hyderabad,Chennai,cheapest_only,2,12760,"Charminar Express",SF,18:55,08:15,800,1.33,1545,39,"Saves your daytime hours",0
+R9,"Early-morning arrival",Hyderabad,Chennai,cheapest_only,3,17652,"Kacheguda Chennai Egmore Express",Exp,16:00,05:49,829,4.00,1600,0,"Matched to Budget Preference",1
+R9,"Early-morning arrival",Hyderabad,Chennai,fixed_utility,1,12604,"Hyderabad - Chennai Express",SF,17:20,05:55,755,2.67,1460,83,"Fastest route available",1
+R9,"Early-morning arrival",Hyderabad,Chennai,fixed_utility,2,12760,"Charminar Express",SF,18:55,08:15,800,1.33,1545,71,"Saves your daytime hours",0
+R9,"Early-morning arrival",Hyderabad,Chennai,fixed_utility,3,17652,"Kacheguda Chennai Egmore Express",Exp,16:00,05:49,829,4.00,1600,36,"Matched to Custom Preferences",1
+R9,"Early-morning arrival",Hyderabad,Chennai,railcompass,1,12604,"Hyderabad - Chennai Express",SF,17:20,05:55,755,2.67,1460,91,"Fastest long-haul option",1
+R9,"Early-morning arrival",Hyderabad,Chennai,railcompass,2,12760,"Charminar Express",SF,18:55,08:15,800,1.33,1545,61,"Solid all-around option",0
+R9,"Early-morning arrival",Hyderabad,Chennai,railcompass,3,17652,"Kacheguda Chennai Egmore Express",Exp,16:00,05:49,829,4.00,1600,37,"Solid all-around option",1
+R10,"Several similar-duration",Bangalore,Hyderabad,duration_only,1,12213,"Yeswantpur-Delhi Sarai Rohilla AC Duronto Express",Drnt,23:40,08:57,557,0.95,1090,100,"Fastest route available",0
+R10,"Several similar-duration",Bangalore,Hyderabad,duration_only,2,12649,"Karnataka Sampark Kranti Express",SKr,22:10,08:25,615,0.42,1200,72,"Saves your daytime hours",0
+R10,"Several similar-duration",Bangalore,Hyderabad,duration_only,3,22691,"Bangalore - Hazrat Nizamuddin Rajdhani Express",Rajdhani,20:25,07:12,647,0.00,1890,57,"Saves your daytime hours",0
+R10,"Several similar-duration",Bangalore,Hyderabad,duration_only,4,12251,"Wainganga express",SF,23:40,10:35,655,2.58,1275,53,"Matched to Duration Preference",0
+R10,"Several similar-duration",Bangalore,Hyderabad,duration_only,5,15024,"YESVANTPUR - GORAKHPUR Exp",Exp,23:40,10:35,655,2.58,1275,53,"Matched to Duration Preference",0
+R10,"Several similar-duration",Bangalore,Hyderabad,duration_only,6,12493,"Bangalore-Hazrat Nizammudin Rajdhani Express",Rajdhani,20:25,07:33,668,0.00,1940,47,"Saves your daytime hours",0
+R10,"Several similar-duration",Bangalore,Hyderabad,duration_only,7,12786,"Bangalore-Kacheguda SF Express",Superfast,18:33,05:40,667,1.45,1345,47,"Matched to Duration Preference",1
+R10,"Several similar-duration",Bangalore,Hyderabad,duration_only,8,12647,"Kongu Express",SF,23:28,10:35,667,2.58,1295,47,"Matched to Duration Preference",0
+R10,"Several similar-duration",Bangalore,Hyderabad,duration_only,9,12975,"Mysore-Jaipur SF Express",Superfast,13:20,02:05,765,6.67,1530,0,"Matched to Duration Preference",1
+R10,"Several similar-duration",Bangalore,Hyderabad,duration_only,10,17604,"Prashanti Nilayam Express",Exp,16:15,05:00,765,3.75,1480,0,"Matched to Duration Preference",1
+R10,"Several similar-duration",Bangalore,Hyderabad,cheapest_only,1,12213,"Yeswantpur-Delhi Sarai Rohilla AC Duronto Express",Drnt,23:40,08:57,557,0.95,1090,100,"Fastest route available",0
+R10,"Several similar-duration",Bangalore,Hyderabad,cheapest_only,2,12649,"Karnataka Sampark Kranti Express",SKr,22:10,08:25,615,0.42,1200,87,"Saves your daytime hours",0
+R10,"Several similar-duration",Bangalore,Hyderabad,cheapest_only,3,12251,"Wainganga express",SF,23:40,10:35,655,2.58,1275,78,"Matched to Budget Preference",0
+R10,"Several similar-duration",Bangalore,Hyderabad,cheapest_only,4,15024,"YESVANTPUR - GORAKHPUR Exp",Exp,23:40,10:35,655,2.58,1275,78,"Matched to Budget Preference",0
+R10,"Several similar-duration",Bangalore,Hyderabad,cheapest_only,5,12647,"Kongu Express",SF,23:28,10:35,667,2.58,1295,76,"Matched to Budget Preference",0
+R10,"Several similar-duration",Bangalore,Hyderabad,cheapest_only,6,12786,"Bangalore-Kacheguda SF Express",Superfast,18:33,05:40,667,1.45,1345,70,"Matched to Budget Preference",1
+R10,"Several similar-duration",Bangalore,Hyderabad,cheapest_only,7,17604,"Prashanti Nilayam Express",Exp,16:15,05:00,765,3.75,1480,54,"Matched to Budget Preference",1
+R10,"Several similar-duration",Bangalore,Hyderabad,cheapest_only,8,12975,"Mysore-Jaipur SF Express",Superfast,13:20,02:05,765,6.67,1530,48,"Matched to Budget Preference",1
+R10,"Several similar-duration",Bangalore,Hyderabad,cheapest_only,9,22691,"Bangalore - Hazrat Nizamuddin Rajdhani Express",Rajdhani,20:25,07:12,647,0.00,1890,6,"Saves your daytime hours",0
+R10,"Several similar-duration",Bangalore,Hyderabad,cheapest_only,10,12493,"Bangalore-Hazrat Nizammudin Rajdhani Express",Rajdhani,20:25,07:33,668,0.00,1940,0,"Saves your daytime hours",0
+R10,"Several similar-duration",Bangalore,Hyderabad,fixed_utility,1,12213,"Yeswantpur-Delhi Sarai Rohilla AC Duronto Express",Drnt,23:40,08:57,557,0.95,1090,84,"Fastest route available",0
+R10,"Several similar-duration",Bangalore,Hyderabad,fixed_utility,2,12649,"Karnataka Sampark Kranti Express",SKr,22:10,08:25,615,0.42,1200,78,"Saves your daytime hours",0
+R10,"Several similar-duration",Bangalore,Hyderabad,fixed_utility,3,12786,"Bangalore-Kacheguda SF Express",Superfast,18:33,05:40,667,1.45,1345,74,"Matched to Custom Preferences",1
+R10,"Several similar-duration",Bangalore,Hyderabad,fixed_utility,4,12251,"Wainganga express",SF,23:40,10:35,655,2.58,1275,73,"Matched to Custom Preferences",0
+R10,"Several similar-duration",Bangalore,Hyderabad,fixed_utility,5,12647,"Kongu Express",SF,23:28,10:35,667,2.58,1295,72,"Matched to Custom Preferences",0
+R10,"Several similar-duration",Bangalore,Hyderabad,fixed_utility,6,22691,"Bangalore - Hazrat Nizamuddin Rajdhani Express",Rajdhani,20:25,07:12,647,0.00,1890,72,"Saves your daytime hours",0
+R10,"Several similar-duration",Bangalore,Hyderabad,fixed_utility,7,12493,"Bangalore-Hazrat Nizammudin Rajdhani Express",Rajdhani,20:25,07:33,668,0.00,1940,69,"Saves your daytime hours",0
+R10,"Several similar-duration",Bangalore,Hyderabad,fixed_utility,8,15024,"YESVANTPUR - GORAKHPUR Exp",Exp,23:40,10:35,655,2.58,1275,68,"Matched to Custom Preferences",0
+R10,"Several similar-duration",Bangalore,Hyderabad,fixed_utility,9,17604,"Prashanti Nilayam Express",Exp,16:15,05:00,765,3.75,1480,52,"Matched to Custom Preferences",1
+R10,"Several similar-duration",Bangalore,Hyderabad,fixed_utility,10,12975,"Mysore-Jaipur SF Express",Superfast,13:20,02:05,765,6.67,1530,49,"Matched to Custom Preferences",1
+R10,"Several similar-duration",Bangalore,Hyderabad,railcompass,1,12213,"Yeswantpur-Delhi Sarai Rohilla AC Duronto Express",Drnt,23:40,08:57,557,0.95,1090,92,"Fastest route available",0
+R10,"Several similar-duration",Bangalore,Hyderabad,railcompass,2,22691,"Bangalore - Hazrat Nizamuddin Rajdhani Express",Rajdhani,20:25,07:12,647,0.00,1890,83,"Solid all-around option",0
+R10,"Several similar-duration",Bangalore,Hyderabad,railcompass,3,12493,"Bangalore-Hazrat Nizammudin Rajdhani Express",Rajdhani,20:25,07:33,668,0.00,1940,79,"Solid all-around option",0
+R10,"Several similar-duration",Bangalore,Hyderabad,railcompass,4,12649,"Karnataka Sampark Kranti Express",SKr,22:10,08:25,615,0.42,1200,75,"Solid all-around option",0
+R10,"Several similar-duration",Bangalore,Hyderabad,railcompass,5,12251,"Wainganga express",SF,23:40,10:35,655,2.58,1275,72,"Solid all-around option",0
+R10,"Several similar-duration",Bangalore,Hyderabad,railcompass,6,12647,"Kongu Express",SF,23:28,10:35,667,2.58,1295,69,"Solid all-around option",0
+R10,"Several similar-duration",Bangalore,Hyderabad,railcompass,7,12786,"Bangalore-Kacheguda SF Express",Superfast,18:33,05:40,667,1.45,1345,68,"Solid all-around option",1
+R10,"Several similar-duration",Bangalore,Hyderabad,railcompass,8,15024,"YESVANTPUR - GORAKHPUR Exp",Exp,23:40,10:35,655,2.58,1275,67,"Solid all-around option",0
+R10,"Several similar-duration",Bangalore,Hyderabad,railcompass,9,12975,"Mysore-Jaipur SF Express",Superfast,13:20,02:05,765,6.67,1530,49,"Solid all-around option",1
+R10,"Several similar-duration",Bangalore,Hyderabad,railcompass,10,17604,"Prashanti Nilayam Express",Exp,16:15,05:00,765,3.75,1480,45,"Solid all-around option",1
